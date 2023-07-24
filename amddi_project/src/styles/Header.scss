@@ -1,0 +1,43 @@
+@import 'Variables';
+/* Importamos las variables */
+
+
+
+
+.header_container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $verde-lima;
+    height: 130px;
+    font-size: 20px;
+
+}
+
+a {
+    color: $blanco !important;
+}
+
+.bg-gris {
+    background: $verde-lima !important;
+
+    :hover {
+        background-color: $gris-oscuro !important;
+    }
+}
+
+.nav-item{
+    padding: 0 10px 0 10px;
+}
+
+.nav-link {
+    transition: all $transition ease-in-out !important;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover {
+    transform: scale(1.1) !important;
+    transition: all $transition ease-in-out !important;
+}

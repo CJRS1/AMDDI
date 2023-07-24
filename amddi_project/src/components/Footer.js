@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Header (){
+export default function Footer (){
     return(
-        <header>
+        <footer>
             <h1>Hola</h1>
-        </header>
+            <img src="../images/Logo_blanco.png" alt="" />
+        </footer>
     )
 }

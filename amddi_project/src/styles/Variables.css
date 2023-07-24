@@ -1,0 +1,23 @@
+* {
+  font-family: "Dosis", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1 {
+  color: #7febcc;
+}
+
+#root {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+section {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}/*# sourceMappingURL=Variables.css.map */

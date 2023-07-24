@@ -1,0 +1,33 @@
+$verde-lima: #00d799;
+$verde-agua: #7febcc; 
+$verde-menta: #4beccd;
+$gris-claro: #b4b4b4;
+$gris-oscuro: #666666;
+$blanco: #ffffff;
+$negro: #000000;
+$transition: 0.5s;
+
+* {
+    font-family: 'Dosis', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+h1 {
+    color: $verde-agua
+}
+
+#root {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+section {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
