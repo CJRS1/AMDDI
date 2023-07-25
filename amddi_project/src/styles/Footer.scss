@@ -1,0 +1,35 @@
+@import 'Variables';
+
+.footer-description{
+    height: 850px;
+    width: 100%;
+    background: $verde-lima;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-description-amddi{
+    width: 300px;
+}
+
+.footer-description-nuestrosservicios{
+    width: 300px;
+}
+
+.footer-description-ubicanos{
+    width: 300px;
+}
+
+.footer-description-llamanos{
+    width: 300px;
+}
+
+.footer-text{
+    padding-top: 15px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

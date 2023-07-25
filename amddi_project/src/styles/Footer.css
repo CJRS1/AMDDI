@@ -1,0 +1,79 @@
+* {
+  font-family: "Dosis", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1 {
+  color: #7febcc;
+}
+
+#root {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+section {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.button-effect {
+  color: #000000 !important;
+  background-color: #00d799 !important;
+  padding: 10px 10px 10px 10px !important;
+  margin: 0 20px 40px 20px !important;
+}
+
+.button-effect:hover {
+  animation: scale 1s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.footer-description {
+  height: 850px;
+  width: 100%;
+  background: #00d799;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-description-amddi {
+  width: 300px;
+}
+
+.footer-description-nuestrosservicios {
+  width: 300px;
+}
+
+.footer-description-ubicanos {
+  width: 300px;
+}
+
+.footer-description-llamanos {
+  width: 300px;
+}
+
+.footer-text {
+  padding-top: 15px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Footer.css.map */
