@@ -19,7 +19,7 @@ export default function Header() {
                                 <a className="nav-link dropdown-toggle " href="#nuestrosservicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Nuestros Servicios
                                 </a>
-                                <ul className="dropdown-menu bg-gris">
+                                <ul className="dropdown-menu bg-gris" >
                                     <li><a className="dropdown-item" href="#e">Redacción de Tesis de Pregrado</a></li>
                                     <li><a className="dropdown-item" href="#e">Redacción de Tesis de Postgrado</a></li>
                                     <li><a className="dropdown-item" href="#e">Levantamiento de Observaciones Pregrado</a></li>

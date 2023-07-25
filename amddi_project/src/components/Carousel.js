@@ -13,21 +13,21 @@ export default function Carousel() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="https://dical.es/modules/ph_simpleblog/featured/18.jpg" alt="AMDDI" height={'603.2px'} width={'1481px'} />
+                        <img src={require('../images/asesoria.jpeg')} alt='AMDDI' height={'603.2px'} width={'1481px'}/>
                         <div className="carousel-caption d-none d-md-block">
                             <button type="button" className="btn button-effect">Contáctanos por Whatsapp</button>
                             <button type="button" className="btn button-effect">Contáctanos por Correo</button>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://dical.es/modules/ph_simpleblog/featured/18.jpg" alt="AMDDI" height={'603.2px'} width={'1481px'} />
+                        <img src={require('../images/asesoria.jpeg')} alt='AMDDI' height={'603.2px'} width={'1481px'}/>
                         <div className="carousel-caption d-none d-md-block">
                             <button type="button" className="btn button-effect">Contáctanos por Whatsapp</button>
                             <button type="button" className="btn button-effect">Contáctanos por Correo</button>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://dical.es/modules/ph_simpleblog/featured/18.jpg" alt="AMDDI" height={'603.2px'} width={'1481px'} />
+                        <img src={require('../images/asesoria.jpeg')} alt='AMDDI' height={'603.2px'} width={'1481px'}/>
                         <div className="carousel-caption d-none d-md-block">
                             <button type="button" className="btn button-effect">Contáctanos por Whatsapp</button>
                             <button type="button" className="btn button-effect">Contáctanos por Correo</button>

@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <Carousel /> */}
+      <Carousel />
       <Footer />
     </div>
   );
