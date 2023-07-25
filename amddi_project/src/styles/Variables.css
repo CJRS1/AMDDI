@@ -20,4 +20,27 @@ section {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+}
+
+.button-effect {
+  color: #000000 !important;
+  background-color: #00d799 !important;
+  padding: 10px 10px 10px 10px !important;
+  margin: 0 20px 40px 20px !important;
+}
+
+.button-effect:hover {
+  animation: scale 1s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=Variables.css.map */

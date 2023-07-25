@@ -1,0 +1,94 @@
+@charset "UTF-8";
+* {
+  font-family: "Dosis", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1 {
+  color: #7febcc;
+}
+
+#root {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+section {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.button-effect {
+  color: #000000 !important;
+  background-color: #00d799 !important;
+  padding: 10px 10px 10px 10px !important;
+  margin: 0 20px 40px 20px !important;
+}
+
+.button-effect:hover {
+  animation: scale 1s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.carousel_container {
+  padding-top: 120px;
+}
+
+.carousel-indicators button {
+  background-color: #b4b4b4 !important;
+  width: 80px !important;
+  /* Cambia el ancho según tu preferencia */
+  height: 20px !important;
+  /* Cambia la altura según tu preferencia */
+}
+
+.carousel-indicators .active {
+  background-color: #00d799 !important;
+}
+
+.carousel-control-next-icon {
+  width: 80px !important;
+  height: 80px !important;
+  background-color: #00d799 !important;
+  filter: none !important;
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon {
+  width: 80px !important;
+  height: 80px !important;
+  background-color: #00d799 !important;
+  filter: none !important;
+  border-radius: 5px;
+}
+
+.button-carousel:hover {
+  animation: scale 1s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=Carousel.css.map */

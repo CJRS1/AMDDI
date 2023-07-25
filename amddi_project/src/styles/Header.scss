@@ -1,9 +1,6 @@
 @import 'Variables';
 /* Importamos las variables */
 
-
-
-
 .header_container {
     width: 100vw;
     display: flex;
@@ -11,9 +8,13 @@
     align-items: center;
     justify-content: center;
     background-color: $verde-lima;
-    height: 130px;
+    height: 120px;
     font-size: 20px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 a {
@@ -28,7 +29,7 @@ a {
     }
 }
 
-.nav-item{
+.nav-item {
     padding: 0 10px 0 10px;
 }
 
