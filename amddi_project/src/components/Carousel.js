@@ -40,7 +40,6 @@ export default function Carousel() {
                 </button>
                 <button className="carousel-control-next button-carousel" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span className="carousel-control-next-icon icon-x" aria-hidden="true"></span>
-                    <i class="fa-solid fa-circle-right"></i>
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
