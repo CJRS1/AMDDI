@@ -1,35 +1,138 @@
 @import 'Variables';
 
-.footer-description{
-    height: 850px;
+.footer-description {
+    height: 610px;
     width: 100%;
     background: $verde-lima;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    color: $blanco;
+    box-shadow: inset 0px 10px 80px 0 rgb(0,0,0,0.8);
 }
 
-.footer-description-amddi{
+.footer-description-amddi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.footer-content {
+    padding: 0 30px 0 30px;
+    text-align: justify;
+
+}
+
+.footer-socialnetwork {
     width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
 }
 
-.footer-description-nuestrosservicios{
-    width: 300px;
+.svg-effect {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
 }
 
-.footer-description-ubicanos{
-    width: 300px;
+.svg-effect:hover {
+    filter: brightness(1) invert(0);
+    animation: scale 1s infinite;
 }
 
-.footer-description-llamanos{
-    width: 300px;
+.li-effect:hover {
+    animation: scale 1s infinite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.footer-text{
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.footer-description-nuestrosservicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-top: 20px;
+}
+
+.footer-description-ubicanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+
+.footer-description-llamanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-top: 20px;
+}
+
+.footer-description-redes {
+    padding-top: 20px;
+}
+
+.card-ictel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icloc {
+    display: flex;
+}
+
+.card-localizacion {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.bi-geo-alt {
+    padding-top: 5px !important;
+}
+
+.container-ictel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.footer-text {
     padding-top: 15px;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600 !important;
+    color: $gris-oscuro
 }

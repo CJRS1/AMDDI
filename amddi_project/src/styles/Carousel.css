@@ -1,11 +1,26 @@
 @charset "UTF-8";
 * {
-  font-family: "Dosis", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+body {
   font-family: "Poppins", sans-serif !important;
 }
 
 h1 {
   color: #7febcc;
+}
+
+h4 {
+  font-size: 20px !important;
+}
+
+h5 {
+  font-size: 15px !important;
+}
+
+a, ul, li {
+  text-decoration: none !important;
 }
 
 #root {
