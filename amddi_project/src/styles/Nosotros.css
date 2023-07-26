@@ -9,7 +9,7 @@ body {
 h1 {
   font-size: 30px;
   width: 150px !important;
-  color: #00d799 !important;
+  color: #ffffff !important;
   display: inline-block !important;
   margin: 0 0 0 0 !important;
   height: 40px !important;
@@ -67,37 +67,44 @@ section {
   }
 }
 .amddi_container {
-  height: 200vh;
+  height: 1186.4px;
   width: 1481px;
   display: flex !important;
   flex-direction: column;
   justify-content: space-around !important;
-  padding-top: 100px;
 }
 
 .quienessomos {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
+  width: 900px;
   height: 100vh;
-  padding: 10px 20px 10px 20px;
   border-radius: 10px;
+  padding-top: 20px;
 }
 
 .quienessomos-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
-  padding: 10px 20px 10px 20px;
+  width: 900px;
+  height: 399px;
+  padding: 0 0 0 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.8);
+  position: relative;
+  background: #00d799;
 }
 
 .quienessomos-descripcion {
   width: 400px;
   margin-right: 50px;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+}
+.quienessomos-descripcion h4 {
+  color: #ffffff;
 }
 
 .vimi-container {
@@ -106,7 +113,7 @@ section {
   align-items: center;
   width: 1000px;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .vimi {
@@ -117,7 +124,18 @@ section {
   height: 350px;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+.vimi h4 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.vision {
+  background-image: url("../images/Nosotros/vision_verde2.jpeg");
+}
+
+.mision {
+  background-image: url("../images/Nosotros/vision_verde3.jpeg");
 }
 
 .img-titulo {
@@ -126,12 +144,19 @@ section {
   align-items: center;
   height: 50px !important;
 }
+.img-titulo h2 {
+  color: #ffffff;
+}
 
 .img-logo {
-  padding-right: 10px;
   padding-bottom: 1px;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .titulo-vimi {
   padding-top: 6px;
+  color: #ffffff;
 }/*# sourceMappingURL=Nosotros.css.map */
