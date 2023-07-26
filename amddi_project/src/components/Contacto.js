@@ -4,10 +4,10 @@ export default function Contacto() {
     return (
         <section className="contacto_container">
             <div class="container-contacto-lottie zoom">
-                <lottie-player src="https://lottie.host/70b614b9-6656-4d01-8cf7-ec4cb1ee922b/39igVwIbbf.json" background="transparent"
+                <lottie-player src="https://lottie.host/a9c16ef5-0055-4c4a-8a7d-1f124d2dff10/iappdZRYCl.json" background="transparent"
                     speed="0.5" style={{height:'400px', width:'400px'}} loop autoplay></lottie-player>
                 <form method="POST" action="https://formsubmit.co/reyes.christian@pucp.pe" enctype="multipart/form-data" class="container-contacto-empresa">
-                    <h4 class="titulo"><strong>Contáctanos</strong></h4>
+                    <h2 class="titulo"><strong>Contáctanos</strong></h2>
                     <div class="contacto-desc">
                         <h4 class="cont-text">En AMDDI siempre estamos a su disposición para cualquier consulta. Si requiere mayor información, puede contactarnos a
                             través del siguiente formulario: </h4>

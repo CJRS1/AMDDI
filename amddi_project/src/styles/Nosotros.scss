@@ -1,0 +1,73 @@
+@import 'Variables';
+
+.amddi_container{
+    height: 200vh;
+    width: 1481px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around !important;
+    padding-top: 100px;
+}
+
+.quienessomos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 100vh;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+.quienessomos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.quienessomos-descripcion{
+    width: 400px;
+    margin-right: 50px;
+}
+
+.vimi-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.vimi{
+    display: flex;
+    flex-direction: column;
+    // justify-content: start;
+    align-items: center;
+    width: 400px !important;
+    height: 350px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.img-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+}
+
+.img-logo{
+    padding-right: 10px;
+    padding-bottom: 1px;
+}
+
+.titulo-vimi{
+    padding-top: 6px;
+}

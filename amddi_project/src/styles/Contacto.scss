@@ -2,6 +2,7 @@
 
 .contacto_container{
     height: 620px !important;
+    color: $blanco !important;
 }
 
 .container-contacto-lottie {
@@ -9,7 +10,7 @@
     align-items: center;
     width: 1100px;
     height: 580px;
-    background: $gris-claro;
+    background: $verde-lima;
     padding-top: 20px;
     border-radius: 20px;
 }
@@ -33,7 +34,7 @@
 }
 
 .my-input{
-    box-shadow: 0 0 3px 3px rgb(0,0 ,0,0.8);
+    // box-shadow: 0 0 3px 3px rgb(0,0 ,0,0.8);
 }
 
 .cont-text{

@@ -15,7 +15,7 @@ export default function Footer() {
                     <h4><strong>Nosotros</strong></h4>
                     <div className="footer-content">
                         <h5>
-                            En <strong>AMDDI</strong> somos una empresa líder en soluciones académicas y profesionales. Nuestro equipo de expertos altamente capacitados abarca diversas áreas para ofrecer servicios de redacción de tesis, artículos científicos, ensayos, y más. Brindamos resultados de calidad y confianza para impulsar el éxito de nuestros clientes en sus objetivos académicos y laborales.
+                            <strong>AMDDI</strong> es una empresa líder en soluciones académicas y profesionales. Nuestro equipo de expertos altamente capacitados abarca diversas áreas para ofrecer servicios de redacción de tesis, artículos científicos, ensayos, y más. Brindamos resultados de calidad y confianza para impulsar el éxito de nuestros clientes en sus objetivos académicos y laborales.
                         </h5>
                     </div>
                     <div className="footer-description-llamanos">

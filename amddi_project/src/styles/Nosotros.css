@@ -66,45 +66,72 @@ section {
     transform: scale(1);
   }
 }
-/* Importamos las variables */
-.header_container {
-  width: 100vw;
+.amddi_container {
+  height: 200vh;
+  width: 1481px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-around !important;
+  padding-top: 100px;
+}
+
+.quienessomos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 100vh;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+
+.quienessomos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.quienessomos-descripcion {
+  width: 400px;
+  margin-right: 50px;
+}
+
+.vimi-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.vimi {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 400px !important;
+  height: 350px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.img-titulo {
+  display: flex;
   justify-content: center;
-  background-color: #00d799;
-  height: 120px;
-  font-size: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  box-shadow: inset 0 0 20px 0 #666666;
+  align-items: center;
+  height: 50px !important;
 }
 
-a {
-  color: #ffffff !important;
+.img-logo {
+  padding-right: 10px;
+  padding-bottom: 1px;
 }
 
-.bg-gris {
-  background: #00d799 !important;
-}
-.bg-gris :hover {
-  background-color: #666666 !important;
-}
-
-.nav-item {
-  padding: 0 10px 0 10px;
-}
-
-.nav-link {
-  transition: all 0.5s ease-in-out !important;
-  font-weight: 600 !important;
-}
-
-.nav-link:hover {
-  transform: scale(1.1) !important;
-  transition: all 0.5s ease-in-out !important;
-}/*# sourceMappingURL=Header.css.map */
+.titulo-vimi {
+  padding-top: 6px;
+}/*# sourceMappingURL=Nosotros.css.map */
