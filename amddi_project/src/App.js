@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Carousel from './components/Carousel'
 import Contacto from './components/Contacto'
 import Nosotros from './components/Nosotros';
+import Testimonios from './components/Testimonios';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Carousel />
       <Nosotros />
       <Contacto />
+      <Testimonios />
       <Footer />
     </div>
   );

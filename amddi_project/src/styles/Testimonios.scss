@@ -1,0 +1,39 @@
+@import 'Variables';
+
+.testimonios_container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 620px !important;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 900px;
+    overflow: hidden;
+}
+
+.slider-frame {
+    display: flex;
+}
+
+/* Estilos para los botones de navegación */
+.prevButton,
+.nextButton {
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+}
+
+.prevButton {
+    margin-right: auto;
+}
+
+.nextButton {
+    margin-left: auto;
+}

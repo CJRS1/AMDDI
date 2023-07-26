@@ -29,6 +29,28 @@ a, ul, li {
   text-decoration: none !important;
 }
 
+input {
+  color: #00d799 !important;
+}
+
+input::-moz-placeholder {
+  color: #00d799 !important;
+  opacity: 1 !important;
+}
+
+input::placeholder {
+  color: #00d799 !important;
+  opacity: 1 !important;
+}
+
+textarea {
+  color: #00d799 !important;
+}
+
+select {
+  color: #00d799 !important;
+}
+
 #root {
   display: flex !important;
   flex-direction: column !important;
@@ -69,6 +91,7 @@ section {
 .contacto_container {
   height: 620px !important;
   color: #ffffff !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .container-contacto-lottie {
@@ -96,12 +119,15 @@ section {
 }
 
 .titulo {
-  padding-bottom: 20px;
+  padding-bottom: 20px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
 }
 
 .cont-text {
   text-align: justify;
   padding-bottom: 20px;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .container-contacto {
@@ -112,12 +138,12 @@ section {
 }
 
 .button-contact {
+  border: 2px solid #ffffff !important;
   background: #00d799 !important;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.8);
+  color: #ffffff !important;
 }
 
 .button-contact:hover {
-  box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.8);
   animation: scale 1s infinite;
   transition: 0.2s ease-in-out;
 }

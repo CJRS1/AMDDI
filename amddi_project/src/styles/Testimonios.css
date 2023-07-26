@@ -89,50 +89,40 @@ section {
     transform: scale(1);
   }
 }
-.carousel_container {
-  padding-top: 120px;
+.testimonios_container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 620px !important;
 }
 
-.carousel-indicators button {
-  background-color: #b4b4b4 !important;
-  width: 80px !important;
-  /* Cambia el ancho según tu preferencia */
-  height: 20px !important;
-  /* Cambia la altura según tu preferencia */
+.carousel {
+  display: flex;
+  align-items: center;
 }
 
-.carousel-indicators .active {
-  background-color: #00d799 !important;
+.slider {
+  width: 900px;
+  overflow: hidden;
 }
 
-.carousel-control-next-icon {
-  width: 80px !important;
-  height: 80px !important;
-  background-color: #00d799 !important;
-  filter: none !important;
-  border-radius: 5px;
+.slider-frame {
+  display: flex;
 }
 
-.carousel-control-prev-icon {
-  width: 80px !important;
-  height: 80px !important;
-  background-color: #00d799 !important;
-  filter: none !important;
-  border-radius: 5px;
+/* Estilos para los botones de navegación */
+.prevButton,
+.nextButton {
+  width: 50px;
+  height: 40px;
+  margin: 10px;
 }
 
-.button-carousel:hover {
-  animation: scale 1s infinite;
+.prevButton {
+  margin-right: auto;
 }
 
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}/*# sourceMappingURL=Carousel.css.map */
+.nextButton {
+  margin-left: auto;
+}/*# sourceMappingURL=Testimonios.css.map */

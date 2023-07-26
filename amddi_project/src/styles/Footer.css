@@ -29,6 +29,28 @@ a, ul, li {
   text-decoration: none !important;
 }
 
+input {
+  color: #00d799 !important;
+}
+
+input::-moz-placeholder {
+  color: #00d799 !important;
+  opacity: 1 !important;
+}
+
+input::placeholder {
+  color: #00d799 !important;
+  opacity: 1 !important;
+}
+
+textarea {
+  color: #00d799 !important;
+}
+
+select {
+  color: #00d799 !important;
+}
+
 #root {
   display: flex !important;
   flex-direction: column !important;
