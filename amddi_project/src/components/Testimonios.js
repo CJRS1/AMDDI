@@ -1,86 +1,150 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import '../styles/Testimonios.css'
+import Slider from 'react-slick';
 
-let interval;
-const images = [
-    'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
-    'https://images.unsplash.com/photo-1497449493050-aad1e7cad165?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
-    'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
-    'https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80',
-    'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
-
-];
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function Testimonios() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            slideRight();
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    const slideLeft = () => {
-        setCurrentSlide((prevSlide) =>
-            prevSlide === 0 ? images.length - 1 : prevSlide - 1
-        );
+    const settings = {
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    dots: true,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                }
+            }
+        ]
     };
 
-    const slideRight = () => {
-        setCurrentSlide((prevSlide) =>
-            prevSlide === images.length - 1 ? prevSlide : prevSlide + 1
-        );
-    };
-
-    const onMouseEnter = () => {
-        clearInterval(interval);
-    };
-
-    const onMouseLeave = () => {
-        const interval = setInterval(() => {
-            slideRight();
-        }, 3000);
-    };
 
     return (
-        <section
-            className="testimonios_container"
-            style={{ width: "1400px" }}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-        >
-            <h2>Testimonios</h2>
-
-            <div className="carousel">
-                <button className="prevButton" onClick={slideLeft}>
-                    Prev
-                </button>
-
-                <div className="slider">
-                    <div
-                        className="slider-frame"
-                        style={{
-                            transform: `translateX(-${currentSlide * 300}px)`,
-                            transition: "transform 0.3s ease-in-out",
-                        }}
-                    >
-                        {images.map((image, index) => (
-                            <img
-                                key={index}
-                                src={image}
-                                alt="imagen"
-                                style={{ width: "300px", height: "400px" }}
-                            />
-                        ))}
+        <section className="testimonios_container">
+            <div className="wrapper">
+                <h2 className="titulo-verde">Testimonios</h2>
+                <div className="carousel carousel2">
+                    <Slider {...settings}>
+                    <div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* <img src="https://lorempixel.com/200/200/abstract/1"> */}
+                            </div>
+                            <div className="card-body">
+                                <div className="card-content">
+                                    <div className="card-title">This is the First slider</div>
+                                    <div className="card-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* <img src="https://lorempixel.com/200/200/abstract/2"> */}
+                            </div>
+                            <div className="card-body">
+                                <div className="card-content">
+                                    <div className="card-title">This is the Second slider</div>
+                                    <div className="card-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* <img src="https://lorempixel.com/200/200/abstract/3"> */}
+                            </div>
+                            <div className="card-body">
+                                <div className="card-content">
+                                    <div className="card-title">This is the Third slider</div>
+                                    <div className="card-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* <img src="https://lorempixel.com/200/200/abstract/4"> */}
+                            </div>
+                            <div className="card-body">
+                                <div className="card-content">
+                                    <div className="card-title">This is the Fourth slider</div>
+                                    <div className="card-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* <img src="https://lorempixel.com/200/200/abstract/5"> */}
+                            </div>
+                            <div className="card-body">
+                                <div className="card-content">
+                                    <div className="card-title">This is the Fifth slider</div>
+                                    <div className="card-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* <img src="https://lorempixel.com/200/200/abstract/6"> */}
+                            </div>
+                            <div className="card-body">
+                                <div className="card-content">
+                                    <div className="card-title">This is the Sixth slider</div>
+                                    <div className="card-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </Slider>
                 </div>
-
-                <button className="nextButton" onClick={slideRight}>
-                    Next
-                </button>
             </div>
-        </section>
+        </section >
     );
 }

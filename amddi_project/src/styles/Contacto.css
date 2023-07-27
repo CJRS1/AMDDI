@@ -16,6 +16,10 @@ h1 {
   font-weight: 900 !important;
 }
 
+h2 {
+  color: #ffffff !important;
+}
+
 h4 {
   font-size: 20px !important;
   text-align: justify !important;
@@ -44,6 +48,14 @@ input::placeholder {
 }
 
 textarea {
+  color: #00d799 !important;
+}
+
+textarea::-moz-placeholder {
+  color: #00d799 !important;
+}
+
+textarea::placeholder {
   color: #00d799 !important;
 }
 
@@ -90,6 +102,7 @@ section {
 }
 .contacto_container {
   height: 620px !important;
+  width: 1481px !important;
   color: #ffffff !important;
   font-family: "Poppins", sans-serif !important;
 }

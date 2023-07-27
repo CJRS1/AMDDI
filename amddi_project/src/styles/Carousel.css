@@ -17,6 +17,10 @@ h1 {
   font-weight: 900 !important;
 }
 
+h2 {
+  color: #ffffff !important;
+}
+
 h4 {
   font-size: 20px !important;
   text-align: justify !important;
@@ -45,6 +49,14 @@ input::placeholder {
 }
 
 textarea {
+  color: #00d799 !important;
+}
+
+textarea::-moz-placeholder {
+  color: #00d799 !important;
+}
+
+textarea::placeholder {
   color: #00d799 !important;
 }
 
@@ -91,6 +103,16 @@ section {
 }
 .carousel_container {
   padding-top: 120px;
+  max-width: 1481px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 1481px !important;
+  margin: 0 0 0 0 !important;
 }
 
 .carousel-indicators button {
@@ -103,6 +125,7 @@ section {
 
 .carousel-indicators .active {
   background-color: #00d799 !important;
+  margin: 0 0 0 0 !important;
 }
 
 .carousel-control-next-icon {

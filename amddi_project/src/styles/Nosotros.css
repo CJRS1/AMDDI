@@ -16,6 +16,10 @@ h1 {
   font-weight: 900 !important;
 }
 
+h2 {
+  color: #ffffff !important;
+}
+
 h4 {
   font-size: 20px !important;
   text-align: justify !important;
@@ -44,6 +48,14 @@ input::placeholder {
 }
 
 textarea {
+  color: #00d799 !important;
+}
+
+textarea::-moz-placeholder {
+  color: #00d799 !important;
+}
+
+textarea::placeholder {
   color: #00d799 !important;
 }
 
@@ -165,6 +177,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 50px !important;
+  padding-bottom: 10px;
 }
 .img-titulo h2 {
   color: #ffffff;
@@ -176,6 +189,10 @@ section {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.img-logo-vimi {
+  padding-right: 10px;
 }
 
 .titulo-vimi {
