@@ -19,20 +19,20 @@ function App() {
 
       <Routes>
 
-        <Route path="/" element={
+        <Route path="/AMDII" element={
           <>
             <Carousel />
             <Servicios />  
           </>
         } />
 
-        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/AMDII/servicios" element={<Servicios />} />
         
-        <Route path="/testimonios" element={<Testimonios />} />
+        <Route path="/AMDII/testimonios" element={<Testimonios />} />
         
-        <Route path="/contactanos" element={<Contacto />} />
+        <Route path="/AMDII/contactanos" element={<Contacto />} />
         
-        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/AMDII/nosotros" element={<Nosotros />} />
 
       </Routes>
 
