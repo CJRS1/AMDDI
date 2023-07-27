@@ -1,10 +1,11 @@
 @import 'Variables';
 
 .contacto_container{
-    height: 620px !important;
+    height: 100vh !important;
     width: 1481px !important;
     color: $blanco !important;
     font-family: 'Poppins', sans-serif !important;
+    padding-top: 120px !important;
 }
 
 .container-contacto-lottie {
