@@ -105,9 +105,10 @@ section {
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-  height: 670px !important;
+  height: 100vh !important;
   width: 1481px !important;
   margin-right: 0 !important;
+  padding-top: 110px !important;
 }
 
 .wrapper {
@@ -186,8 +187,8 @@ section {
 
 .slick-dots li button:before {
   font-size: 20px !important;
-  width: 80px !important;
-  height: 80px !important;
+  width: 20px !important;
+  height: 20px !important;
   color: #00d799 !important;
 }
 

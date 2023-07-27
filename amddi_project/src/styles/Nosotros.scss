@@ -1,11 +1,12 @@
 @import 'Variables';
 
 .amddi_container {
-    height: 1186.4px;
+    height: 200vh;
     width: 1481px;
     display: flex !important;
     flex-direction: column;
     justify-content: space-around !important;
+    padding-top: 70px;
 }
 
 .quienessomos {
