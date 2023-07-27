@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/Header.css'
 
 export default function Header() {
@@ -6,48 +7,48 @@ export default function Header() {
         <header className="header_container">
             <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#inicio"> <img src={require('../images/Logo_confondo.png')} alt='AMDDI' height={'400px'}/> </a>
+                    <Link to="/" className="navbar-brand" href="#inicio"> <img src={require('../images/Logo_confondo.png')} alt='AMDDI' height={'400px'} />  </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                                <Link to="/" className="nav-link active" aria-current="page" href="#inicio">Inicio </Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle " href="#nuestrosservicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link to="/servicios" className="nav-link dropdown-toggle " href="#nuestrosservicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Nuestros Servicios
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu bg-gris" >
-                                    <li><a className="dropdown-item" href="#e">Redacción de Tesis de Pregrado</a></li>
-                                    <li><a className="dropdown-item" href="#e">Redacción de Tesis de Postgrado</a></li>
-                                    <li><a className="dropdown-item" href="#e">Levantamiento de Observaciones Pregrado</a></li>
-                                    <li><a className="dropdown-item" href="#e">Levantamiento de Observaciones Maestría</a></li>
-                                    <li><a className="dropdown-item" href="#e">Parafraseo</a></li>
-                                    <li><a className="dropdown-item" href="#e">Trabajo de Suficiencia Profesional</a></li>
-                                    <li><a className="dropdown-item" href="#e">Artículo Científico</a></li>
-                                    <li><a className="dropdown-item" href="#e">Artículo de Revisión Sistemática</a></li>
-                                    <li><a className="dropdown-item" href="#e">Artículo de Revisión de Literatura</a></li>
-                                    <li><a className="dropdown-item" href="#e">Trabajos de Ciclo</a></li>
-                                    <li><a className="dropdown-item" href="#e">Monografía</a></li>
-                                    <li><a className="dropdown-item" href="#e">Ensayos</a></li>
-                                    <li><a className="dropdown-item" href="#e">Planes de Negocio</a></li>
-                                    <li><a className="dropdown-item" href="#e">Informe de Prácticas</a></li>
-                                    <li><a className="dropdown-item" href="#e">Tesinas</a></li>
-                                    <li><a className="dropdown-item" href="#e">Elavoración de CV</a></li>
-                                    <li><a className="dropdown-item" href="#e">Diapositivas</a></li>
-                                    <li><a className="dropdown-item" href="#e">Curso Online: próximamente...</a></li>
+                                    <li> <Link to="/servicios/redacciontesispregrado" className="dropdown-item" >Redacción de Tesis de Pregrado </Link> </li>
+                                    <li> <Link to="/servicios/redacciontesispostgrado" className="dropdown-item" >Redacción de Tesis de Postgrado </Link> </li>
+                                    <li> <Link to="/servicios/levantamientoobservacionespregrado" className="dropdown-item" >Levantamiento de Observaciones Pregrado </Link> </li>
+                                    <li> <Link to="/servicios/levantamientoobservacionesmaestria" className="dropdown-item" >Levantamiento de Observaciones Maestría </Link> </li>
+                                    <li> <Link to="/servicios/parafraseo" className="dropdown-item" >Parafraseo </Link> </li>
+                                    <li> <Link to="/servicios/trabajosuficienciaprofesional" className="dropdown-item" >Trabajo de Suficiencia Profesional </Link> </li>
+                                    <li> <Link to="/servicios/articulocientifico" className="dropdown-item" >Artículo Científico </Link> </li>
+                                    <li> <Link to="/servicios/articulorevisionsistematica" className="dropdown-item" >Artículo de Revisión Sistemática </Link> </li>
+                                    <li> <Link to="/servicios/articulorevisionliteratura" className="dropdown-item" >Artículo de Revisión de Literatura </Link> </li>
+                                    <li> <Link to="/servicios/trabajodeciclo" className="dropdown-item" >Trabajos de Ciclo </Link> </li>
+                                    <li> <Link to="/servicios/monografias" className="dropdown-item" >Monografía </Link> </li>
+                                    <li> <Link to="/servicios/ensayos" className="dropdown-item" >Ensayos </Link> </li>
+                                    <li> <Link to="/servicios/plannegocio" className="dropdown-item" >Planes de Negocio </Link> </li>
+                                    <li> <Link to="/servicios/informepracticas" className="dropdown-item" >Informe de Prácticas </Link> </li>
+                                    <li> <Link to="/servicios/tesinas" className="dropdown-item" >Tesinas </Link> </li>
+                                    <li> <Link to="/servicios/elaboracioncv" className="dropdown-item" >Elavoración de CV </Link> </li>
+                                    <li> <Link to="/servicios/dispositivas" className="dropdown-item" >Diapositivas </Link> </li>
+                                    <li> <Link to="/servicios/cursos" className="dropdown-item" >Curso Online: próximamente... </Link> </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#e">Nosotros</a>
+                                <Link to="/nosotros" className="nav-link">Nosotros </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#e">Testimonios</a>
+                                <Link to="/testimonios" className="nav-link">Testimonios </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#e">Contáctanos</a>
+                                <Link to="/contactanos" className="nav-link">Contáctanos </Link>
                             </li>
                         </ul>
                     </div>
