@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import '../styles/Nosotros.css';
 
 export default function Nosotros() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
+
     return (
         <section className="amddi_container">
             <div className="quienessomos">
@@ -14,7 +21,7 @@ export default function Nosotros() {
                         <h1>AMDDI</h1><h4> es una empresa líder en soluciones académicas y profesionales. Nuestro equipo de expertos altamente capacitados abarca diversas áreas para ofrecer servicios de redacción de tesis, artículos científicos, ensayos, y más. Brindamos resultados de calidad y confianza para impulsar el éxito de nuestros clientes en sus objetivos académicos y laborales.</h4>
                     </div>
                     <div className="quienessomos-img">
-                        <img className="img-logo" src={require('../images/Nosotros/quienes.jpeg')} alt='AMDDI' height={'400px'} width={'400px'}/>
+                        <img className="img-logo" src={require('../images/Nosotros/quienes.jpeg')} alt='AMDDI' height={'400px'} width={'400px'} />
                     </div>
                 </div>
             </div>

@@ -9,12 +9,14 @@ body {
 
 h1 {
   font-size: 30px;
-  width: 150px !important;
+  width: 140px !important;
   color: #ffffff !important;
   display: inline-block !important;
   margin: 0 0 0 0 !important;
   height: 40px !important;
   font-weight: 900 !important;
+  display: inline;
+  text-align: justify !important;
 }
 
 h2 {
@@ -24,6 +26,9 @@ h2 {
 h4 {
   font-size: 20px !important;
   text-align: justify !important;
+  display: inline;
+  margin: 0 !important;
+  padding-bottom: 10px !important;
 }
 
 h5 {
@@ -103,8 +108,9 @@ section {
 }
 .carousel_container {
   padding-top: 120px;
-  max-width: 1481px;
+  width: 1481px;
   display: flex !important;
+  flex-direction: column;
   justify-content: center !important;
   align-items: center !important;
   overflow: hidden;
@@ -158,4 +164,56 @@ section {
   100% {
     transform: scale(1);
   }
+}
+.caracteristica_servicios {
+  margin-bottom: 20px;
+  width: 850px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caracterisctia_servicios_container {
+  padding: 20px;
+  padding-top: 40px !important;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #00d799;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+}
+
+.servicios_descripcion {
+  text-align: justify;
+  color: #ffffff;
+  font-size: 17px;
+  margin-bottom: 15px;
+  padding: 10px 20px 0 20px;
+}
+
+.lista_servicios {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+.lista_servicios li {
+  margin-bottom: 8px;
+}
+
+.boton_servicios {
+  display: inline-block;
+  margin-top: 20px 0 0 0 !important;
+  border: 1px solid #ffffff;
+  background-color: #00d799;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
 }/*# sourceMappingURL=Carousel.css.map */
