@@ -1,13 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../styles/Header.css'
 
 export default function Header() {
+    const navigate = useNavigate();
+
+    function handleClickServices(e) {
+        e.preventDefault();
+        navigate('/servicios');
+    }
     return (
         <header className="header_container">
             <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
-                    <Link to="/" className="navbar-brand" href="#inicio"> <img src={require('../images/Logo_confondo.png')} alt='AMDDI' height={'400px'} />  </Link>
+                    <Link to="/" className="navbar-brand" href="#inicio"> <img src={require('../images/Logo_confondo.png')} alt='AMDDI' height={'100px'} />  </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -17,7 +23,7 @@ export default function Header() {
                                 <Link to="/" className="nav-link active" aria-current="page" href="#inicio">Inicio </Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <Link to="/servicios" className="nav-link dropdown-toggle " href="#nuestrosservicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link to="/servicios" className="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleClickServices} >
                                     Nuestros Servicios
                                 </Link>
                                 <ul className="dropdown-menu bg-gris" >

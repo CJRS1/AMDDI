@@ -37,19 +37,19 @@ export default function Footer() {
                     <div className="footer-socialnetwork">
                         <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate" rel="noreferrer"
                             target="_blank">
-                            <img className='svg-effect' src={Facebook} alt='facebook' height={'50px'}  />
+                            <img className='svg-effect' src={Facebook} alt='facebook' height={'35px'}  />
                         </a>
                         <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate"
                             rel="noreferrer" target="_blank">
-                            <img className='svg-effect' src={Instagram} alt='instagram' height={'55px'} />
+                            <img className='svg-effect' src={Instagram} alt='instagram' height={'40px'} />
                         </a>
                         <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate"
                             rel="noreferrer" target="_blank">
-                            <img className='svg-effect' src={Linkedin} alt='linkedin' height={'55px'} />
+                            <img className='svg-effect' src={Linkedin} alt='linkedin' height={'40px'} />
                         </a>
                         <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate"
                             rel="noreferrer" target="_blank">
-                            <img className='svg-effect' src={Tiktok} alt='tiktok' height={'50px'} />
+                            <img className='svg-effect' src={Tiktok} alt='tiktok' height={'35px'} />
                         </a>
                     </div>
                     </div>
