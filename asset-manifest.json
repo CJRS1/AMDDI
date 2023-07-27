@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1738909.css",
-    "main.js": "/static/js/main.bf5f5b1c.js",
-    "static/js/787.a75494a5.chunk.js": "/static/js/787.a75494a5.chunk.js",
-    "static/media/negocio.jpeg": "/static/media/negocio.8ae48e33582c0e027476.jpeg",
-    "static/media/proyecto.jpeg": "/static/media/proyecto.ed3959311a789bb391ff.jpeg",
-    "static/media/asesoria.jpeg": "/static/media/asesoria.cb8b9a43a3a02f3d0f6b.jpeg",
-    "static/media/practicas.jpg": "/static/media/practicas.963c49b19c2b2e2a419d.jpg",
-    "static/media/quienes.jpeg": "/static/media/quienes.ece67b954d757aabc312.jpeg",
-    "static/media/Logo_confondo.png": "/static/media/Logo_confondo.ce79942a4667ce3e272e.png",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/index.html",
-    "static/media/instagram.svg": "/static/media/instagram.116ad97e1f8e0638fcb7d5aed6800697.svg",
-    "static/media/linkedin-in.svg": "/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
-    "static/media/tiktok.svg": "/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
-    "static/media/facebook-f.svg": "/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.a1738909.css.map": "/static/css/main.a1738909.css.map",
-    "main.bf5f5b1c.js.map": "/static/js/main.bf5f5b1c.js.map",
-    "787.a75494a5.chunk.js.map": "/static/js/787.a75494a5.chunk.js.map"
+    "main.css": "/AMDII/static/css/main.8806c4a7.css",
+    "main.js": "/AMDII/static/js/main.a9d62a68.js",
+    "static/js/787.a75494a5.chunk.js": "/AMDII/static/js/787.a75494a5.chunk.js",
+    "static/media/negocio.jpeg": "/AMDII/static/media/negocio.8ae48e33582c0e027476.jpeg",
+    "static/media/proyecto.jpeg": "/AMDII/static/media/proyecto.ed3959311a789bb391ff.jpeg",
+    "static/media/asesoria.jpeg": "/AMDII/static/media/asesoria.cb8b9a43a3a02f3d0f6b.jpeg",
+    "static/media/practicas.jpg": "/AMDII/static/media/practicas.963c49b19c2b2e2a419d.jpg",
+    "static/media/quienes.jpeg": "/AMDII/static/media/quienes.ece67b954d757aabc312.jpeg",
+    "static/media/Logo_confondo.png": "/AMDII/static/media/Logo_confondo.ce79942a4667ce3e272e.png",
+    "static/media/slick.svg": "/AMDII/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/AMDII/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/AMDII/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/AMDII/index.html",
+    "static/media/slick.woff": "/AMDII/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/instagram.svg": "/AMDII/static/media/instagram.116ad97e1f8e0638fcb7d5aed6800697.svg",
+    "static/media/linkedin-in.svg": "/AMDII/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
+    "static/media/tiktok.svg": "/AMDII/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
+    "static/media/facebook-f.svg": "/AMDII/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
+    "main.8806c4a7.css.map": "/AMDII/static/css/main.8806c4a7.css.map",
+    "main.a9d62a68.js.map": "/AMDII/static/js/main.a9d62a68.js.map",
+    "787.a75494a5.chunk.js.map": "/AMDII/static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1738909.css",
-    "static/js/main.bf5f5b1c.js"
+    "static/css/main.8806c4a7.css",
+    "static/js/main.a9d62a68.js"
   ]
 }
