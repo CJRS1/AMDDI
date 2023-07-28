@@ -106,7 +106,7 @@ section {
   }
 }
 .amddi_container {
-  height: 200vh;
+  max-height: 300vh;
   width: 1481px;
   display: flex !important;
   flex-direction: column;
@@ -205,4 +205,31 @@ section {
 .titulo-vimi {
   padding-top: 6px;
   color: #ffffff;
+}
+
+#accordionExample {
+  width: 500px;
+  padding: 20px 0 0 0 !important;
+}
+
+.valores-container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 550px !important;
+  height: 1000px !important;
+}
+
+.valores {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 550px !important;
+  height: auto !important;
+  max-height: 1000px !important;
+  background: #00d799;
+  border-radius: 10px;
+  padding: 20px 0 30px 0 !important;
 }/*# sourceMappingURL=Nosotros.css.map */
