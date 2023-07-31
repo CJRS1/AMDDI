@@ -24,11 +24,46 @@
     }
 }
 
+.servicios_caracteristicas{
+    margin-top: 130px;
+    width: 1200px;
+    background: $verde-lima;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    .titulo2{
+        display: inline-block;
+        h2{ 
+            display: inline-block;
+            text-align: center !important;
+        }
+    }
+}
+
+.servicios_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.servicios_carreras{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    li{
+        color: $blanco;
+    }
+}
+
 .servicios_list{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
 }
 
 .servicio_description{
@@ -43,3 +78,86 @@
     margin-bottom: 0px !important;
 }
 
+.biologicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid $blanco !important;
+    h3{
+        align-items: center;
+    }
+    ul{
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+}
+
+.ingenieria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid $blanco !important;
+}
+
+.basicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid $blanco !important;
+    ul{
+        padding-right: 10px;
+    }
+}
+
+.sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid $blanco !important;
+}
+
+.empresariales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid $blanco !important;
+}
+
+.salud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid $blanco !important;
+}
+
+.carrera_grupo{
+    display: grid;
+    grid-auto-rows: auto; 
+    row-gap: 20px;
+}

@@ -12,20 +12,22 @@ export default function Testimonios() {
 
     return (
         <section className="ingresos_container">
+            
             <div className="ingresos_description">
                 <div className="ingresos_card">
-                    <h2 className="titulo">Programa de Ingresos Extras</h2>
-                    <p>Gana ingresos extras desde casa
-
+                    <h2 className="titulo"><strong>Programa de Ingresos Extras</strong></h2>
+                    <p>
+                        Gana ingresos extras desde casa
                         Únete a nuestra comunidad freelance eligiendo entre:
-
-                        Contratos a tiempo completo para proyectos grandes.
-                        Mini trabajos y proyectos por horas o tareas puntuales.
+                        <div className="puestos_list">
+                            <li><strong>Contratos a tiempo completo para proyectos grandes. Ideal si buscas un trabajo estable.</strong></li>
+                            <li><strong>Mini trabajos y proyectos por horas o tareas puntuales. Perfecto para ingresos adicionales flexibles.</strong></li>
+                        </div>
                         No necesitas experiencia previa. Postula con tus habilidades (diseño, redacción, programación, traducción, etc.)
 
-                        Tú eliges los proyectos y horarios. Perfecto para ingresos adicionales flexibles.
+                        Tú eliges los proyectos y horarios.
 
-                        Envíanos tu CV y rellena el formulario de postulación. Buscamos personas responsables para impulsar sus habilidades y generar ingresos extras desde casa.</p>
+                        Envíanos tu CV y rellena el formulario de postulación. Buscamos personas responsables tanto para trabajo freelance como a tiempo completo. ¡Impulsa tus habilidades y genera ingresos extras desde casa!</p>
                 </div>
 
                 <form method="POST" action="https://formsubmit.co/reyes.christian@pucp.pe" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">

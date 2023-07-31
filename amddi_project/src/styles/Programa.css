@@ -22,6 +22,12 @@ h2 {
   color: #ffffff !important;
 }
 
+h3 {
+  text-align: center !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+}
+
 h4 {
   font-size: 20px !important;
   text-align: justify !important;
@@ -127,8 +133,6 @@ section {
   padding-top: 125px !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .ingresos_description {
@@ -137,8 +141,7 @@ section {
   padding: 20px 40px 20px 40px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: #00d799;
   border-radius: 10px;
 }
@@ -147,7 +150,12 @@ section {
   text-align: justify;
 }
 
+.puestos_list {
+  margin: 5px 0 5px 0;
+}
+
 .ingresos_card {
+  padding-top: 20px;
   padding-right: 40px;
   display: flex;
   flex-direction: column;

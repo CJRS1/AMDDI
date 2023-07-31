@@ -22,6 +22,12 @@ h2 {
   color: #ffffff !important;
 }
 
+h3 {
+  text-align: center !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+}
+
 h4 {
   font-size: 20px !important;
   text-align: justify !important;
@@ -146,11 +152,45 @@ section {
   text-align: center;
 }
 
+.servicios_caracteristicas {
+  margin-top: 130px;
+  width: 1200px;
+  background: #00d799;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+}
+.servicios_caracteristicas .titulo2 {
+  display: inline-block;
+}
+.servicios_caracteristicas .titulo2 h2 {
+  display: inline-block;
+  text-align: center !important;
+}
+
+.servicios_titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.servicios_carreras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.servicios_carreras li {
+  color: #ffffff;
+}
+
 .servicios_list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .servicio_description {
@@ -163,4 +203,88 @@ section {
 .button-effect {
   border: 2px solid #ffffff !important;
   margin-bottom: 0px !important;
+}
+
+.biologicas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ffffff !important;
+}
+.biologicas h3 {
+  align-items: center;
+}
+.biologicas ul {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.ingenieria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #ffffff !important;
+}
+
+.basicas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #ffffff !important;
+}
+.basicas ul {
+  padding-right: 10px;
+}
+
+.sociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #ffffff !important;
+}
+
+.empresariales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #ffffff !important;
+}
+
+.salud {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #ffffff !important;
+}
+
+.carrera_grupo {
+  display: grid;
+  grid-auto-rows: auto;
+  row-gap: 20px;
 }/*# sourceMappingURL=Servicios.css.map */

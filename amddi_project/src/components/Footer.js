@@ -50,19 +50,19 @@ export default function Footer() {
                     <div className="footer-description-redes">
                         <h4><strong>Síguenos en nuestras redes</strong></h4>
                         <div className="footer-socialnetwork">
-                            <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate" rel="noreferrer"
+                            <a className="redes" href="https://www.facebook.com/tesisamddi" rel="noreferrer"
                                 target="_blank">
                                 <img className='svg-effect' src={Facebook} alt='facebook' height={'35px'} />
                             </a>
-                            <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate"
+                            <a className="redes" href="https://www.instagram.com/amddiasesorias/"
                                 rel="noreferrer" target="_blank">
                                 <img className='svg-effect' src={Instagram} alt='instagram' height={'40px'} />
                             </a>
-                            <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate"
+                            <a className="redes" href="https://www.linkedin.com/company/amddi-tesis-proyectos-empresariales/about/"
                                 rel="noreferrer" target="_blank">
                                 <img className='svg-effect' src={Linkedin} alt='linkedin' height={'40px'} />
                             </a>
-                            <a className="redes" href="https://translate.google.com/?sl=en&tl=es&text=liying&op=translate"
+                            <a className="redes" href="https://www.tiktok.com/@amdditesisproyectos"
                                 rel="noreferrer" target="_blank">
                                 <img className='svg-effect' src={Tiktok} alt='tiktok' height={'35px'} />
                             </a>
