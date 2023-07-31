@@ -38,6 +38,7 @@
     text-align: justify;
     top: 8%;
     left: 5%;
+
     h4 {
         color: $blanco;
     }
@@ -60,6 +61,7 @@
     height: 350px;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
+
     h4 {
         color: $blanco;
         // text-shadow: 1px 1px 2px #000000;
@@ -81,7 +83,8 @@
     align-items: center;
     height: 50px !important;
     padding-bottom: 10px;
-    h2{
+
+    h2 {
         color: $blanco;
     }
 }
@@ -94,7 +97,7 @@
     right: 0;
 }
 
-.img-logo-vimi{
+.img-logo-vimi {
     padding-right: 10px;
 }
 
@@ -109,7 +112,7 @@
     padding: 20px 0 0 0 !important
 }
 
-.valores-container{
+.valores-container {
     display: flex !important;
     flex-direction: column;
     justify-content: center !important;
@@ -119,7 +122,7 @@
 
 }
 
-.valores{
+.valores {
     display: flex !important;
     flex-direction: column;
     justify-content: center !important;
@@ -132,3 +135,33 @@
     padding: 20px 0 30px 0 !important;
 }
 
+.accordion-button {
+    color: white !important;
+    background-color: $verde-lima !important;
+}
+
+.accordion-body p {
+    color: white !important;
+}
+
+.accordion-collapse {
+    background-color: $verde-lima !important;
+
+}
+
+.accordion-button::before {
+    color: white;
+    /* Set the color of the arrow to white */
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::before {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}

@@ -1,0 +1,23 @@
+@import 'Variables';
+
+.ingresos_container{
+
+    height: 100vh !important;
+    padding-top: 125px !important;
+}
+
+.ingresos_description{
+    width: 700px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $verde-lima;
+    border-radius: 10px;
+    p{
+        padding-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+}

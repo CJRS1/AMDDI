@@ -48,6 +48,9 @@ export default function Header() {
                                 </ul>
                             </li>
                             <li className="nav-item">
+                                <Link to="/AMDDI/programadeingresos" className="nav-link">Programa de Ingresos Extra </Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link to="/AMDDI/nosotros" className="nav-link">Nosotros </Link>
                             </li>
                             <li className="nav-item">

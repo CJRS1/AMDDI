@@ -11,7 +11,7 @@ $transition: 0.5s;
     font-family: 'Poppins', sans-serif !important;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif !important;
 }
 
@@ -27,7 +27,7 @@ h1 {
     text-align: justify !important;
 }
 
-h2{
+h2 {
     color: $blanco !important;
 }
 
@@ -40,20 +40,26 @@ h4 {
 
 }
 
-h5{
+h5 {
     font-size: 15px !important;
 }
 
-a,ul,li{
+p {
+    color: $blanco !important;
+}
+
+a,
+ul,
+li {
     text-decoration: none !important;
 }
 
-input{
+input {
     // box-shadow: 0 0 3px 3px rgb(0,0 ,0,0.8);
     color: $verde-lima !important;
 }
 
-input::placeholder{
+input::placeholder {
     color: $verde-lima !important;
     opacity: 1 !important;
 }
@@ -62,7 +68,7 @@ textarea {
     color: $verde-lima !important;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: $verde-lima !important;
 }
 
@@ -108,4 +114,15 @@ section {
     100% {
         transform: scale(1);
     }
+}
+
+.whatsapp-icon {
+    z-index: 2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-icon:hover {
+    animation: scale 1s infinite;
 }

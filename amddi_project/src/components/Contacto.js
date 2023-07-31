@@ -11,8 +11,8 @@ export default function Contacto() {
     return (
         <section className="contacto_container">
             <div className="container-contacto-lottie zoom">
-                <lottie-player src="https://lottie.host/a9c16ef5-0055-4c4a-8a7d-1f124d2dff10/iappdZRYCl.json" background="transparent"
-                    speed="0.5" style={{height:'400px', width:'400px'}} loop autoplay></lottie-player>
+                <lottie-player src="https://lottie.host/b52fea18-ae21-45a3-b5a4-d851086dadfd/m0qJS3J3FV.json" background="transparent"
+                    speed="0.5" style={{ height: '400px', width: '400px' }} loop autoplay></lottie-player>
                 <form method="POST" action="https://formsubmit.co/reyes.christian@pucp.pe" encType="multipart/form-data" className="container-contacto-empresa">
                     <h2 className="titulo"><strong>Contáctanos</strong></h2>
                     <div className="contacto-desc">
@@ -21,15 +21,15 @@ export default function Contacto() {
                     </div>
                     <div className="container-contacto">
                         <div className="mb-3 d-flex ">
-                            <input type="text" name="name" className="form-control my-input" style={{width:'300px', marginRight:'10px'}}  id="Input1"
+                            <input type="text" name="name" className="form-control my-input" style={{ width: '300px', marginRight: '10px' }} id="Input1"
                                 placeholder="Nombre y apellido *" required />
-                            <input type="number" name="phone" className="form-control my-input" style={{width:'300px'}} id="Input1"
+                            <input type="number" name="phone" className="form-control my-input" style={{ width: '300px' }} id="Input1"
                                 placeholder="Celular *" min="10000000" max="999999999999" required />
                         </div>
                         <div className="mb-3 d-flex ">
-                            <input type="email" name="email" className="form-control form-email my-input" style={{width:'300px', marginRight:'10px'}}
+                            <input type="email" name="email" className="form-control form-email my-input" style={{ width: '300px', marginRight: '10px' }}
                                 id="exampleFormControlInput1" placeholder="Correo electrónico *" required />
-                            <select className="form-control my-input" name="departamento" style={{width: '300px'}} id="contact-method" defaultValue="" required>
+                            <select className="form-control my-input" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
                                 <option value="" disabled >Seleccione un departamento</option>
                                 <option value="Ancash">Ancash</option>
                                 <option value="Apurímac">Apurímac</option>
@@ -64,7 +64,7 @@ export default function Contacto() {
                                 placeholder="RUC *" min="10000000" max="999999999999" required />
                         </div> */}
                         <div className="mb-3">
-                            <textarea className="form-control my-input" name="message" id="exampleFormControlTextarea1" style={{width:'610px'}} rows="5"
+                            <textarea className="form-control my-input" name="message" id="exampleFormControlTextarea1" style={{ width: '610px' }} rows="5"
                                 placeholder="Comentario o mensaje *" required></textarea>
                         </div>
 
@@ -72,7 +72,7 @@ export default function Contacto() {
 
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactanos.html" />
                         <input type="hidden" name="_captcha" value="false" />
-                        <div className="d-flex p-3 justify-content-between" style={{width:'600px', marginTop:'10px'}} >
+                        <div className="d-flex p-3 justify-content-between" style={{ width: '600px', marginTop: '10px' }} >
                             <div className="d-flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
                                     className="bi bi-envelope-at icon" viewBox="0 0 16 16">
@@ -95,6 +95,7 @@ export default function Contacto() {
                     </div>
                 </form>
             </div>
+            
         </section>
     );
 }

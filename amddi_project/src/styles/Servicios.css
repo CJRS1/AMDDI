@@ -122,102 +122,45 @@ section {
   animation: scale 1s infinite;
 }
 
-.testimonios_container {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  height: 100vh !important;
-  width: 1481px !important;
-  margin-right: 0 !important;
-  padding-top: 110px !important;
+.servicios_container {
+  height: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.wrapper {
-  width: 1000px !important;
-  height: 500px;
+.servicios_card {
+  height: 400px;
+  width: 600px;
+  margin-top: 200px;
+  margin-bottom: 123px;
+  background: #00d799;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicios_card h2 {
   text-align: center;
 }
 
-.wrapper:hover {
-  cursor: pointer;
-}
-
-.carousel2 {
-  padding-top: 20px !important;
-  width: 1000px !important;
-  margin: 0px auto;
-  height: 500px !important;
-}
-
-.slick-list {
-  height: 400px !important;
-}
-
-.slick-slide {
-  margin: 10px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev,
-.slick-next {
-  background: #000;
-  border-radius: 15px;
-  border-color: transparent;
-  background: #00d799 !important;
-  height: 40px !important;
-  width: 40px !important;
-  z-index: 2;
+.servicios_list {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 3px !important;
+  align-items: center;
 }
 
-.slick-prev:before {
-  font-size: 40px !important;
+.servicio_description {
+  width: 600px;
+  padding: 20px 30px 20px 30px;
+  text-align: justify;
+  color: #ffffff;
 }
 
-.slick-next:before {
-  font-size: 40px !important;
-}
-
-.card {
-  border: 2px solid #fff;
-  box-shadow: 1px 1px 15px #ccc;
-}
-
-.card-body {
-  background: #fff;
-  width: 100%;
-  vertical-align: top;
-}
-
-.card-content {
-  text-align: left;
-  color: #00d799;
-  padding: 15px;
-}
-
-.card-text {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.slick-dots li button:before {
-  font-size: 20px !important;
-  width: 20px !important;
-  height: 20px !important;
-  color: #00d799 !important;
-}
-
-.slick-dots {
-  bottom: -50px !important;
-}
-
-.titulo-verde {
-  color: #00d799 !important;
-}/*# sourceMappingURL=Testimonios.css.map */
+.button-effect {
+  border: 2px solid #ffffff !important;
+  margin-bottom: 0px !important;
+}/*# sourceMappingURL=Servicios.css.map */

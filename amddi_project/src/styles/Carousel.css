@@ -35,7 +35,13 @@ h5 {
   font-size: 15px !important;
 }
 
-a, ul, li {
+p {
+  color: #ffffff !important;
+}
+
+a,
+ul,
+li {
   text-decoration: none !important;
 }
 
@@ -106,6 +112,17 @@ section {
     transform: scale(1);
   }
 }
+.whatsapp-icon {
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp-icon:hover {
+  animation: scale 1s infinite;
+}
+
 .carousel_container {
   padding-top: 120px;
   width: 1481px;
