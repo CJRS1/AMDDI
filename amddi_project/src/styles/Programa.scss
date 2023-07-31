@@ -1,23 +1,44 @@
 @import 'Variables';
 
 .ingresos_container{
-
     height: 100vh !important;
     padding-top: 125px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .ingresos_description{
-    width: 700px;
+    width: 85%;
+    height: 87%;
     padding: 20px 40px 20px 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background: $verde-lima;
     border-radius: 10px;
     p{
-        padding-top: 20px;
         font-size: 18px;
         text-align: justify;
     }
+}
+
+.ingresos_card{
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programa-formulario{
+    margin-top: 20px;
+    padding-left: 0 !important;
+}
+
+.seleccionar-archivo{
+    background: $blanco;
+    border-radius: 5px;
 }

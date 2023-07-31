@@ -153,7 +153,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .svg-effect {
@@ -202,11 +202,24 @@ section {
 
 .footer-description-llamanos {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 400px;
   padding-top: 20px;
+}
+
+.llamanos_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.horario_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-description-redes {
@@ -237,7 +250,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-top: 10px;
   padding-left: 10px;
 }
