@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/AMDDI/static/css/main.2a29d19a.css",
-    "main.js": "/AMDDI/static/js/main.556a6fb7.js",
+    "main.css": "/AMDDI/static/css/main.1e350101.css",
+    "main.js": "/AMDDI/static/js/main.dd440684.js",
     "static/js/787.a75494a5.chunk.js": "/AMDDI/static/js/787.a75494a5.chunk.js",
     "static/media/negocio.jpeg": "/AMDDI/static/media/negocio.8ae48e33582c0e027476.jpeg",
     "static/media/proyecto.jpeg": "/AMDDI/static/media/proyecto.ed3959311a789bb391ff.jpeg",
     "static/media/asesoria.jpeg": "/AMDDI/static/media/asesoria.cb8b9a43a3a02f3d0f6b.jpeg",
     "static/media/practicas.jpg": "/AMDDI/static/media/practicas.963c49b19c2b2e2a419d.jpg",
     "static/media/quienes.jpeg": "/AMDDI/static/media/quienes.ece67b954d757aabc312.jpeg",
+    "static/media/Whatsapp.png": "/AMDDI/static/media/Whatsapp.3c88a2148dbf6e49dfae.png",
     "static/media/Logo_confondo.png": "/AMDDI/static/media/Logo_confondo.ce79942a4667ce3e272e.png",
     "static/media/slick.svg": "/AMDDI/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/AMDDI/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -18,12 +19,12 @@
     "static/media/linkedin-in.svg": "/AMDDI/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
     "static/media/tiktok.svg": "/AMDDI/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
     "static/media/facebook-f.svg": "/AMDDI/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.2a29d19a.css.map": "/AMDDI/static/css/main.2a29d19a.css.map",
-    "main.556a6fb7.js.map": "/AMDDI/static/js/main.556a6fb7.js.map",
+    "main.1e350101.css.map": "/AMDDI/static/css/main.1e350101.css.map",
+    "main.dd440684.js.map": "/AMDDI/static/js/main.dd440684.js.map",
     "787.a75494a5.chunk.js.map": "/AMDDI/static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a29d19a.css",
-    "static/js/main.556a6fb7.js"
+    "static/css/main.1e350101.css",
+    "static/js/main.dd440684.js"
   ]
 }
