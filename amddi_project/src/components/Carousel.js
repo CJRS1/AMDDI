@@ -59,7 +59,7 @@ export default function Carousel() {
             </div>
             <div class="caracteristica_servicios" id="inicio">
                 <div class="caracterisctia_servicios_container">
-                    <h2>Nuestros Servicios</h2>
+                    <h2 className='nuestros_servicios_title'>Nuestros Servicios</h2>
                     <p class="servicios_descripcion">
                         En nuestra plataforma ofrecemos servicios académicos de alta calidad para brindarte el apoyo necesario en el desarrollo de tu tesis. Nuestro equipo de expertos te guiará en cada etapa del proceso de investigación y redacción, asegurándonos de que alcances tus objetivos académicos con éxito. En AMDDI nos encocamos en:
                     </p>

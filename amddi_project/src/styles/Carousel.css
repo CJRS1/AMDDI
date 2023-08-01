@@ -247,4 +247,17 @@ section {
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .nuestros_servicios_title {
+    padding-top: 20px;
+  }
+  .caracteristica_servicios {
+    height: 100%;
+  }
+  .caracterisctia_servicios_container {
+    height: 100%;
+    width: 500px;
+  }
 }/*# sourceMappingURL=Carousel.css.map */

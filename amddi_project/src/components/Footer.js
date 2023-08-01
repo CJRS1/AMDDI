@@ -258,7 +258,7 @@ export default function Footer() {
 
             </div>
             <p className="footer-text">
-                Copyright © AMDDI. All rights reserved.
+                Copyright © AMDDI. Todos los derechos reservados.
             </p>
 
         </footer>
