@@ -200,7 +200,7 @@ export default function Footer() {
                             </svg>
                             <div className="card-localizacion">
                                 <h5><strong>CUSCO – CUSCO</strong></h5>
-                                <h5>Av. el sol 344, oficina 211</h5>
+                                <h5>Av. El Sol 344, oficina 211</h5>
                             </div>
                         </div>
                         <div className="card-icloc">

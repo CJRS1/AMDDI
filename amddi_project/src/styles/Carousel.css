@@ -129,6 +129,14 @@ section {
   animation: scale 1s infinite;
 }
 
+.zoom {
+  transition: 0.8s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
 .carousel_container {
   padding-top: 120px;
   width: 1481px;

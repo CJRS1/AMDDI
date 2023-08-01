@@ -1,18 +1,26 @@
 @import 'Variables';
 
 .servicios_container{
-    height: 110%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.servicio_container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .servicios_card{
     height: 400px;
     width: 600px;
-    margin-top: 200px;
-    margin-bottom: 123px;
+    margin-top: 80px;
+    // margin-bottom: 123px;
     background: $verde-lima;
     border-radius: 10px;
     display: flex;
@@ -24,15 +32,24 @@
     }
 }
 
+.carreras_container{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+}
+
 .servicios_caracteristicas{
-    margin-top: 130px;
     width: 1200px;
+    height: 800px;
     background: $verde-lima;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    padding: 20px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
+    margin-top: 140px;
     .titulo2{
         display: inline-block;
         h2{ 
@@ -161,3 +178,4 @@
     grid-auto-rows: auto; 
     row-gap: 20px;
 }
+

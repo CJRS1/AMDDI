@@ -128,6 +128,14 @@ section {
   animation: scale 1s infinite;
 }
 
+.zoom {
+  transition: 0.8s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
 .testimonios_container {
   display: flex !important;
   flex-direction: column !important;

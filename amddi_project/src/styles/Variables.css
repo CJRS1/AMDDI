@@ -126,4 +126,12 @@ section {
 
 .whatsapp-icon:hover {
   animation: scale 1s infinite;
+}
+
+.zoom {
+  transition: 0.8s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=Variables.css.map */
