@@ -11,9 +11,7 @@ export default function Header() {
             <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
                     <Link to="/AMDDI" className="navbar-brand" href="#inicio"> <img src={require('../images/Logo_confondo.png')} alt='AMDDI' height={'80px'} />  </Link>
-                    <li className="nav-item">
-                        <Link to="/AMDDI/nosotros" className="nav-link">Nosotros </Link>
-                    </li>
+
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -22,6 +20,9 @@ export default function Header() {
                             {/* <li className="nav-item">
                                 <Link to="/AMDDI" className="nav-link active" aria-current="page" >Inicio </Link>
                             </li> */}
+                            <li className="nav-item">
+                                <Link to="/AMDDI/nosotros" className="nav-link">Nosotros </Link>
+                            </li>
                             <li className="nav-item dropdown">
                                 <Link to="/AMDDI/servicios" className="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                     Nuestros Servicios

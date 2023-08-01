@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect }  from 'react'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 import '../styles/Carousel.css'
 
 export default function Carousel() {
+    const location = useLocation();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
     return (
         <section className="carousel_container">
             <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -15,28 +20,28 @@ export default function Carousel() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={require('../images/asesoria.jpg')} alt='AMDDI' height={'603.2px'} width={'1481px'} />
+                        <img src={require('../images/asesoria.jpg')} alt='asesoria' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={require('../images/practicas.jpg')} alt='AMDDI' height={'603.2px'} width={'1481px'} />
+                        <img src={require('../images/practicas.jpg')} alt='practicas' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <Link to="/AMDDI/programadeingresos" type="button" className="btn button-effect">Escríbemos</Link>
                             {/* <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link> */}
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={require('../images/proyecto.jpeg')} alt='AMDDI' height={'603.2px'} width={'1481px'} />
+                        <img src={require('../images/proyecto.jpeg')} alt='proyecto' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={require('../images/negocio.jpeg')} alt='AMDDI' height={'603.2px'} width={'1481px'} />
+                        <img src={require('../images/negocio.jpeg')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>

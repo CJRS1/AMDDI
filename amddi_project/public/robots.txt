@@ -1,3 +1,20 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+
+Disallow: /backups/
+Disallow: /temp/
+
+Disallow: /*.pdf$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+Disallow: /category-a/
+Disallow: /tag-x/
+
+Sitemap: https://www.miejemplo.com/sitemap.xml
