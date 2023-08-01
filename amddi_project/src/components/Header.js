@@ -29,7 +29,7 @@ export default function Header() {
                                     Nuestros Servicios
                                 </Link>
                                 <ul className="dropdown-menu bg-gris" >
-                                    <li> <HashLink smooth to="/AMDDI/servicios#carreras" className="dropdown-item" >Carreras asesoradas </HashLink> </li>
+                                    <li> <HashLink smooth to="/AMDDI/servicios#carreras" className="dropdown-item" >Carreras Asesoradas </HashLink> </li>
                                     <li> <HashLink smooth to="/AMDDI/servicios#redacciontesispregrado" className="dropdown-item" >Redacción de Tesis de Pregrado </HashLink> </li>
                                     <li> <HashLink smooth to="/AMDDI/servicios#redacciontesispostgrado" className="dropdown-item" >Redacción de Tesis de Postgrado </HashLink> </li>
                                     <li> <HashLink smooth to="/AMDDI/servicios#levantamientoobservacionespregrado" className="dropdown-item" >Levantamiento de Observaciones Pregrado </HashLink> </li>

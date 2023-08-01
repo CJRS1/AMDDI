@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 import '../styles/Footer.css'
 import Tiktok from '..//images/LogoRedesSociales/tiktok.svg'
 import Facebook from '..//images/LogoRedesSociales/facebook-f.svg'
@@ -73,94 +74,99 @@ export default function Footer() {
                     <h4><strong>Nuestros servicios</strong></h4>
                     <ul className="container-list">
                         <li className="li-effect">
-                            <a className="servicios" href="#pregrado">
-                                <h5>Redacción de Tesis de Pregrado</h5>
-                            </a>
+                            <HashLink smooth to="/AMDDI/servicios#carreras" className="servicios" href="#pregrado">
+                                <h5>Carreras Asesoradas</h5>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#postgrado">
+                            <HashLink smooth to="/AMDDI/servicios#redacciontesispregrado" className="servicios" href="#pregrado">
                                 <h5>Redacción de Tesis de Pregrado</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#levantamieno-pregrado">
+                            <HashLink smooth to="/AMDDI/servicios#redacciontesispostgrado" className="servicios" href="#postgrado">
+                                <h5>Redacción de Tesis de Pregrado</h5>
+                            </HashLink>
+                        </li>
+                        <li className="li-effect">
+                            <HashLink smooth to="/AMDDI/servicios#levantamientoobservacionespregrado" className="servicios" href="#levantamieno-pregrado">
                                 <h5>Levantamiento de Observaciones Pregrado</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#levantamieno-postgrado">
+                            <HashLink smooth to="/AMDDI/servicios#levantamientoobservacionesmaestria" className="servicios" href="#levantamieno-postgrado">
                                 <h5>Levantamiento de Observaciones Maestría</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#parafraseo">
+                            <HashLink smooth to="/AMDDI/servicios#parafraseo" className="servicios" href="#parafraseo">
                                 <h5>Parafraseo</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#suficiencia">
+                            <HashLink smooth to="/AMDDI/servicios#trabajosuficienciaprofesional" className="servicios" href="#suficiencia">
                                 <h5>Trabajo de Suficiencia Profesional</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#articulo">
+                            <HashLink smooth to="/AMDDI/servicios#articulocientifico" className="servicios" href="#articulo">
                                 <h5>Artículo Científico</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#articulo-sistematica">
+                            <HashLink smooth to="/AMDDI/servicios#articulorevisionsistematica" className="servicios" href="#articulo-sistematica">
                                 <h5>Artículo de Revisión Sistemática</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#articulo-literatura">
+                            <HashLink smooth to="/AMDDI/servicios#articulorevisionliteratura" className="servicios" href="#articulo-literatura">
                                 <h5>Artículo de Revisión de Literatura</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#ciclo">
+                            <HashLink smooth to="/AMDDI/servicios#trabajodeciclo" className="servicios" href="#ciclo">
                                 <h5>Trabajos de Ciclo</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#monografia">
+                            <HashLink smooth to="/AMDDI/servicios#monografias" className="servicios" href="#monografia">
                                 <h5>Monografía</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#ensayo">
+                            <HashLink smooth to="/AMDDI/servicios#ensayos" className="servicios" href="#ensayo">
                                 <h5>Ensayos</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#plan">
+                            <HashLink smooth to="/AMDDI/servicios#plannegocio" className="servicios" href="#plan">
                                 <h5>Planes de Negocio</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#practicas">
+                            <HashLink smooth to="/AMDDI/servicios#informepracticas" className="servicios" href="#practicas">
                                 <h5>Informe de Prácticas</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#tesinas">
+                            <HashLink smooth to="/AMDDI/servicios#tesinas" className="servicios" href="#tesinas">
                                 <h5>Tesinas</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#cv">
+                            <HashLink smooth to="/AMDDI/servicios#elaboracioncv" className="servicios" href="#cv">
                                 <h5>Elavoración de CV</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#diapositivas">
+                            <HashLink smooth to="/AMDDI/servicios#dispositivas" className="servicios" href="#diapositivas">
                                 <h5>Diapositivas</h5>
-                            </a>
+                            </HashLink>
                         </li>
                         <li className="li-effect">
-                            <a className="servicios" href="#cursos">
+                            <HashLink smooth to="/AMDDI/servicios#cursos" className="servicios" href="#cursos">
                                 <h5>Curso Online: próximamente...</h5>
-                            </a>
+                            </HashLink>
                         </li>
                     </ul>
                 </div>
