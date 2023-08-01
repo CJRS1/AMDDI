@@ -32,14 +32,22 @@ a {
 
 .nav-item {
     padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-link {
     transition: all $transition ease-in-out !important;
     font-weight: 600 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .nav-link:hover {
     transform: scale(1.1) !important;
     transition: all $transition ease-in-out !important;
 }
+

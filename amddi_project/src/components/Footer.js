@@ -171,6 +171,14 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="footer-description-ubicanos">
+                    <h4><strong>Programas de Beneficios</strong></h4>
+                    <div className="container-list">
+                        <ul>
+                            <li><HashLink smooth to="/AMDDI/ingresosextra"> Ingresos Extra</HashLink> </li>
+                            <li><HashLink smooth to="/AMDDI/investigacionsostenible"> Investigación Sostenible</HashLink> </li>
+                            <li><HashLink smooth to="/AMDDI/emprendimientojoven"> Emprendimiento Joven</HashLink> </li>
+                        </ul>
+                    </div>
                     <h4><strong>Ubícanos</strong></h4>
                     <div className="ubi-list">
                         <div className="card-icloc">

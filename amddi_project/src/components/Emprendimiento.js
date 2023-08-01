@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
-import '../styles/Programa.css';
+import '../styles/Emprendimiento.css';
 
-export default function Testimonios() {
+export default function Emprendimiento() {
     const location = useLocation();
 
     useEffect(() => {
@@ -12,22 +12,11 @@ export default function Testimonios() {
 
     return (
         <section className="ingresos_container">
-            
+
             <div className="ingresos_description">
                 <div className="ingresos_card">
-                    <h2 className="titulo"><strong>Programa de Ingresos Extras</strong></h2>
-                    <p>
-                        Gana ingresos extras desde casa
-                        Únete a nuestra comunidad freelance eligiendo entre:
-                        <div className="puestos_list">
-                            <li><strong>Contratos a tiempo completo para proyectos grandes. Ideal si buscas un trabajo estable.</strong></li>
-                            <li><strong>Mini trabajos y proyectos por horas o tareas puntuales. Perfecto para ingresos adicionales flexibles.</strong></li>
-                        </div>
-                        No necesitas experiencia previa. Postula con tus habilidades (diseño, redacción, programación, traducción, etc.)
-
-                        Tú eliges los proyectos y horarios.
-
-                        Envíanos tu CV y rellena el formulario de postulación. Buscamos personas responsables tanto para trabajo freelance como a tiempo completo. ¡Impulsa tus habilidades y genera ingresos extras desde casa!</p>
+                    <h2 className="titulo"><strong>Programa Emprendimiento Joven</strong></h2>
+                    <p> ¡Bienvenido al Programa Emprendimiento AMDDI! Apoyamos a jóvenes estudiantes emprendedores comprometidos en hacer realidad sus ideas innovadoras. Si compartes esta pasión, te brindamos asesoría experta para desarrollar planes de negocio y acceso a subvenciones como capital inicial. También te ofrecemos constante mentoria desde la conceptualización hasta la ejecución de tu emprendimiento. Únete a nuestro programa y convierte tu visión en realidad, con nuestro apoyo financiero y en conocimientos. Juntos podemos impulsar el potencial de los jóvenes para crear un impacto positivo. </p>
                 </div>
 
                 <form method="POST" action="https://formsubmit.co/reyes.christian@pucp.pe" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
@@ -48,7 +37,7 @@ export default function Testimonios() {
                         </div>
                         <div className="mb-3 d-flex ">
                             <input type="text" name="phone" className="form-control my-input" style={{ width: '300px', marginRight: '10px' }} id="Input1"
-                                placeholder="Puesto al que postula*" required />
+                                placeholder="Nombre del Emprendimiento*" required />
                             <select className="form-control my-input" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
                                 <option value="" disabled >Seleccione un departamento</option>
                                 <option value="Ancash">Ancash</option>
@@ -80,7 +69,7 @@ export default function Testimonios() {
 
                         <div className="mb-3">
                             <textarea className="form-control my-input" name="message" id="exampleFormControlTextarea1" style={{ width: '610px' }} rows="5"
-                                placeholder="Comentario o mensaje *" required></textarea>
+                                placeholder="Mi Proyecto de Emprendimiento Joven trata sobre ... *" required></textarea>
                         </div>
                         <div class="mb-3 d-flex flex-column custom-file seleccionar-archivo">
 

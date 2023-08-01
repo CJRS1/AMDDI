@@ -11,7 +11,7 @@ export default function Contacto() {
     return (
         <section className="contacto_container">
             <div className="container-contacto-lottie zoom">
-                <lottie-player src="https://lottie.host/b52fea18-ae21-45a3-b5a4-d851086dadfd/m0qJS3J3FV.json" background="transparent"
+                <lottie-player src="https://lottie.host/e78cad45-142b-442c-8943-73541c6778cb/vPwyM4thh3.json" background="transparent"
                     speed="0.5" style={{ height: '400px', width: '400px' }} loop autoplay></lottie-player>
                 <form method="POST" action="https://formsubmit.co/reyes.christian@pucp.pe" encType="multipart/form-data" className="container-contacto-empresa">
                     <h2 className="titulo"><strong>Contáctanos</strong></h2>

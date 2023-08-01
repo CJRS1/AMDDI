@@ -133,50 +133,9 @@ section {
 }
 
 .zoom:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
-.ingresos_container {
-  height: 100vh !important;
-  padding-top: 125px !important;
-  display: flex;
-  flex-direction: column;
-}
-
-.ingresos_description {
-  width: 85%;
-  height: 87%;
-  padding: 20px 40px 20px 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  background: #00d799;
-  border-radius: 10px;
-}
-.ingresos_description p {
-  font-size: 18px;
-  text-align: justify;
-}
-
-.puestos_list {
-  margin: 5px 0 5px 0;
-}
-
-.ingresos_card {
-  padding-top: 20px;
-  padding-right: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.programa-formulario {
-  margin-top: 20px;
-  padding-left: 0 !important;
-}
-
-.seleccionar-archivo {
-  background: #ffffff;
-  border-radius: 5px;
-}/*# sourceMappingURL=Programa.css.map */
+.ingresos_card h2 .titulo {
+  text-align: center !important;
+}/*# sourceMappingURL=Emprendimiento.css.map */

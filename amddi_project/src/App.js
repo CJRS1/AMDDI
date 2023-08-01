@@ -9,7 +9,9 @@ import Contacto from './components/Contacto';
 import Nosotros from './components/Nosotros';
 import Testimonios from './components/Testimonios';
 import Servicios from './components/Servicios';
-import Programa from './components/Programa';
+import Ingresos from './components/Ingresos';
+import Investigacion from './components/Investigacion';
+import Emprendimiento from './components/Emprendimiento';
 
 function App() {
 
@@ -30,7 +32,11 @@ function App() {
 
         <Route path="/AMDDI/testimonios" element={<Testimonios />} />
 
-        <Route path="/AMDDI/programadeingresos" element={<Programa />} />
+        <Route path="/AMDDI/ingresosextra" element={<Ingresos />} />
+
+        <Route path="/AMDDI/investigacionsostenible" element={<Investigacion />} />
+
+        <Route path="/AMDDI/emprendimientojoven" element={<Emprendimiento/>} />
 
         <Route path="/AMDDI/contactanos" element={<Contacto />} />
 
