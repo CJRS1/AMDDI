@@ -100,3 +100,37 @@
 .titulo-verde{
     color: $verde-lima !important;
 }
+
+@media (max-width: 768px){
+    .testimonios_container{
+        width: 100% !important;
+    }
+
+
+    .wrapper{
+        width: 100% !important;
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel2{
+        width: 80% !important;
+        margin: 0 0 0 0 !important;
+    }
+
+    .card-body{
+        width: 100%;
+    }
+
+    .slick-track{
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .slick-slide{
+        margin: 0 !important;
+    }
+}
