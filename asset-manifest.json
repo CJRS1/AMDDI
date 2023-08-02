@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AMDDI/static/css/main.b806c3a3.css",
+    "main.css": "/AMDDI/static/css/main.9887bb5e.css",
     "main.js": "/AMDDI/static/js/main.ec2575eb.js",
     "static/js/787.a75494a5.chunk.js": "/AMDDI/static/js/787.a75494a5.chunk.js",
     "static/media/libro.png": "/AMDDI/static/media/libro.09f237bbeb8238a004b7.png",
@@ -25,12 +25,12 @@
     "static/media/linkedin-in.svg": "/AMDDI/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
     "static/media/tiktok.svg": "/AMDDI/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
     "static/media/facebook-f.svg": "/AMDDI/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.b806c3a3.css.map": "/AMDDI/static/css/main.b806c3a3.css.map",
+    "main.9887bb5e.css.map": "/AMDDI/static/css/main.9887bb5e.css.map",
     "main.ec2575eb.js.map": "/AMDDI/static/js/main.ec2575eb.js.map",
     "787.a75494a5.chunk.js.map": "/AMDDI/static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b806c3a3.css",
+    "static/css/main.9887bb5e.css",
     "static/js/main.ec2575eb.js"
   ]
 }
