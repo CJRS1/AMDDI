@@ -70,7 +70,6 @@ export default function Header() {
                             <li className="nav-item">
                                 <Link to="/AMDDI/emprendimientojoven" className="nav-link" onClick={handleLinkClick}>Emprendimiento Joven </Link>
                             </li>
-
                             <li className="nav-item">
                                 <Link to="/AMDDI/testimonios" className="nav-link" onClick={handleLinkClick}>Testimonios </Link>
                             </li>
