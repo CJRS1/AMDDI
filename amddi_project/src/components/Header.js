@@ -44,7 +44,7 @@ export default function Header() {
                                     <li> <HashLink to="/AMDDI/servicios#plannegocio"  className="dropdown-item" >Planes de Negocio </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#informepracticas" className="dropdown-item" >Informe de Prácticas </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#tesinas"  className="dropdown-item" >Tesinas </HashLink> </li>
-                                    <li> <HashLink to="/AMDDI/servicios#elaboracioncv"  className="dropdown-item" >Elavoración de CV </HashLink> </li>
+                                    <li> <HashLink to="/AMDDI/servicios#elaboracioncv"  className="dropdown-item" >Elaboración de CV </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#dispositivas"  className="dropdown-item" >Diapositivas </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#cursos"  className="dropdown-item" >Curso Online: próximamente... </HashLink> </li>
                                 </ul>
