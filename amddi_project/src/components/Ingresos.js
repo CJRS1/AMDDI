@@ -39,17 +39,17 @@ export default function Testimonios() {
                                 placeholder="Nombre y apellido *" required />
 
                         </div>
-                        <div className="mb-3 d-flex">
+                        <div className="mb-3 d-flex input_contact_container">
 
                             <input type="email" name="email" className="form-control form-email my-input" style={{ width: '300px', marginRight: '10px' }}
                                 id="exampleFormControlInput1" placeholder="Correo electrónico *" required />
-                            <input type="number" name="phone" className="form-control my-input" style={{ width: '300px' }} id="Input1"
+                            <input type="number" name="phone" className="form-control my-input input_card" style={{ width: '300px' }} id="Input1"
                                 placeholder="Celular *" min="10000000" max="999999999999" required />
                         </div>
-                        <div className="mb-3 d-flex ">
-                            <input type="text" name="phone" className="form-control my-input" style={{ width: '300px', marginRight: '10px' }} id="Input1"
+                        <div className="mb-3 d-flex input_contact_container">
+                            <input type="text" name="phone" className="form-control my-input " style={{ width: '300px', marginRight: '10px' }} id="Input1"
                                 placeholder="Puesto al que postula*" required />
-                            <select className="form-control my-input" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
+                            <select className="form-control my-input input_card" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
                                 <option value="" disabled >Seleccione un departamento</option>
                                 <option value="Ancash">Ancash</option>
                                 <option value="Apurímac">Apurímac</option>

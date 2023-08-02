@@ -28,17 +28,17 @@ export default function Emprendimiento() {
                                 placeholder="Nombre y apellido *" required />
 
                         </div>
-                        <div className="mb-3 d-flex">
+                        <div className="mb-3 d-flex input_contact_container">
 
                             <input type="email" name="email" className="form-control form-email my-input" style={{ width: '300px', marginRight: '10px' }}
                                 id="exampleFormControlInput1" placeholder="Correo electrónico *" required />
-                            <input type="number" name="phone" className="form-control my-input" style={{ width: '300px' }} id="Input1"
+                            <input type="number" name="phone" className="form-control my-input input_card" style={{ width: '300px' }} id="Input1"
                                 placeholder="Celular *" min="10000000" max="999999999999" required />
                         </div>
-                        <div className="mb-3 d-flex ">
+                        <div className="mb-3 d-flex input_contact_container">
                             <input type="text" name="phone" className="form-control my-input" style={{ width: '300px', marginRight: '10px' }} id="Input1"
                                 placeholder="Nombre del Emprendimiento*" required />
-                            <select className="form-control my-input" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
+                            <select className="form-control my-input input_card" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
                                 <option value="" disabled >Seleccione un departamento</option>
                                 <option value="Ancash">Ancash</option>
                                 <option value="Apurímac">Apurímac</option>
@@ -71,11 +71,7 @@ export default function Emprendimiento() {
                             <textarea className="form-control my-input" name="message" id="exampleFormControlTextarea1" style={{ width: '610px' }} rows="5"
                                 placeholder="Mi Proyecto de Emprendimiento Joven trata sobre ... *" required></textarea>
                         </div>
-                        <div class="mb-3 d-flex flex-column custom-file seleccionar-archivo">
-
-                            <input class="form-control btn color-button" name="file" type="file"
-                                id="formFileMultiple" accept=".pdf" required />
-                        </div>
+                        
                         <button type="submit" className="btn button-contact">Enviar el formulario</button>
 
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactanos.html" />

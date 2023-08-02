@@ -268,4 +268,10 @@ section {
   .cont {
     margin-bottom: 0;
   }
+  .input_contact_container {
+    width: 310px !important;
+  }
+  .ingresos_description {
+    width: 340px;
+  }
 }/*# sourceMappingURL=Contacto.css.map */
