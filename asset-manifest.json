@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/AMDDI/static/css/main.35f71857.css",
-    "main.js": "/AMDDI/static/js/main.97237526.js",
+    "main.css": "/AMDDI/static/css/main.bcbe769a.css",
+    "main.js": "/AMDDI/static/js/main.8658783f.js",
     "static/js/787.a75494a5.chunk.js": "/AMDDI/static/js/787.a75494a5.chunk.js",
+    "static/media/libro.png": "/AMDDI/static/media/libro.09f237bbeb8238a004b7.png",
     "static/media/asesoria.jpg": "/AMDDI/static/media/asesoria.433585d85c24c50f1aa6.jpg",
     "static/media/negocio.jpeg": "/AMDDI/static/media/negocio.8ae48e33582c0e027476.jpeg",
     "static/media/proyecto.jpeg": "/AMDDI/static/media/proyecto.ed3959311a789bb391ff.jpeg",
     "static/media/practicas.jpg": "/AMDDI/static/media/practicas.963c49b19c2b2e2a419d.jpg",
     "static/media/quienes.jpeg": "/AMDDI/static/media/quienes.ece67b954d757aabc312.jpeg",
     "static/media/Whatsapp.png": "/AMDDI/static/media/Whatsapp.3c88a2148dbf6e49dfae.png",
+    "static/media/visa.jpg": "/AMDDI/static/media/visa.c81afb8585f5ad92385e.jpg",
+    "static/media/scotiabank.jpg": "/AMDDI/static/media/scotiabank.d83752406a9bc559d7b8.jpg",
+    "static/media/mastercard.jpg": "/AMDDI/static/media/mastercard.a173603c14fde665010f.jpg",
+    "static/media/bcp.jpg": "/AMDDI/static/media/bcp.af4c5f8d65c2acb39dbd.jpg",
     "static/media/Logo_confondo.png": "/AMDDI/static/media/Logo_confondo.ce79942a4667ce3e272e.png",
+    "static/media/mercadopago.png": "/AMDDI/static/media/mercadopago.a8b68a623faf4d213b61.png",
     "index.html": "/AMDDI/index.html",
     "static/media/slick.svg": "/AMDDI/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/AMDDI/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -19,12 +25,12 @@
     "static/media/linkedin-in.svg": "/AMDDI/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
     "static/media/tiktok.svg": "/AMDDI/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
     "static/media/facebook-f.svg": "/AMDDI/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.35f71857.css.map": "/AMDDI/static/css/main.35f71857.css.map",
-    "main.97237526.js.map": "/AMDDI/static/js/main.97237526.js.map",
+    "main.bcbe769a.css.map": "/AMDDI/static/css/main.bcbe769a.css.map",
+    "main.8658783f.js.map": "/AMDDI/static/js/main.8658783f.js.map",
     "787.a75494a5.chunk.js.map": "/AMDDI/static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35f71857.css",
-    "static/js/main.97237526.js"
+    "static/css/main.bcbe769a.css",
+    "static/js/main.8658783f.js"
   ]
 }
