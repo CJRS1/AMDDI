@@ -137,11 +137,6 @@ section {
   transform: scale(1.01);
 }
 
-@media (max-width: 768px) {
-  .whatsapp-icon {
-    display: none;
-  }
-}
 .carousel_container {
   padding-top: 120px;
   width: 1481px;

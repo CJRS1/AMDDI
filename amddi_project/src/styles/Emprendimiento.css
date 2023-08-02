@@ -136,11 +136,6 @@ section {
   transform: scale(1.01);
 }
 
-@media (max-width: 768px) {
-  .whatsapp-icon {
-    display: none;
-  }
-}
 .titulo {
   text-align: center !important;
 }/*# sourceMappingURL=Emprendimiento.css.map */

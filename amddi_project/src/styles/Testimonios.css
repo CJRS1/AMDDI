@@ -136,11 +136,6 @@ section {
   transform: scale(1.01);
 }
 
-@media (max-width: 768px) {
-  .whatsapp-icon {
-    display: none;
-  }
-}
 .testimonios_container {
   display: flex !important;
   flex-direction: column !important;

@@ -54,6 +54,7 @@ a {
 @media (max-width: 768px) {
     .header_container {
         max-width: 100%;
+        max-height: 100%;
     }
 
     .img_header {
@@ -65,7 +66,43 @@ a {
         justify-content: space-between !important;
         padding: 0 0 0 0 !important;
     }
-    .navbar_header_container{
+
+    .navbar_header_container {
         width: 85% !important;
     }
+
+    .menu-closed {
+        display: none;
+    }
+
+    .menu-open {
+        display: block;
+        position: fixed;
+        width: 100%;
+        min-height: 100vh !important;
+        overflow-y: auto;
+        top: 0;
+        left: 0;
+        background: $verde-lima;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown-menu {
+        flex-direction: column;
+        align-items: stretch;
+        flex-grow: 1; 
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .dropdown-item {
+        min-height: 0;
+    }
+
 }
