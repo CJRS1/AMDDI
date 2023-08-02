@@ -136,6 +136,11 @@ section {
   transform: scale(1.01);
 }
 
+@media (max-width: 768px) {
+  .whatsapp-icon {
+    display: none;
+  }
+}
 .footer-description {
   height: 630px;
   width: 1481px;

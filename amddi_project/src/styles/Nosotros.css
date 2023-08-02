@@ -136,6 +136,11 @@ section {
   transform: scale(1.01);
 }
 
+@media (max-width: 768px) {
+  .whatsapp-icon {
+    display: none;
+  }
+}
 .amddi_container {
   max-height: 300vh;
   width: 1481px;

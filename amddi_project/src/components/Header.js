@@ -8,9 +8,9 @@ export default function Header() {
 
     return (
         <header className="header_container">
-            <nav className="navbar navbar-expand-lg ">
-                <div className="container-fluid">
-                    <Link to="/AMDDI" className="navbar-brand" href="#inicio"> <img src={require('../images/Logo_confondo.png')} alt='AMDDI' height={'80px'} />  </Link>
+            <nav className="navbar navbar-expand-lg navbar_header_container">
+                <div className="container-fluid contenedor_logo_menu">
+                    <Link to="/AMDDI" className="navbar-brand" href="#inicio"> <img className='img_header' src={require('../images/Logo_confondo.png')} alt='AMDDI' height={'80px'} />  </Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

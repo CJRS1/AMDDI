@@ -20,16 +20,16 @@ export default function Contacto() {
                             través del siguiente formulario: </h4>
                     </div>
                     <div className="container-contacto">
-                        <div className="mb-3 d-flex ">
+                        <div className="mb-3 d-flex justify-content-center input_container">
                             <input type="text" name="name" className="form-control my-input" style={{ width: '300px', marginRight: '10px' }} id="Input1"
                                 placeholder="Nombre y apellido *" required />
-                            <input type="number" name="phone" className="form-control my-input" style={{ width: '300px' }} id="Input1"
+                            <input type="number" name="phone" className="form-control my-input input_card" style={{ width: '300px' }} id="Input1"
                                 placeholder="Celular *" min="10000000" max="999999999999" required />
                         </div>
-                        <div className="mb-3 d-flex ">
+                        <div className="mb-3 d-flex justify-content-center input_container">
                             <input type="email" name="email" className="form-control form-email my-input" style={{ width: '300px', marginRight: '10px' }}
                                 id="exampleFormControlInput1" placeholder="Correo electrónico *" required />
-                            <select className="form-control my-input" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
+                            <select className="form-control my-input input_card" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
                                 <option value="" disabled >Seleccione un departamento</option>
                                 <option value="Ancash">Ancash</option>
                                 <option value="Apurímac">Apurímac</option>
@@ -72,8 +72,8 @@ export default function Contacto() {
 
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactanos.html" />
                         <input type="hidden" name="_captcha" value="false" />
-                        <div className="d-flex p-3 justify-content-between" style={{ width: '600px', marginTop: '10px' }} >
-                            <div className="d-flex">
+                        <div className="d-flex p-3 justify-content-between referencias_card" style={{ width: '600px', marginTop: '10px' }} >
+                            <div className="d-flex ref_card">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
                                     className="bi bi-envelope-at icon" viewBox="0 0 16 16">
                                     <path
@@ -83,7 +83,7 @@ export default function Contacto() {
                                 </svg>
                                 <h6 className="cont"> Correo: info@amddi.com</h6>
                             </div>
-                            <div className="d-flex">
+                            <div className="d-flex ref_card">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
                                     className="bi bi-telephone icon" viewBox="0 0 16 16">
                                     <path

@@ -51,8 +51,21 @@ a {
     transition: all $transition ease-in-out !important;
 }
 
-@media (max-width: 768px){
-    .header_container{
-        width: 100%;
+@media (max-width: 768px) {
+    .header_container {
+        max-width: 100%;
+    }
+
+    .img_header {
+        height: 60px;
+    }
+
+    .contenedor_logo_menu {
+        width: 100% !important;
+        justify-content: space-between !important;
+        padding: 0 0 0 0 !important;
+    }
+    .navbar_header_container{
+        width: 85% !important;
     }
 }

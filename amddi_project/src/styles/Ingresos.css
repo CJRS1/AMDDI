@@ -136,6 +136,11 @@ section {
   transform: scale(1.01);
 }
 
+@media (max-width: 768px) {
+  .whatsapp-icon {
+    display: none;
+  }
+}
 .ingresos_container {
   height: 100vh !important;
   padding-top: 125px !important;

@@ -208,4 +208,64 @@ section {
   100% {
     transform: scale(1);
   }
+}
+@media (max-width: 768px) {
+  lottie-player {
+    display: none;
+  }
+  .contacto_container {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container-contacto-lottie {
+    width: 100%;
+    height: 100% !important;
+  }
+  .container-contacto-empresa {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding: 0 10px 0 10px;
+  }
+  .contacto-desc {
+    text-align: justify;
+  }
+  .container-contacto {
+    margin-top: 16px;
+    width: 100%;
+    height: 100%;
+  }
+  .container-contacto .d-flex {
+    flex-direction: column;
+  }
+  .input_card {
+    margin-top: 16px;
+  }
+  textarea {
+    width: 310px !important;
+  }
+  input {
+    width: 310px !important;
+  }
+  select {
+    width: 310px !important;
+  }
+  .referencias_card {
+    width: 320px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .input_container {
+    width: 310px !important;
+  }
+  .ref_card {
+    flex-direction: row !important;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .cont {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=Contacto.css.map */
