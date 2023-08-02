@@ -276,7 +276,7 @@ export default function Footer() {
                     <h4><strong>Libro de Reclamaciones</strong></h4>
                     <div className="libro-container">
                         <a href="https://librodereclamacionesperu.com/formulario.php?id=853131633"
-                            rel="noreferrer" target="_blank">
+                            rel="noreferrer" target="_blank" >
                             <img src={libro} alt='bcp' height={'65px'} />
                         </a>
                     </div>
