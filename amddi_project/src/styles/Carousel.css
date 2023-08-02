@@ -255,9 +255,20 @@ section {
   }
   .caracteristica_servicios {
     height: 100%;
+    margin-top: 20px;
   }
   .caracterisctia_servicios_container {
     height: 100%;
-    width: 500px;
+    width: 360px;
+    padding-top: 20px !important;
+  }
+  .lista_servicios {
+    margin-left: 0;
+  }
+  .img-carousel {
+    width: 400px;
+  }
+  .carousel_container {
+    width: 100%;
   }
 }/*# sourceMappingURL=Carousel.css.map */

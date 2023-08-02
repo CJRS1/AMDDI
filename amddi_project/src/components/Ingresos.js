@@ -80,7 +80,7 @@ export default function Testimonios() {
 
                         <div className="mb-3">
                             <textarea className="form-control my-input" name="message" id="exampleFormControlTextarea1" style={{ width: '610px' }} rows="5"
-                                placeholder="Comentario o mensaje *" required></textarea>
+                                placeholder="Buenas tardes, yo AMDDI, quiero trabajar con ustedes en el área de ... *" required></textarea>
                         </div>
                         <div class="mb-3 d-flex flex-column custom-file seleccionar-archivo">
 

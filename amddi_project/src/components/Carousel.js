@@ -20,28 +20,28 @@ export default function Carousel() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={require('../images/asesoria.jpg')} alt='asesoria' height={'603.2px'} width={'1481px'} />
+                        <img className="img-carousel" src={require('../images/asesoria.jpg')} alt='asesoria' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={require('../images/practicas.jpg')} alt='practicas' height={'603.2px'} width={'1481px'} />
+                        <img className="img-carousel" src={require('../images/practicas.jpg')} alt='practicas' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <Link to="/AMDDI/programadeingresos" type="button" className="btn button-effect">Escríbemos</Link>
                             {/* <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link> */}
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={require('../images/proyecto.jpeg')} alt='proyecto' height={'603.2px'} width={'1481px'} />
+                        <img className="img-carousel" src={require('../images/proyecto.jpeg')} alt='proyecto' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={require('../images/negocio.jpeg')} alt='negocio' height={'603.2px'} width={'1481px'} />
+                        <img className="img-carousel" src={require('../images/negocio.jpeg')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>

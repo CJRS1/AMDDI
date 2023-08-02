@@ -5,7 +5,13 @@ import Tiktok from '..//images/LogoRedesSociales/tiktok.svg'
 import Facebook from '..//images/LogoRedesSociales/facebook-f.svg'
 import Instagram from '..//images/LogoRedesSociales/instagram.svg'
 import Linkedin from '..//images/LogoRedesSociales/linkedin-in.svg'
-
+import bcp from '../images/FormasdePago/bcp.jpg'
+import mastercard from '../images/FormasdePago/mastercard.jpg'
+import mercadopago from '../images/FormasdePago/mercadopago.png'
+import paypal from '../images/FormasdePago/paypal.png'
+import scotiabank from '../images/FormasdePago/scotiabank.jpg'
+import visa from '../images/FormasdePago/visa.jpg'
+import libro from '../images/libro.png'
 
 
 export default function Footer() {
@@ -67,6 +73,19 @@ export default function Footer() {
                                 rel="noreferrer" target="_blank">
                                 <img className='svg-effect' src={Tiktok} alt='tiktok' height={'35px'} />
                             </a>
+                        </div>
+                    </div>
+                    <div className="footer-description-pago">
+                        <h4><strong>Formas de pago</strong></h4>
+                        <div className="pago-container">
+
+                            <img src={bcp} alt='bcp' height={'45px'} />
+                            <img src={scotiabank} alt='scotiabank' height={'45px'} />
+                            <img src={visa} alt='visa' height={'45px'} />
+                            <img src={mastercard} alt='mastercard' height={'45px'} />
+                            <img src={mercadopago} alt='mercadopago' height={'45px'} />
+                            <img src={paypal} alt='paypal' height={'45px'} />
+
                         </div>
                     </div>
                 </div>
@@ -253,6 +272,13 @@ export default function Footer() {
                                 <h5>Av. Ejército 710 Yanahuara </h5>
                             </div>
                         </div>
+                    </div>
+                    <h4><strong>Libro de Reclamaciones</strong></h4>
+                    <div className="libro-container">
+                        <a href="https://librodereclamacionesperu.com/formulario.php?id=853131633"
+                            rel="noreferrer" target="_blank">
+                            <img src={libro} alt='bcp' height={'65px'} />
+                        </a>
                     </div>
                 </div>
 

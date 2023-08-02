@@ -278,6 +278,29 @@ section {
   color: #666666 !important;
 }
 
+.footer-description-pago {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pago-container {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.pago-container img {
+  border-radius: 5px;
+}
+
+.libro-container {
+  padding-bottom: 10px;
+}
+
 @media (max-width: 768px) {
   .footer-description {
     height: 100%;
@@ -287,5 +310,8 @@ section {
   }
   .footer-description-nuestrosservicios {
     margin-top: 20px;
+  }
+  .footer-text {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=Footer.css.map */

@@ -9,7 +9,7 @@
     justify-content: space-around;
     align-items: flex-start;
     color: $blanco;
-    box-shadow: inset 0px 10px 80px 0 rgb(0,0,0,0.8);
+    box-shadow: inset 0px 10px 80px 0 rgb(0, 0, 0, 0.8);
     padding-top: 20px;
 }
 
@@ -95,14 +95,14 @@
     padding-top: 20px;
 }
 
-.llamanos_container{
+.llamanos_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.horario_container{
+.horario_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,14 +151,43 @@
     color: $gris-oscuro !important;
 }
 
+
+.footer-description-pago {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pago-container {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.pago-container img {
+    border-radius: 5px;
+}
+
+.libro-container{
+    padding-bottom: 10px;
+}
+
 @media (max-width: 768px) {
-    .footer-description{
+    .footer-description {
         height: 100%;
         width: 768px;
         flex-direction: column;
         align-items: center;
     }
-    .footer-description-nuestrosservicios{
+
+    .footer-description-nuestrosservicios {
         margin-top: 20px;
+    }
+
+    .footer-text {
+        font-size: 12px;
     }
 }
