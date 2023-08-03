@@ -166,58 +166,152 @@
     filter: brightness(0) invert(1);
 }
 
-@media (max-width: 768px){
-    .amddi_container{
+@media (max-width: 768px) {
+    .amddi_container {
         width: 100%;
     }
-    .quienessomos{
+
+    .quienessomos {
         width: 100%;
         height: 100vh;
         margin-top: 50px;
 
     }
-    .quienessomos-container{
+
+    .quienessomos-container {
         width: 350px;
-        height: 98%;
+        height: 460px;
         padding-left: 0;
 
     }
-    .quienessomos-img{
+
+    .quienessomos-img {
         display: none;
         width: 0;
         height: 0;
     }
-    .quienessomos-descripcion{
+
+    .quienessomos-descripcion {
         width: 90%;
         margin-right: 0;
         top: 5%;
     }
-    .vimi-container{
+
+    .vimi-container {
         width: 350px;
         flex-direction: column;
     }
-    .vision{
+
+    .vision {
         width: 350px !important;
-        h4{
+
+        h4 {
             font-size: 19px !important;
         }
 
     }
-    .mision{
+
+    .mision {
         width: 350px !important;
         margin-top: 50px;
-        h4{
+
+        h4 {
             font-size: 19px !important;
         }
     }
-    .valores-container{
+
+    .valores-container {
         width: 350px !important;
         margin: 20px 0 20px 0 !important;
     }
-    .valores{
+
+    .valores {
         width: 350px !important;
     }
-    .accordion{
+
+    .accordion {
         width: 350px !important;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .vimi-container {
+        width: 80vw;
+    }
+
+    .vision {
+        width: 500px !important;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+    }
+
+    .mision {
+        width: 500px !important;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+    }
+
+    .titulo-vimi {
+        font-size: 40px;
+    }
+
+    .img-logo-vimi {
+        height: 50px;
+    }
+
+    .img-titulo {
+        padding: 10px 0 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .vimi {
+        h4 {
+            font-size: 25px !important;
+        }
+    }
+
+    .valores-container {
+        width: 700px !important;
+    }
+
+    .valores {
+        width: 650px !important;
+    }
+
+    .accordion {
+        width: 600px !important;
+    }
+
+    .accordion-button {
+        font-size: 25px !important;
+    }
+
+    .accordion-body {
+        p {
+            font-size: 25px !important;
+        }
+    }
+
+    .img-titulo {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+
+    .quienessomos-descripcion {
+        font-size: 30px !important;
+    }
+
+    .quienessomos-container{
+        width: 1200px !important;
+    }
+    .quienessomos{
+        width: 1800px;
+    }
+    .quienessomos-descripcion{
+        width: 680px;
     }
 }

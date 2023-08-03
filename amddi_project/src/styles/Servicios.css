@@ -363,4 +363,21 @@ section {
   .servicio_description {
     width: 320px;
   }
+}
+@media (min-width: 1500px) {
+  .carreras_container {
+    height: calc(100vh - 120px) !important;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicios_card {
+    width: 800px;
+  }
+  .servicio_description {
+    width: 95%;
+  }
+  .servicio_description p {
+    font-size: 20px !important;
+  }
 }/*# sourceMappingURL=Servicios.css.map */

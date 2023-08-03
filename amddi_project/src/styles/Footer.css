@@ -328,4 +328,78 @@ section {
   .container-list {
     width: 90%;
   }
+}
+@media (min-width: 1500px) {
+  .footer_container {
+    width: 100% !important;
+    font-weight: 600;
+  }
+  .footer-description {
+    width: 100%;
+    height: 800px;
+  }
+  .footer-content {
+    width: 500px;
+  }
+  .footer-content h5 {
+    font-size: 20px !important;
+  }
+  .footer-description-amddi {
+    width: 500px;
+  }
+  .footer-description-amddi h4 {
+    font-size: 30px !important;
+  }
+  .container-ictel h5 {
+    font-size: 20px !important;
+  }
+  .footer-description-llamanos {
+    width: 100%;
+  }
+  .card-ictel svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .footer-description-pago {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .svg-effect {
+    height: 50px;
+  }
+  .footer-description-redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pago-container img {
+    height: 60px;
+  }
+  .footer-description-nuestrosservicios {
+    width: 600px;
+  }
+  .footer-description-nuestrosservicios h4 {
+    font-size: 30px !important;
+  }
+  .footer-description-nuestrosservicios .container-list li .servicios h5 {
+    font-size: 22px !important;
+  }
+  .footer-description-ubicanos {
+    width: 500px;
+  }
+  .footer-description-ubicanos h4 {
+    font-size: 30px !important;
+  }
+  .li-effect {
+    font-size: 20px !important;
+  }
+  .card-localizacion h5 {
+    font-size: 20px !important;
+  }
+  .card-icloc svg {
+    width: 50px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

@@ -148,3 +148,28 @@
     }
     
 }
+
+@media (min-width: 1500px){
+    .caracterisctia_servicios_container{
+        width: 800px;
+        height: 800px;
+    }
+    .img-carousel{
+        height: calc(100vh - 120px) !important;
+        width: 100vw !important;
+    }
+    .carousel_container{
+        width: 100vw;
+    }
+    #carouselExample{
+        width: 100vw !important;
+    }
+    .servicios_descripcion{
+        font-size: 18px !important;
+    }
+    .lista_servicios{
+        li{
+            font-size: 18px !important;
+        }
+    }
+}

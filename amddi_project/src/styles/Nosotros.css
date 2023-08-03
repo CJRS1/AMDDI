@@ -306,7 +306,7 @@ section {
   }
   .quienessomos-container {
     width: 350px;
-    height: 98%;
+    height: 460px;
     padding-left: 0;
   }
   .quienessomos-img {
@@ -345,5 +345,65 @@ section {
   }
   .accordion {
     width: 350px !important;
+  }
+}
+@media (min-width: 1500px) {
+  .vimi-container {
+    width: 80vw;
+  }
+  .vision {
+    width: 500px !important;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+  }
+  .mision {
+    width: 500px !important;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+  }
+  .titulo-vimi {
+    font-size: 40px;
+  }
+  .img-logo-vimi {
+    height: 50px;
+  }
+  .img-titulo {
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+  }
+  .vimi h4 {
+    font-size: 25px !important;
+  }
+  .valores-container {
+    width: 700px !important;
+  }
+  .valores {
+    width: 650px !important;
+  }
+  .accordion {
+    width: 600px !important;
+  }
+  .accordion-button {
+    font-size: 25px !important;
+  }
+  .accordion-body p {
+    font-size: 25px !important;
+  }
+  .img-titulo h2 {
+    font-size: 30px !important;
+  }
+  .quienessomos-descripcion {
+    font-size: 30px !important;
+  }
+  .quienessomos-container {
+    width: 1200px !important;
+  }
+  .quienessomos {
+    width: 1800px;
+  }
+  .quienessomos-descripcion {
+    width: 680px;
   }
 }/*# sourceMappingURL=Nosotros.css.map */

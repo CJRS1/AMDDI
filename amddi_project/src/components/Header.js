@@ -14,6 +14,16 @@ export default function Header() {
     function handleLinkClick() {
         setMenuOpen(false);
     }
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const showMenu = (e) => {
+        e.preventDefault();
+        setIsMenuOpen(!isMenuOpen);
+    }
+
+
+
     const isMobile = useMediaQuery({ maxWidth: 768 });
 
     const menuClass = isMobile ? 'dropdown-menu-end' : '';
@@ -44,7 +54,7 @@ export default function Header() {
                                     {/* <li> <HashLink to="/AMDDI/servicios#redacciontesispregrado" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Pregrado </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#redacciontesispostgrado" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Postgrado </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#redacciontesismaestria" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Maestría </HashLink> </li> */}
-                                    <li className="dropdown li-redacciongeneral">
+                                    <li className="dropdown li-redacciongeneral" onClick={showMenu}>
                                         <Link to="/AMDDI/servicios" className="dropdown-toggle li-redaccion-title">Redacción de Tesis</Link>
                                         {/* Menú desplegable para "Redacción de Tesis" */}
                                         <ul className="dropdown-menu-redaccion">

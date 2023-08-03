@@ -1,6 +1,6 @@
 @import 'Variables';
 
-.servicios_container{
+.servicios_container {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.servicio_container{
+.servicio_container {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
 }
 
 
-.servicios_card{
+.servicios_card {
     height: 400px;
     width: 600px;
     margin-top: 80px;
@@ -27,26 +27,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h2 {
         text-align: center;
     }
 }
 
-.card_servicio{
+.card_servicio {
     width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    button{
+
+    button {
         margin-bottom: 0 !important;
     }
 }
 
 
 
-.carreras_container{
+.carreras_container {
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -54,7 +56,7 @@
     // align-items: center;
 }
 
-.servicios_caracteristicas{
+.servicios_caracteristicas {
     width: 1200px;
     height: 800px;
     background: $verde-lima;
@@ -64,52 +66,55 @@
     border-radius: 10px;
     padding: 0px 20px 0px 20px;
     margin-top: 140px;
-    .titulo2{
+
+    .titulo2 {
         display: inline-block;
-        h2{ 
+
+        h2 {
             display: inline-block;
             text-align: center !important;
         }
     }
 }
 
-.servicios_titulo{
+.servicios_titulo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
 }
 
-.servicios_carreras{
+.servicios_carreras {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:flex-start;
-    li{
+    align-items: flex-start;
+
+    li {
         color: $blanco;
     }
 }
 
-.servicios_list{
+.servicios_list {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
 
-.servicio_description{
+.servicio_description {
     width: 600px;
     padding: 20px 30px 20px 30px;
     text-align: justify;
     color: $blanco;
 }
 
-.button-effect{
+.button-effect {
     border: 2px solid $blanco !important;
     margin-bottom: 0px !important;
 }
 
-.biologicas{
+.biologicas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,10 +123,12 @@
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     border: 1px solid $blanco !important;
-    h3{
+
+    h3 {
         align-items: center;
     }
-    ul{
+
+    ul {
         margin-bottom: 0;
         display: flex;
         flex-direction: column;
@@ -129,7 +136,7 @@
     }
 }
 
-.ingenieria{
+.ingenieria {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +147,7 @@
     border: 1px solid $blanco !important;
 }
 
-.basicas{
+.basicas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,12 +156,13 @@
     border-radius: 10px;
     padding: 10px 0 10px 0;
     border: 1px solid $blanco !important;
-    ul{
+
+    ul {
         padding-right: 10px;
     }
 }
 
-.sociales{
+.sociales {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +173,7 @@
     border: 1px solid $blanco !important;
 }
 
-.empresariales{
+.empresariales {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +184,7 @@
     border: 1px solid $blanco !important;
 }
 
-.salud{
+.salud {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,53 +195,85 @@
     border: 1px solid $blanco !important;
 }
 
-.carrera_grupo{
+.carrera_grupo {
     display: grid;
-    grid-auto-rows: auto; 
+    grid-auto-rows: auto;
     row-gap: 20px;
 }
 
 
 
-@media (max-width: 768px){
-    .servicios_container{
+@media (max-width: 768px) {
+    .servicios_container {
         height: auto;
     }
-    .carreras_container{
+
+    .carreras_container {
         height: 100%;
     }
-    .servicios_caracteristicas{
+
+    .servicios_caracteristicas {
         width: 320px;
         height: 100%
     }
-    .servicios_card{
+
+    .servicios_card {
         height: 75%;
         width: 320px;
     }
-    .servicios_carreras{
+
+    .servicios_carreras {
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
-    .servicios_titulo{
+
+    .servicios_titulo {
         padding-top: 20px;
         text-align: center;
         padding-bottom: 0;
     }
-    .ingenieria{
+
+    .ingenieria {
         margin-top: 5px;
     }
-    .servicios_list{
+
+    .servicios_list {
         margin-top: 5px;
     }
-    .carrera_grupo{
+
+    .carrera_grupo {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .sociales{
+
+    .sociales {
         margin-top: 20px;
     }
-    .servicio_description{
+
+    .servicio_description {
         width: 320px;
     }
+}
+
+@media (min-width: 1500px) {
+    .carreras_container {
+        height: calc(100vh - 120px) !important;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicios_card {
+        width: 800px;
+    }
+
+    .servicio_description {
+        width: 95%;
+
+        p {
+            font-size: 20px !important;
+        }
+    }
+
 }
