@@ -41,8 +41,18 @@ export default function Header() {
                                 </Link>
                                 <ul className={`dropdown-menu bg-gris ${menuClass}`} >
                                     <li> <HashLink to="/AMDDI/servicios#carreras" className="dropdown-item" onClick={handleLinkClick}>Carreras Asesoradas </HashLink> </li>
-                                    <li> <HashLink to="/AMDDI/servicios#redacciontesispregrado" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Pregrado </HashLink> </li>
+                                    {/* <li> <HashLink to="/AMDDI/servicios#redacciontesispregrado" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Pregrado </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#redacciontesispostgrado" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Postgrado </HashLink> </li>
+                                    <li> <HashLink to="/AMDDI/servicios#redacciontesismaestria" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Maestría </HashLink> </li> */}
+                                    <li className="dropdown">
+                                        <Link to="/AMDDI/servicios" className="dropdown-toggle">Redacción de Tesis</Link>
+                                        {/* Menú desplegable para "Redacción de Tesis" */}
+                                        <ul className="dropdown-menu-redaccion">
+                                            <li> <HashLink to="/AMDDI/servicios#redacciontesispregrado" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Pregrado </HashLink> </li>
+                                            <li> <HashLink to="/AMDDI/servicios#redacciontesispostgrado" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Postgrado </HashLink> </li>
+                                            <li> <HashLink to="/AMDDI/servicios#redacciontesismaestria" className="dropdown-item" onClick={handleLinkClick}>Redacción de Tesis de Maestría </HashLink> </li>
+                                        </ul>
+                                    </li>
                                     <li> <HashLink to="/AMDDI/servicios#levantamientoobservacionespregrado" className="dropdown-item" onClick={handleLinkClick}>Levantamiento de Observaciones Pregrado </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#levantamientoobservacionesmaestria" className="dropdown-item" onClick={handleLinkClick}>Levantamiento de Observaciones Maestría </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#parafraseo" className="dropdown-item" onClick={handleLinkClick}>Parafraseo </HashLink> </li>

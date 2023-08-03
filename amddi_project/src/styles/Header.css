@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Poppins", sans-serif !important;
 }
@@ -184,6 +185,32 @@ a {
 .nav-link:hover {
   transform: scale(1.1) !important;
   transition: all 0.5s ease-in-out !important;
+}
+
+.dropdown-menu-redaccion {
+  display: none;
+  /* Puedes agregar estilos adicionales aquí, como position: absolute, right: 0, etc. */
+  /* Ajustamos el estilo para mostrar el menú a la derecha */
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  background: #00d799;
+}
+
+/* Mostrar el menú al hacer hover en el elemento padre */
+.dropdown:hover .dropdown-menu-redaccion {
+  display: block;
+}
+
+/* Mostrar el menú al hacer clic en el elemento padre */
+.dropdown:focus .dropdown-menu-redaccion {
+  display: block;
+}
+
+.dropdown-menu-redaccion li:hover {
+  background-color: red !important;
 }
 
 @media (max-width: 768px) {

@@ -51,6 +51,31 @@ a {
     transition: all $transition ease-in-out !important;
 }
 
+.dropdown-menu-redaccion {
+    display: none;
+    /* Puedes agregar estilos adicionales aquí, como position: absolute, right: 0, etc. */
+    /* Ajustamos el estilo para mostrar el menú a la derecha */
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    background: $verde-lima;
+}
+
+/* Mostrar el menú al hacer hover en el elemento padre */
+.dropdown:hover .dropdown-menu-redaccion {
+    display: block;
+}
+
+/* Mostrar el menú al hacer clic en el elemento padre */
+.dropdown:focus .dropdown-menu-redaccion {
+    display: block;
+}
+.dropdown-menu-redaccion li:hover {
+    background-color: red !important;
+}
+
 @media (max-width: 768px) {
     .header_container {
         max-width: 100%;

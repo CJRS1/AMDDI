@@ -45,7 +45,7 @@ function App() {
       </Routes>
 
       <Footer />
-      <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer">
+      <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer">
         <img src={require('../src/images/LogoRedesSociales/Whatsapp.png')} alt='Whatsapp' height={'80px'} width={'80x'} className="whatsapp-icon" />
       </a>
     </Router>

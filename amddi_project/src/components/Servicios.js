@@ -141,6 +141,20 @@ export default function Servicios() {
                         </svg> Descarga el Browsure</button>
                     </div>
                 </div>
+                <div id="redacciontesismaestria" className="servicio_container">
+                    <div className="servicios_card">
+                        <h2>Redacción de Tesis de Maestría</h2>
+                        <div className="servicio_description">
+                            <p>
+                            Como expertos en tesis de maestría, te ofrecemos asesoría personalizada para realizar una investigación sobresaliente y obtener tu título. Trabajamos directamente en el planteamiento del problema, marco teórico, metodología y análisis de resultados para garantizar una tesis estructurada y bien sustentada. Con nuestra guía ganarás en calidad académica. Descarga más información sobre nuestros servicios de redacción de tesis de posgrado y maestrías. 
+                            </p>
+                        </div>
+                        <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg> Descarga el Browsure</button>
+                    </div>
+                </div>
                 <div id="levantamientoobservacionespregrado" className="servicio_container">
                     <div className="servicios_card">
                         <h2>Levantamiento de Observaciones Pregrado</h2>

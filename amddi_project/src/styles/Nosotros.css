@@ -296,14 +296,17 @@ section {
 }
 
 @media (max-width: 768px) {
+  .amddi_container {
+    width: 100%;
+  }
   .quienessomos {
-    width: 360px;
+    width: 100%;
     height: 100vh;
     margin-top: 50px;
   }
   .quienessomos-container {
     width: 350px;
-    height: 100%;
+    height: 98%;
     padding-left: 0;
   }
   .quienessomos-img {

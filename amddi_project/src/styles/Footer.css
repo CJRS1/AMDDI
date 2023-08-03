@@ -137,7 +137,7 @@ section {
 }
 
 .footer-description {
-  height: 630px;
+  height: 660px;
   width: 1481px;
   background: #00d799;
   display: flex;
@@ -301,6 +301,10 @@ section {
   padding-bottom: 10px;
 }
 
+.container-list {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .footer_container {
     width: 100%;
@@ -316,5 +320,8 @@ section {
   }
   .footer-text {
     font-size: 12px;
+  }
+  .container-list {
+    width: 90%;
   }
 }/*# sourceMappingURL=Footer.css.map */
