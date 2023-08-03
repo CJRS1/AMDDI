@@ -272,7 +272,7 @@ a {
     display: block;
     position: fixed;
     width: 100%;
-    min-height: 100vh !important;
+    height: 100%;
     overflow-y: auto;
     top: 0;
     left: 0;
@@ -292,5 +292,28 @@ a {
   }
   .dropdown-item {
     min-height: 0;
+  }
+  .li-redacciongeneral {
+    display: flex;
+    align-items: flex-start !important;
+  }
+  .navbar-nav {
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+  }
+  .dropdown-menu-end {
+    width: 370px;
+  }
+  .dropdown-menu-redaccion {
+    /* Puedes agregar estilos adicionales aquí, como position: absolute, right: 0, etc. */
+    /* Ajustamos el estilo para mostrar el menú a la derecha */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 96px;
+    background: #00d799 !important;
+    z-index: 2;
   }
 }/*# sourceMappingURL=Header.css.map */
