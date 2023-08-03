@@ -278,7 +278,7 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <h4><strong>Libro de Reclamaciones</strong></h4>
+                    <h4 className='margin_title'><strong>Libro de Reclamaciones</strong></h4>
                     <div className="libro-container">
                         <a href="https://librodereclamacionesperu.com/formulario.php?id=853131633"
                             rel="noreferrer" target="_blank" >

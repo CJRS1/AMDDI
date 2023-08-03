@@ -187,6 +187,10 @@ section {
   justify-content: center;
 }
 
+.margin_title {
+  margin-top: 20px !important;
+}
+
 @keyframes scale {
   0% {
     transform: scale(1);

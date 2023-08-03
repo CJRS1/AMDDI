@@ -166,6 +166,18 @@ section {
   text-align: center;
 }
 
+.card_servicio {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card_servicio button {
+  margin-bottom: 0 !important;
+}
+
 .carreras_container {
   height: 800px;
   display: flex;
