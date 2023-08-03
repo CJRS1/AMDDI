@@ -249,6 +249,14 @@ a {
   background: #00d799 !important;
 }
 
+.dropdown-menu-redaccion {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .header_container {
     max-width: 100%;
@@ -296,6 +304,7 @@ a {
   .li-redacciongeneral {
     display: flex;
     align-items: flex-start !important;
+    display: none !important;
   }
   .navbar-nav {
     width: 100%;
@@ -306,6 +315,7 @@ a {
     width: 370px;
   }
   .dropdown-menu-redaccion {
+    display: none;
     /* Puedes agregar estilos adicionales aquí, como position: absolute, right: 0, etc. */
     /* Ajustamos el estilo para mostrar el menú a la derecha */
     position: absolute;
@@ -315,5 +325,11 @@ a {
     height: 96px;
     background: #00d799 !important;
     z-index: 2;
+  }
+  .li-redacciongeneral.open .dropdown-menu-redaccion {
+    display: block !important;
+  }
+  .hidden {
+    display: block !important;
   }
 }/*# sourceMappingURL=Header.css.map */
