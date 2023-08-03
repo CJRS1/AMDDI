@@ -57,13 +57,13 @@ export default function Carousel() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div class="caracteristica_servicios" id="inicio">
-                <div class="caracterisctia_servicios_container">
+            <div className="caracteristica_servicios" id="inicio">
+                <div className="caracterisctia_servicios_container">
                     <h2 className='nuestros_servicios_title'>Nuestros Servicios</h2>
-                    <p class="servicios_descripcion">
+                    <p className="servicios_descripcion">
                         En nuestra plataforma ofrecemos servicios académicos de alta calidad para brindarte el apoyo necesario en el desarrollo de tu tesis. Nuestro equipo de expertos te guiará en cada etapa del proceso de investigación y redacción, asegurándonos de que alcances tus objetivos académicos con éxito. En AMDDI nos encocamos en:
                     </p>
-                    <ul class="lista_servicios">
+                    <ul className="lista_servicios">
                         <li>Asesoría y orientación en el tema de tesis.</li>
                         <li>Revisión y retroalimentación sobre el diseño de la investigación y la formulación del problema.</li>
                         <li>Asistencia en la revisión de literatura y búsqueda de fuentes académicas relevantes.</li>
@@ -75,8 +75,8 @@ export default function Carousel() {
                         <li>Orientación en la estructura y formato requeridos por la institución académica.</li>
                         <li>Asesoramiento sobre aspectos éticos y de integridad académica.</li>
                     </ul>
-                    {/* <!-- <img class="imagen_servicios" src="ruta_de_la_imagen.jpg" alt="Imagen representativa"> --> */}
-                    <Link to="/AMDDI/servicios" class="boton_servicios button-effect" >Ver Más</Link>
+                    {/* <!-- <img className="imagen_servicios" src="ruta_de_la_imagen.jpg" alt="Imagen representativa"> --> */}
+                    <Link to="/AMDDI/servicios" className="boton_servicios button-effect" >Ver Más</Link>
                 </div>
             </div>
         </section>

@@ -82,9 +82,9 @@ export default function Testimonios() {
                             <textarea className="form-control my-input" name="message" id="exampleFormControlTextarea1" style={{ width: '610px' }} rows="5"
                                 placeholder="Buenas tardes, yo AMDDI, quiero trabajar con ustedes en el área de ... *" required></textarea>
                         </div>
-                        <div class="mb-3 d-flex flex-column custom-file seleccionar-archivo">
+                        <div className="mb-3 d-flex flex-column custom-file seleccionar-archivo">
 
-                            <input class="form-control btn color-button" name="file" type="file"
+                            <input className="form-control btn color-button" name="file" type="file"
                                 id="formFileMultiple" accept=".pdf" required />
                         </div>
                         <button type="submit" className="btn button-contact">Enviar el formulario</button>

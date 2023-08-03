@@ -45,124 +45,124 @@ export default function Nosotros() {
             <div className="valores-container" >
                 <div className="valores">
                     <h2>Nuestros Valores</h2>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div className="accordion" id="accordionExample">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     1. Excelencia académica
                                     
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Comprometidos con la calidad y precisión en cada aspecto de nuestra asesoría para garantizar resultados sobresalientes en proyectos de investigación.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     2. Integridad:
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Actuamos con honestidad y ética, promoviendo la originalidad y autenticidad en todos los trabajos académicos.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     3. Compromiso con el cliente:
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Priorizamos las necesidades de nuestros clientes y nos esforzamos por brindar un servicio personalizado y atento para alcanzar su satisfacción y éxito académico.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     4. Colaboración:
                                 </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Fomentamos un ambiente de trabajo cooperativo, donde el trabajo en equipo y la comunicación efectiva son fundamentales para lograr los mejores resultados.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     5. Innovación:
                                 </button>
                             </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Buscamos constantemente nuevas formas de mejorar nuestros servicios y adoptar tecnologías y metodologías avanzadas en el ámbito de la asesoría de tesis.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     6. Responsabilidad social:
                                 </button>
                             </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Reconocemos nuestra responsabilidad hacia la sociedad y nos esforzamos por promover la investigación que tenga un impacto positivo en el conocimiento y el bienestar de la comunidad.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                     7. Confidencialidad:
                                 </button>
                             </h2>
-                            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseSeven" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Respetamos la privacidad y confidencialidad de nuestros clientes, garantizando la protección de sus datos e información personal.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                     8. Aprendizaje continuo:
                                 </button>
                             </h2>
-                            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseEight" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Promovemos un ambiente de aprendizaje y desarrollo profesional para nuestro equipo, con el fin de mantenernos actualizados en las últimas tendencias y avances académicos.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                                     9. Diversidad e inclusión:
                                 </button>
                             </h2>
-                            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseNine" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Valoramos la diversidad de perspectivas y experiencias, y nos esforzamos por crear un ambiente inclusivo donde todos se sientan respetados y valorados.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                                     10.	Empoderamiento académico:
                                 </button>
                             </h2>
-                            <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseTen" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <p>Nos dedicamos a empoderar a nuestros clientes con conocimientos y habilidades que les permitan ser investigadores autónomos y competentes. Buscamos fortalecer sus capacidades intelectuales y técnicas para que puedan abordar futuros desafíos académicos y profesionales con confianza y éxito.</p>
                                 </div>
                             </div>
