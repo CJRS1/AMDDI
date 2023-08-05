@@ -164,7 +164,9 @@ section {
   padding: 0 0 0 20px;
   border-radius: 10px;
   position: relative;
-  background: #00d799;
+  background-image: url(../images/fonto_verde.jpeg);
+  background-size: 500px 500px;
+  background-repeat: repeat;
 }
 
 .quienessomos-descripcion {
@@ -260,14 +262,18 @@ section {
   width: 550px !important;
   height: auto !important;
   max-height: 1000px !important;
-  background: #00d799;
+  background-image: url(../images/fonto_verde.jpeg);
+  background-size: 500px 500px;
+  background-repeat: repeat;
   border-radius: 10px;
   padding: 20px 0 30px 0 !important;
 }
 
 .accordion-button {
   color: white !important;
-  background-color: #00d799 !important;
+  background-image: url(../images/fonto_verde.jpeg);
+  background-size: 500px 500px;
+  background-repeat: repeat;
 }
 
 .accordion-body p {
@@ -275,7 +281,9 @@ section {
 }
 
 .accordion-collapse {
-  background-color: #00d799 !important;
+  background-image: url(../images/fonto_verde.jpeg);
+  background-size: 500px 500px;
+  background-repeat: repeat;
 }
 
 .accordion-button::before {

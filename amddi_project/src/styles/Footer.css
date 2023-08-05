@@ -139,7 +139,9 @@ section {
 .footer-description {
   height: 660px;
   width: 1481px;
-  background: #00d799;
+  background-image: url(../images/fonto_verde.jpeg);
+  background-size: 500px 500px;
+  background-repeat: repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -283,6 +285,7 @@ section {
 
 .footer-description-pago {
   padding-top: 15px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -306,6 +309,15 @@ section {
 
 .container-list {
   width: 100%;
+  margin-bottom: 0 !important;
+}
+
+.programas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -360,7 +372,7 @@ section {
     height: 30px !important;
   }
   .footer-description-pago {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 100%;
   }
   .svg-effect {

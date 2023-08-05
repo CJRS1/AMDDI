@@ -75,19 +75,7 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
-                    <div className="footer-description-pago">
-                        <h4><strong>Formas de pago</strong></h4>
-                        <div className="pago-container">
 
-                            <img src={bcp} alt='bcp' height={'45px'} />
-                            <img src={scotiabank} alt='scotiabank' height={'45px'} />
-                            <img src={visa} alt='visa' height={'45px'} />
-                            <img src={mastercard} alt='mastercard' height={'45px'} />
-                            <img src={mercadopago} alt='mercadopago' height={'45px'} />
-                            <img src={paypal} alt='paypal' height={'45px'} />
-
-                        </div>
-                    </div>
                 </div>
                 <div className="footer-description-nuestrosservicios">
                     <h4><strong>Nuestros servicios</strong></h4>
@@ -122,6 +110,17 @@ export default function Footer() {
                                 <h5>Levantamiento de Observaciones Maestría</h5>
                             </HashLink>
                         </li>
+                        <li >
+                            <HashLink smooth to="/AMDDI/servicios#articulocientifico" className="servicios li-effect" href="#articulo">
+                                <h5>Artículo Científico</h5>
+                            </HashLink>
+                        </li>
+                        <li >
+                            <HashLink smooth to="/AMDDI/servicios#plannegocio" className="servicios li-effect" href="#plan">
+                                <h5>Planes de Negocio</h5>
+                            </HashLink>
+                        </li>
+
                         {/* <li >
                             <HashLink smooth to="/AMDDI/servicios#parafraseo" className="servicios li-effect" href="#parafraseo">
                                 <h5>Parafraseo</h5>
@@ -193,16 +192,33 @@ export default function Footer() {
                             </HashLink>
                         </li> */}
                     </ul>
+                    <div className="footer-description-pago">
+                        <h4><strong>Formas de pago</strong></h4>
+                        <div className="pago-container">
+
+                            <img src={bcp} alt='bcp' height={'45px'} />
+                            <img src={scotiabank} alt='scotiabank' height={'45px'} />
+                            <img src={visa} alt='visa' height={'45px'} />
+                            <img src={mastercard} alt='mastercard' height={'45px'} />
+                            <img src={mercadopago} alt='mercadopago' height={'45px'} />
+                            <img src={paypal} alt='paypal' height={'45px'} />
+
+                        </div>
+                    </div>
+                    <div className="programas">
+                        <h4><strong>Programas de Beneficios</strong></h4>
+
+                        <div className="container-list">
+                            <ul>
+                                <li><HashLink smooth to="/AMDDI/ingresosextra" className="li-effect"> Ingresos Extra</HashLink> </li>
+                                <li><HashLink smooth to="/AMDDI/investigacionsostenible" className="li-effect"> Investigación Sostenible</HashLink> </li>
+                                <li><HashLink smooth to="/AMDDI/emprendimientojoven" className="li-effect"> Emprendimiento Joven</HashLink> </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className="footer-description-ubicanos">
-                    <h4><strong>Programas de Beneficios</strong></h4>
-                    <div className="container-list">
-                        <ul>
-                            <li><HashLink smooth to="/AMDDI/ingresosextra" className="li-effect"> Ingresos Extra</HashLink> </li>
-                            <li><HashLink smooth to="/AMDDI/investigacionsostenible" className="li-effect"> Investigación Sostenible</HashLink> </li>
-                            <li><HashLink smooth to="/AMDDI/emprendimientojoven" className="li-effect"> Emprendimiento Joven</HashLink> </li>
-                        </ul>
-                    </div>
+
                     <h4><strong>Ubícanos</strong></h4>
                     <div className="ubi-list">
                         <div className="card-icloc">
@@ -213,7 +229,7 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg>
                             <a href='https://goo.gl/maps/A2tvJ1vVgeFuwbZX7' target='_blank' rel='noreferrer' className="card-localizacion">
-                                
+
                                 <h5><strong>SAN ISIDRO – LIMA</strong></h5>
                                 <h5>Calle German Schreiber 276</h5>
                             </a>

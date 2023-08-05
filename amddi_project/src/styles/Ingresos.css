@@ -150,8 +150,10 @@ section {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background: #00d799;
   border-radius: 10px;
+  background-image: url(../images/fonto_verde.jpeg);
+  background-size: 500px 500px;
+  background-repeat: repeat;
 }
 .ingresos_description p {
   font-size: 18px;

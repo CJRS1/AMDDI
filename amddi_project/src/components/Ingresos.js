@@ -15,7 +15,7 @@ export default function Testimonios() {
             
             <div className="ingresos_description">
                 <div className="ingresos_card">
-                    <h2 className="titulo"><strong>Programa de Ingresos Extras</strong></h2>
+                    <h2 className="titulo"><strong>Programa de 50 / 50</strong></h2>
                     <p>
                         Gana ingresos extras desde casa
                         Únete a nuestra comunidad freelance eligiendo entre:
