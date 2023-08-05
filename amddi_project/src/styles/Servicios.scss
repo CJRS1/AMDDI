@@ -144,7 +144,22 @@
     width: 230px;
     border-radius: 10px;
     padding: 10px 0 10px 0;
+    background: $blanco;
     border: 1px solid $blanco !important;
+    h3{
+        color: $verde-lima !important;
+    }
+    ul{
+        list-style: none !important;
+        text-decoration: none !important;
+        li{
+            text-decoration: none !important;
+            padding-right: 10px;
+            color: $verde-lima !important;
+            font-weight: 800;
+            text-shadow: black 0.01em 0.01em 0.01em;
+    }
+}
 }
 
 .basicas {

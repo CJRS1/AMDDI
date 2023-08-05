@@ -122,7 +122,7 @@ export default function Footer() {
                                 <h5>Levantamiento de Observaciones Maestría</h5>
                             </HashLink>
                         </li>
-                        <li >
+                        {/* <li >
                             <HashLink smooth to="/AMDDI/servicios#parafraseo" className="servicios li-effect" href="#parafraseo">
                                 <h5>Parafraseo</h5>
                             </HashLink>
@@ -191,7 +191,7 @@ export default function Footer() {
                             <HashLink smooth to="/AMDDI/servicios#cursos" className="servicios li-effect" href="#cursos">
                                 <h5>Curso Online: próximamente...</h5>
                             </HashLink>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 <div className="footer-description-ubicanos">

@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1 {
+  font-size: 30px;
+  width: 140px !important;
+  color: #ffffff !important;
+  display: inline-block !important;
+  margin: 0 0 0 0 !important;
+  height: 40px !important;
+  font-weight: 900 !important;
+  display: inline;
+  text-align: justify !important;
+}
+
+h2 {
+  color: #ffffff !important;
+}
+
+h3 {
+  text-align: center !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+}
+
+h4 {
+  font-size: 20px !important;
+  text-align: justify !important;
+  display: inline;
+  margin: 0 !important;
+  padding-bottom: 10px !important;
+}
+
+h5 {
+  font-size: 15px !important;
+}
+
+p {
+  color: #ffffff !important;
+}
+
+a,
+ul,
+li {
+  text-decoration: none !important;
+}
+
+input {
+  color: #00d799 !important;
+}
+
+input::-moz-placeholder {
+  color: #00d799 !important;
+  opacity: 1 !important;
+}
+
+input::placeholder {
+  color: #00d799 !important;
+  opacity: 1 !important;
+}
+
+textarea {
+  color: #00d799 !important;
+}
+
+textarea::-moz-placeholder {
+  color: #00d799 !important;
+}
+
+textarea::placeholder {
+  color: #00d799 !important;
+}
+
+select {
+  color: #00d799 !important;
+}
+
+#root {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+section {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.button-effect {
+  color: #ffffff !important;
+  background-color: #00d799 !important;
+  padding: 10px 10px 10px 10px !important;
+  margin: 0 20px 40px 20px !important;
+}
+
+.button-effect:hover {
+  animation: scale 1s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.whatsapp-icon {
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp-icon:hover {
+  animation: scale 1s infinite;
+}
+
+.zoom {
+  transition: 0.8s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.01);
+}
+
+.registro_container {
+  height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el formulario */
+.form_registro {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #00d799;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los campos de entrada */
+.input_registro {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón de enviar */
+.form_registro button[type=submit] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form_registro button[type=submit]:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=Registro.css.map */

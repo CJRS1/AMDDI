@@ -145,7 +145,6 @@ section {
   justify-content: space-around;
   align-items: flex-start;
   color: #ffffff;
-  box-shadow: inset 0px 10px 80px 0 rgba(0, 0, 0, 0.8);
   padding-top: 20px;
 }
 
@@ -383,8 +382,15 @@ section {
   .footer-description-nuestrosservicios h4 {
     font-size: 30px !important;
   }
+  .footer-description-nuestrosservicios .container-list {
+    font-weight: 700 !important;
+  }
+  .footer-description-nuestrosservicios .container-list li {
+    font-weight: 700 !important;
+  }
   .footer-description-nuestrosservicios .container-list li .servicios h5 {
     font-size: 22px !important;
+    font-weight: 700 !important;
   }
   .footer-description-ubicanos {
     width: 500px;

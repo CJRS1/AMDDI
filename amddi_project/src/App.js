@@ -12,12 +12,15 @@ import Servicios from './components/Servicios';
 import Ingresos from './components/Ingresos';
 import Investigacion from './components/Investigacion';
 import Emprendimiento from './components/Emprendimiento';
+import Subheader from './components/Subheader';
+import Registro from './components/Registro';
+import Login from './components/Login';
 
 function App() {
 
   return (
     <Router>
-
+      <Subheader />
       <Header />
 
       <Routes>
@@ -27,6 +30,10 @@ function App() {
             <Carousel />
           </>
         } />
+
+        <Route path="/AMDDI/registrarse" element={<Registro />} />
+
+        <Route path="/AMDDI/login" element={<Login />} />
 
         <Route path="/AMDDI/servicios" element={<Servicios />} />
 

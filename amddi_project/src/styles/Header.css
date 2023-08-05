@@ -144,7 +144,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #00d799;
+  background-color: #ffffff;
   height: 120px;
   font-size: 20px;
   position: fixed;
@@ -152,7 +152,7 @@ section {
   left: 0;
   right: 0;
   z-index: 999;
-  box-shadow: inset 0 0 20px 0 #666666;
+  box-shadow: 0 0 4px 0 #00d799;
 }
 
 a {
@@ -180,6 +180,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #00d799 !important;
 }
 
 .nav-link:hover {
