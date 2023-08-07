@@ -6,16 +6,21 @@
     color: $blanco !important;
     font-family: 'Poppins', sans-serif !important;
     padding-top: 120px !important;
+    
 }
 
 .container-contacto-lottie {
     display: flex !important;
+    justify-content: center;
     align-items: center;
     width: 1100px;
     height: 580px;
-    background: $verde-lima;
+    // background: rgb(0,215,153,0.6);
     padding-top: 20px;
     border-radius: 20px;
+    background-image: url(../images/fonto_verde.jpeg);
+    background-size: 500px 500px;
+    background-repeat: repeat;
 }
 
 .container-contacto-empresa {
@@ -24,7 +29,7 @@
     justify-content: center;
     align-items: center;
     width: 650px;
-    padding-left: 50px;
+    // padding-left: 50px;
 }
 
 .cont {
@@ -38,8 +43,10 @@
     font-weight: 500 !important;
 }
 
-.my-input {
-    // box-shadow: 0 0 3px 3px rgb(0,0 ,0,0.8);
+.contacto-desc{
+    width: 600px !important;
+    text-align: justify;
+    padding-bottom: 15px;
 }
 
 .cont-text {
@@ -106,6 +113,7 @@
 
     .contacto-desc {
         text-align: justify;
+        
     }
 
     .container-contacto {

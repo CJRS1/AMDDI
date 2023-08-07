@@ -1,0 +1,48 @@
+@import 'Variables';
+
+
+.registro_container {
+    height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el formulario */
+.form_registro {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $verde-lima;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los campos de entrada */
+.input_registro {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de enviar */
+.form_registro button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form_registro button[type="submit"]:hover {
+    background-color: #0056b3;
+}

@@ -136,78 +136,49 @@ section {
   transform: scale(1.01);
 }
 
-.ingresos_container {
-  height: 100vh !important;
-  padding-top: 125px !important;
-  display: flex;
-  flex-direction: column;
+.subheader_container {
+  position: absolute;
+  top: 1%;
+  right: 1.5%;
+  z-index: 155555;
 }
 
-.ingresos_description {
-  width: 85%;
-  height: 87%;
-  padding: 20px 40px 20px 40px;
+.subheader-content {
+  width: 250px;
+  margin: 0;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  border-radius: 10px;
-  background-image: url(../images/fonto_verde.jpeg);
-  background-size: 500px 500px;
-  background-repeat: repeat;
-}
-.ingresos_description p {
-  font-size: 18px;
-  text-align: justify;
-}
-
-.puestos_list {
-  margin: 5px 0 5px 0;
-}
-
-.ingresos_card {
-  padding-top: 20px;
-  padding-right: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
 
-.programa-formulario {
-  margin-top: 20px;
-  padding-left: 0 !important;
+.login-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.seleccionar-archivo {
-  background: #ffffff;
-  border-radius: 5px;
+.inicio {
+  margin-left: 5px;
+}
+
+.zoom-header {
+  transition: 0.8s ease-in-out;
+  color: #00d799 !important;
+  font-size: 14px !important;
+}
+
+.zoom-header:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
-  .ingresos_description {
+  .header-content {
     flex-direction: column;
-    padding: 0 30px 0 30px;
-    height: 100%;
-    width: 90%;
-    padding-bottom: 20px;
   }
-  .ingresos_card {
-    padding-right: 0;
+  .login-btn {
+    margin-top: 1rem;
   }
-  .ingresos_container {
-    height: 100% !important;
-    margin-bottom: 20px;
-  }
-  .container-contacto {
-    padding-left: 10px;
-  }
-  .input_celular {
-    margin-top: 20px;
-  }
-}
-@media (min-width: 1500px) {
-  .ingresos_description {
-    width: 65%;
-    height: 68%;
-  }
-}/*# sourceMappingURL=Ingresos.css.map */
+}/*# sourceMappingURL=Subheader.css.map */

@@ -7,7 +7,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $verde-lima;
+    background-image: url(../images/fondo_blanco.jpeg);
+    background-size: 500px 500px;
+    background-repeat: repeat;
     height: 120px;
     font-size: 20px;
     position: fixed;
@@ -15,7 +17,7 @@
     left: 0;
     right: 0;
     z-index: 999;
-    box-shadow: inset 0 0 20px 0 $gris-oscuro;
+    box-shadow:  0 0 4px 0 $verde-lima;
 }
 
 a {
@@ -39,11 +41,13 @@ a {
 
 .nav-link {
     transition: all $transition ease-in-out !important;
-    font-weight: 600 !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: $verde-lima !important;
 }
 
 .nav-link:hover {
