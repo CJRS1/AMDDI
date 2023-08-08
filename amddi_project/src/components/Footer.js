@@ -22,7 +22,7 @@ export default function Footer() {
                     <h4><strong>Nosotros</strong></h4>
                     <div className="footer-content">
                         <h5>
-                            <strong>AMDDI</strong> es una empresa líder en soluciones académicas y profesionales. Nuestro equipo de expertos altamente capacitados abarca diversas áreas para ofrecer servicios de redacción de tesis, artículos científicos, ensayos, y más. Brindamos resultados de calidad y confianza para impulsar el éxito de nuestros clientes en sus objetivos académicos y laborales.
+                            <strong>AMDDI</strong> AMDDI brinda servicios confiables de redacción para impulsar el éxito académico y profesional de nuestros clientes.
                         </h5>
                     </div>
                     <div className="footer-description-llamanos">
@@ -75,7 +75,17 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
+                    <div className="programas">
+                        <h4><strong>Programas de Beneficios</strong></h4>
 
+                        <div className="container-list">
+                            <ul>
+                                <li><HashLink smooth to="/AMDDI/ingresosextra" className="li-effect"> Ingresos Extra</HashLink> </li>
+                                <li><HashLink smooth to="/AMDDI/investigacionsostenible" className="li-effect"> Investigación Sostenible</HashLink> </li>
+                                <li><HashLink smooth to="/AMDDI/emprendimientojoven" className="li-effect"> Emprendimiento Joven</HashLink> </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className="footer-description-nuestrosservicios">
                     <h4><strong>Nuestros servicios</strong></h4>
@@ -120,7 +130,16 @@ export default function Footer() {
                                 <h5>Planes de Negocio</h5>
                             </HashLink>
                         </li>
-
+                        <li >
+                            <HashLink smooth to="/AMDDI/servicios#articulorevisionsistematica" className="servicios li-effect" href="#articulo-sistematica">
+                                <h5>Artículo de Revisión Sistemática</h5>
+                            </HashLink>
+                        </li>
+                        <li >
+                            <HashLink smooth to="/AMDDI/servicios#ensayos" className="servicios li-effect" href="#ensayo">
+                                <h5>Ensayos</h5>
+                            </HashLink>
+                        </li>
                         {/* <li >
                             <HashLink smooth to="/AMDDI/servicios#parafraseo" className="servicios li-effect" href="#parafraseo">
                                 <h5>Parafraseo</h5>
@@ -205,17 +224,7 @@ export default function Footer() {
 
                         </div>
                     </div>
-                    <div className="programas">
-                        <h4><strong>Programas de Beneficios</strong></h4>
-
-                        <div className="container-list">
-                            <ul>
-                                <li><HashLink smooth to="/AMDDI/ingresosextra" className="li-effect"> Ingresos Extra</HashLink> </li>
-                                <li><HashLink smooth to="/AMDDI/investigacionsostenible" className="li-effect"> Investigación Sostenible</HashLink> </li>
-                                <li><HashLink smooth to="/AMDDI/emprendimientojoven" className="li-effect"> Emprendimiento Joven</HashLink> </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div className="footer-description-ubicanos">
 
