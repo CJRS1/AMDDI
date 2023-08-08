@@ -177,7 +177,7 @@ a {
 
 .nav-link {
   transition: all 0.5s ease-in-out !important;
-  font-weight: 300 !important;
+  font-weight: 600 !important;
   font-size: 14px !important;
   display: flex;
   justify-content: center;

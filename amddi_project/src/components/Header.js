@@ -23,7 +23,7 @@ export default function Header() {
         <header className="header_container">
             <nav className="navbar navbar-expand-lg navbar_header_container">
                 <div className="container-fluid contenedor_logo_menu">
-                    <Link to="/AMDDI" className="navbar-brand" href="#inicio"> <img className='img_header' src={require('../images/Logo_plomo.png')} alt='AMDDI' height={'250px'} />  </Link>
+                    <Link to="/AMDDI" className="navbar-brand" href="#inicio"> <img className='img_header' src={require('../images/Logo_plomo.png')} alt='AMDDI' height={'100px'} />  </Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMenu} >
                         <span className="navbar-toggler-icon"></span>
