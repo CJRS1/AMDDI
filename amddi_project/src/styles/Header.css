@@ -157,6 +157,11 @@ section {
   box-shadow: 0 0 4px 0 #00d799;
 }
 
+.disable-bootstrap-animations * {
+  transition: none !important;
+  animation: none !important;
+}
+
 a {
   color: #ffffff !important;
 }
@@ -229,7 +234,7 @@ a {
   text-decoration: none !important;
   height: 32px !important;
   display: flex !important;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -304,6 +309,9 @@ a {
   }
   .dropdown-item {
     min-height: 0;
+  }
+  .nav-link {
+    color: #ffffff !important;
   }
   .li-redacciongeneral {
     display: flex;

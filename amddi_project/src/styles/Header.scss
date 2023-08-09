@@ -20,6 +20,11 @@
     box-shadow:  0 0 4px 0 $verde-lima;
 }
 
+.disable-bootstrap-animations * {
+    transition: none !important;
+    animation: none !important;
+}
+
 a {
     color: $blanco !important;
 }
@@ -98,7 +103,7 @@ a {
     text-decoration: none !important;
     height: 32px !important;
     display: flex !important;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -168,6 +173,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     .dropdown-menu {
@@ -186,6 +192,10 @@ a {
         min-height: 0;
     }
 
+    .nav-link{
+        color: $blanco !important;
+    }
+    
     .li-redacciongeneral {
         display: flex;
         align-items: flex-start !important;
