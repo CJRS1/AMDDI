@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import '../styles/Registro.css';
 
 export default function Registro2() {
@@ -59,7 +60,7 @@ export default function Registro2() {
                 />
 
 
-                <button type="submit">Siguiente</button>
+                <Link to="/AMDDI/registrarse-p3" type="submit">Siguiente</Link>
 
 
             </form>

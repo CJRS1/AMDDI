@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { useLocation } from 'react-router-dom';
 import '../styles/Registro.css';
 
-export default function Registro2() {
+export default function Registro3() {
     const location = useLocation();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
 
-    const [user, setUser] = useState({
-        name: '',
-        lastName: '',
-        career: '',
-        dni: '',
-        email: '',
-        password: ''
-    });
+    // const [user, setUser] = useState({
+    //     name: '',
+    //     lastName: '',
+    //     career: '',
+    //     dni: '',
+    //     email: '',
+    //     password: ''
+    // });
 
 
-    const handleInputChange = (event) => {
-        const { name, value } = event.target;
-        setUser({ ...user, [name]: value });
-    }
+    // const handleInputChange = (event) => {
+    //     const { name, value } = event.target;
+    //     setUser({ ...user, [name]: value });
+    // }
 
     const handleSubmit = (event) => {
         event.preventDefault();
