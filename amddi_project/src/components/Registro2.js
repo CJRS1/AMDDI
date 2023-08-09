@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
 import '../styles/Registro.css';
 
-export default function Registro() {
+export default function Registro2() {
     const location = useLocation();
 
     useEffect(() => {
@@ -33,36 +33,9 @@ export default function Registro() {
         <section className="registro_container">
             <div className="form_registro">
 
-            <h2 className="titulo">Completa tus datos</h2>
+            <h2 className="titulo">Escribe tu correo y contraseña</h2>
             <form onSubmit={handleSubmit} >
-                <input className="input_registro"
-                    type="text"
-                    name="name"
-                    placeholder="Nombre"
-                    value={user.name}
-                    onChange={handleInputChange}
-                />
-                <input className="input_registro"
-                    type="text"
-                    name="lastName"
-                    placeholder="Apellido"
-                    value={user.lastName}
-                    onChange={handleInputChange}
-                />
-                <input className="input_registro"
-                    type="text"
-                    name="dni"
-                    placeholder="DNI"
-                    value={user.lastName}
-                    onChange={handleInputChange}
-                />
-                <input className="input_registro"
-                    type="text"
-                    name="career"
-                    placeholder="Carrera"
-                    value={user.lastName}
-                    onChange={handleInputChange}
-                />
+                
                 <input className="input_registro"
                     type="text"
                     name="correo"
@@ -74,6 +47,13 @@ export default function Registro() {
                     type="text"
                     name="password"
                     placeholder="Contraseña"
+                    value={user.lastName}
+                    onChange={handleInputChange}
+                />
+                <input className="input_registro"
+                    type="text"
+                    name="password"
+                    placeholder="Confirma tu contraseña"
                     value={user.lastName}
                     onChange={handleInputChange}
                 />

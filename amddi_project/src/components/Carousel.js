@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import '../styles/Carousel.css'
@@ -22,7 +22,7 @@ export default function Carousel() {
                     <div className="carousel-item active">
                         <img className="img-carousel" src={require('../images/asesoria.jpg')} alt='asesoria' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
-                            <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
+                            <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div>
                     </div>
@@ -36,15 +36,39 @@ export default function Carousel() {
                     <div className="carousel-item">
                         <img className="img-carousel" src={require('../images/proyecto.jpeg')} alt='proyecto' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
-                            <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
+                            <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <img className="img-carousel" src={require('../images/negocio.jpeg')} alt='negocio' height={'603.2px'} width={'1481px'} />
-                        <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-item negocio">
+                        <img className="img-carousel " src={require('../images/Plan_negocio.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
+                        {/* <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                        </div> */}
+                        <div className="negocio_descripcion">
+                            <div className="negocio_titulo">
+                                    <h2 className='titulo_negocio_1'>PLANES DE</h2>
+                                    <h2 className='titulo_negocio_2'>NEGOCIO</h2>
+                            </div>
+                            <div className="negocio_listas">
+                                <ul className="negocio_list">
+                                    <li><span></span>Resumen ejecutivo</li>
+                                    <li><span></span>Plan organizacional</li>
+                                    <li><span></span>Plan operativo</li>
+                                    <div className="contacto_carousel contacto-whatsapp">
+                                    <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect contacto_carousel ">Asesor en vivo</a>
+                                    </div>
+                                </ul>
+                                <ul className="negocio_list">
+                                    <li><span></span>Análisis de mercado</li>
+                                    <li><span></span>Finanzas</li>
+                                    <li><span></span>Plan de marketing</li>
+                                    <div className="contacto_carousel contacto">
+                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

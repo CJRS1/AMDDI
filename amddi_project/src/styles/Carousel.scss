@@ -1,7 +1,7 @@
 @import 'Variables';
 
 .carousel_container {
-    padding-top:120px;
+    padding-top: 120px;
     width: 1481px;
     display: flex !important;
     flex-direction: column;
@@ -118,57 +118,184 @@
 
 }
 
+.negocio {
+    position: relative;
+}
+
+.negocio_titulo{
+    height: 300px;
+    padding-top: 30px;
+}
+
+.negocio_descripcion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+}
+
+.titulo_negocio_1 {
+    color: $verde-lima !important;
+    font-weight: 900;
+    font-size: 60px;
+    height: 60px;
+    margin-bottom: 0 !important;
+}
+
+.titulo_negocio_2 {
+    color: $blanco !important;
+    font-weight: 900;
+    font-size: 100px;
+    height: 100px;
+    margin-bottom: 0 !important;
+}
+
+.negocio_listas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 95px;
+}
+
+.negocio_list {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    li {
+        
+        color: $blanco !important;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $blanco;
+        margin-right: 5px;
+    }
+}
+
+.contacto_carousel {
+    margin-top: 20px !important;
+    width: 200px;
+    padding-right: 20px !important;
+    margin-bottom: 0 !important;
+}
+
 @media (max-width: 768px) {
-    .nuestros_servicios_title{
+    .nuestros_servicios_title {
         padding-top: 20px;
     }
-    .caracteristica_servicios{
+
+    .caracteristica_servicios {
         height: 100%;
         margin-top: 20px;
     }
-    .caracterisctia_servicios_container{
+
+    .caracterisctia_servicios_container {
         height: 100%;
         width: 360px;
         padding-top: 20px !important;
     }
-    .lista_servicios{
+
+    .lista_servicios {
         margin-left: 0;
     }
-    .img-carousel{
+
+    .img-carousel {
         width: 100%;
     }
-    .carousel_container{
+
+    .carousel_container {
         width: 100%;
     }
-    .carousel{
+
+    .carousel {
         width: 100% !important;
     }
-    .caracteristica_servicios{
+
+    .caracteristica_servicios {
         width: 100%;
     }
-    
+
+    .negocio_descripcion{
+        flex-direction: column;
+        width: 380px;
+    }
+
+    .negocio_titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        height: 200px;
+    }
+
+    .titulo_negocio_1{
+        font-size: 50px;
+        height: 50px;
+    }
+
+    .titulo_negocio_2{
+        font-size: 75px;
+        height: 75px;
+    }
+
+    .negocio_listas{
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .contacto-whatsapp{
+        display: none !important;
+    }
+
+    .negocio_list{
+        margin-bottom: 0 !important;
+        padding-left: 12px;
+    }
+
+    .contacto{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-@media (min-width: 1500px){
-    .caracterisctia_servicios_container{
+@media (min-width: 1500px) {
+    .caracterisctia_servicios_container {
         width: 800px;
         height: 800px;
     }
-    .img-carousel{
+
+    .img-carousel {
         height: calc(100vh - 120px) !important;
         width: 100vw !important;
     }
-    .carousel_container{
+
+    .carousel_container {
         width: 100vw;
     }
-    #carouselExample{
+
+    #carouselExample {
         width: 100vw !important;
     }
-    .servicios_descripcion{
+
+    .servicios_descripcion {
         font-size: 18px !important;
     }
-    .lista_servicios{
-        li{
+
+    .lista_servicios {
+        li {
             font-size: 18px !important;
         }
     }

@@ -41,7 +41,7 @@ export default function Inicio() {
 
                     <button type="submit">Recuperar Contraseña</button>
 
-                    <Link to="/AMDDI/registrarse" type="submit">Registrarse</Link>
+                    <Link to="/AMDDI/registrarse" type="submit">Crear una cuenta</Link>
                 </form>
             </div>
         </section>

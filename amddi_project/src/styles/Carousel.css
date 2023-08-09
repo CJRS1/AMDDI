@@ -249,6 +249,77 @@ section {
   border-radius: 5px;
 }
 
+.negocio {
+  position: relative;
+}
+
+.negocio_titulo {
+  height: 300px;
+  padding-top: 30px;
+}
+
+.negocio_descripcion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+}
+
+.titulo_negocio_1 {
+  color: #00d799 !important;
+  font-weight: 900;
+  font-size: 60px;
+  height: 60px;
+  margin-bottom: 0 !important;
+}
+
+.titulo_negocio_2 {
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 100px;
+  height: 100px;
+  margin-bottom: 0 !important;
+}
+
+.negocio_listas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 95px;
+}
+
+.negocio_list {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+.negocio_list li {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+.negocio_list span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 5px;
+}
+
+.contacto_carousel {
+  margin-top: 20px !important;
+  width: 200px;
+  padding-right: 20px !important;
+  margin-bottom: 0 !important;
+}
+
 @media (max-width: 768px) {
   .nuestros_servicios_title {
     padding-top: 20px;
@@ -276,6 +347,40 @@ section {
   }
   .caracteristica_servicios {
     width: 100%;
+  }
+  .negocio_descripcion {
+    flex-direction: column;
+    width: 380px;
+  }
+  .negocio_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+  }
+  .titulo_negocio_1 {
+    font-size: 50px;
+    height: 50px;
+  }
+  .titulo_negocio_2 {
+    font-size: 75px;
+    height: 75px;
+  }
+  .negocio_listas {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  .contacto-whatsapp {
+    display: none !important;
+  }
+  .negocio_list {
+    margin-bottom: 0 !important;
+    padding-left: 12px;
+  }
+  .contacto {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 1500px) {
