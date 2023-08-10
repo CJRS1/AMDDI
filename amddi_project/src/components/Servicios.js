@@ -145,13 +145,13 @@ export default function Servicios() {
                         </div>
                     </div>
                 </div>
-                <div id="redacciontesismaestria" className="servicio_container">
+                <div id="redacciontesisdoctorado" className="servicio_container">
                     <div className="servicios_card">
                         <div className="card_servicio">
-                            <h2>Redacción de Tesis de Maestría</h2>
+                            <h2>Redacción de Tesis de Doctorado</h2>
                             <div className="servicio_description">
                                 <p>
-                                    Como expertos en tesis de maestría, te ofrecemos asesoría personalizada para realizar una investigación sobresaliente y obtener tu título. Trabajamos directamente en el planteamiento del problema, marco teórico, metodología y análisis de resultados para garantizar una tesis estructurada y bien sustentada. Con nuestra guía ganarás en calidad académica. Descarga más información sobre nuestros servicios de redacción de tesis de posgrado y maestrías.
+                                Especializados en tesis de doctorado, brindamos asesoría personalizada para una investigación sobresaliente y la obtención del título. Desde la formulación del problema hasta el análisis de resultados, garantizamos una tesis sólida y bien fundamentada. Mejora tu calidad académica con nuestra guía. Descarga información sobre redacción de tesis de doctorado y avanza en tu investigación.
                                 </p>
                             </div>
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">

@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 export default function Header() {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const [lastId, setLastId] = useState('');
 
     function toggleMenu() {
         setMenuOpen(!menuOpen);
@@ -15,20 +16,26 @@ export default function Header() {
     function handleLinkClick() {
         setMenuOpen(false);
     }
+
+    //Esta función soluciona los errores que tiene boostrap
     function handleLinkNavigation(targetId) {
-
         const targetElement = document.getElementById(targetId);
-        console.log('hola')
-        if (targetElement) {
-            // Calcula el desplazamiento para tener en cuenta encabezados fijos u otros elementos
-            const offset = 100; // Ajusta este valor según sea necesario
-            const topPos = targetElement.getBoundingClientRect().top + window.scrollY - offset;
     
-            window.scrollTo({ top: topPos, behavior: 'smooth' });
-
-            window.location.hash = targetId;
-        }
+        setLastId(targetId);
+        setTimeout(() => {
+            if (targetElement) {
+                const rect = targetElement.getBoundingClientRect();
+                const yOffset = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+                const targetOffsetTop = rect.top + yOffset;
+    
+                window.scrollTo({
+                    top: targetOffsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }, targetId === lastId ? 0 : 100);
     }
+    
 
     const isMobile = useMediaQuery({ maxWidth: 768 });
 
@@ -67,12 +74,12 @@ export default function Header() {
                                         <ul className="dropdown-menu-redaccion">
                                             <li> <HashLink to="/AMDDI/servicios#redacciontesispregrado" className="dropdown-item li-redaccion" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesispregrado'); }}>Redacción de Tesis de Pregrado </HashLink> </li>
                                             <li> <HashLink to="/AMDDI/servicios#redacciontesispostgrado" className="dropdown-item li-redaccion" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesispostgrado'); }}>Redacción de Tesis de Postgrado </HashLink> </li>
-                                            <li> <HashLink to="/AMDDI/servicios#redacciontesismaestria" className="dropdown-item li-redaccion" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesismaestria'); }}>Redacción de Tesis de Maestría </HashLink> </li>
+                                            <li> <HashLink to="/AMDDI/servicios#redacciontesisdoctorado" className="dropdown-item li-redaccion" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesisdoctorado'); }}>Redacción de Tesis de Doctorado </HashLink> </li>
                                         </ul>
                                     </li>
                                     <li> <HashLink to="/AMDDI/servicios#redacciontesispregrado" className="dropdown-item li-redaccion hidden" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesispregrado'); }}>Redacción de Tesis de Pregrado </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#redacciontesispostgrado" className="dropdown-item li-redaccion hidden" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesispostgrado'); }}>Redacción de Tesis de Postgrado </HashLink> </li>
-                                    <li> <HashLink to="/AMDDI/servicios#redacciontesismaestria" className="dropdown-item li-redaccion hidden" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesismaestria'); }}>Redacción de Tesis de Maestría </HashLink> </li>
+                                    <li> <HashLink to="/AMDDI/servicios#redacciontesisdoctorado" className="dropdown-item li-redaccion hidden" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesisdoctorado'); }}>Redacción de Tesis de Doctorado </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#levantamientoobservacionespregrado" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('levantamientoobservacionespregrado'); }}>Levantamiento de Observaciones Pregrado </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#levantamientoobservacionesmaestria" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('levantamientoobservacionesmaestria'); }}>Levantamiento de Observaciones Maestría </HashLink> </li>
                                     <li> <HashLink to="/AMDDI/servicios#parafraseo" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('parafraseo'); }}>Parafraseo </HashLink> </li>

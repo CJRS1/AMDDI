@@ -106,8 +106,8 @@ export default function Footer() {
                             </HashLink>
                         </li>
                         <li >
-                            <HashLink smooth to="/AMDDI/servicios#redacciontesismaestria" className="servicios li-effect" href="#postgrado">
-                                <h5>Redacción de Tesis de Maestría</h5>
+                            <HashLink smooth to="/AMDDI/servicios#redacciontesisdoctorado" className="servicios li-effect" href="#postgrado">
+                                <h5>Redacción de Tesis de Doctorado</h5>
                             </HashLink>
                         </li>
                         <li >
