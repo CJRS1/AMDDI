@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import '../styles/Carousel.css'
@@ -9,6 +9,33 @@ export default function Carousel() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
+
+    const efectoRef = useRef(null);
+    const imagenRef = useRef(null);
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+
+            const maxTop = 500;
+
+            if (window.scrollY > 300) {
+                efectoRef.current.style.top = "0px";
+            } else {
+                efectoRef.current.style.top = "-800px";
+            }
+
+            imagenRef.current.style.top = Math.min(window.scrollY, maxTop) + 'px';
+
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+
+    }, []);
     return (
         <section className="carousel_container">
             <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -26,18 +53,46 @@ export default function Carousel() {
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <img className="img-carousel" src={require('../images/practicas.jpg')} alt='practicas' height={'603.2px'} width={'1481px'} />
-                        <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-item practica">
+                        <img className="img-carousel" src={require('../images/practicas_ preprofesionales.png')} alt='practicas' height={'603.2px'} width={'1481px'} />
+                        {/* <div className="carousel-caption d-none d-md-block">
                             <Link to="/AMDDI/programadeingresos" type="button" className="btn button-effect">Escríbemos</Link>
-                            {/* <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link> */}
+                        </div> */}
+                        <div className="practicas_description">
+                            <div className="practicas_titulo">
+
+                                <h2><span className='color_verde'>REALIZA</span> TUS PRÁCTICAS</h2>
+                                <h2>PRE <span className='color_verde'>PROFESIONALES</span> CON</h2>
+                                <h2>GRUPO <span className='color_verde'>AMDDI</span></h2>
+                            </div>
+                            <a href="https://pe.indeed.com/cmp/Amddi-S.a.c." target="_blank" rel="noreferrer" className='indeed_btn '>
+                                Revisa nuestras convocatorias vigentes
+                            </a>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="img-carousel" src={require('../images/proyecto.jpeg')} alt='proyecto' height={'603.2px'} width={'1481px'} />
-                        <div className="carousel-caption d-none d-md-block">
-                            <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                        <img className="img-carousel" src={require('../images/proyecto_inversión.png')} alt='proyecto' height={'603.2px'} width={'1481px'} />
+
+                        <div className="proyecto_descripcion">
+                            <div className="proyecto_titulo">
+                                <h2 className='titulo_negocio_1'>PROYECTO DE</h2>
+                                <h2 className='titulo_proyecto_2'>INVERSIÓN</h2>
+                                <div className="carousel-caption d-none d-md-block contenedor_btn_proyecto">
+                                    <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect contacto_carousel">Asesoría en vivo</a>
+                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                </div>
+                            </div>
+                            <div className="proyecto_listas">
+                                <ul className="proyecto_list">
+                                    <li><span></span>Diseño Estratégico</li>
+                                    <li><span></span>Estudio Técnico</li>
+                                    <li><span></span>Estudio Organizacional y Legal</li>
+                                    <li><span></span>Estudio Ambiental</li>
+                                    <li><span></span>Estudio de Mercado</li>
+                                    <li className='proyecto_last'><span></span>Estudio Económico Financiero</li>
+                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className="carousel-item negocio">
@@ -48,8 +103,8 @@ export default function Carousel() {
                         </div> */}
                         <div className="negocio_descripcion">
                             <div className="negocio_titulo">
-                                    <h2 className='titulo_negocio_1'>PLANES DE</h2>
-                                    <h2 className='titulo_negocio_2'>NEGOCIO</h2>
+                                <h2 className='titulo_negocio_1'>PLANES DE</h2>
+                                <h2 className='titulo_negocio_2'>NEGOCIO</h2>
                             </div>
                             <div className="negocio_listas">
                                 <ul className="negocio_list">
@@ -57,7 +112,7 @@ export default function Carousel() {
                                     <li><span></span>Plan organizacional</li>
                                     <li><span></span>Plan operativo</li>
                                     <div className="contacto_carousel contacto-whatsapp">
-                                    <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect contacto_carousel ">Asesor en vivo</a>
+                                        <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect contacto_carousel ">Asesor en vivo</a>
                                     </div>
                                 </ul>
                                 <ul className="negocio_list">
@@ -65,7 +120,7 @@ export default function Carousel() {
                                     <li><span></span>Finanzas</li>
                                     <li><span></span>Plan de marketing</li>
                                     <div className="contacto_carousel contacto">
-                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                        <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
                                     </div>
                                 </ul>
                             </div>
@@ -101,6 +156,19 @@ export default function Carousel() {
                     </ul>
                     {/* <!-- <img className="imagen_servicios" src="ruta_de_la_imagen.jpg" alt="Imagen representativa"> --> */}
                     <Link to="/AMDDI/servicios" className="boton_servicios button-effect" >Ver Más</Link>
+                </div>
+            </div>
+            <div className="contenedor-efecto">
+
+                <div ref={efectoRef} className="efecto-scroll">
+                    <div className="contenido-texto">
+                        <h2>#¡SEGUIMOS ADELANTE!</h2>
+                        <p>Asesoría y redacción de tesis de Pregrado, Posgrado, Doctorado y MBA.</p>
+                        <div className="contacto_carousel contacto">
+                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Más información</Link>
+                        </div>
+                    </div>
+                    <img ref={imagenRef} className="img-scroll" src={require('../images/adelante_completo.png')} alt='asesoria' />
                 </div>
             </div>
         </section>

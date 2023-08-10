@@ -17,7 +17,7 @@
     left: 0;
     right: 0;
     z-index: 999;
-    box-shadow:  0 0 4px 0 $verde-lima;
+    box-shadow: 0 0 4px 0 $verde-lima;
 }
 
 .disable-bootstrap-animations * {
@@ -133,7 +133,7 @@ a {
     display: none;
 }
 
-.hidden{
+.hidden {
     display: none !important;
 }
 
@@ -169,11 +169,12 @@ a {
         overflow-y: auto;
         top: 0;
         left: 0;
-        background: $verde-lima;
-        display: flex;
+        background-image: url(../images/fonto_verde.jpeg);
+        background-size: 500px 500px;
+        background-repeat: repeat;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .dropdown-menu {
@@ -192,10 +193,10 @@ a {
         min-height: 0;
     }
 
-    .nav-link{
+    .nav-link {
         color: $blanco !important;
     }
-    
+
     .li-redacciongeneral {
         display: flex;
         align-items: flex-start !important;
@@ -229,7 +230,7 @@ a {
         display: block !important;
     }
 
-    .hidden{
+    .hidden {
         display: block !important;
     }
 }

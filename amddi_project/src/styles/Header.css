@@ -293,8 +293,9 @@ a {
     overflow-y: auto;
     top: 0;
     left: 0;
-    background: #00d799;
-    display: flex;
+    background-image: url(../images/fonto_verde.jpeg);
+    background-size: 500px 500px;
+    background-repeat: repeat;
     justify-content: center;
     align-items: center;
   }
