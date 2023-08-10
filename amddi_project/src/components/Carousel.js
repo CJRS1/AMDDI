@@ -136,6 +136,22 @@ export default function Carousel() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
+            <div className="amddi_internacional">
+                <div className="img_container">
+                    <img className="img-carousel" src={require('../images/somos_internacionales.png')} alt='proyecto' height={'605px'} width={'826px'} />
+                </div>
+                <div className="amdi_international_description">
+                    <div className="international_container">
+                        <h3>En AMDDI somos</h3>
+                        <h3> INTERNACIONES</h3>
+                        <div className="international_desc">
+                            <p>
+                                En AMDDI somos una empresa que brinda el servicio de trabajo de invertifaciòn con el objetivo de lograr que nuestros clientes se superen en el ámbito acadèmido y profesional; en ese sentido contamos con un equipo conformado por asesores metodolòsicos estadísticos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="caracteristica_servicios" id="inicio">
                 <div className="caracterisctia_servicios_container">
                     <h2 className='nuestros_servicios_title'>Nuestros Servicios</h2>
@@ -159,7 +175,6 @@ export default function Carousel() {
                 </div>
             </div>
             <div className="contenedor-efecto">
-
                 <div ref={efectoRef} className="efecto-scroll">
                     <div className="contenido-texto">
                         <h2>#¡SEGUIMOS ADELANTE!</h2>

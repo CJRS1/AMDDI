@@ -503,6 +503,10 @@ section {
   display: none !important;
 }
 
+.amddi_internacional {
+  height: calc(100vh - 120px);
+}
+
 @media (max-width: 768px) {
   .nuestros_servicios_title {
     padding-top: 20px;

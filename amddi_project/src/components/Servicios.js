@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import '../styles/Servicios.css'
+// import Tesispregrado from  '../components/pdf/Tesispregrado.pdf';
 
 
 export default function Servicios() {
@@ -9,6 +10,8 @@ export default function Servicios() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
+
+
     return (
         <section className="servicios_container">
             <div id="carreras" className="carreras_container">
@@ -111,7 +114,6 @@ export default function Servicios() {
                     </div>
                 </div>
             </div>
-
             <div className="servicios_list">
                 <div id="redacciontesispregrado" className="servicio_container">
                     <div className="servicios_card">
@@ -122,10 +124,12 @@ export default function Servicios() {
                                     Nuestro servicio brinda apoyo integral en la creación de tesis de grado para estudiantes universitarios. Te acompañamos desde la elección del tema hasta la elaboración del informe final, garantizando la calidad y originalidad del trabajo. Si necesitas un impulso para culminar tu carrera con éxito, ¡contáctanos y obtén más información!
                                 </p>
                             </div>
-                            <button className="btn boton_servicios button-effect button-perfect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
-                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                            </svg> Descarga el Browsure</button>
+                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                                <button className="btn boton_servicios button-effect button-perfect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                </svg> Descarga el Browsure</button>
+                        
                         </div>
                     </div>
                 </div>
@@ -138,6 +142,7 @@ export default function Servicios() {
                                     Como expertos en asesoramiento para tesis de posgrado y maestría, te brindamos el respaldo necesario para llevar a cabo una investigación rigurosa y relevante. Nos enfocamos en la estructura, metodología y análisis para garantizar un trabajo sobresaliente. ¡Consigue tu título con una tesis de alto nivel académico! Haz clic a continuación para obtener más detalles.
                                 </p>
                             </div>
+                            {/* <a href={pdf2} target="_blank" rel="noopener noreferrer" download="pdf2.pdf"></a> */}
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
@@ -151,9 +156,10 @@ export default function Servicios() {
                             <h2>Redacción de Tesis de Doctorado</h2>
                             <div className="servicio_description">
                                 <p>
-                                Especializados en tesis de doctorado, brindamos asesoría personalizada para una investigación sobresaliente y la obtención del título. Desde la formulación del problema hasta el análisis de resultados, garantizamos una tesis sólida y bien fundamentada. Mejora tu calidad académica con nuestra guía. Descarga información sobre redacción de tesis de doctorado y avanza en tu investigación.
+                                    Especializados en tesis de doctorado, brindamos asesoría personalizada para una investigación sobresaliente y la obtención del título. Desde la formulación del problema hasta el análisis de resultados, garantizamos una tesis sólida y bien fundamentada. Mejora tu calidad académica con nuestra guía. Descarga información sobre redacción de tesis de doctorado y avanza en tu investigación.
                                 </p>
                             </div>
+                            {/* <a href={pdf3} target="_blank" rel="noopener noreferrer" download="pdf3.pdf"></a> */}
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
@@ -170,6 +176,7 @@ export default function Servicios() {
                                     ¿Has recibido observaciones en tu tesis de pregrado? No te preocupes, estamos aquí para ayudarte a superarlas y corregir tu trabajo. Nuestro equipo de expertos revisará minuciosamente tus documentos, proporcionándote valiosas sugerencias para mejorar tu investigación. ¡Avanza hacia tu graduación sin complicaciones! Obtén más información ahora.
                                 </p>
                             </div>
+                            {/* <a href={pdf4} target="_blank" rel="noopener noreferrer" download=".pdf"></a> */}
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
