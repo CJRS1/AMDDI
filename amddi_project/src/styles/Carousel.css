@@ -505,6 +505,37 @@ section {
 
 .amddi_internacional {
   height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.amdi_international_description {
+  width: 450px;
+}
+.amdi_international_description .international_container h3:nth-of-type(1) {
+  color: #00d799 !important;
+  font-size: 35px !important;
+  font-weight: 700 !important;
+  margin-bottom: 0 !important;
+}
+.amdi_international_description .international_container h3:nth-of-type(2) {
+  color: #00d799 !important;
+  font-size: 45px !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+}
+.amdi_international_description .international_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.amdi_international_description .international_desc p {
+  color: #000 !important;
+  text-align: justify;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {

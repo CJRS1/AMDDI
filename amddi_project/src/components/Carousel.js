@@ -148,11 +148,13 @@ export default function Carousel() {
                             <p>
                                 En AMDDI somos una empresa que brinda el servicio de trabajo de invertifaciòn con el objetivo de lograr que nuestros clientes se superen en el ámbito acadèmido y profesional; en ese sentido contamos con un equipo conformado por asesores metodolòsicos estadísticos.
                             </p>
+
+                        <Link to="/AMDDI/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="caracteristica_servicios" id="inicio">
+            {/* <div className="caracteristica_servicios" id="inicio">
                 <div className="caracterisctia_servicios_container">
                     <h2 className='nuestros_servicios_title'>Nuestros Servicios</h2>
                     <p className="servicios_descripcion">
@@ -170,10 +172,9 @@ export default function Carousel() {
                         <li>Orientación en la estructura y formato requeridos por la institución académica.</li>
                         <li>Asesoramiento sobre aspectos éticos y de integridad académica.</li>
                     </ul>
-                    {/* <!-- <img className="imagen_servicios" src="ruta_de_la_imagen.jpg" alt="Imagen representativa"> --> */}
                     <Link to="/AMDDI/servicios" className="boton_servicios button-effect" >Ver Más</Link>
                 </div>
-            </div>
+            </div> */}
             <div className="contenedor-efecto">
                 <div ref={efectoRef} className="efecto-scroll">
                     <div className="contenido-texto">
