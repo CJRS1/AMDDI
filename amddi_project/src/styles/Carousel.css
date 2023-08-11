@@ -512,7 +512,7 @@ section {
 }
 
 .amdi_international_description {
-  width: 450px;
+  width: 550px;
 }
 .amdi_international_description .international_container h3:nth-of-type(1) {
   color: #00d799 !important;
@@ -541,6 +541,9 @@ section {
 .seccion_contador {
   height: 400px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .seccion_contador .fila {
   display: flex;
@@ -797,6 +800,18 @@ section {
   left: 55%;
 }
 
+.paises_list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-decoration: none !important;
+  padding-left: 0;
+  width: 100%;
+}
+.paises_list li {
+  text-decoration: none !important;
+}
+
 @media (max-width: 768px) {
   .nuestros_servicios_title {
     padding-top: 20px;
@@ -951,6 +966,19 @@ section {
   }
   .informacion_btn {
     width: 300px !important;
+  }
+  .international_container h3 {
+    font-size: 25px !important;
+  }
+  .medalla_doctorado {
+    height: 25px;
+  }
+  .seccion_contador {
+    width: 100%;
+    height: 100%;
+  }
+  .fila {
+    flex-direction: column;
   }
 }
 @media (min-width: 1500px) {

@@ -176,8 +176,8 @@ export default function Carousel() {
                             <div className="doctorado_titulo">
                                 <div className="doctorado_titulos_list">
 
-                                <h2 className='titulo_doctorado_1'>ASESORÍA Y <span>ELABORACIÓN</span></h2>
-                                <h2 className='titulo_doctorado_2'>DE TESIS <span>DOCTORAL</span></h2>
+                                    <h2 className='titulo_doctorado_1'>ASESORÍA Y <span>ELABORACIÓN</span></h2>
+                                    <h2 className='titulo_doctorado_2'>DE TESIS <span>DOCTORAL</span></h2>
                                 </div>
                             </div>
                             <div className="doctorado_experiencia">
@@ -187,12 +187,12 @@ export default function Carousel() {
                                 <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
                                 <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
                             </div>
-                            
+
                         </div>
                         <div className="medalla_container_doctorado">
-                                <img className="medalla medalla_doctorado" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
-                                <img className="somos somos_doctorado" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
-                            </div>
+                            <img className="medalla medalla_doctorado" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
+                            <img className="somos somos_doctorado" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
+                        </div>
                     </div>
                     <div className="carousel-item maestria">
                         <img className="img-carousel " src={require('../images/maestria.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
@@ -243,9 +243,19 @@ export default function Carousel() {
                     <div className="international_container">
                         <h3>En AMDDI somos</h3>
                         <h3> INTERNACIONES</h3>
+                        <ul className="paises_list">
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/peru.png')} alt='Peru' height={'35px'} /></li>
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/bolivia.png')} alt='Bolivia' height={'35px'} /></li>
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/colombia.png')} alt='Colombia' height={'35px'} /></li>
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/costica.png')} alt='CostaRica' height={'35px'} /></li>
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/cuba.png')} alt='Cuba' height={'35px'} /></li>
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/ecuador.png')} alt='Ecuador' height={'35px'} /></li>
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/venezuela.png')} alt='Venezuela' height={'35px'} /></li>
+                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/mexico.png')} alt='Mexico' height={'35px'} /></li>
+                        </ul>
                         <div className="international_desc">
                             <p>
-                                En AMDDI, nos especializamos en soluciones integrales para investigación y asesoría. Guiamos y apoyamos proyectos de investigación para impulsar el crecimiento académico y profesional. Nuestro equipo multidisciplinario de expertos en metodología y estadísticas está comprometido con tu éxito. Operamos en Perú, Ecuador, Bolivia, Colombia, México y Costa Rica.
+                                En AMDDI, nos especializamos en soluciones integrales para investigación y asesoría. Guiamos y apoyamos proyectos de investigación para impulsar el crecimiento académico y profesional. Nuestro equipo multidisciplinario de expertos en metodología y estadísticas está comprometido con tu éxito. Operamos en Perú, Bolivia, Colombia, Costa Rica, Cuba, Ecuador, Venezuela y México.
                             </p>
 
                             <Link to="/AMDDI/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link>
@@ -278,7 +288,7 @@ export default function Carousel() {
             <div className="seccion_contador">
                 <div className="fila">
                     <div className="col">
-                        {/* <img src="img1.png" /> */}
+                        <img className="" src={require('../images/Contador/titulados.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={1000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
@@ -286,7 +296,7 @@ export default function Carousel() {
                         <p>Titulados</p>
                     </div>
                     <div className="col">
-                        {/* <img src="img2.png" /> */}
+                    <img className="" src={require('../images/Contador/clientes.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={1000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
@@ -294,12 +304,12 @@ export default function Carousel() {
                         <p>Clientes Satisfechos</p>
                     </div>
                     <div className="col">
-                        {/* <img src="img2.png" /> */}
+                    <img className="" src={require('../images/Contador/peru.png')} alt='medalla' height={'220px'} />
                         <Contador inicio={0} final={24} duracion={100} />
                         <p>Departamentos de Perú</p>
                     </div>
                     <div className="col">
-                        {/* <img src="img3.png" /> */}
+                    <img className="" src={require('../images/Contador/carreras.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={40} duracion={100} />
                             <h3 className="contador-margin">+</h3>
