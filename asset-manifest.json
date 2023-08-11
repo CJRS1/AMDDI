@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AMDDI/static/css/main.193faa9d.css",
-    "main.js": "/AMDDI/static/js/main.edb8eb63.js",
+    "main.css": "/AMDDI/static/css/main.5832ab75.css",
+    "main.js": "/AMDDI/static/js/main.ad97d1e7.js",
     "static/js/787.a75494a5.chunk.js": "/AMDDI/static/js/787.a75494a5.chunk.js",
     "static/media/adelante_completo.png": "/AMDDI/static/media/adelante_completo.e6cc3752f6ab0a7e1157.png",
     "static/media/Plan_negocio.png": "/AMDDI/static/media/Plan_negocio.5f4fb7453becf1e842ab.png",
+    "static/media/asesoria.png": "/AMDDI/static/media/asesoria.16d39019a6a4bda7c935.png",
     "static/media/practicas_ preprofesionales.png": "/AMDDI/static/media/practicas_ preprofesionales.dfd4ffeb3487087c12f7.png",
     "static/media/proyecto_inversión.png": "/AMDDI/static/media/proyecto_inversión.e5ba4f5824d88aa80f58.png",
-    "static/media/asesoria.jpg": "/AMDDI/static/media/asesoria.122f7575071fd068aa30.jpg",
     "static/media/somos_internacionales.png": "/AMDDI/static/media/somos_internacionales.75068c583245557520f6.png",
     "static/media/libro.png": "/AMDDI/static/media/libro.09f237bbeb8238a004b7.png",
     "static/media/fondo_blanco.jpeg": "/AMDDI/static/media/fondo_blanco.e9a6a91b931b82191bb5.jpeg",
@@ -29,12 +29,12 @@
     "static/media/linkedin-in.svg": "/AMDDI/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
     "static/media/tiktok.svg": "/AMDDI/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
     "static/media/facebook-f.svg": "/AMDDI/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.193faa9d.css.map": "/AMDDI/static/css/main.193faa9d.css.map",
-    "main.edb8eb63.js.map": "/AMDDI/static/js/main.edb8eb63.js.map",
+    "main.5832ab75.css.map": "/AMDDI/static/css/main.5832ab75.css.map",
+    "main.ad97d1e7.js.map": "/AMDDI/static/js/main.ad97d1e7.js.map",
     "787.a75494a5.chunk.js.map": "/AMDDI/static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.193faa9d.css",
-    "static/js/main.edb8eb63.js"
+    "static/css/main.5832ab75.css",
+    "static/js/main.ad97d1e7.js"
   ]
 }
