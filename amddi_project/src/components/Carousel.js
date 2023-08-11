@@ -1,7 +1,29 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import '../styles/Carousel.css'
+
+function Contador({ inicio, final, duracion }) {
+    const [contador, setContador] = useState(inicio);
+
+    useEffect(() => {
+        const intervalo = setInterval(() => {
+            setContador(prev => {
+                if (prev === final) {
+                    clearInterval(intervalo);
+                    return prev; // No incrementar más
+                }
+                return prev + 1;
+            });
+        }, duracion);
+
+        return () => {
+            clearInterval(intervalo);
+        };
+    }, [final, duracion]);
+
+    return <h3>{contador}</h3>;
+}
 
 export default function Carousel() {
     const location = useLocation();
@@ -47,7 +69,7 @@ export default function Carousel() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="img-carousel" src={require('../images/asesoria.jpg')} alt='asesoria' height={'603.2px'} width={'1481px'} />
+                        <img className="img-carousel" src={require('../images/asesoria.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
                         <div className="carousel-caption d-none d-md-block">
                             <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
@@ -137,7 +159,7 @@ export default function Carousel() {
                 </button>
             </div>
             <div className="amddi_internacional">
-                <div className="img_container">
+                <div className="img_int_container">
                     <img className="img-carousel" src={require('../images/somos_internacionales.png')} alt='proyecto' height={'605px'} width={'826px'} />
                 </div>
                 <div className="amdi_international_description">
@@ -146,10 +168,10 @@ export default function Carousel() {
                         <h3> INTERNACIONES</h3>
                         <div className="international_desc">
                             <p>
-                                En AMDDI somos una empresa que brinda el servicio de trabajo de invertifaciòn con el objetivo de lograr que nuestros clientes se superen en el ámbito acadèmido y profesional; en ese sentido contamos con un equipo conformado por asesores metodolòsicos estadísticos.
+                                En AMDDI, nos especializamos en soluciones integrales para investigación y asesoría. Guiamos y apoyamos proyectos de investigación para impulsar el crecimiento académico y profesional. Nuestro equipo multidisciplinario de expertos en metodología y estadísticas está comprometido con tu éxito. Operamos en Perú, Ecuador, Bolivia, Colombia, México y Costa Rica.
                             </p>
 
-                        <Link to="/AMDDI/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link>
+                            <Link to="/AMDDI/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link>
                         </div>
                     </div>
                 </div>
@@ -175,15 +197,56 @@ export default function Carousel() {
                     <Link to="/AMDDI/servicios" className="boton_servicios button-effect" >Ver Más</Link>
                 </div>
             </div> */}
+
+            <div className="seccion_contador">
+
+                <div className="fila">
+                    <div className="col">
+                        {/* <img src="img1.png" /> */}
+                        <div className="d-flex">
+                            <Contador  inicio={0} final={1000} duracion={5} />
+                            <h3 className="contador-margin">+</h3>
+                        </div>
+                        <p>Titulados</p>
+                    </div>
+                    <div className="col">
+                        {/* <img src="img2.png" /> */}
+                        <div className="d-flex">
+                            <Contador  inicio={0} final={1000} duracion={5} />
+                            <h3 className="contador-margin">+</h3>
+                        </div>
+                        <p>Clientes Satisfechos</p>
+                    </div>
+                    <div className="col">
+                        {/* <img src="img2.png" /> */}
+                        <Contador inicio={0} final={24} duracion={100} />
+                        <p>Departamentos de Perú</p>
+                    </div>
+                    <div className="col">
+                        {/* <img src="img3.png" /> */}
+                        <div className="d-flex">
+                            <Contador inicio={0} final={40} duracion={100} />
+                            <h3 className="contador-margin">+</h3>
+                        </div>
+                        <p>Carreras</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
             <div className="contenedor-efecto">
                 <div ref={efectoRef} className="efecto-scroll">
                     <div className="contenido-texto">
                         <h2>#¡SEGUIMOS ADELANTE!</h2>
                         <p>Asesoría y redacción de tesis de Pregrado, Posgrado, Doctorado y MBA.</p>
-                        <div className="contacto_carousel contacto">
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Más información</Link>
+                        <div className="contacto_carousel contacto informacion_btn">
+                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel informacion_btn">Más información</Link>
                         </div>
                     </div>
+
                     <img ref={imagenRef} className="img-scroll" src={require('../images/adelante_completo.png')} alt='asesoria' />
                 </div>
             </div>

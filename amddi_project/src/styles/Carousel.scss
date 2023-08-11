@@ -425,6 +425,38 @@
     }
 }
 
+.seccion_contador{
+    height: 400px;
+    width: 100%;
+    .fila{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        .col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            h3{
+                font-size: 40px !important;
+                font-weight: 900 !important;
+                color: $verde-lima !important;
+            }
+            p{
+                font-size: 20px !important;
+                font-weight: 500 !important;
+                color: $verde-lima !important;
+            }
+        }
+    }
+}
+
+.contador-margin{
+    margin-left: 10px;
+}
+
 @media (max-width: 768px) {
     .nuestros_servicios_title {
         padding-top: 20px;
@@ -569,6 +601,57 @@
 
     .proyecto_last {
         padding-bottom: 30px;
+    }
+
+    .img_int_container{
+        display: none !important;
+    }
+    .amddi_internacional{
+        width: 100%;
+    }
+    .international_container{
+        width: 380px;
+        margin-left: 0 !important;
+    }
+    .international_desc{
+        p{
+            padding: 0 10px 0 10px;
+        }
+    }
+
+    .amdi_international_description {
+        .international_container{
+            h3:nth-of-type(1){
+                font-size: 20px !important;
+            }
+            h3:nth-of-type(2){
+                font-size: 30px !important;
+            }
+        }
+    }
+
+    .contenedor-efecto{
+        height: 258.13px !important;
+    }
+
+    .efecto-scroll{
+        height: 258.13px !important;
+        transition: 2s ease;
+    }
+    
+    .contenido-texto{
+        width: 380px;
+        top: 60%;
+        h2{
+            font-size: 20px !important;
+        }
+        p{
+            font-size: 15px !important;
+        }
+    }
+
+    .informacion_btn{
+        width:  300px !important;
     }
 }
 
