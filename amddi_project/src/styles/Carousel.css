@@ -570,6 +570,233 @@ section {
   margin-left: 10px;
 }
 
+.asesoria {
+  position: relative;
+}
+
+.asesoria_subtitulo {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+.asesoria_descripcion {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.asesoria_descripcion h2 {
+  font-size: 60px;
+  font-weight: 900;
+  height: 60px;
+  margin: 0 0 0 0 !important;
+}
+.asesoria_descripcion h2 span {
+  color: #00d799;
+}
+.asesoria_descripcion h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.asesoria_descripcion h3 span {
+  color: #00d799;
+}
+
+.botones_contacto_asesoria {
+  position: relative;
+  bottom: 0 !important;
+  left: 60% !important;
+}
+
+.asesoria_lista {
+  width: 600px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+.asesoria_lista li {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+.asesoria_lista span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 5px;
+}
+
+.medalla_container {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+}
+
+.medalla {
+  position: relative;
+  z-index: 2;
+}
+
+.somos {
+  position: relative;
+  top: 80%;
+  left: 18%;
+  transform: translate(-50%, -10%);
+}
+
+.maestria {
+  position: relative;
+}
+
+.maestria_titulo {
+  height: 300px;
+  padding-top: 30px;
+}
+
+.maestria_descripcion {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.titulo_maestria_1 {
+  color: #00d799 !important;
+  font-weight: 900;
+  font-size: 40px;
+  height: 40px;
+  margin-bottom: 0 !important;
+}
+
+.titulo_maestria_2 {
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 80px;
+  height: 80px;
+  margin-bottom: 0 !important;
+}
+
+.maestria_listas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+}
+
+.maestria_list {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+.maestria_list li {
+  padding-left: 20px;
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+.maestria_list span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 5px;
+}
+
+.doctorado {
+  position: relative;
+}
+
+.doctorado_titulo {
+  height: 300px;
+  padding-top: 30px;
+}
+
+.doctorado_descripcion {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.doctorado_titulos_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 480px;
+}
+
+.titulo_doctorado_1 {
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 45px;
+  height: 45px;
+  margin-bottom: 0 !important;
+}
+.titulo_doctorado_1 span {
+  color: #00d799;
+}
+
+.titulo_doctorado_2 {
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 45px;
+  height: 45px;
+  margin-bottom: 0 !important;
+}
+.titulo_doctorado_2 span {
+  color: #00d799;
+}
+
+.doctorado_experiencia {
+  padding: 15px 25px 5px 25px;
+  top: 60%;
+  width: 600px;
+  border: solid 3px #00d799;
+  border-radius: 10px;
+  position: absolute;
+}
+.doctorado_experiencia p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.doctorado_listas {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 120%;
+}
+
+.medalla_container_doctorado {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+}
+
 @media (max-width: 768px) {
   .nuestros_servicios_title {
     padding-top: 20px;

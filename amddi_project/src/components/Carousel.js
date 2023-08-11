@@ -65,21 +65,39 @@ export default function Carousel() {
                     <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" className="active" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2" aria-current="true"></button>
                     <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3" aria-current="true"></button>
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <div className="carousel-item active asesoria">
                         <img className="img-carousel" src={require('../images/asesoria.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
-                        <div className="carousel-caption d-none d-md-block">
-                            <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                        <div className="carousel-caption d-none d-md-block botones_contacto_asesoria">
+                            <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
+                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
+                        </div>
+                        <div className="asesoria_descripcion">
+                            <div className="asesoria_titulo">
+                                <h2>TESIS PARA GENTE</h2>
+                                <h2><span>QUE TRABAJA</span></h2>
+                                <div className="asesoria_subtitulo">
+                                    <h3>PREGRADO <span>-</span> MAESTRÍA <span>-</span> DOCTORADO <span>-</span> MBA</h3>
+                                </div>
+                            </div>
+                            <ul className="asesoria_lista">
+                                <li><span></span>Asesoría personalizada</li>
+                                <li><span></span>Compromiso con nuestro trabajo</li>
+                                <li><span></span>Especialistas de todas las carreras profesionales</li>
+                            </ul>
+                            <div className="medalla_container">
+                                <img className="medalla" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
+                                <img className="somos" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
+                            </div>
                         </div>
                     </div>
                     <div className="carousel-item practica">
                         <img className="img-carousel" src={require('../images/practicas_ preprofesionales.png')} alt='practicas' height={'603.2px'} width={'1481px'} />
-                        {/* <div className="carousel-caption d-none d-md-block">
-                            <Link to="/AMDDI/programadeingresos" type="button" className="btn button-effect">Escríbemos</Link>
-                        </div> */}
+
                         <div className="practicas_description">
                             <div className="practicas_titulo">
 
@@ -148,6 +166,65 @@ export default function Carousel() {
                             </div>
                         </div>
                     </div>
+                    <div className="carousel-item doctorado">
+                        <img className="img-carousel " src={require('../images/doctoral.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
+                        {/* <div className="carousel-caption d-none d-md-block">
+                            <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
+                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                        </div> */}
+                        <div className="doctorado_descripcion">
+                            <div className="doctorado_titulo">
+                                <div className="doctorado_titulos_list">
+
+                                <h2 className='titulo_doctorado_1'>ASESORÍA Y <span>ELABORACIÓN</span></h2>
+                                <h2 className='titulo_doctorado_2'>DE TESIS <span>DOCTORAL</span></h2>
+                                </div>
+                            </div>
+                            <div className="doctorado_experiencia">
+                                <p>¡Contamos con más de 10 años de Experiencia a Nivel Nacional!</p>
+                            </div>
+                            <div className="doctorado_listas">
+                                <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
+                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
+                            </div>
+                            
+                        </div>
+                        <div className="medalla_container_doctorado">
+                                <img className="medalla medalla_doctorado" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
+                                <img className="somos somos_doctorado" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
+                            </div>
+                    </div>
+                    <div className="carousel-item maestria">
+                        <img className="img-carousel " src={require('../images/maestria.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
+                        {/* <div className="carousel-caption d-none d-md-block">
+                            <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
+                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                        </div> */}
+                        <div className="maestria_descripcion">
+                            <div className="maestria_titulo">
+                                <h2 className='titulo_maestria_1'>ASESORÍA Y ELABORACIÓN DE</h2>
+                                <h2 className='titulo_maestria_2'>TESIS DE MAESTRÍA</h2>
+                            </div>
+                            <div className="maestria_listas">
+                                <ul className="maestria_list">
+                                    <li><span></span>Gestión Pública</li>
+                                    <li><span></span>Derecho</li>
+                                    <li><span></span>Administración</li>
+                                    <div className="contacto_carousel contacto-whatsapp">
+                                        <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect contacto_carousel ">Asesor en vivo</a>
+                                    </div>
+                                </ul>
+                                <ul className="maestria_list">
+                                    <li><span></span>Contabilidad</li>
+                                    <li><span></span>Finanzas</li>
+                                    <li><span></span>Salud</li>
+                                    <div className="contacto_carousel contacto">
+                                        <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <button className="carousel-control-prev button-carousel" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon icon-x" aria-hidden="true"></span>
@@ -199,12 +276,11 @@ export default function Carousel() {
             </div> */}
 
             <div className="seccion_contador">
-
                 <div className="fila">
                     <div className="col">
                         {/* <img src="img1.png" /> */}
                         <div className="d-flex">
-                            <Contador  inicio={0} final={1000} duracion={5} />
+                            <Contador inicio={0} final={1000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
                         </div>
                         <p>Titulados</p>
@@ -212,7 +288,7 @@ export default function Carousel() {
                     <div className="col">
                         {/* <img src="img2.png" /> */}
                         <div className="d-flex">
-                            <Contador  inicio={0} final={1000} duracion={5} />
+                            <Contador inicio={0} final={1000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
                         </div>
                         <p>Clientes Satisfechos</p>
@@ -231,10 +307,6 @@ export default function Carousel() {
                         <p>Carreras</p>
                     </div>
                 </div>
-
-
-
-
             </div>
 
             <div className="contenedor-efecto">
