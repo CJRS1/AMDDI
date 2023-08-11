@@ -72,10 +72,12 @@ export default function Carousel() {
                 <div className="carousel-inner">
                     <div className="carousel-item active asesoria">
                         <img className="img-carousel" src={require('../images/asesoria.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
+
                         <div className="carousel-caption d-none d-md-block botones_contacto_asesoria">
                             <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
                         </div>
+
                         <div className="asesoria_descripcion">
                             <div className="asesoria_titulo">
                                 <h2>TESIS PARA GENTE</h2>
@@ -88,6 +90,9 @@ export default function Carousel() {
                                 <li><span></span>Asesoría personalizada</li>
                                 <li><span></span>Compromiso con nuestro trabajo</li>
                                 <li><span></span>Especialistas de todas las carreras profesionales</li>
+
+                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect btn_asesoria">Contáctanos</Link>
+
                             </ul>
                             <div className="medalla_container">
                                 <img className="medalla" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
@@ -184,14 +189,14 @@ export default function Carousel() {
                                 <p>¡Contamos con más de 10 años de Experiencia a Nivel Nacional!</p>
                             </div>
                             <div className="doctorado_listas">
-                                <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
-                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
+                                <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect doctorado_contacto">Más información</a>
+                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect ">Contáctanos</Link>
                             </div>
 
                         </div>
                         <div className="medalla_container_doctorado">
                             <img className="medalla medalla_doctorado" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
-                            <img className="somos somos_doctorado" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
+                            <img className="somos1 somos_doctorado" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
                         </div>
                     </div>
                     <div className="carousel-item maestria">
@@ -244,14 +249,14 @@ export default function Carousel() {
                         <h3>En AMDDI somos</h3>
                         <h3> INTERNACIONES</h3>
                         <ul className="paises_list">
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/peru.png')} alt='Peru' height={'35px'} /></li>
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/bolivia.png')} alt='Bolivia' height={'35px'} /></li>
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/colombia.png')} alt='Colombia' height={'35px'} /></li>
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/costica.png')} alt='CostaRica' height={'35px'} /></li>
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/cuba.png')} alt='Cuba' height={'35px'} /></li>
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/ecuador.png')} alt='Ecuador' height={'35px'} /></li>
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/venezuela.png')} alt='Venezuela' height={'35px'} /></li>
-                            <li><img className="medalla medalla_doctorado" src={require('../images/paises/mexico.png')} alt='Mexico' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/peru.png')} alt='Peru' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/bolivia.png')} alt='Bolivia' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/colombia.png')} alt='Colombia' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/costica.png')} alt='CostaRica' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/cuba.png')} alt='Cuba' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/ecuador.png')} alt='Ecuador' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/venezuela.png')} alt='Venezuela' height={'35px'} /></li>
+                            <li><img className="pais" src={require('../images/paises/mexico.png')} alt='Mexico' height={'35px'} /></li>
                         </ul>
                         <div className="international_desc">
                             <p>
@@ -296,7 +301,7 @@ export default function Carousel() {
                         <p>Titulados</p>
                     </div>
                     <div className="col">
-                    <img className="" src={require('../images/Contador/clientes.png')} alt='medalla' height={'220px'} />
+                        <img className="" src={require('../images/Contador/clientes.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={1000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
@@ -304,12 +309,12 @@ export default function Carousel() {
                         <p>Clientes Satisfechos</p>
                     </div>
                     <div className="col">
-                    <img className="" src={require('../images/Contador/peru.png')} alt='medalla' height={'220px'} />
+                        <img className="" src={require('../images/Contador/peru.png')} alt='medalla' height={'220px'} />
                         <Contador inicio={0} final={24} duracion={100} />
                         <p>Departamentos de Perú</p>
                     </div>
                     <div className="col">
-                    <img className="" src={require('../images/Contador/carreras.png')} alt='medalla' height={'220px'} />
+                        <img className="" src={require('../images/Contador/carreras.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={40} duracion={100} />
                             <h3 className="contador-margin">+</h3>
