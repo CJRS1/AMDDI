@@ -91,7 +91,7 @@ export default function Carousel() {
                                 <li><span></span>Compromiso con nuestro trabajo</li>
                                 <li><span></span>Especialistas de todas las carreras profesionales</li>
 
-                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect btn_asesoria">Contáctanos</Link>
+                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect btn_asesoria">Contáctanos</Link>
 
                             </ul>
                             <div className="medalla_container">
@@ -196,7 +196,7 @@ export default function Carousel() {
                         </div>
                         <div className="medalla_container_doctorado">
                             <img className="medalla medalla_doctorado" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
-                            <img className="somos1 somos_doctorado" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
+                            <img className="somos somos_doctorado somos2" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
                         </div>
                     </div>
                     <div className="carousel-item maestria">
@@ -289,7 +289,36 @@ export default function Carousel() {
                     <Link to="/AMDDI/servicios" className="boton_servicios button-effect" >Ver Más</Link>
                 </div>
             </div> */}
-
+            <div className="seccion_servicios_p">
+                <h2>NUESTROS SERVICIOS</h2>
+                <div className="servicios_list_p">
+                    <div className="servicio_p">
+                        <img className="img_servicio_p" src={require('../images/Servicio_carousel/ciclo.png')} alt='medalla' height={'300px'} />
+                        <div className="servicio_titulo_p">
+                            <h3>Redacción de Tesis Pregrado</h3>
+                        </div>
+                    </div>
+                    <div className="servicio_p">
+                        <img className="img_servicio_p" src={require('../images/Servicio_carousel/observaciones.png')} alt='medalla' height={'300px'} />
+                        <div className="servicio_titulo_p">
+                            <h3>Levantamiento de Observaciones Pregrado</h3>
+                        </div>
+                    </div>
+                    <div className="servicio_p">
+                        <img className="img_servicio_p" src={require('../images/Servicio_carousel/redaccion.png')} alt='medalla' height={'300px'} />
+                        <div className="servicio_titulo_p">
+                            <h3>Trabajos de ciclo</h3>
+                        </div>
+                    </div>
+                    <div className="servicio_p">
+                        <img className="img_servicio_p" src={require('../images/Servicio_carousel/informe.png')} alt='medalla' height={'300px'} />
+                        <div className="servicio_titulo_p">
+                            <h3>Informe de prácticas</h3>
+                        </div>
+                    </div>
+                </div>
+                <Link to="/AMDDI/nosotros" type="button" className="btn button-effect contacto_carousel">Ver más servicios</Link>
+            </div>
             <div className="seccion_contador">
                 <div className="fila">
                     <div className="col">
