@@ -197,59 +197,6 @@ section {
     transform: scale(1);
   }
 }
-.caracteristica_servicios {
-  margin-bottom: 20px;
-  width: 850px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.caracterisctia_servicios_container {
-  padding: 20px;
-  padding-top: 40px !important;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #00d799;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 92vh;
-}
-
-.servicios_descripcion {
-  text-align: justify;
-  color: #ffffff;
-  font-size: 17px;
-  margin-bottom: 15px;
-  padding: 10px 20px 0 20px;
-}
-
-.lista_servicios {
-  list-style: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  padding-bottom: 10px;
-  text-align: justify;
-}
-
-.lista_servicios li {
-  margin-bottom: 8px;
-}
-
-.boton_servicios {
-  display: inline-block;
-  margin-top: 20px 0 0 0 !important;
-  border: 1px solid #ffffff;
-  background-color: #00d799;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
 .negocio {
   position: relative;
 }
@@ -505,10 +452,18 @@ section {
 
 .amddi_internacional {
   height: calc(100vh - 120px);
+  width: 90%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.img-carousel_int {
+  height: calc(100vh - 120px);
+}
+
+.img_int_container {
+  width: 400px !important;
 }
 
 .amdi_international_description {
@@ -915,21 +870,6 @@ section {
   }
 }
 @media (max-width: 768px) {
-  .nuestros_servicios_title {
-    padding-top: 20px;
-  }
-  .caracteristica_servicios {
-    height: 100%;
-    margin-top: 20px;
-  }
-  .caracterisctia_servicios_container {
-    height: 100%;
-    width: 360px;
-    padding-top: 20px !important;
-  }
-  .lista_servicios {
-    margin-left: 0;
-  }
   .img-carousel {
     width: 100%;
   }
@@ -938,9 +878,6 @@ section {
   }
   .carousel {
     width: 100% !important;
-  }
-  .caracteristica_servicios {
-    width: 100%;
   }
   .negocio_descripcion {
     flex-direction: column;

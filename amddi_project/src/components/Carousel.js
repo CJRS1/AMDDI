@@ -283,7 +283,7 @@ export default function Carousel() {
                 </div>
                 <div className="amddi_internacional">
                     <div className="img_int_container">
-                        <img className="img-carousel" src={require('../images/somos_internacionales.png')} alt='proyecto' height={'605px'} width={'826px'} />
+                        <img className="img-carousel_int" src={require('../images/somos_internacionales.png')} alt='proyecto'/>
                     </div>
                     <div className="amdi_international_description">
                         <div className="international_container">
@@ -309,27 +309,7 @@ export default function Carousel() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="caracteristica_servicios" id="inicio">
-                <div className="caracterisctia_servicios_container">
-                    <h2 className='nuestros_servicios_title'>Nuestros Servicios</h2>
-                    <p className="servicios_descripcion">
-                        En nuestra plataforma ofrecemos servicios académicos de alta calidad para brindarte el apoyo necesario en el desarrollo de tu tesis. Nuestro equipo de expertos te guiará en cada etapa del proceso de investigación y redacción, asegurándonos de que alcances tus objetivos académicos con éxito. En AMDDI nos encocamos en:
-                    </p>
-                    <ul className="lista_servicios">
-                        <li>Asesoría y orientación en el tema de tesis.</li>
-                        <li>Revisión y retroalimentación sobre el diseño de la investigación y la formulación del problema.</li>
-                        <li>Asistencia en la revisión de literatura y búsqueda de fuentes académicas relevantes.</li>
-                        <li>Apoyo en la definición de la metodología de investigación adecuada.</li>
-                        <li>Ayuda en la recolección y análisis de datos.</li>
-                        <li>Revisión y corrección del contenido, gramática y estilo del trabajo de tesis.</li>
-                        <li>Asesoramiento en la interpretación de los resultados y conclusiones.</li>
-                        <li>Apoyo en la redacción de la introducción, marco teórico, metodología, resultados y conclusiones.</li>
-                        <li>Orientación en la estructura y formato requeridos por la institución académica.</li>
-                        <li>Asesoramiento sobre aspectos éticos y de integridad académica.</li>
-                    </ul>
-                    <Link to="/AMDDI/servicios" className="boton_servicios button-effect" >Ver Más</Link>
-                </div>
-            </div> */}
+
                 <div className="seccion_servicios_p">
                     <h2>NUESTROS SERVICIOS</h2>
                     <div className="servicios_list_p">
