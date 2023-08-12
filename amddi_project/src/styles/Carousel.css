@@ -561,12 +561,16 @@ section {
 .seccion_contador .fila .col h3 {
   font-size: 40px !important;
   font-weight: 900 !important;
-  color: #00d799 !important;
+  color: #666666 !important;
 }
 .seccion_contador .fila .col p {
   font-size: 20px !important;
-  font-weight: 500 !important;
+  font-weight: 800 !important;
   color: #00d799 !important;
+}
+
+.img_contador {
+  margin-bottom: 20px;
 }
 
 .contador-margin {
@@ -880,6 +884,36 @@ section {
   font-size: 25px !important;
 }
 
+.servicio_p {
+  overflow: hidden;
+  transition: transform 1s;
+}
+
+.servicio_p img {
+  transition: transform 0.3s;
+}
+
+.servicio_p:hover img {
+  transform: scale(1.2);
+}
+
+.servicio_p:hover {
+  transform: scale(1.05);
+}
+
+.animated {
+  animation: slide-in 0.5s ease;
+  opacity: 1; /* Mantener la opacidad en 1 para que los elementos sean visibles */
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @media (max-width: 768px) {
   .nuestros_servicios_title {
     padding-top: 20px;
