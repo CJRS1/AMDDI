@@ -345,7 +345,7 @@ export default function Nosotros() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </section>
     );
 }
