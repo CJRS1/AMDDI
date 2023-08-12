@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AMDDI/static/css/main.a0d1c87c.css",
-    "main.js": "/AMDDI/static/js/main.8ba294af.js",
+    "main.css": "/AMDDI/static/css/main.05de93f5.css",
+    "main.js": "/AMDDI/static/js/main.571f2d8a.js",
     "static/js/787.a75494a5.chunk.js": "/AMDDI/static/js/787.a75494a5.chunk.js",
     "static/media/adelante_completo.png": "/AMDDI/static/media/adelante_completo.e6cc3752f6ab0a7e1157.png",
     "static/media/Plan_negocio.png": "/AMDDI/static/media/Plan_negocio.5f4fb7453becf1e842ab.png",
@@ -37,12 +37,12 @@
     "static/media/linkedin-in.svg": "/AMDDI/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
     "static/media/tiktok.svg": "/AMDDI/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
     "static/media/facebook-f.svg": "/AMDDI/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.a0d1c87c.css.map": "/AMDDI/static/css/main.a0d1c87c.css.map",
-    "main.8ba294af.js.map": "/AMDDI/static/js/main.8ba294af.js.map",
+    "main.05de93f5.css.map": "/AMDDI/static/css/main.05de93f5.css.map",
+    "main.571f2d8a.js.map": "/AMDDI/static/js/main.571f2d8a.js.map",
     "787.a75494a5.chunk.js.map": "/AMDDI/static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0d1c87c.css",
-    "static/js/main.8ba294af.js"
+    "static/css/main.05de93f5.css",
+    "static/js/main.571f2d8a.js"
   ]
 }
