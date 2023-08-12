@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AMDDI/static/css/main.05de93f5.css",
-    "main.js": "/AMDDI/static/js/main.571f2d8a.js",
+    "main.css": "/AMDDI/static/css/main.7b23f085.css",
+    "main.js": "/AMDDI/static/js/main.e7e1c5e9.js",
     "static/js/787.a75494a5.chunk.js": "/AMDDI/static/js/787.a75494a5.chunk.js",
     "static/media/adelante_completo.png": "/AMDDI/static/media/adelante_completo.e6cc3752f6ab0a7e1157.png",
     "static/media/Plan_negocio.png": "/AMDDI/static/media/Plan_negocio.5f4fb7453becf1e842ab.png",
@@ -11,6 +11,7 @@
     "static/media/proyecto_inversión.png": "/AMDDI/static/media/proyecto_inversión.e5ba4f5824d88aa80f58.png",
     "static/media/doctoral.png": "/AMDDI/static/media/doctoral.dcd51041d0e97dfc5677.png",
     "static/media/ciclo.png": "/AMDDI/static/media/ciclo.e284223bc2091431f1e4.png",
+    "static/media/captura1.png": "/AMDDI/static/media/captura1.079b807851595632bc36.png",
     "static/media/medalla.png": "/AMDDI/static/media/medalla.7353329962aaa910a9d3.png",
     "static/media/observaciones.png": "/AMDDI/static/media/observaciones.f07dcfbc4dd2fe952088.png",
     "static/media/informe.png": "/AMDDI/static/media/informe.7b1cfdbefa7d155d6a0b.png",
@@ -37,12 +38,12 @@
     "static/media/linkedin-in.svg": "/AMDDI/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
     "static/media/tiktok.svg": "/AMDDI/static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
     "static/media/facebook-f.svg": "/AMDDI/static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.05de93f5.css.map": "/AMDDI/static/css/main.05de93f5.css.map",
-    "main.571f2d8a.js.map": "/AMDDI/static/js/main.571f2d8a.js.map",
+    "main.7b23f085.css.map": "/AMDDI/static/css/main.7b23f085.css.map",
+    "main.e7e1c5e9.js.map": "/AMDDI/static/js/main.e7e1c5e9.js.map",
     "787.a75494a5.chunk.js.map": "/AMDDI/static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05de93f5.css",
-    "static/js/main.571f2d8a.js"
+    "static/css/main.7b23f085.css",
+    "static/js/main.e7e1c5e9.js"
   ]
 }
