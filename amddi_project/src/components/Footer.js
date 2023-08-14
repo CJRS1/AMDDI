@@ -229,17 +229,6 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="programas">
-                        <h4><strong>Programas de Beneficios</strong></h4>
-
-                        <div className="container-list">
-                            <ul>
-                                <li><HashLink smooth to="/AMDDI/ingresosextra" className="li-effect"> Ingresos Extra</HashLink> </li>
-                                <li><HashLink smooth to="/AMDDI/investigacionsostenible" className="li-effect"> Investigación Sostenible</HashLink> </li>
-                                <li><HashLink smooth to="/AMDDI/emprendimientojoven" className="li-effect"> Emprendimiento Joven</HashLink> </li>
-                            </ul>
-                        </div>
-                    </div>
 
                 </div>
                 <div className="footer-description-ubicanos">
