@@ -313,7 +313,7 @@ export default function Carousel() {
                 <div className="seccion_servicios_p">
                     <h2>NUESTROS SERVICIOS</h2>
                     <div className="servicios_list_p">
-                        <HashLink to="/AMDDI/servicios#redacciontesispregrado" smooth={false} >
+                        <HashLink className='servicio_p' to="/AMDDI/servicios#redacciontesispregrado" smooth={false} >
                             <div className="servicio_p">
                                 <img className="img_servicio_p" src={require('../images/Servicio_carousel/ciclo.png')} alt='medalla' height={'300px'} />
                                 <div className="servicio_titulo_p">
@@ -321,7 +321,7 @@ export default function Carousel() {
                                 </div>
                             </div>
                         </HashLink>
-                        <HashLink to="/AMDDI/servicios#levantamientoobservacionespregrado" smooth={false} >
+                        <HashLink className='servicio_p' to="/AMDDI/servicios#levantamientoobservacionespregrado" smooth={false} >
                             <div className="servicio_p">
                                 <img className="img_servicio_p" src={require('../images/Servicio_carousel/observaciones.png')} alt='medalla' height={'300px'} />
                                 <div className="servicio_titulo_p">
@@ -329,7 +329,7 @@ export default function Carousel() {
                                 </div>
                             </div>
                         </HashLink>
-                        <HashLink to="/AMDDI/servicios#trabajodeciclo" smooth={false} >
+                        <HashLink className='servicio_p' to="/AMDDI/servicios#trabajodeciclo" smooth={false} >
                             <div className="servicio_p">
                                 <img className="img_servicio_p" src={require('../images/Servicio_carousel/redaccion.png')} alt='medalla' height={'300px'} />
                                 <div className="servicio_titulo_p">
@@ -337,7 +337,7 @@ export default function Carousel() {
                                 </div>
                             </div>
                         </HashLink>
-                        <HashLink to="/AMDDI/servicios#informepracticas" smooth={false} >
+                        <HashLink className='servicio_p' to="/AMDDI/servicios#informepracticas" smooth={false} >
                             <div className="servicio_p">
                                 <img className="img_servicio_p" src={require('../images/Servicio_carousel/informe.png')} alt='medalla' height={'300px'} />
                                 <div className="servicio_titulo_p">

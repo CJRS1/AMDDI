@@ -789,7 +789,6 @@ section {
 
 .btn_asesoria {
   display: none;
-  visibility: hidden;
 }
 
 .seccion_servicios_p {
@@ -974,12 +973,24 @@ section {
   .amddi_internacional {
     width: 100%;
   }
+  .amddi_internacional {
+    height: 100%;
+  }
   .international_container {
-    width: 380px;
-    margin-left: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0 !important;
   }
   .international_desc p {
     padding: 0 10px 0 10px;
+  }
+  .amdi_international_description {
+    padding-top: 20px;
+    width: 100%;
+    background: #7febcc;
   }
   .amdi_international_description .international_container h3:nth-of-type(1) {
     font-size: 25px !important;
@@ -988,7 +999,7 @@ section {
     font-size: 35px !important;
   }
   .contenedor-efecto {
-    height: 258.13px !important;
+    height: 257px !important;
   }
   .efecto-scroll {
     height: 258.13px !important;
@@ -1126,6 +1137,20 @@ section {
   }
   .maestria_list {
     margin-bottom: 0;
+  }
+  .seccion_servicios_p {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .seccion_servicios_p h2 {
+    text-align: center;
+  }
+  .servicios_list_p {
+    flex-direction: column;
+  }
+  .servicio_p {
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 1500px) {
