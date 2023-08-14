@@ -4,6 +4,7 @@
 
 body {
   font-family: "Poppins", sans-serif !important;
+  margin-bottom: 0 !important;
 }
 
 h1 {
@@ -158,7 +159,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 120px);
 }
 
 .quienessomos-container {
@@ -166,7 +167,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 900px;
+  width: 100%;
   height: 399px;
   padding: 0 0 0 20px;
   border-radius: 10px;
@@ -181,24 +182,15 @@ section {
   margin-bottom: 30px;
 }
 
-.vimi {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-
 .quienessomos-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin-bottom: 30px;
+  width: 70%;
 }
 
 .quienessomos_description {
-  width: 530px;
+  width: 550px;
   text-align: justify;
 }
 .quienessomos_description h1 {
@@ -214,28 +206,62 @@ section {
   padding: 20px 0 0 0 !important;
 }
 
+.img-logo2 {
+  width: 400px;
+}
+
 .valores-container {
   display: flex !important;
   flex-direction: column;
   justify-content: center !important;
   align-items: center !important;
-  width: 550px !important;
-  height: 1000px !important;
+  background-image: url(../images/Nosotros/valores.jpg);
+  width: 100vw;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 140vh !important;
+}
+.valores-container h2 {
+  font-weight: 600;
 }
 
 .valores {
   display: flex !important;
-  flex-direction: column;
-  justify-content: center !important;
+  justify-content: space-between;
   align-items: center !important;
-  width: 550px !important;
-  height: auto !important;
-  max-height: 1000px !important;
-  background-image: url(../images/fonto_verde.jpeg);
-  background-size: 500px 500px;
-  background-repeat: repeat;
-  border-radius: 10px;
-  padding: 20px 0 30px 0 !important;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.valores_primeros {
+  width: 550px;
+}
+
+.valor_card {
+  display: flex;
+  height: 160px;
+}
+
+.valor_description {
+  width: 450px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.valor_description h3 {
+  font-size: 23px !important;
+  color: #00d799 !important;
+  height: 16px !important;
+  font-weight: 700;
+}
+.valor_description p {
+  text-align: justify;
+}
+
+.img-valor {
+  height: 120px;
 }
 
 .accordion-button {
@@ -274,22 +300,51 @@ section {
   .amddi_container {
     width: 100%;
   }
+  .img-valor {
+    height: 70px !important;
+  }
   .valores-container {
-    width: 350px !important;
-    margin: 20px 0 20px 0 !important;
+    height: 150vh !important;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+  .valor_card {
+    width: 400px;
+    height: auto;
+  }
+  .valores_primeros {
+    width: 100%;
   }
   .valores {
-    width: 350px !important;
+    width: 95%;
+    flex-direction: column !important;
+  }
+  .valor_description {
+    width: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .valor_description h3 {
+    font-size: 15px !important;
+  }
+  .valor_description p {
+    font-size: 10px !important;
   }
   .accordion {
     width: 350px !important;
   }
   .quienessomos {
     padding-top: 30px;
-    height: auto !important;
+    height: 100% !important;
   }
   .quienessomos-card {
     flex-direction: column;
+    width: 90%;
+  }
+  .quienessomos-container {
+    height: 100%;
   }
   .img-logo2 {
     width: 300px;
@@ -297,9 +352,6 @@ section {
   .quienessomos_description {
     margin-top: 20px;
     width: 100%;
-  }
-  .quienessomos-container {
-    width: 95%;
   }
 }
 @media (min-width: 1500px) {
@@ -332,10 +384,10 @@ section {
     font-size: 25px !important;
   }
   .valores-container {
-    width: 700px !important;
+    height: 110vh !important;
   }
   .valores {
-    width: 650px !important;
+    width: 70%;
   }
   .accordion {
     width: 600px !important;
