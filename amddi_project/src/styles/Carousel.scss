@@ -695,6 +695,7 @@
 
 .btn_asesoria {
     display: none;
+    visibility: hidden;
 }
 
 .seccion_servicios_p {
@@ -771,7 +772,9 @@
     /* Mantener la opacidad en 1 para que los elementos sean visibles */
 }
 
-
+.img_responsive{
+    display: none;
+}
 
 @keyframes slide-in {
     from {
@@ -785,7 +788,12 @@
 
 
 @media (max-width: 768px) {
-
+    .img_principal{
+        display: none;
+    }
+    .img_responsive{
+        display: block;
+    }
     .img-carousel {
         width: 100%;
     }
@@ -1051,6 +1059,7 @@
         display: block;
         width: 200px;
         margin-left: 40px !important;
+        visibility: visible;
     }
 
     .medalla_container {

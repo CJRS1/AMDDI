@@ -112,7 +112,8 @@ export default function Carousel() {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active asesoria">
-                            <img className="img-carousel" src={require('../images/asesoria.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
+                            <img className="img-carousel img_principal" src={require('../images/asesoria.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
+                            <img className="img-carousel img_responsive" src={require('../images/recortado1.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
 
                             <div className="carousel-caption d-none d-md-block botones_contacto_asesoria">
                                 <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
