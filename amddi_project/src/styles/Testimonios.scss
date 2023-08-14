@@ -5,15 +5,15 @@
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    height: 100vh !important;
+    height: 130vh !important;
     width: 1481px !important;
     margin-right: 0 !important;
-    padding-top: 110px !important;
+    padding-top: 90px !important;
 }
 
 .wrapper {
     width: 1000px !important;
-    height: 500px;
+    height: 700px;
     text-align: center;
 }
 
@@ -25,11 +25,11 @@
     padding-top: 20px !important;
     width: 1000px !important;
     margin: 0px auto;
-    height: 500px !important;
+    height: 1000px !important;
 }
 
 .slick-list{
-    height: 400px !important;
+    height: 620px !important;
 
 }
 
@@ -43,7 +43,7 @@
 
 .slick-prev,
 .slick-next {
-    background: #000;
+    // background: #000;
     border-radius: 15px;
     border-color: transparent;
     background: $verde-lima !important;
@@ -64,8 +64,10 @@
 }
 
 .card {
-    border: 2px solid #fff;
-    box-shadow: 1px 1px 15px #ccc;
+    // width: 280px !important;
+    // height: 400px !important;
+    border: 0px solid $blanco !important;
+    // box-shadow: 1px 1px 15px #ccc;
 }
 
 .card-body {
@@ -104,11 +106,14 @@
 @media (max-width: 768px){
     .testimonios_container{
         width: 100% !important;
+        height: 750px !important;
+        padding-top: 70px !important;
     }
 
 
     .wrapper{
         width: 100% !important;
+        height: 500px !important;
         display: flex ;
         flex-direction: column;
         justify-content: center;
@@ -132,5 +137,9 @@
     }
     .slick-slide{
         margin: 0 !important;
+    }
+
+    .slick-list{
+        height: 450px !important;
     }
 }

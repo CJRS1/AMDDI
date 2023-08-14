@@ -3,6 +3,7 @@
 .carousel_container {
     padding-top:120px;
     width: 1481px;
+    height: auto;
     display: flex !important;
     flex-direction: column;
     justify-content: center !important;
@@ -62,113 +63,1094 @@
     }
 }
 
-.caracteristica_servicios {
-    margin-bottom: 20px;
-    width: 850px;
-    height: 100vh;
+
+.negocio {
+    position: relative;
+}
+
+.negocio_titulo {
+    height: 300px;
+    padding-top: 30px;
+}
+
+.negocio_descripcion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+}
+
+.titulo_negocio_1 {
+    color: $verde-lima !important;
+    font-weight: 900;
+    font-size: 60px;
+    height: 60px;
+    margin-bottom: 0 !important;
+}
+
+.titulo_negocio_2 {
+    color: $blanco !important;
+    font-weight: 900;
+    font-size: 100px;
+    height: 100px;
+    margin-bottom: 0 !important;
+}
+
+.negocio_listas {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
+    padding-top: 95px;
 }
 
-.caracterisctia_servicios_container {
-    padding: 20px;
-    padding-top: 40px !important;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: $verde-lima;
+.negocio_list {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+
+    li {
+
+        color: $blanco !important;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $blanco;
+        margin-right: 5px;
+    }
+}
+
+.contenedor_btn_proyecto {
+    width: 500px;
+    top: 80%;
+    left: 20%;
+
+}
+
+.proyecto_titulo {
+    height: 300px;
+    padding-top: 30px;
+}
+
+.proyecto_descripcion {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+}
+
+.titulo_proyecto_1 {
+    font-size: 50px;
+    height: 50px;
+}
+
+.titulo_proyecto_2 {
+    font-size: 115px;
+    font-weight: 900;
+}
+
+.proyecto_listas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.proyecto_list {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 100px;
+    padding-bottom: 25px;
+
+    li {
+
+        color: $blanco !important;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $blanco;
+        margin-right: 5px;
+    }
+}
+
+
+.contacto_carousel {
+    margin-top: 20px !important;
+    width: 200px;
+    padding-right: 20px !important;
+    margin-bottom: 0 !important;
+}
+
+.contenedor-efecto {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.contenedor-efecto {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.practica {
+    position: relative;
+}
+
+.practicas_description {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.practicas_titulo {
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 92vh;
+
+    h2 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+}
+
+.color_verde {
+    color: $verde-lima;
+}
+
+.indeed_btn {
+    width: 700px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid $verde-lima;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.indeed_btn:hover {
+    animation: scale 1s infinite;
 }
 
 
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
 
-.servicios_descripcion {
-    text-align: justify;
-    color: $blanco;
-    font-size: 17px;
-    margin-bottom: 15px;
-    padding: 10px 20px 0 20px;
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
-.lista_servicios {
-    list-style: disc;
-    margin-left: 20px;
+.efecto-scroll {
+    position: absolute;
+
+    text-align: center;
+    top: -800px;
+    /* oculto al inicio */
+    width: 100%;
+    height: 500px;
+    transition: 3s ease;
+
+}
+
+.contenido-texto {
+    position: absolute;
+    width: 1000px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-texto p {
+    font-size: 0.5em;
+}
+
+.efecto-scroll h2 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+
+.efecto-scroll p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+
+.img-scroll {
+    width: 100%;
+
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.proyecto_contacto {
+    display: none !important;
+}
+
+.amddi_internacional {
+    height: calc(100vh - 120px);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-carousel_int{
+    height: calc(100vh - 120px) ;
+}
+
+.img_int_container{
+    width: 400px !important;
+}
+
+.amdi_international_description {
+    width: 550px;
+
+    .international_container {
+        h3:nth-of-type(1) {
+            color: $verde-lima !important;
+            font-size: 35px !important;
+            font-weight: 700 !important;
+            margin-bottom: 0 !important;
+        }
+
+        h3:nth-of-type(2) {
+            color: $verde-lima !important;
+            font-size: 45px !important;
+            font-weight: 700 !important;
+            margin-bottom: 20px !important;
+        }
+    }
+
+    .international_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: #000 !important;
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+
+.seccion_contador {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fila {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            h3 {
+                font-size: 40px !important;
+                font-weight: 900 !important;
+                color: $gris-oscuro !important;
+            }
+
+            p {
+                font-size: 20px !important;
+                font-weight: 800 !important;
+                color: $verde-lima !important;
+            }
+        }
+    }
+}
+
+.img_contador {
     margin-bottom: 20px;
-    color: $blanco;
-    padding-bottom: 10px;
-    text-align: justify;
 }
 
-.lista_servicios li {
-    margin-bottom: 8px;
+.contador-margin {
+    margin-left: 10px;
 }
 
-.boton_servicios {
-    display: inline-block;
-    margin-top: 20px 0 0 0 !important;
-    border: 1px solid $blanco;
-    background-color: $verde-lima;
-    color: $blanco;
-    text-decoration: none;
-    border-radius: 5px;
-
+.asesoria {
+    position: relative;
 }
+
+.asesoria_subtitulo {
+    display: flex;
+    justify-content: flex-start;
+    // align-items: start;
+    margin-top: 25px;
+}
+
+.asesoria_descripcion {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2 {
+        font-size: 60px;
+        font-weight: 900;
+        height: 60px;
+        margin: 0 0 0 0 !important;
+
+        span {
+            color: $verde-lima;
+        }
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+
+        span {
+            color: $verde-lima;
+        }
+    }
+}
+
+.botones_contacto_asesoria {
+    position: relative;
+    bottom: 0 !important;
+    left: 60% !important;
+    z-index: 2;
+    top: 70%;
+    height: 100px !important;
+}
+
+.asesoria_lista {
+    width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+
+    li {
+
+        color: $blanco !important;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $blanco;
+        margin-right: 5px;
+    }
+}
+
+.medalla_container {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
+.medalla {
+    position: relative;
+    z-index: 2;
+}
+
+.somos {
+    position: relative;
+    top: 90%;
+    left: 8%;
+    transform: translate(-50%, -10%);
+}
+
+.somos1 {
+    position: relative;
+    top: 90%;
+    left: 18%;
+    transform: translate(-50%, -10%);
+}
+
+.somos2 {
+    left: 18%;
+}
+
+
+.maestria {
+    position: relative;
+}
+
+.maestria_titulo {
+    height: 300px;
+    padding-top: 30px;
+}
+
+.maestria_descripcion {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.titulo_maestria_1 {
+    color: $verde-lima !important;
+    font-weight: 900;
+    font-size: 40px;
+    height: 40px;
+    margin-bottom: 0 !important;
+}
+
+.titulo_maestria_2 {
+    color: $blanco !important;
+    font-weight: 900;
+    font-size: 80px;
+    height: 80px;
+    margin-bottom: 0 !important;
+}
+
+.maestria_listas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+}
+
+.maestria_list {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+
+    li {
+        padding-left: 20px;
+        color: $blanco !important;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $blanco;
+        margin-right: 5px;
+    }
+}
+
+.doctorado {
+    position: relative;
+}
+
+.doctorado_titulo {
+    height: 300px;
+    padding-top: 30px;
+}
+
+.doctorado_descripcion {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.doctorado_titulos_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 480px;
+}
+
+.titulo_doctorado_1 {
+    color: $blanco !important;
+    font-weight: 900;
+    font-size: 45px;
+    height: 45px;
+    margin-bottom: 0 !important;
+
+    span {
+        color: $verde-lima;
+    }
+}
+
+.titulo_doctorado_2 {
+    color: $blanco !important;
+    font-weight: 900;
+    font-size: 45px;
+    height: 45px;
+    margin-bottom: 0 !important;
+
+    span {
+        color: $verde-lima;
+    }
+}
+
+.doctorado_experiencia {
+    padding: 15px 25px 5px 25px;
+    top: 60%;
+    width: 600px;
+    border: solid 3px $verde-lima;
+    border-radius: 10px;
+    position: absolute;
+
+    p {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.doctorado_listas {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120%;
+}
+
+.medalla_container_doctorado {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
+
+.paises_list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-decoration: none !important;
+    padding-left: 0;
+    width: 100%;
+
+    li {
+        text-decoration: none !important;
+    }
+}
+
+.btn_asesoria {
+    display: none;
+    visibility: hidden;
+}
+
+.seccion_servicios_p {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 40px !important;
+        font-weight: 800 !important;
+        color: $verde-lima !important;
+    }
+}
+
+.servicios_list_p {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.servicio_p {
+    position: relative;
+    width: 300px;
+}
+
+.img_servicio_p {
+    width: 100%;
+    display: block;
+}
+
+.servicio_titulo_p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.servicio_titulo_p h3 {
+    margin: 0;
+    width: 100%;
+    font-size: 25px !important;
+}
+
+.servicio_p {
+    overflow: hidden;
+    transition: transform 1s;
+}
+
+.servicio_p img {
+    transition: transform 0.3s;
+}
+
+.servicio_p:hover img {
+    transform: scale(1.2);
+}
+
+.servicio_p:hover {
+    transform: scale(1.05);
+}
+
+
+
+.animated {
+    animation: slide-in 0.5s ease;
+    opacity: 1; /* Mantener la opacidad en 1 para que los elementos sean visibles */
+}
+
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 
 @media (max-width: 768px) {
-    .nuestros_servicios_title{
-        padding-top: 20px;
-    }
-    .caracteristica_servicios{
-        height: 100%;
-        margin-top: 20px;
-    }
-    .caracterisctia_servicios_container{
-        height: 100%;
-        width: 360px;
-        padding-top: 20px !important;
-    }
-    .lista_servicios{
-        margin-left: 0;
-    }
-    .img-carousel{
+
+    .img-carousel {
         width: 100%;
     }
-    .carousel_container{
+
+    .carousel_container {
         width: 100%;
     }
-    .carousel{
+
+    .carousel {
         width: 100% !important;
     }
-    .caracteristica_servicios{
+
+
+    .negocio_descripcion {
+        flex-direction: column;
+        width: 380px;
+    }
+
+    .negocio_titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        height: 200px;
+    }
+
+    .titulo_negocio_1 {
+        font-size: 50px;
+        height: 50px;
+    }
+
+    .titulo_negocio_2 {
+        font-size: 75px;
+        height: 75px;
+    }
+
+    .negocio_listas {
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .contacto-whatsapp {
+        display: none !important;
+    }
+
+    .negocio_list {
+        margin-bottom: 0 !important;
+        padding-left: 12px;
+    }
+
+    .contacto {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .practicas_description {
+        width: 100%;
+        top: 45%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .practicas_titulo {
+        width: 100%;
+
+        h2 {
+            font-size: 27px;
+        }
+    }
+
+    .indeed_btn {
+        width: 330px;
+        font-size: 15px;
+        height: 50px;
+        text-align: center;
+        margin-top: 80px !important;
+    }
+
+    .proyecto_titulo {
         width: 100%;
     }
-    
+
+    .titulo_proyecto_1 {
+        font-size: 30px;
+    }
+
+    .titulo_proyecto_2 {
+        font-size: 60px;
+    }
+
+    .proyecto_descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .proyecto_titulo {
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proyecto_listas {
+        padding-top: 0;
+    }
+
+    .proyecto_contacto {
+        display: block !important;
+    }
+
+    .proyecto_last {
+        padding-bottom: 30px;
+    }
+
+    .img_int_container {
+        display: none !important;
+    }
+
+    .amddi_internacional {
+        width: 100%;
+    }
+
+    .international_container {
+        width: 380px;
+        margin-left: 0 !important;
+    }
+
+    .international_desc {
+        p {
+            padding: 0 10px 0 10px;
+        }
+    }
+
+    .amdi_international_description {
+        .international_container {
+            h3:nth-of-type(1) {
+                font-size: 25px !important;
+            }
+
+            h3:nth-of-type(2) {
+                font-size: 35px !important;
+            }
+        }
+    }
+
+    .contenedor-efecto {
+        height: 258.13px !important;
+    }
+
+    .efecto-scroll {
+        height: 258.13px !important;
+        transition: 2s ease;
+    }
+
+    .contenido-texto {
+        width: 380px;
+        top: 60%;
+
+        h2 {
+            font-size: 20px !important;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+
+    .informacion_btn {
+        width: 300px !important;
+    }
+
+
+    .pais {
+        height: 25px;
+    }
+
+    .seccion_contador {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .asesoria_titulo {
+        h2 {
+            font-size: 33px;
+            height: 30px;
+        }
+
+        .asesoria_subtitulo {
+            h3 {
+                font-size: 15px !important;
+            }
+        }
+    }
+
+    .asesoria_lista {
+        li {
+            font-size: 20px;
+        }
+    }
+
+    .asesoria_descripcion {
+        top: 25%;
+        left: 0;
+    }
+
+    .asesoria_lista {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .medalla_container {
+        top: -50%;
+        left: 10%;
+    }
+
+    .medalla {
+        height: 120px;
+        width: 120px;
+
+    }
+
+    .somos {
+        width: 240px;
+        height: 70px;
+        left: 15%;
+    }
+
+    .btn_asesoria {
+        margin-top: 20px !important;
+        display: block;
+        width: 200px;
+        margin-left: 40px !important;
+    }
+
+    .medalla_container {
+        top: -37%;
+    }
+
+    .doctorado {
+        width: 100%;
+    }
+
+    .doctorado_descripcion {
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .doctorado_titulos_list {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 20px;
+
+        .titulo_doctorado_1 {
+            width: 100%;
+            font-size: 25px !important;
+            height: 30px;
+        }
+
+        .titulo_doctorado_2 {
+            width: 100%;
+            font-size: 25px !important;
+            height: 30px;
+        }
+    }
+
+    .doctorado_experiencia {
+        width: 300px;
+        margin-left: 42px;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .doctorado_titulo {
+        padding-top: 80px;
+    }
+
+    .doctorado_contacto {
+        display: none !important;
+    }
+
+    .doctorado_listas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .medalla_container_doctorado {
+        width: 100%;
+        top: 0;
+        left: 10%;
+    }
+
+    .maestria_descripcion {
+        top: 50%;
+        width: 100%;
+
+        .titulo_maestria_1 {
+            font-size: 20px;
+            height: 20px;
+            padding-left: 20px;
+        }
+
+        .titulo_maestria_2 {
+            font-size: 35px;
+            padding-left: 20px;
+        }
+    }
+
+    .maestria_listas {
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        padding-right: 50px;
+    }
+
+    .maestria_list {
+        margin-bottom: 0;
+    }
 }
 
-@media (min-width: 1500px){
-    .caracterisctia_servicios_container{
+@media (min-width: 1500px) {
+    .caracterisctia_servicios_container {
         width: 800px;
         height: 800px;
     }
-    .img-carousel{
+
+    .img-carousel {
         height: calc(100vh - 120px) !important;
         width: 100vw !important;
     }
-    .carousel_container{
+
+    .carousel_container {
         width: 100vw;
     }
-    #carouselExample{
+
+    #carouselExample {
         width: 100vw !important;
     }
-    .servicios_descripcion{
+
+    .servicios_descripcion {
         font-size: 18px !important;
     }
-    .lista_servicios{
-        li{
+
+    .lista_servicios {
+        li {
             font-size: 18px !important;
         }
     }

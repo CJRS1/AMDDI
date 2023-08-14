@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+
 import '../styles/Registro.css';
 
 export default function Registro() {
@@ -33,7 +35,11 @@ export default function Registro() {
         <section className="registro_container">
             <div className="form_registro">
 
+
             <h2 className="titulo">Regístrate y completa tus datos</h2>
+
+            <h2 className="titulo">Completa tus datos</h2>
+
             <form onSubmit={handleSubmit} >
                 <input className="input_registro"
                     type="text"
@@ -79,7 +85,10 @@ export default function Registro() {
                 />
 
 
+
                 <button type="submit">Registrarse</button>
+
+                <Link to="/AMDDI/registrarse-p2" type="submit">Siguiente</Link>
 
 
             </form>

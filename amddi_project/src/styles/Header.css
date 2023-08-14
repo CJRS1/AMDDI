@@ -155,6 +155,12 @@ section {
   right: 0;
   z-index: 999;
   box-shadow: 0 0 4px 0 #00d799;
+  box-shadow: 0 0 4px 0 #00d799;
+}
+
+.disable-bootstrap-animations * {
+  transition: none !important;
+  animation: none !important;
 }
 
 a {
@@ -178,6 +184,7 @@ a {
 .nav-link {
   transition: all 0.5s ease-in-out !important;
   font-weight: 300 !important;
+  font-weight: 600 !important;
   font-size: 14px !important;
   display: flex;
   justify-content: center;
@@ -229,7 +236,7 @@ a {
   text-decoration: none !important;
   height: 32px !important;
   display: flex !important;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -288,8 +295,9 @@ a {
     overflow-y: auto;
     top: 0;
     left: 0;
-    background: #00d799;
-    display: flex;
+    background-image: url(../images/fonto_verde.jpeg);
+    background-size: 500px 500px;
+    background-repeat: repeat;
     justify-content: center;
     align-items: center;
   }
@@ -304,6 +312,9 @@ a {
   }
   .dropdown-item {
     min-height: 0;
+  }
+  .nav-link {
+    color: #ffffff !important;
   }
   .li-redacciongeneral {
     display: flex;

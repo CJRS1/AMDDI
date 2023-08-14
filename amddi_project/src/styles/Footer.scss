@@ -1,7 +1,7 @@
 @import 'Variables';
 
 .footer-description {
-    height: 660px;
+    height: 570px;
     width: 1481px;
     background-image: url(../images/fonto_verde.jpeg);
     background-size: 500px 500px;
@@ -98,7 +98,7 @@
     align-items: center;
 
     width: 400px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .llamanos_container {
@@ -116,7 +116,7 @@
 }
 
 .footer-description-redes {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .card-ictel {
@@ -160,6 +160,7 @@
 
 .footer-description-pago {
     padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -168,7 +169,7 @@
 }
 
 .pago-container {
-    padding-top: 15px;
+    padding-top: 3%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;

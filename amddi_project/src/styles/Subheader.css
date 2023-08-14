@@ -141,6 +141,7 @@ section {
   top: 1%;
   right: 1.5%;
   z-index: 155555;
+  display: none !important;
 }
 
 .subheader-content {

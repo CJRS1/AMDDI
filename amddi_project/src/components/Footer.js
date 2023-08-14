@@ -22,7 +22,7 @@ export default function Footer() {
                     <h4><strong>Nosotros</strong></h4>
                     <div className="footer-content">
                         <h5>
-                            <strong>AMDDI</strong> es una empresa líder en soluciones académicas y profesionales. Nuestro equipo de expertos altamente capacitados abarca diversas áreas para ofrecer servicios de redacción de tesis, artículos científicos, ensayos, y más. Brindamos resultados de calidad y confianza para impulsar el éxito de nuestros clientes en sus objetivos académicos y laborales.
+                            <strong>AMDDI</strong> AMDDI brinda servicios confiables de redacción para impulsar el éxito académico y profesional de nuestros clientes.
                         </h5>
                     </div>
                     <div className="footer-description-llamanos">
@@ -76,6 +76,18 @@ export default function Footer() {
                         </div>
                     </div>
 
+                    <div className="programas">
+                        <h4><strong>Programas de Beneficios</strong></h4>
+
+                        <div className="container-list">
+                            <ul>
+                                <li><HashLink smooth to="/AMDDI/ingresosextra" className="li-effect"> Ingresos Extra</HashLink> </li>
+                                <li><HashLink smooth to="/AMDDI/investigacionsostenible" className="li-effect"> Investigación Sostenible</HashLink> </li>
+                                <li><HashLink smooth to="/AMDDI/emprendimientojoven" className="li-effect"> Emprendimiento Joven</HashLink> </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
                 <div className="footer-description-nuestrosservicios">
                     <h4><strong>Nuestros servicios</strong></h4>
@@ -96,8 +108,8 @@ export default function Footer() {
                             </HashLink>
                         </li>
                         <li >
-                            <HashLink smooth to="/AMDDI/servicios#redacciontesismaestria" className="servicios li-effect" href="#postgrado">
-                                <h5>Redacción de Tesis de Maestría</h5>
+                            <HashLink smooth to="/AMDDI/servicios#redacciontesisdoctorado" className="servicios li-effect" href="#postgrado">
+                                <h5>Redacción de Tesis de Doctorado</h5>
                             </HashLink>
                         </li>
                         <li >
@@ -118,6 +130,17 @@ export default function Footer() {
                         <li >
                             <HashLink smooth to="/AMDDI/servicios#plannegocio" className="servicios li-effect" href="#plan">
                                 <h5>Planes de Negocio</h5>
+                            </HashLink>
+                        </li>
+
+                        <li >
+                            <HashLink smooth to="/AMDDI/servicios#articulorevisionsistematica" className="servicios li-effect" href="#articulo-sistematica">
+                                <h5>Artículo de Revisión Sistemática</h5>
+                            </HashLink>
+                        </li>
+                        <li >
+                            <HashLink smooth to="/AMDDI/servicios#ensayos" className="servicios li-effect" href="#ensayo">
+                                <h5>Ensayos</h5>
                             </HashLink>
                         </li>
 
@@ -205,6 +228,7 @@ export default function Footer() {
 
                         </div>
                     </div>
+
                     <div className="programas">
                         <h4><strong>Programas de Beneficios</strong></h4>
 
@@ -216,6 +240,7 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
+
                 </div>
                 <div className="footer-description-ubicanos">
 
@@ -294,12 +319,24 @@ export default function Footer() {
                                 <h5>Av. Ejército 710 Yanahuara </h5>
                             </a>
                         </div>
+                        <div className="card-icloc">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" className="bi bi-geo-alt"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                            <a href='https://goo.gl/maps/1Z3CP3vTZRnupzS16' target='_blank' rel='noreferrer' className="card-localizacion">
+                                <h5><strong>ICA</strong></h5>
+                                <h5>Calle Lima 340, Oficina 25 </h5>
+                            </a>
+                        </div>
                     </div>
                     <h4 className='margin_title'><strong>Libro de Reclamaciones</strong></h4>
                     <div className="libro-container">
                         <a href="https://librodereclamacionesperu.com/formulario.php?id=853131633"
                             rel="noreferrer" target="_blank" >
-                            <img src={libro} alt='bcp' height={'65px'} />
+                            <img src={libro} alt='bcp' height={'55px'} />
                         </a>
                     </div>
                 </div>

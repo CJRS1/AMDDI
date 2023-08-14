@@ -14,6 +14,8 @@ import Investigacion from './components/Investigacion';
 import Emprendimiento from './components/Emprendimiento';
 import Subheader from './components/Subheader';
 import Registro from './components/Registro';
+import Registro2 from './components/Registro2';
+import Registro3 from './components/Registro3';
 import Login from './components/Login';
 
 function App() {
@@ -32,6 +34,13 @@ function App() {
         } />
 
         <Route path="/AMDDI/registrarse" element={<Registro />} />
+
+        <Route path="/AMDDI/registrarse-p1" element={<Registro />} />
+
+        <Route path="/AMDDI/registrarse-p2" element={<Registro2 />} />
+
+        <Route path="/AMDDI/registrarse-p3" element={<Registro3 />} />
+
 
         <Route path="/AMDDI/login" element={<Login />} />
 

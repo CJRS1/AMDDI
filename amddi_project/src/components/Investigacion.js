@@ -75,7 +75,7 @@ export default function Investigacion() {
                        
                         <button type="submit" className="btn button-contact">Enviar el formulario</button>
 
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactanos.html" />
+                        <input type="hidden" name="_next" value="https://cjrs1.github.io/AMDDI/investigacionsostenible" />
                         <input type="hidden" name="_captcha" value="false" />
 
                     </div>

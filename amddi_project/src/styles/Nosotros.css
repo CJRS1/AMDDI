@@ -137,7 +137,7 @@ section {
 }
 
 .amddi_container {
-  max-height: 300vh;
+  max-height: 500vh;
   width: 1481px;
   display: flex !important;
   flex-direction: column;
@@ -145,18 +145,25 @@ section {
   padding-top: 70px;
 }
 
+.carousel_nosotros {
+  padding-top: 50px !important;
+}
+
+.carousel_nosotros {
+  padding-top: 50px !important;
+}
+
 .quienessomos {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 900px;
+  width: 100%;
   height: 100vh;
-  border-radius: 10px;
-  padding-top: 20px;
 }
 
 .quienessomos-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 900px;
@@ -164,80 +171,42 @@ section {
   padding: 0 0 0 20px;
   border-radius: 10px;
   position: relative;
-  background-image: url(../images/fonto_verde.jpeg);
-  background-size: 500px 500px;
-  background-repeat: repeat;
 }
 
-.quienessomos-descripcion {
-  width: 420px;
-  margin-right: 10px;
-  position: absolute;
-  text-align: justify;
-  top: 8%;
-  left: 5%;
-}
-.quienessomos-descripcion h4 {
-  color: #ffffff;
-}
-
-.vimi-container {
+.quienessomos-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 1000px;
-  height: 100vh;
-  padding-top: 20px;
+  width: 90%;
+  margin-bottom: 30px;
 }
 
 .vimi {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 400px !important;
-  height: 350px;
-  padding: 10px 20px 10px 20px;
-  border-radius: 10px;
-}
-.vimi h4 {
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.vision {
-  background-image: url("../images/Nosotros/vision_verde2.jpeg");
-}
-
-.mision {
-  background-image: url("../images/Nosotros/vision_verde3.jpeg");
-}
-
-.img-titulo {
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px !important;
-  padding-bottom: 10px;
-}
-.img-titulo h2 {
-  color: #ffffff;
+  width: 80%;
 }
 
-.img-logo {
-  padding-bottom: 1px;
-  border-radius: 0 10px 10px 0;
-  position: absolute;
-  top: 0;
-  right: 0;
+.quienessomos-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 30px;
 }
 
-.img-logo-vimi {
-  padding-right: 10px;
+.quienessomos_description {
+  width: 530px;
+  text-align: justify;
 }
-
-.titulo-vimi {
-  padding-top: 6px;
-  color: #ffffff;
+.quienessomos_description h1 {
+  color: #666666 !important;
+}
+.quienessomos_description h4 {
+  font-size: 18px !important;
+  color: #666666 !important;
 }
 
 #accordionExample {
@@ -281,9 +250,7 @@ section {
 }
 
 .accordion-collapse {
-  background-image: url(../images/fonto_verde.jpeg);
-  background-size: 500px 500px;
-  background-repeat: repeat;
+  background-color: #00d799 !important;
 }
 
 .accordion-button::before {
@@ -307,43 +274,6 @@ section {
   .amddi_container {
     width: 100%;
   }
-  .quienessomos {
-    width: 100%;
-    height: 100vh;
-    margin-top: 50px;
-  }
-  .quienessomos-container {
-    width: 350px;
-    height: 460px;
-    padding-left: 0;
-  }
-  .quienessomos-img {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-  .quienessomos-descripcion {
-    width: 90%;
-    margin-right: 0;
-    top: 5%;
-  }
-  .vimi-container {
-    width: 350px;
-    flex-direction: column;
-  }
-  .vision {
-    width: 350px !important;
-  }
-  .vision h4 {
-    font-size: 19px !important;
-  }
-  .mision {
-    width: 350px !important;
-    margin-top: 50px;
-  }
-  .mision h4 {
-    font-size: 19px !important;
-  }
   .valores-container {
     width: 350px !important;
     margin: 20px 0 20px 0 !important;
@@ -353,6 +283,23 @@ section {
   }
   .accordion {
     width: 350px !important;
+  }
+  .quienessomos {
+    padding-top: 30px;
+    height: auto !important;
+  }
+  .quienessomos-card {
+    flex-direction: column;
+  }
+  .img-logo2 {
+    width: 300px;
+  }
+  .quienessomos_description {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .quienessomos-container {
+    width: 95%;
   }
 }
 @media (min-width: 1500px) {
