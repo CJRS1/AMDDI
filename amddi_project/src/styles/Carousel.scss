@@ -1,7 +1,7 @@
 @import 'Variables';
 
 .carousel_container {
-    padding-top:120px;
+    padding-top: 120px;
     width: 1481px;
     height: auto;
     display: flex !important;
@@ -210,11 +210,11 @@
     height: 50vh;
 }
 
-.contenedor-efecto {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-}
+// .contenedor-efecto {
+//     position: relative;
+//     height: 500px;
+//     overflow: hidden;
+// }
 
 .practica {
     position: relative;
@@ -340,11 +340,11 @@
     align-items: center;
 }
 
-.img-carousel_int{
-    height: calc(100vh - 120px) ;
+.img-carousel_int {
+    height: calc(100vh - 120px);
 }
 
-.img_int_container{
+.img_int_container {
     width: 400px !important;
 }
 
@@ -767,7 +767,8 @@
 
 .animated {
     animation: slide-in 0.5s ease;
-    opacity: 1; /* Mantener la opacidad en 1 para que los elementos sean visibles */
+    opacity: 1;
+    /* Mantener la opacidad en 1 para que los elementos sean visibles */
 }
 
 
@@ -918,7 +919,7 @@
         width: 100%;
     }
 
-    .amddi_internacional{
+    .amddi_internacional {
         height: 100%;
     }
 
@@ -940,7 +941,7 @@
     .amdi_international_description {
         padding-top: 20px;
         width: 100%;
-        background: $verde-agua;
+
         .international_container {
             h3:nth-of-type(1) {
                 font-size: 25px !important;
@@ -953,7 +954,14 @@
     }
 
     .contenedor-efecto {
-        height: 257px !important;
+        background-image: url(../images/adelante_completo.png);
+        width: 100vw;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .img-scroll {
+        visibility: hidden;
     }
 
     .efecto-scroll {
@@ -1135,20 +1143,21 @@
         margin-bottom: 0;
     }
 
-    .seccion_servicios_p{
+    .seccion_servicios_p {
         justify-content: center;
         align-items: center;
         height: 100%;
-        h2{
-        text-align: center;
+
+        h2 {
+            text-align: center;
         }
     }
 
-    .servicios_list_p{
+    .servicios_list_p {
         flex-direction: column;
     }
 
-    .servicio_p{
+    .servicio_p {
         margin-bottom: 10px;
     }
 }

@@ -382,7 +382,7 @@ export default function Carousel() {
                     </div>
                 </div>
 
-                <div className="contenedor-efecto">
+                <div className="contenedor-efecto ">
                     <div ref={efectoRef} className="efecto-scroll">
                         <div className="contenido-texto">
                             <h2>#¡SEGUIMOS ADELANTE!</h2>

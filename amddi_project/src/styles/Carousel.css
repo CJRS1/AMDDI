@@ -336,12 +336,6 @@ section {
   height: 50vh;
 }
 
-.contenedor-efecto {
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-}
-
 .practica {
   position: relative;
 }
@@ -858,7 +852,8 @@ section {
 
 .animated {
   animation: slide-in 0.5s ease;
-  opacity: 1; /* Mantener la opacidad en 1 para que los elementos sean visibles */
+  opacity: 1;
+  /* Mantener la opacidad en 1 para que los elementos sean visibles */
 }
 
 @keyframes slide-in {
@@ -990,7 +985,6 @@ section {
   .amdi_international_description {
     padding-top: 20px;
     width: 100%;
-    background: #7febcc;
   }
   .amdi_international_description .international_container h3:nth-of-type(1) {
     font-size: 25px !important;
@@ -999,7 +993,13 @@ section {
     font-size: 35px !important;
   }
   .contenedor-efecto {
-    height: 257px !important;
+    background-image: url(../images/adelante_completo.png);
+    width: 100vw;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  .img-scroll {
+    visibility: hidden;
   }
   .efecto-scroll {
     height: 258.13px !important;

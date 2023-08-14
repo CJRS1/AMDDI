@@ -318,11 +318,12 @@ section {
     width: 100%;
   }
   .valores {
+    padding-top: 0;
     width: 95%;
     flex-direction: column !important;
   }
   .valor_description {
-    width: 280px;
+    width: 65%;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -345,6 +346,7 @@ section {
   }
   .quienessomos-container {
     height: 100%;
+    padding-left: 0 !important;
   }
   .img-logo2 {
     width: 300px;
