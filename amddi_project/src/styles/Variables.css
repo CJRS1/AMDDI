@@ -97,10 +97,10 @@ section {
 }
 
 .button-effect {
-  color: #ffffff !important;
-  background-color: #00d799 !important;
-  padding: 10px 10px 10px 10px !important;
-  margin: 0 20px 40px 20px !important;
+  color: #ffffff;
+  background-color: #00d799;
+  padding: 10px 10px 10px 10px;
+  margin: 0 20px 40px 20px;
 }
 
 .button-effect:hover {

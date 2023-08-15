@@ -1037,7 +1037,7 @@
         li {
             width: 68%;
             font-weight: 300;
-            font-size: 18px;
+            font-size: 15px;
             span{
                 width: 15px;
                 height: 15px;
@@ -1046,7 +1046,7 @@
     }
 
     .asesoria_descripcion {
-        top: 10%;
+        top: 7%;
         left: 0;
     }
 
@@ -1069,16 +1069,23 @@
     }
 
     .btn_asesoria {
-        margin-top: 20px !important;
-        margin-bottom: 0 !important;
+        margin: 0 0 0 0 !important;
+        padding: 0 0 0 0 !important;
         display: block;
         width: 200px;
-        margin-left: 40px !important;
         visibility: visible;
+        background: blue !important;
+
+    }
+
+    .carousel-indicators{
+        display: none !important;
     }
 
     .medalla_container {
-        top: -37%;
+        top: 80%;
+        left: 10%;
+        position: static !important;
     }
 
     .doctorado {
