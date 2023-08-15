@@ -1039,6 +1039,7 @@
     .seccion_contador {
         width: 100%;
         height: 100%;
+        margin-top: 30px;
     }
 
     .fila {
@@ -1087,7 +1088,7 @@
     }
 
     .asesoria_descripcion {
-        top: 7%;
+        top: 4%;
         left: 0;
     }
 
@@ -1222,6 +1223,7 @@
     }
 
     .seccion_servicios_p {
+        margin-top: 30px;
         justify-content: center;
         align-items: center;
         height: 100%;
@@ -1249,6 +1251,11 @@
         width: 50px !important;
         height: 50px !important;
         // background: blue !important;
+    }
+
+    .contacto_tesis_prev{
+        margin-top: 0 !important;
+
     }
 }
 

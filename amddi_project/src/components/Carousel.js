@@ -140,7 +140,8 @@ export default function Carousel() {
                                 <img className="medalla" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
                                 <img className="somos" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
                             </div>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn btn_asesoria button-effect ">Contáctanos</Link>
+                            {/* <Link to="/AMDDI/contactanos" type="button" className="btn btn_asesoria button-effect contact_carousel">Contáctanos</Link> */}
+                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto contacto_tesis_pre">Contáctanos</Link>
                         </div>
                     </div>
                     <div className="carousel-item practica">

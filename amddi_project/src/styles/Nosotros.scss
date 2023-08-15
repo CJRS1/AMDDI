@@ -2,11 +2,11 @@
 
 .amddi_container {
     max-height: 500vh;
-    width: 1481px;
+    width: 100%;
     display: flex !important;
     flex-direction: column;
     justify-content: space-around !important;
-    padding-top: 70px;
+    padding-top: 120px;
 
 }
 
@@ -84,7 +84,7 @@
     justify-content: center !important;
     align-items: center !important;
     background-image: url(../images/Nosotros/valores.jpg);
-    width: 100vw;
+    width: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     height: 140vh !important;
