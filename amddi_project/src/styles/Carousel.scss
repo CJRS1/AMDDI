@@ -1009,33 +1009,47 @@
     }
 
     .asesoria_titulo {
+        width: 90% !important;
+        height: auto !important;
         h2 {
-            font-size: 33px;
-            height: 30px;
+            font-size: 40px;
+            height: auto !important;
         }
 
         .asesoria_subtitulo {
+            width: 100%;
+            margin-top: 20px;
             h3 {
-                font-size: 15px !important;
+                font-size: 18px !important;
+                height: auto !important;
             }
         }
     }
 
+    .titulo_principal{
+        display: none;
+    }
+
     .asesoria_lista {
+        padding-left: 16%;
+        width: 100%;
+        justify-content: center;
         li {
-            font-size: 20px;
+            width: 68%;
+            font-weight: 300;
+            font-size: 18px;
+            span{
+                width: 15px;
+                height: 15px;
+            }
         }
     }
 
     .asesoria_descripcion {
-        top: 25%;
+        top: 10%;
         left: 0;
     }
 
-    .asesoria_lista {
-        width: 100%;
-        justify-content: center;
-    }
 
     .medalla_container {
         top: -50%;
@@ -1056,6 +1070,7 @@
 
     .btn_asesoria {
         margin-top: 20px !important;
+        margin-bottom: 0 !important;
         display: block;
         width: 200px;
         margin-left: 40px !important;
@@ -1168,6 +1183,18 @@
 
     .servicio_p {
         margin-bottom: 10px;
+    }
+
+    .carousel-control-prev-icon{
+        width: 50px !important;
+        height: 50px !important;
+        // background: blue !important;
+    }
+
+    .carousel-control-next-icon{
+        width: 50px !important;
+        height: 50px !important;
+        // background: blue !important;
     }
 }
 

@@ -101,7 +101,7 @@ export default function Carousel() {
 
         return (
             <section className="carousel_container">
-                <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="80000">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" className="active" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2" aria-current="true"></button>
@@ -122,8 +122,9 @@ export default function Carousel() {
 
                             <div className="asesoria_descripcion">
                                 <div className="asesoria_titulo">
-                                    <h2>TESIS PARA GENTE</h2>
-                                    <h2><span>QUE TRABAJA</span></h2>
+                                    <h2 className='titulo_principal'>TESIS PARA GENTE</h2>
+                                    <h2 className='titulo_principal'><span>QUE TRABAJA</span></h2>
+                                    <h2>TESIS PARA GENTE<span> QUE <br /> TRABAJA</span></h2>
                                     <div className="asesoria_subtitulo">
                                         <h3>PREGRADO <span>-</span> MAESTRÍA <span>-</span> DOCTORADO <span>-</span> MBA</h3>
                                     </div>
