@@ -40,7 +40,7 @@ export default function Carousel() {
 
         const handleScroll = () => {
 
-            const maxTop = 500;
+            const maxTop = 1000;
 
             if (window.scrollY > 300) {
                 efectoRef.current.style.top = "0px";
@@ -115,7 +115,7 @@ export default function Carousel() {
                         <img className="img-carousel img_principal" src={require('../images/asesoria.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
                         <img className="img-carousel img_responsive" src={require('../images/recortado1.png')} alt='asesoria' height={'603.2px'} width={'1481px'} />
 
-                        <div className="carousel-caption d-none d-md-block botones_contacto_asesoria">
+                        <div className="botones_contacto_asesoria carousel-caption d-none d-md-block ">
                             <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
                             <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
                         </div>
@@ -182,8 +182,9 @@ export default function Carousel() {
                                     <li><span></span>Estudio Ambiental</li>
                                     <li><span></span>Estudio de Mercado</li>
                                     <li className='proyecto_last'><span></span>Estudio Económico Financiero</li>
-                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
+                                    
                                 </ul>
+                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
                             </div>
                         </div>
                     </div>

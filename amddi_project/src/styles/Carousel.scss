@@ -166,6 +166,7 @@
 
 .proyecto_listas {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 60px;
@@ -195,6 +196,8 @@
         background: $blanco;
         margin-right: 5px;
     }
+
+
 }
 
 
@@ -470,10 +473,10 @@
 .botones_contacto_asesoria {
     position: relative;
     bottom: 0 !important;
-    left: 60% !important;
+    left: 55%  !important;
     z-index: 2;
-    top: 70%;
-    height: 100px !important;
+    top: 78%;
+    height: 100px;
 }
 
 .asesoria_lista {
@@ -791,6 +794,10 @@
 
 
 @media (max-width: 768px) {
+    .contacto_carousel{
+        width: 150px !important;
+    }
+
     .titulo_2 {
         display: block;
     }
@@ -814,7 +821,6 @@
     .carousel {
         width: 100% !important;
     }
-
 
     .negocio_descripcion {
         flex-direction: column;
@@ -927,6 +933,7 @@
 
     .proyecto_listas {
         padding-top: 0;
+
         li{
             font-weight: 300;
             font-size: 15px;
@@ -934,6 +941,11 @@
             display: flex;
             align-items: center;
         }
+    }
+
+    .proyecto_list{
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .proyecto_contacto {
