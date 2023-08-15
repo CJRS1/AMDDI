@@ -99,7 +99,7 @@ section {
 
 .button-effect {
   color: #ffffff;
-  background-color: #00d799;
+  background-color: #00d799 !important;
   padding: 10px 10px 10px 10px;
   margin: 0 20px 40px 20px;
 }
@@ -326,14 +326,14 @@ section {
 .contacto_carousel {
   margin-top: 20px !important;
   width: 200px;
-  padding-right: 20px !important;
+  padding-right: 12px !important;
   margin-bottom: 0 !important;
 }
 
 .contenedor-efecto {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 }
 
 .practica {
@@ -851,6 +851,10 @@ section {
   transform: scale(1.05);
 }
 
+.titulo_2 {
+  display: none;
+}
+
 .animated {
   animation: slide-in 0.5s ease;
   opacity: 1;
@@ -870,6 +874,9 @@ section {
   }
 }
 @media (max-width: 768px) {
+  .titulo_2 {
+    display: block;
+  }
   .img_principal {
     display: none;
   }
@@ -887,17 +894,19 @@ section {
   }
   .negocio_descripcion {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 380px;
   }
   .negocio_titulo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     height: 200px;
   }
   .titulo_negocio_1 {
-    font-size: 50px;
-    height: 50px;
+    font-size: 30px;
+    height: 30px;
   }
   .titulo_negocio_2 {
     font-size: 75px;
@@ -914,6 +923,11 @@ section {
     margin-bottom: 0 !important;
     padding-left: 12px;
   }
+  .negocio_list li {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
   .contacto {
     display: flex !important;
     justify-content: center;
@@ -921,7 +935,7 @@ section {
   }
   .practicas_description {
     width: 100%;
-    top: 45%;
+    top: 40%;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -929,17 +943,19 @@ section {
     align-items: center;
   }
   .practicas_titulo {
-    width: 100%;
+    width: 90%;
+    padding-left: 30%;
   }
   .practicas_titulo h2 {
-    font-size: 27px;
+    text-align: center;
+    font-size: 30px;
   }
   .indeed_btn {
-    width: 330px;
+    margin-left: 30%;
+    width: 200px;
     font-size: 15px;
-    height: 50px;
+    height: 60px;
     text-align: center;
-    margin-top: 80px !important;
   }
   .proyecto_titulo {
     width: 100%;
@@ -951,21 +967,29 @@ section {
     font-size: 60px;
   }
   .proyecto_descripcion {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .proyecto_titulo {
-    width: 400px;
+    width: 85%;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .proyecto_listas {
     padding-top: 0;
+  }
+  .proyecto_listas li {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
   }
   .proyecto_contacto {
     display: block !important;
@@ -1095,7 +1119,7 @@ section {
     display: block;
     width: 200px;
     visibility: visible;
-    background: blue !important;
+    background: #00d799 !important;
   }
   .carousel-indicators {
     display: none !important;
@@ -1116,8 +1140,8 @@ section {
   }
   .doctorado_titulos_list {
     width: 100%;
-    padding-right: 0;
-    padding-left: 20px;
+    padding-right: 25%;
+    padding-left: 10%;
   }
   .doctorado_titulos_list .titulo_doctorado_1 {
     width: 100%;
@@ -1131,10 +1155,12 @@ section {
   }
   .doctorado_experiencia {
     width: 300px;
-    margin-left: 42px;
+    top: 70%;
+    left: 12%;
   }
   .doctorado_experiencia p {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 300;
   }
   .doctorado_titulo {
     padding-top: 80px;
@@ -1150,11 +1176,11 @@ section {
   }
   .medalla_container_doctorado {
     width: 100%;
-    top: 0;
-    left: 10%;
+    top: 5%;
+    left: 5%;
   }
   .maestria_descripcion {
-    top: 50%;
+    top: 40%;
     width: 100%;
   }
   .maestria_descripcion .titulo_maestria_1 {
@@ -1174,6 +1200,11 @@ section {
   }
   .maestria_list {
     margin-bottom: 0;
+  }
+  .maestria_list li {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
   .seccion_servicios_p {
     justify-content: center;

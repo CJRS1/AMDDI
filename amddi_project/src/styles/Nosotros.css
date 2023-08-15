@@ -97,9 +97,9 @@ section {
 }
 
 .button-effect {
-  color: #ffffff !important;
+  color: #ffffff;
   background-color: #00d799 !important;
-  padding: 10px 10px 10px 10px !important;
+  padding: 10px 10px 10px 10px;
   margin: 0 20px 40px 20px;
 }
 
