@@ -61,32 +61,32 @@ export default function Testimonios() {
                     <Slider {...settings}>
                         <div>
                             <div className="card">
-                                <img className="img_contador" src={require('../images/Testimonios/captura1.png')} alt='medalla' />
+                                <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
                             </div>
                         </div>
                         <div>
                             <div className="card">
-                                <img className="img_contador" src={require('../images/Testimonios/captura1.png')} alt='medalla' />
+                                <img className="img_contador" src={require('../images/Testimonios/mockup2.png')} alt='medalla' />
                             </div>
                         </div>
                         <div>
                             <div className="card">
-                                <img className="img_contador" src={require('../images/Testimonios/captura1.png')} alt='medalla' />
+                                <img className="img_contador" src={require('../images/Testimonios/mockup3.png')} alt='medalla' />
                             </div>
                         </div>
                         <div>
                             <div className="card">
-                                <img className="img_contador" src={require('../images/Testimonios/captura1.png')} alt='medalla' />
+                                <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
                             </div>
                         </div>
                         <div>
                             <div className="card">
-                                <img className="img_contador" src={require('../images/Testimonios/captura1.png')} alt='medalla' />
+                                <img className="img_contador" src={require('../images/Testimonios/mockup2.png')} alt='medalla' />
                             </div>
                         </div>
                         <div>
                             <div className="card">
-                                <img className="img_contador" src={require('../images/Testimonios/captura1.png')} alt='medalla' />
+                                <img className="img_contador" src={require('../images/Testimonios/mockup3.png')} alt='medalla' />
                             </div>
                         </div>
                     </Slider>
