@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.e3eadc3f.css",
-    "main.js": "./static/js/main.52684085.js",
+    "main.css": "./static/css/main.bea4468b.css",
+    "main.js": "./static/js/main.06ede8a7.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/adelante_completo.png": "./static/media/adelante_completo.e6cc3752f6ab0a7e1157.png",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.5f4fb7453becf1e842ab.png",
@@ -32,10 +32,12 @@
     "static/media/Logo_plomo.png": "./static/media/Logo_plomo.9d6072051bf375cc9f65.png",
     "static/media/somos.png": "./static/media/somos.9538722ecf2cd0c76dbf.png",
     "static/media/Whatsapp.png": "./static/media/Whatsapp.3c88a2148dbf6e49dfae.png",
+    "static/media/fb.png": "./static/media/fb.9a1f2b3dfc085a0cec69.png",
     "static/media/visa.jpg": "./static/media/visa.c81afb8585f5ad92385e.jpg",
     "static/media/scotiabank.jpg": "./static/media/scotiabank.d83752406a9bc559d7b8.jpg",
     "static/media/mastercard.jpg": "./static/media/mastercard.a173603c14fde665010f.jpg",
     "static/media/bcp.jpg": "./static/media/bcp.af4c5f8d65c2acb39dbd.jpg",
+    "static/media/insta.png": "./static/media/insta.85e869a755c605162bb9.png",
     "static/media/mercadopago.png": "./static/media/mercadopago.a8b68a623faf4d213b61.png",
     "static/media/nosotros.png": "./static/media/nosotros.17a18f2e4487c6557019.png",
     "index.html": "./index.html",
@@ -43,16 +45,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "static/media/instagram.svg": "./static/media/instagram.116ad97e1f8e0638fcb7d5aed6800697.svg",
-    "static/media/linkedin-in.svg": "./static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
-    "static/media/tiktok.svg": "./static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
-    "static/media/facebook-f.svg": "./static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.e3eadc3f.css.map": "./static/css/main.e3eadc3f.css.map",
-    "main.52684085.js.map": "./static/js/main.52684085.js.map",
+    "main.bea4468b.css.map": "./static/css/main.bea4468b.css.map",
+    "main.06ede8a7.js.map": "./static/js/main.06ede8a7.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3eadc3f.css",
-    "static/js/main.52684085.js"
+    "static/css/main.bea4468b.css",
+    "static/js/main.06ede8a7.js"
   ]
 }
