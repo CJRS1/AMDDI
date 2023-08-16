@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.1cfe3b67.css",
-    "main.js": "./static/js/main.c8f5fe3b.js",
+    "main.css": "./static/css/main.e3eadc3f.css",
+    "main.js": "./static/js/main.52684085.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/adelante_completo.png": "./static/media/adelante_completo.e6cc3752f6ab0a7e1157.png",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.5f4fb7453becf1e842ab.png",
@@ -47,12 +47,12 @@
     "static/media/linkedin-in.svg": "./static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
     "static/media/tiktok.svg": "./static/media/tiktok.55632982d6ba945f34f5933b1633d453.svg",
     "static/media/facebook-f.svg": "./static/media/facebook-f.3393a8700aa477db6175ff91ae54d6a2.svg",
-    "main.1cfe3b67.css.map": "./static/css/main.1cfe3b67.css.map",
-    "main.c8f5fe3b.js.map": "./static/js/main.c8f5fe3b.js.map",
+    "main.e3eadc3f.css.map": "./static/css/main.e3eadc3f.css.map",
+    "main.52684085.js.map": "./static/js/main.52684085.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cfe3b67.css",
-    "static/js/main.c8f5fe3b.js"
+    "static/css/main.e3eadc3f.css",
+    "static/js/main.52684085.js"
   ]
 }
