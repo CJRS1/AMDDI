@@ -325,10 +325,37 @@
     }
 
     .quienessomos {
-        width: 1800px;
+        width: 100%;
     }
 
     .quienessomos-descripcion {
         width: 680px;
     }
+    .quienessomos-container{
+        width: 70% !important;
+        height: 90%;
+        margin-top: 50px;
+    }
+    .quienessomos-card{
+        width: 80%;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1480px) {
+
+
+.quienessomos-container{
+    height: 90%;
+}
+.quienessomos-card{
+    width: 80%;
+}
+.valores{
+    width: 95%;
+}
+
+.fila{
+    height: 100%;
+}
 }

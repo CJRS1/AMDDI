@@ -15,13 +15,14 @@
     width: 1000px !important;
     height: 700px;
     text-align: center;
-    h2{
+
+    h2 {
         font-weight: 900;
         font-size: 35px;
     }
 }
 
-.wrapper:hover{
+.wrapper:hover {
     cursor: pointer;
 }
 
@@ -32,7 +33,7 @@
     height: 1000px !important;
 }
 
-.slick-list{
+.slick-list {
     height: 620px !important;
 
 }
@@ -60,10 +61,11 @@
     padding-top: 3px !important;
 }
 
-.slick-prev:before{
+.slick-prev:before {
     font-size: 40px !important;
 }
-.slick-next:before{
+
+.slick-next:before {
     font-size: 40px !important;
 }
 
@@ -91,59 +93,103 @@
     font-weight: 300;
 }
 
-.slick-dots li button:before{
+.slick-dots li button:before {
     font-size: 20px !important;
     width: 20px !important;
     height: 20px !important;
     color: $verde-lima !important;
 }
 
-.slick-dots{
+.slick-dots {
     bottom: -50px !important;
 }
 
 
-.titulo-verde{
+.titulo-verde {
     color: $verde-lima !important;
 }
 
-@media (max-width: 768px){
-    .testimonios_container{
+@media (max-width: 768px) {
+    .testimonios_container {
         width: 100% !important;
         height: 750px !important;
         padding-top: 70px !important;
     }
 
 
-    .wrapper{
+    .wrapper {
         width: 100% !important;
         height: 500px !important;
-        display: flex ;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .carousel2{
+    .carousel2 {
         width: 80% !important;
         margin: 0 0 0 0 !important;
     }
 
-    .card-body{
+    .card-body {
         width: 100%;
     }
 
-    .slick-track{
-        display: flex ;
+    .slick-track {
+        display: flex;
         justify-content: center;
         align-items: center;
-    
+
     }
-    .slick-slide{
+
+    .slick-slide {
         margin: 0 !important;
     }
 
-    .slick-list{
+    .slick-list {
         height: 450px !important;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1480px) {
+    .testimonios_container {
+        width: 100% !important;
+        height: 100% !important;
+        margin-top: 70px;
+    }
+
+    .carousel2 {
+        height: 100% !important;
+    }
+
+    .slick-list{
+        height: 550px !important;
+    }
+
+    .img_contador{
+        width: 280px !important;
+        height: 540px;
+    }
+
+}
+
+@media (min-width: 1500px){
+    .testimonios_container {
+        width: 100% !important;
+        height: calc(100vh - 70px) !important;
+        margin-top: 70px;
+    }
+    .carousel2 {
+        height: 100% !important;
+    }
+
+    .slick-list{
+        height: 550px !important;
+    }
+
+    .img_contador{
+        width: 280px !important;
+        height: 540px;
+    }
+
 }

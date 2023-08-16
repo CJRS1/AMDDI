@@ -365,7 +365,7 @@ export default function Carousel() {
             <div className="seccion_contador" ref={seccionRef}>
                 <div className="fila">
                     <div className="col" >
-                        <img className="img_contador" src={require('../images/Contador/titulados.png')} alt='medalla' height={'220px'} />
+                        <img className="img_contador_1" src={require('../images/Contador/titulados.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={1000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
@@ -373,7 +373,7 @@ export default function Carousel() {
                         <p>Titulados</p>
                     </div>
                     <div className="col" >
-                        <img className="img_contador" src={require('../images/Contador/clientes.png')} alt='medalla' height={'220px'} />
+                        <img className="img_contador_1" src={require('../images/Contador/clientes.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={1000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
@@ -381,12 +381,12 @@ export default function Carousel() {
                         <p>Clientes Satisfechos</p>
                     </div>
                     <div className="col" >
-                        <img className="img_contador" src={require('../images/Contador/peru.png')} alt='medalla' height={'220px'} />
+                        <img className="img_contador_1" src={require('../images/Contador/peru.png')} alt='medalla' height={'220px'} />
                         <Contador inicio={0} final={24} duracion={100} />
                         <p>Departamentos de Perú</p>
                     </div>
                     <div className="col" >
-                        <img className="img_contador" src={require('../images/Contador/carreras.png')} alt='medalla' height={'220px'} />
+                        <img className="img_contador_1" src={require('../images/Contador/carreras.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
                             <Contador inicio={0} final={40} duracion={100} />
                             <h3 className="contador-margin">+</h3>

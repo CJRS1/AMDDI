@@ -1289,3 +1289,31 @@
         }
     }
 }
+
+@media (min-width: 769px) and (max-width: 1480px) {
+    .img-carousel {
+        height: calc(100vh - 120px) !important;
+        width: 100vw !important;
+    }
+    .carousel_container {
+        width: 100vw;
+    }
+
+    #carouselExample {
+        width: 100vw !important;
+    }
+
+    .amddi_internacional{
+        width: 100%;
+    }
+
+    .amdi_international_description{
+        width: 500px !important;
+        margin-right: 100px;
+    }
+
+    .img-carousel_int{
+        width: 700px;
+    }
+
+}

@@ -271,4 +271,38 @@ section {
   .slick-list {
     height: 450px !important;
   }
+}
+@media (min-width: 769px) and (max-width: 1480px) {
+  .testimonios_container {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 70px;
+  }
+  .carousel2 {
+    height: 100% !important;
+  }
+  .slick-list {
+    height: 550px !important;
+  }
+  .img_contador {
+    width: 280px !important;
+    height: 540px;
+  }
+}
+@media (min-width: 1500px) {
+  .testimonios_container {
+    width: 100% !important;
+    height: calc(100vh - 70px) !important;
+    margin-top: 70px;
+  }
+  .carousel2 {
+    height: 100% !important;
+  }
+  .slick-list {
+    height: 550px !important;
+  }
+  .img_contador {
+    width: 280px !important;
+    height: 540px;
+  }
 }/*# sourceMappingURL=Testimonios.css.map */
