@@ -55,7 +55,7 @@
     justify-content: center;
 }
 
-.margin_title{
+.margin_title {
     margin-top: 20px !important;
 }
 
@@ -133,7 +133,8 @@
 .card-localizacion {
     padding-left: 10px;
     padding-bottom: 5px;
-    h5{
+
+    h5 {
         color: $verde-lima !important;
     }
 }
@@ -183,22 +184,35 @@
     border-radius: 5px;
 }
 
-.libro-container{
+.libro-container {
     padding-bottom: 10px;
 }
 
-.container-list{
+.container-list {
     width: 100%;
     margin-bottom: 0 !important;
-    ul{
-        li{
+    list-style: none !important;
+    text-decoration: none;
+
+    li {
+        list-style: none !important;
+        margin-bottom: 15px !important;
+
+        h5 {
             color: $verde-lima !important;
         }
     }
-
 }
 
-.programas{
+.servicios {
+    text-decoration: none !important;
+}
+
+.servicios_l {
+    color: $verde-lima !important;
+}
+
+.programas {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -208,7 +222,7 @@
 }
 
 @media (max-width: 768px) {
-    .footer_container{
+    .footer_container {
         width: 100%;
     }
 
@@ -226,106 +240,130 @@
     .footer-text {
         font-size: 12px;
     }
-    .container-list{
+
+    .container-list {
         width: 90%;
+
     }
 
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1500px) {
 
-    .footer_container{
+    .footer_container {
         width: 100% !important;
         font-weight: 600;
     }
-    .footer-description{
+
+    .footer-description {
         width: 100%;
         height: 700px;
     }
-    .footer-content{
+
+    .footer-content {
         width: 500px;
-        h5{
+
+        h5 {
             font-size: 20px !important;
         }
     }
-    .footer-description-amddi{
+
+    .footer-description-amddi {
         width: 500px;
-        h4{
+
+        h4 {
             font-size: 30px !important;
         }
     }
-    .container-ictel{
-        h5{
+
+    .container-ictel {
+        h5 {
             font-size: 20px !important;
         }
     }
-    .footer-description-llamanos{
+
+    .footer-description-llamanos {
         width: 100%;
     }
-    .card-ictel{
-        svg{
+
+    .card-ictel {
+        svg {
             width: 30px !important;
             height: 30px !important;
         }
     }
-    .footer-description-pago{
+
+    .footer-description-pago {
         margin-top: 5px;
         width: 100%;
     }
-    .svg-effect{
+
+    .svg-effect {
         height: 50px;
     }
-    .footer-description-redes{
+
+    .footer-description-redes {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .pago-container{
-        img{
+
+    .pago-container {
+        img {
             height: 60px;
         }
     }
-    .footer-description-nuestrosservicios{
+
+    .footer-description-nuestrosservicios {
         width: 600px;
-        h4{
+
+        h4 {
             font-size: 30px !important;
         }
-        .container-list{
+
+        .container-list {
             font-weight: 700 !important;
-            li{
+
+            li {
 
                 font-weight: 700 !important;
-                .servicios{
-                    h5{
+
+                .servicios {
+                    h5 {
                         font-size: 20px !important;
                         font-weight: 500 !important;
-                        color: $verde-lima !important;
                     }
                 }
             }
         }
     }
-    .pro_list{
+
+    .pro_list {
         color: $verde-lima !important;
     }
-    .footer-description-ubicanos{
+
+    .footer-description-ubicanos {
         width: 500px;
-        h4{
+
+        h4 {
             font-size: 30px !important;
         }
     }
-    .li-effect{
+
+    .li-effect {
         font-size: 20px !important;
     }
-    .card-localizacion{
-        h5{
+
+    .card-localizacion {
+        h5 {
             font-size: 20px !important;
         }
     }
-    .card-icloc{
-        svg{
+
+    .card-icloc {
+        svg {
             width: 50px;
             height: 50px;
         }
@@ -337,6 +375,7 @@
         height: calc(100vh - 120px) !important;
         width: 100vw !important;
     }
+
     .carousel_container {
         width: 100vw;
     }
@@ -345,16 +384,16 @@
         width: 100vw !important;
     }
 
-    .amddi_internacional{
+    .amddi_internacional {
         width: 100%;
     }
 
-    .footer_container{
+    .footer_container {
         width: 100% !important;
     }
 
-    .footer-description{
+    .footer-description {
         width: 100%;
     }
-    
+
 }

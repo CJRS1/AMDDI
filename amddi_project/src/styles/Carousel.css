@@ -1286,4 +1286,34 @@ section {
   .img-carousel_int {
     width: 700px;
   }
+  .carousel-control-prev-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .quienessomos {
+    width: 100vw !important;
+  }
+  .img-logo2 {
+    width: 300px;
+  }
+  .quienessomos-card {
+    width: 90% !important;
+    justify-content: space-around;
+  }
+  .valor_description {
+    width: 380px !important;
+  }
+  .valor_description h3 {
+    font-size: 15px !important;
+  }
+  .valor_description p {
+    font-size: 15px !important;
+  }
+  .img-valor {
+    height: 70px !important;
+  }
+  .valor_card {
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=Carousel.css.map */

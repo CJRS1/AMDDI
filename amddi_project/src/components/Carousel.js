@@ -159,7 +159,7 @@ export default function Carousel() {
 
                                 <h2 className='titulo_2'><span className='color_verde'>REALIZA</span> TUS PRÁCTICAS PRE <span className='color_verde'>PROFESIONALES</span> CON GRUPO <span className='color_verde'>AMDDI</span></h2>
                             </div>
-                            <a href="https://pe.indeed.com/cmp-S.a.c." target="_blank" rel="noreferrer" className='indeed_btn '>
+                            <a href="https://pe.indeed.com/cmp/Amddi-S.a.c.?from=mobviewjob&tk=1h7vol40h2cgr001&fromjk=fafcc6a8efd98a5c&attributionid=mobvjcmp" target="_blank" rel="noreferrer" className='indeed_btn '>
                                 Revisa nuestras convocatorias vigentes
                             </a>
                         </div>

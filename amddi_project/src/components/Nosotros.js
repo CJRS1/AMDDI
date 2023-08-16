@@ -69,7 +69,7 @@ export default function Nosotros() {
 
                                 <h2 className='titulo_2'><span className='color_verde'>REALIZA</span> TUS PRÁCTICAS PRE <span className='color_verde'>PROFESIONALES</span> CON GRUPO <span className='color_verde'>AMDDI</span></h2>
                             </div>
-                            <a href="https://pe.indeed.com/cmp-S.a.c." target="_blank" rel="noreferrer" className='indeed_btn '>
+                            <a href="https://pe.indeed.com/cmp/Amddi-S.a.c.?from=mobviewjob&tk=1h7vol40h2cgr001&fromjk=fafcc6a8efd98a5c&attributionid=mobvjcmp" target="_blank" rel="noreferrer" className='indeed_btn '>
                                 Revisa nuestras convocatorias vigentes
                             </a>
                         </div>
@@ -95,7 +95,7 @@ export default function Nosotros() {
                                     <li><span></span>Estudio Ambiental</li>
                                     <li><span></span>Estudio de Mercado</li>
                                     <li className='proyecto_last'><span></span>Estudio Económico Financiero</li>
-                                    
+
                                 </ul>
                                 <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
                             </div>
@@ -231,85 +231,85 @@ export default function Nosotros() {
             </div>
 
             <div className="valores-container" >
-                    <h2>NUESTROS VALORES</h2>
+                <h2>NUESTROS VALORES</h2>
                 <div className="valores">
-                        <div className="valores_primeros">
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v1.png')} alt='valor_1'/>
+                    <div className="valores_primeros">
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v1.png')} alt='valor_1' />
                             <div className="valor_description">
                                 <h3>EXCELENCIA ACADÉMICA</h3>
                                 <p>Comprometidos con la calidad y precisión en cada aspecto de nuestra asesoría para garantizar resultados sobresalientes en proyectos de investigación.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v2.png')} alt='valor_2'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v2.png')} alt='valor_2' />
                             <div className="valor_description">
                                 <h3>Integridad</h3>
                                 <p>Actuamos con honestidad y ética, promoviendo la originalidad y autenticidad en todos los trabajos académicos.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v3.png')} alt='valor_3'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v3.png')} alt='valor_3' />
                             <div className="valor_description">
                                 <h3>Compromiso con el cliente</h3>
                                 <p>Priorizamos las necesidades de nuestros clientes y nos esforzamos por brindar un servicio personalizado y atento para alcanzar su satisfacción y éxito académico.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v4.png')} alt='valor_4'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v4.png')} alt='valor_4' />
                             <div className="valor_description">
                                 <h3>Colaboración</h3>
                                 <p>Fomentamos un ambiente de trabajo cooperativo, donde el trabajo en equipo y la comunicación efectiva son fundamentales para lograr los mejores resultados.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v5.png')} alt='valor_5'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v5.png')} alt='valor_5' />
                             <div className="valor_description">
                                 <h3>Innovación</h3>
                                 <p>Buscamos constantemente nuevas formas de mejorar nuestros servicios y adoptar tecnologías y metodologías avanzadas en el ámbito de la asesoría de tesis.</p>
                             </div>
-                            </div>
                         </div>
+                    </div>
 
-                        <div className="valores_primeros">
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v6.png')} alt='valor_6'/>
+                    <div className="valores_primeros">
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v6.png')} alt='valor_6' />
                             <div className="valor_description">
                                 <h3>Responsabilidad social</h3>
                                 <p>Reconocemos nuestra responsabilidad hacia la sociedad y nos esforzamos por promover la investigación que tenga un impacto positivo en el conocimiento y el bienestar de la comunidad.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v7.png')} alt='valor_7'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v7.png')} alt='valor_7' />
                             <div className="valor_description">
                                 <h3>Confidencialidad</h3>
                                 <p>Respetamos la privacidad y confidencialidad de nuestros clientes, garantizando la protección de sus datos e información personal.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v8.png')} alt='valor_8'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v8.png')} alt='valor_8' />
                             <div className="valor_description">
                                 <h3>Aprendizaje continuo</h3>
                                 <p>Promovemos un ambiente de aprendizaje y desarrollo profesional para nuestro equipo, con el fin de mantenernos actualizados en las últimas tendencias y avances académicos.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v9.png')} alt='valor_9'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v9.png')} alt='valor_9' />
                             <div className="valor_description">
                                 <h3>Diversidad e inclusión</h3>
                                 <p>Valoramos la diversidad de perspectivas y experiencias, y nos esforzamos por crear un ambiente inclusivo donde todos se sientan respetados y valorados.</p>
                             </div>
-                            </div>
-                            <div className="valor_card">
-                            <img className="img-valor" src={require('../images/Nosotros/v10.png')} alt='valor_10'/>
+                        </div>
+                        <div className="valor_card">
+                            <img className="img-valor" src={require('../images/Nosotros/v10.png')} alt='valor_10' />
                             <div className="valor_description">
                                 <h3>Empoderamiento académico</h3>
                                 <p>Nos dedicamos a empoderar a nuestros clientes con conocimientos y habilidades que les permitan ser investigadores autónomos y competentes. Buscamos fortalecer sus capacidades intelectuales y técnicas para que puedan abordar futuros desafíos académicos y profesionales con confianza y éxito.</p>
                             </div>
-                            </div>
                         </div>
+                    </div>
                 </div>
-            </div> 
+            </div>
 
 
         </section>

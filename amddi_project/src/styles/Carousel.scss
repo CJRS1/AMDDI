@@ -1316,4 +1316,41 @@
         width: 700px;
     }
 
+    .carousel-control-prev-icon {
+        width: 50px !important;
+        height: 50px !important;
+        // background: blue !important;
+    }
+
+    .quienessomos{
+        width: 100vw !important;
+    }
+
+    .img-logo2{
+        width: 300px;
+    }
+
+    .quienessomos-card{
+        width: 90% !important;
+        justify-content: space-around;
+    }
+
+    .valor_description{
+        width: 380px !important;
+        h3{
+            font-size: 15px !important;
+        }
+        p{
+            font-size: 15px !important;
+        }
+    }
+
+    .img-valor{
+        height: 70px !important;
+    }
+
+    .valor_card{
+        justify-content: center;
+        align-items: center;
+    }
 }

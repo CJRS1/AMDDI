@@ -1,10 +1,10 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link'
 import '../styles/Footer.css'
-import Tiktok from '..//images/LogoRedesSociales/tiktok.svg'
-import Facebook from '..//images/LogoRedesSociales/facebook-f.svg'
-import Instagram from '..//images/LogoRedesSociales/instagram.svg'
-import Linkedin from '..//images/LogoRedesSociales/linkedin-in.svg'
+import Tiktok from '..//images/LogoRedesSociales/tiktok.png'
+import Facebook from '..//images/LogoRedesSociales/fb.png'
+import Instagram from '..//images/LogoRedesSociales/insta.png'
+import Linkedin from '..//images/LogoRedesSociales/linke.png'
 import bcp from '../images/FormasdePago/bcp.jpg'
 import mastercard from '../images/FormasdePago/mastercard.jpg'
 import mercadopago from '../images/FormasdePago/mercadopago.png'
@@ -49,7 +49,7 @@ export default function Footer() {
                                 </svg>
                                 <div className="container-ictel">
                                     <h5>Lunes a Viernes</h5>
-                                    <h5>9:00 am a 6:00 pm</h5>
+                                    <h5>9:00 am a 9:00 pm</h5>
                                 </div>
                             </div>
                         </div>
@@ -59,32 +59,46 @@ export default function Footer() {
                         <div className="footer-socialnetwork">
                             <a className="redes" href="https://www.facebook.com/tesisamddi" rel="noreferrer"
                                 target="_blank">
-                                <img className='svg-effect' src={Facebook} alt='facebook' height={'35px'} />
+                                <img className='svg-effect' src={Facebook} alt='facebook' height={'40px'} />
                             </a>
                             <a className="redes" href="https://www.instagram.com/amddiasesorias/"
                                 rel="noreferrer" target="_blank">
-                                <img className='svg-effect' src={Instagram} alt='instagram' height={'40px'} />
+                                <img className='svg-effect' src={Instagram} alt='instagram' height={'45px'} />
                             </a>
                             <a className="redes" href="https://www.linkedin.com/company/amddi-tesis-proyectos-empresariales/about/"
                                 rel="noreferrer" target="_blank">
-                                <img className='svg-effect' src={Linkedin} alt='linkedin' height={'40px'} />
+                                <img className='svg-effect' src={Linkedin} alt='linkedin' height={'45px'} />
                             </a>
                             <a className="redes" href="https://www.tiktok.com/@amdditesisproyectos"
                                 rel="noreferrer" target="_blank">
-                                <img className='svg-effect' src={Tiktok} alt='tiktok' height={'35px'} />
+                                <img className='svg-effect' src={Tiktok} alt='tiktok' height={'40px'} />
                             </a>
                         </div>
                     </div>
 
-                    <div className="programas">
+                    {/* <div className="programas">
                         <h4><strong>Programas de Beneficios</strong></h4>
 
                         <div className="container-list">
                             <ul>
-                                <li><HashLink smooth to="/ingresosextra" className="li-effect pro_list"> Ingresos Extra</HashLink> </li>
-                                <li><HashLink smooth to="/investigacionsostenible" className="li-effect pro_list"> Investigación Sostenible</HashLink> </li>
-                                <li><HashLink smooth to="/emprendimientojoven" className="li-effect pro_list"> Emprendimiento Joven</HashLink> </li>
+                                <li><HashLink smooth to="/ingresosextra" className="li-effect pro_list"> <h5 className="servicios_l">Ingresos Extra</h5></HashLink> </li>
+                                <li><HashLink smooth to="/investigacionsostenible" className="li-effect pro_list"> <h5 className="servicios_l">Investigación Sostenible</h5></HashLink> </li>
+                                <li><HashLink smooth to="/emprendimientojoven" className="li-effect pro_list"> <h5 className="servicios_l">Emprendimiento Joven</h5></HashLink> </li>
                             </ul>
+                        </div>
+                    </div> */}
+
+                    <div className="footer-description-pago">
+                        <h4><strong>Formas de pago</strong></h4>
+                        <div className="pago-container">
+
+                            <img src={bcp} alt='bcp' height={'45px'} />
+                            <img src={scotiabank} alt='scotiabank' height={'45px'} />
+                            <img src={visa} alt='visa' height={'45px'} />
+                            <img src={mastercard} alt='mastercard' height={'45px'} />
+                            <img src={mercadopago} alt='mercadopago' height={'45px'} />
+                            <img src={paypal} alt='paypal' height={'45px'} />
+
                         </div>
                     </div>
 
@@ -94,53 +108,53 @@ export default function Footer() {
                     <ul className="container-list">
                         <li >
                             <HashLink smooth to="/servicios#carreras" className="servicios li-effect" href="#pregrado">
-                                <h5>Carreras Asesoradas</h5>
+                                <h5 className='servicios_l'>Carreras Asesoradas</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#redacciontesispregrado" className="servicios li-effect" href="#pregrado">
-                                <h5>Redacción de Tesis de Pregrado</h5>
+                                <h5 className='servicios_l'>Redacción de Tesis de Pregrado</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#redacciontesispostgrado" className="servicios li-effect" href="#postgrado">
-                                <h5>Redacción de Tesis de Pregrado</h5>
+                                <h5 className='servicios_l'>Redacción de Tesis de Pregrado</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#redacciontesisdoctorado" className="servicios li-effect" href="#postgrado">
-                                <h5>Redacción de Tesis de Doctorado</h5>
+                                <h5 className='servicios_l'>Redacción de Tesis de Doctorado</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#levantamientoobservacionespregrado" className="servicios li-effect" href="#levantamieno-pregrado">
-                                <h5>Levantamiento de Observaciones Pregrado</h5>
+                                <h5 className='servicios_l'>Levantamiento de Observaciones Pregrado</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#levantamientoobservacionesmaestria" className="servicios li-effect" href="#levantamieno-postgrado">
-                                <h5>Levantamiento de Observaciones Maestría</h5>
+                                <h5 className='servicios_l'>Levantamiento de Observaciones Maestría</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#articulocientifico" className="servicios li-effect" href="#articulo">
-                                <h5>Artículo Científico</h5>
+                                <h5 className='servicios_l'>Artículo Científico</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#plannegocio" className="servicios li-effect" href="#plan">
-                                <h5>Planes de Negocio</h5>
+                                <h5 className='servicios_l'>Planes de Negocio</h5>
                             </HashLink>
                         </li>
 
                         <li >
                             <HashLink smooth to="/servicios#articulorevisionsistematica" className="servicios li-effect" href="#articulo-sistematica">
-                                <h5>Artículo de Revisión Sistemática</h5>
+                                <h5 className='servicios_l'>Artículo de Revisión Sistemática</h5>
                             </HashLink>
                         </li>
                         <li >
                             <HashLink smooth to="/servicios#ensayos" className="servicios li-effect" href="#ensayo">
-                                <h5>Ensayos</h5>
+                                <h5 className='servicios_l'>Ensayos</h5>
                             </HashLink>
                         </li>
 
@@ -215,7 +229,7 @@ export default function Footer() {
                             </HashLink>
                         </li> */}
                     </ul>
-                    <div className="footer-description-pago">
+                    {/* <div className="footer-description-pago">
                         <h4><strong>Formas de pago</strong></h4>
                         <div className="pago-container">
 
@@ -227,8 +241,18 @@ export default function Footer() {
                             <img src={paypal} alt='paypal' height={'45px'} />
 
                         </div>
-                    </div>
+                    </div> */}
+                    <div className="programas">
+                        <h4><strong>Programas de Beneficios</strong></h4>
 
+                        <div className="container-list">
+                            <ul>
+                                <li><HashLink smooth to="/ingresosextra" className="li-effect pro_list"> <h5 className="servicios_l">Ingresos Extra</h5></HashLink> </li>
+                                <li><HashLink smooth to="/investigacionsostenible" className="li-effect pro_list"> <h5 className="servicios_l">Investigación Sostenible</h5></HashLink> </li>
+                                <li><HashLink smooth to="/emprendimientojoven" className="li-effect pro_list"> <h5 className="servicios_l">Emprendimiento Joven</h5></HashLink> </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </div>
                 <div className="footer-description-ubicanos">
@@ -236,12 +260,12 @@ export default function Footer() {
                     <h4><strong>Ubícanos</strong></h4>
                     <div className="ubi-list">
                         <div className="card-icloc">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
+                            </svg> */}
                             <a href='https://goo.gl/maps/A2tvJ1vVgeFuwbZX7' target='_blank' rel='noreferrer' className="card-localizacion">
 
                                 <h5><strong>SAN ISIDRO – LIMA</strong></h5>
@@ -249,72 +273,72 @@ export default function Footer() {
                             </a>
                         </div>
                         <div className="card-icloc">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
+                            </svg> */}
                             <a href='https://goo.gl/maps/zGDxRZRcfkWzX1sZ6' target='_blank' rel='noreferrer' className="card-localizacion">
                                 <h5><strong>CERCADO DE LIMA – LIMA</strong></h5>
                                 <h5>Jr. Andahuaylas 437</h5>
                             </a>
                         </div>
                         <div className="card-icloc">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
+                            </svg> */}
                             <a href='https://goo.gl/maps/88n29qF6EZrBbDsk7' target='_blank' rel='noreferrer' className="card-localizacion">
                                 <h5><strong>CUSCO – CUSCO</strong></h5>
                                 <h5>Av. El Sol 344, oficina 211</h5>
                             </a>
                         </div>
                         <div className="card-icloc">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
+                            </svg> */}
                             <a href='https://goo.gl/maps/udj8etqNmS2fjwDs9' target='_blank' rel='noreferrer' className="card-localizacion">
                                 <h5><strong>HUANCAYO</strong></h5>
                                 <h5>Jr. Tacna 234, Edificio Torre Galena 234</h5>
                             </a>
                         </div>
                         <div className="card-icloc">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
+                            </svg> */}
                             <a href='https://goo.gl/maps/aechKCqqoWUwACjy7' target='_blank' rel='noreferrer' className="card-localizacion">
                                 <h5><strong>JULIACA</strong></h5>
                                 <h5>Jr. 02 de Mayo 408, oficina 304 </h5>
                             </a>
                         </div>
                         <div className="card-icloc">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
+                            </svg> */}
                             <a href='https://goo.gl/maps/3FdEePActj1CCLjP8' target='_blank' rel='noreferrer' className="card-localizacion">
                                 <h5><strong>AREQUIPA</strong></h5>
                                 <h5>Av. Ejército 710 Yanahuara </h5>
                             </a>
                         </div>
                         <div className="card-icloc">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00d799" className="bi bi-geo-alt"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
+                            </svg> */}
                             <a href='https://goo.gl/maps/1Z3CP3vTZRnupzS16' target='_blank' rel='noreferrer' className="card-localizacion">
                                 <h5><strong>ICA</strong></h5>
                                 <h5>Calle Lima 340, Oficina 25 </h5>

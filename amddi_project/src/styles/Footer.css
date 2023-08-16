@@ -313,8 +313,22 @@ section {
 .container-list {
   width: 100%;
   margin-bottom: 0 !important;
+  list-style: none !important;
+  text-decoration: none;
 }
-.container-list ul li {
+.container-list li {
+  list-style: none !important;
+  margin-bottom: 15px !important;
+}
+.container-list li h5 {
+  color: #00d799 !important;
+}
+
+.servicios {
+  text-decoration: none !important;
+}
+
+.servicios_l {
   color: #00d799 !important;
 }
 
@@ -410,7 +424,6 @@ section {
   .footer-description-nuestrosservicios .container-list li .servicios h5 {
     font-size: 20px !important;
     font-weight: 500 !important;
-    color: #00d799 !important;
   }
   .pro_list {
     color: #00d799 !important;
