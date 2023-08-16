@@ -33,34 +33,35 @@ export default function Carousel() {
         window.scrollTo(0, 0);
     }, [location]);
 
-    const efectoRef = useRef(null);
-    const imagenRef = useRef(null);
+    // const efectoRef = useRef(null);
+    // const imagenRef = useRef(null);
 
-    useEffect(() => {
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const contenedorTop = efectoRef.current.getBoundingClientRect().top + window.scrollY;
+    //         const maxTop = 1000;
+    //         const scrollY = window.scrollY;
+    //         const imagenTop = imagenRef.current.getBoundingClientRect().top + scrollY;
 
-        const handleScroll = () => {
+    //         if (scrollY > contenedorTop) {
+    //             const scrollOffset = scrollY - contenedorTop;
+    //             const maxImageTop = Math.min(maxTop, imagenTop - scrollOffset);
+    //             efectoRef.current.style.top = `-${scrollOffset}px`;
+    //             imagenRef.current.style.top = `${maxImageTop}px`;
+    //         } else {
+    //             efectoRef.current.style.top = "0px";
+    //             imagenRef.current.style.top = Math.min(scrollY, maxTop) + 'px';
+    //         }
+    //     };
 
-            const maxTop = 500;
+    //     window.addEventListener('scroll', handleScroll);
 
-            if (window.scrollY > 600) {
-                efectoRef.current.style.top = "0px";
-            } else {
-                efectoRef.current.style.top = "-800px";
-            }
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
-            imagenRef.current.style.top = Math.min(window.scrollY, maxTop) + 'px';
 
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-
-    }, []);
-
-    
 
     const seccionRef = useRef(null);
     const [animated, setAnimated] = useState(false); // Estado para controlar la animación
@@ -184,7 +185,7 @@ export default function Carousel() {
                                     <li><span></span>Estudio Ambiental</li>
                                     <li><span></span>Estudio de Mercado</li>
                                     <li className='proyecto_last'><span></span>Estudio Económico Financiero</li>
-                                    
+
                                 </ul>
                                 <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
                             </div>
@@ -395,7 +396,7 @@ export default function Carousel() {
                 </div>
             </div>
 
-            <div className="contenedor-efecto ">
+            {/* <div className="contenedor-efecto ">
                 <div ref={efectoRef} className="efecto-scroll">
                     <div className="contenido-texto">
                         <h2>#¡SEGUIMOS ADELANTE!</h2>
@@ -407,7 +408,21 @@ export default function Carousel() {
 
                     <img ref={imagenRef} className="img-scroll" src={require('../images/adelante_completo.png')} alt='asesoria' />
                 </div>
+            </div> */}
+
+            <div className="contenedor-efecto ">
+                <div  className="efecto-scroll">
+                    <div className="contenido-texto">
+                        <h2>#¡SEGUIMOS ADELANTE!</h2>
+                        <p>Asesoría y redacción de tesis de Pregrado, Posgrado, Doctorado y MBA.</p>
+                        <div className="contacto_carousel contacto informacion_btn">
+                            <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel informacion_btn">Más información</Link>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </section>
 
     )

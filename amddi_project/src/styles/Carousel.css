@@ -332,9 +332,15 @@ section {
 }
 
 .contenedor-efecto {
-  position: relative;
+  background-image: url(../images/adelante_completo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .practica {
@@ -396,22 +402,17 @@ section {
   }
 }
 .efecto-scroll {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  top: -800px;
-  /* oculto al inicio */
   width: 100%;
-  height: 500px;
   transition: 3s ease;
 }
 
 .contenido-texto {
-  position: absolute;
-  width: 1000px;
+  width: 100%;
   text-align: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -599,7 +600,7 @@ section {
 .medalla_container {
   width: 100%;
   position: absolute;
-  top: 80%;
+  top: 100%;
   left: 30%;
 }
 
