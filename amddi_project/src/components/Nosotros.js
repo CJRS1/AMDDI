@@ -29,7 +29,7 @@ export default function Nosotros() {
 
                         <div className="botones_contacto_asesoria carousel-caption d-none d-md-block ">
                             <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
                         </div>
 
                         <div className="asesoria_descripcion">
@@ -52,8 +52,8 @@ export default function Nosotros() {
                                 <img className="medalla" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
                                 <img className="somos" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
                             </div>
-                            {/* <Link to="/AMDDI/contactanos" type="button" className="btn btn_asesoria button-effect contact_carousel">Contáctanos</Link> */}
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto contacto_tesis_pre">Contáctanos</Link>
+                            {/* <Link to="/contactanos" type="button" className="btn btn_asesoria button-effect contact_carousel">Contáctanos</Link> */}
+                            <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto contacto_tesis_pre">Contáctanos</Link>
                         </div>
                     </div>
                     <div className="carousel-item practica">
@@ -69,7 +69,7 @@ export default function Nosotros() {
 
                                 <h2 className='titulo_2'><span className='color_verde'>REALIZA</span> TUS PRÁCTICAS PRE <span className='color_verde'>PROFESIONALES</span> CON GRUPO <span className='color_verde'>AMDDI</span></h2>
                             </div>
-                            <a href="https://pe.indeed.com/cmp/Amddi-S.a.c." target="_blank" rel="noreferrer" className='indeed_btn '>
+                            <a href="https://pe.indeed.com/cmp-S.a.c." target="_blank" rel="noreferrer" className='indeed_btn '>
                                 Revisa nuestras convocatorias vigentes
                             </a>
                         </div>
@@ -84,7 +84,7 @@ export default function Nosotros() {
                                 <h2 className='titulo_proyecto_2'>INVERSIÓN</h2>
                                 <div className="carousel-caption d-none d-md-block contenedor_btn_proyecto">
                                     <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect contacto_carousel">Asesoría en vivo</a>
-                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                    <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
                                 </div>
                             </div>
                             <div className="proyecto_listas">
@@ -97,7 +97,7 @@ export default function Nosotros() {
                                     <li className='proyecto_last'><span></span>Estudio Económico Financiero</li>
                                     
                                 </ul>
-                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
+                                <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ export default function Nosotros() {
                         <img className="img-carousel img_responsive" src={require('../images/recortado6.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         {/* <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div> */}
                         <div className="negocio_descripcion">
                             <div className="negocio_titulo">
@@ -127,7 +127,7 @@ export default function Nosotros() {
                                     <li><span></span>Finanzas</li>
                                     <li><span></span>Plan de marketing</li>
                                     <div className="contacto_carousel contacto">
-                                        <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                        <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
                                     </div>
                                 </ul>
                             </div>
@@ -138,7 +138,7 @@ export default function Nosotros() {
                         <img className="img-carousel img_responsive" src={require('../images/recortado2.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         {/* <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div> */}
                         <div className="doctorado_descripcion">
                             <div className="doctorado_titulo">
@@ -154,7 +154,7 @@ export default function Nosotros() {
                             </div>
                             <div className="doctorado_listas">
                                 <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect doctorado_contacto">Más información</a>
-                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect ">Contáctanos</Link>
+                                <Link to="/contactanos" type="button" className="btn button-effect ">Contáctanos</Link>
                             </div>
 
                         </div>
@@ -168,7 +168,7 @@ export default function Nosotros() {
                         <img className="img-carousel img_responsive" src={require('../images/recortado3.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         {/* <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div> */}
                         <div className="maestria_descripcion">
                             <div className="maestria_titulo">
@@ -189,7 +189,7 @@ export default function Nosotros() {
                                     <li><span></span>Finanzas</li>
                                     <li><span></span>Salud</li>
                                     <div className="contacto_carousel contacto">
-                                        <Link o="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                        <Link o="/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
                                     </div>
                                 </ul>
                             </div>

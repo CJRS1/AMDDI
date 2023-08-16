@@ -27,36 +27,36 @@ function App() {
 
       <Routes>
 
-        <Route path="/AMDDI" element={
+        <Route path="" element={
           <>
             <Carousel />
           </>
         } />
 
-        <Route path="/AMDDI/registrarse" element={<Registro />} />
+        <Route path="/registrarse" element={<Registro />} />
 
-        <Route path="/AMDDI/registrarse-p1" element={<Registro />} />
+        <Route path="/registrarse-p1" element={<Registro />} />
 
-        <Route path="/AMDDI/registrarse-p2" element={<Registro2 />} />
+        <Route path="/registrarse-p2" element={<Registro2 />} />
 
-        <Route path="/AMDDI/registrarse-p3" element={<Registro3 />} />
+        <Route path="/registrarse-p3" element={<Registro3 />} />
 
 
-        <Route path="/AMDDI/login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
 
-        <Route path="/AMDDI/servicios" element={<Servicios />} />
+        <Route path="/servicios" element={<Servicios />} />
 
-        <Route path="/AMDDI/testimonios" element={<Testimonios />} />
+        <Route path="/testimonios" element={<Testimonios />} />
 
-        <Route path="/AMDDI/ingresosextra" element={<Ingresos />} />
+        <Route path="/ingresosextra" element={<Ingresos />} />
 
-        <Route path="/AMDDI/investigacionsostenible" element={<Investigacion />} />
+        <Route path="/investigacionsostenible" element={<Investigacion />} />
 
-        <Route path="/AMDDI/emprendimientojoven" element={<Emprendimiento/>} />
+        <Route path="/emprendimientojoven" element={<Emprendimiento/>} />
 
-        <Route path="/AMDDI/contactanos" element={<Contacto />} />
+        <Route path="/contactanos" element={<Contacto />} />
 
-        <Route path="/AMDDI/nosotros" element={<Nosotros />} />
+        <Route path="/nosotros" element={<Nosotros />} />
 
       </Routes>
 

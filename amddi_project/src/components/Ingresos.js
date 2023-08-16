@@ -30,7 +30,7 @@ export default function Testimonios() {
                         Envíanos tu CV y rellena el formulario de postulación. Buscamos personas responsables tanto para trabajo freelance como a tiempo completo. ¡Impulsa tus habilidades y genera ingresos extras desde casa!</p>
                 </div>
 
-                <form method="POST" action="https://formsubmit.co/reyes.christian@pucp.pe" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
+                <form method="POST" action="https://formsubmit.co/info@amddi.com" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
                     <h2 className="titulo"><strong>¡Postula ya! Rellena tus datos</strong></h2>
 
                     <div className="container-contacto">
@@ -89,7 +89,7 @@ export default function Testimonios() {
                         </div>
                         <button type="submit" className="btn button-contact">Enviar el formulario</button>
 
-                        <input type="hidden" name="_next" value="https://cjrs1.github.io/AMDDI/ingresosextra" />
+                        <input type="hidden" name="_next" value="https://www.amddi.com/ingresosextra" />
                         <input type="hidden" name="_captcha" value="false" />
 
                     </div>

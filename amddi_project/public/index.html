@@ -6,7 +6,7 @@
   <link rel="icon" href="./Logo_soloblanco.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <!-- <meta name="description" content="Web site created using create-react-app" /> -->
   <link rel="apple-touch-icon" href="./Logo_soloblanco.png" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -56,10 +56,11 @@
     }
     </script>
 
-  <link rel="canonical" href="https://www.amddi.com/">
+  <link rel="canonical" href="https://amddi.com/">
 
   <link rel="sitemap" href="https://www.amddi.com/sitemap.xml">
-  <title>AMDDI - Asesoría académica y redacción de trabajos universitarios</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX"></script>
+  <title>Asesoría académica y redacción de trabajos universitarios - AMDDI</title>
 </head>
 
 <body>
@@ -80,6 +81,25 @@
   <!-- JS CAROUSEL TESTIMONIO -->
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-XXXXXXXXX');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXX');
+    fbq('track', 'PageView');
+  </script>
 </body>
 
 </html>

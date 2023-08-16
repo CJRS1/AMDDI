@@ -40,9 +40,9 @@ export default function Carousel() {
 
         const handleScroll = () => {
 
-            const maxTop = 1000;
+            const maxTop = 500;
 
-            if (window.scrollY > 300) {
+            if (window.scrollY > 600) {
                 efectoRef.current.style.top = "0px";
             } else {
                 efectoRef.current.style.top = "-800px";
@@ -60,6 +60,7 @@ export default function Carousel() {
 
     }, []);
 
+    
 
     const seccionRef = useRef(null);
     const [animated, setAnimated] = useState(false); // Estado para controlar la animación
@@ -117,7 +118,7 @@ export default function Carousel() {
 
                         <div className="botones_contacto_asesoria carousel-caption d-none d-md-block ">
                             <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Más información</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos</Link>
                         </div>
 
                         <div className="asesoria_descripcion">
@@ -140,8 +141,8 @@ export default function Carousel() {
                                 <img className="medalla" src={require('../images/medalla.png')} alt='medalla' height={'200px'} width={'200px'} />
                                 <img className="somos" src={require('../images/somos.png')} alt='eslogan' height={'100px'} width={'450px'} />
                             </div>
-                            {/* <Link to="/AMDDI/contactanos" type="button" className="btn btn_asesoria button-effect contact_carousel">Contáctanos</Link> */}
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto contacto_tesis_pre">Contáctanos</Link>
+                            {/* <Link to="/contactanos" type="button" className="btn btn_asesoria button-effect contact_carousel">Contáctanos</Link> */}
+                            <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto contacto_tesis_pre">Contáctanos</Link>
                         </div>
                     </div>
                     <div className="carousel-item practica">
@@ -157,7 +158,7 @@ export default function Carousel() {
 
                                 <h2 className='titulo_2'><span className='color_verde'>REALIZA</span> TUS PRÁCTICAS PRE <span className='color_verde'>PROFESIONALES</span> CON GRUPO <span className='color_verde'>AMDDI</span></h2>
                             </div>
-                            <a href="https://pe.indeed.com/cmp/Amddi-S.a.c." target="_blank" rel="noreferrer" className='indeed_btn '>
+                            <a href="https://pe.indeed.com/cmp-S.a.c." target="_blank" rel="noreferrer" className='indeed_btn '>
                                 Revisa nuestras convocatorias vigentes
                             </a>
                         </div>
@@ -172,7 +173,7 @@ export default function Carousel() {
                                 <h2 className='titulo_proyecto_2'>INVERSIÓN</h2>
                                 <div className="carousel-caption d-none d-md-block contenedor_btn_proyecto">
                                     <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect contacto_carousel">Asesoría en vivo</a>
-                                    <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                    <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
                                 </div>
                             </div>
                             <div className="proyecto_listas">
@@ -185,7 +186,7 @@ export default function Carousel() {
                                     <li className='proyecto_last'><span></span>Estudio Económico Financiero</li>
                                     
                                 </ul>
-                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
+                                <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel proyecto_contacto">Contáctanos</Link>
                             </div>
                         </div>
                     </div>
@@ -194,7 +195,7 @@ export default function Carousel() {
                         <img className="img-carousel img_responsive" src={require('../images/recortado6.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         {/* <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div> */}
                         <div className="negocio_descripcion">
                             <div className="negocio_titulo">
@@ -215,7 +216,7 @@ export default function Carousel() {
                                     <li><span></span>Finanzas</li>
                                     <li><span></span>Plan de marketing</li>
                                     <div className="contacto_carousel contacto">
-                                        <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                        <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
                                     </div>
                                 </ul>
                             </div>
@@ -226,7 +227,7 @@ export default function Carousel() {
                         <img className="img-carousel img_responsive" src={require('../images/recortado2.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         {/* <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div> */}
                         <div className="doctorado_descripcion">
                             <div className="doctorado_titulo">
@@ -242,7 +243,7 @@ export default function Carousel() {
                             </div>
                             <div className="doctorado_listas">
                                 <a href="https://walink.co/4d2ac9" target="_blank" rel="noreferrer" type="button" className="btn button-effect doctorado_contacto">Más información</a>
-                                <Link to="/AMDDI/contactanos" type="button" className="btn button-effect ">Contáctanos</Link>
+                                <Link to="/contactanos" type="button" className="btn button-effect ">Contáctanos</Link>
                             </div>
 
                         </div>
@@ -256,7 +257,7 @@ export default function Carousel() {
                         <img className="img-carousel img_responsive" src={require('../images/recortado3.png')} alt='negocio' height={'603.2px'} width={'1481px'} />
                         {/* <div className="carousel-caption d-none d-md-block">
                             <a href="https://api.whatsapp.com/send?phone=51937965909" target="_blank" rel="noreferrer" type="button" className="btn button-effect">Contáctanos por Whatsapp</a>
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect">Contáctanos por Correo</Link>
                         </div> */}
                         <div className="maestria_descripcion">
                             <div className="maestria_titulo">
@@ -277,7 +278,7 @@ export default function Carousel() {
                                     <li><span></span>Finanzas</li>
                                     <li><span></span>Salud</li>
                                     <div className="contacto_carousel contacto">
-                                        <Link o="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
+                                        <Link o="/contactanos" type="button" className="btn button-effect contacto_carousel">Contáctanos</Link>
                                     </div>
                                 </ul>
                             </div>
@@ -316,7 +317,7 @@ export default function Carousel() {
                                 En AMDDI, nos especializamos en soluciones integrales para investigación y asesoría. Guiamos y apoyamos proyectos de investigación para impulsar el crecimiento académico y profesional. Nuestro equipo multidisciplinario de expertos en metodología y estadísticas está comprometido con tu éxito. Operamos en Perú, Bolivia, Colombia, Costa Rica, Cuba, Ecuador, Venezuela y México.
                             </p>
 
-                            <Link to="/AMDDI/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link>
+                            <Link to="/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link>
                         </div>
                     </div>
                 </div>
@@ -325,7 +326,7 @@ export default function Carousel() {
             <div className="seccion_servicios_p">
                 <h2>NUESTROS SERVICIOS</h2>
                 <div className="servicios_list_p">
-                    <HashLink className='servicio_p' to="/AMDDI/servicios#redacciontesispregrado" smooth={false} >
+                    <HashLink className='servicio_p' to="/servicios#redacciontesispregrado" smooth={false} >
                         <div className="servicio_p">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/ciclo.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
@@ -333,7 +334,7 @@ export default function Carousel() {
                             </div>
                         </div>
                     </HashLink>
-                    <HashLink className='servicio_p' to="/AMDDI/servicios#levantamientoobservacionespregrado" smooth={false} >
+                    <HashLink className='servicio_p' to="/servicios#levantamientoobservacionespregrado" smooth={false} >
                         <div className="servicio_p">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/observaciones.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
@@ -341,7 +342,7 @@ export default function Carousel() {
                             </div>
                         </div>
                     </HashLink>
-                    <HashLink className='servicio_p' to="/AMDDI/servicios#trabajodeciclo" smooth={false} >
+                    <HashLink className='servicio_p' to="/servicios#trabajodeciclo" smooth={false} >
                         <div className="servicio_p">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/redaccion.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
@@ -349,7 +350,7 @@ export default function Carousel() {
                             </div>
                         </div>
                     </HashLink>
-                    <HashLink className='servicio_p' to="/AMDDI/servicios#informepracticas" smooth={false} >
+                    <HashLink className='servicio_p' to="/servicios#informepracticas" smooth={false} >
                         <div className="servicio_p">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/informe.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
@@ -358,7 +359,7 @@ export default function Carousel() {
                         </div>
                     </HashLink>
                 </div>
-                <Link to="/AMDDI/servicios" type="button" className="btn button-effect contacto_carousel">Ver más servicios</Link>
+                <Link to="/servicios" type="button" className="btn button-effect contacto_carousel">Ver más servicios</Link>
             </div>
             <div className="seccion_contador" ref={seccionRef}>
                 <div className="fila">
@@ -400,7 +401,7 @@ export default function Carousel() {
                         <h2>#¡SEGUIMOS ADELANTE!</h2>
                         <p>Asesoría y redacción de tesis de Pregrado, Posgrado, Doctorado y MBA.</p>
                         <div className="contacto_carousel contacto informacion_btn">
-                            <Link to="/AMDDI/contactanos" type="button" className="btn button-effect contacto_carousel informacion_btn">Más información</Link>
+                            <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel informacion_btn">Más información</Link>
                         </div>
                     </div>
 

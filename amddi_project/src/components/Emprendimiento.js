@@ -74,7 +74,7 @@ export default function Emprendimiento() {
                         
                         <button type="submit" className="btn button-contact">Enviar el formulario</button>
 
-                        <input type="hidden" name="_next" value="https://cjrs1.github.io/AMDDI/emprendimientojoven" />
+                        <input type="hidden" name="_next" value="https://www.amddi.com/emprendimientojoven" />
                         <input type="hidden" name="_captcha" value="false" />
 
                     </div>
