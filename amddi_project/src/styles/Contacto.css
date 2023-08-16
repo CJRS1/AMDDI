@@ -287,13 +287,23 @@ section {
 @media (min-width: 769px) and (max-width: 1480px) {
   .contacto_container {
     width: 100% !important;
+    height: 100vh !important;
   }
   .container-contacto-lottie {
     width: 80%;
     height: 90%;
   }
+  .ingresos_container {
+    height: 100vh;
+  }
   .ingresos_description {
     width: 90% !important;
     height: 90% !important;
+  }
+  .ingresos_card p {
+    font-size: 17px !important;
+  }
+  .ingresos_description {
+    height: 84% !important;
   }
 }/*# sourceMappingURL=Contacto.css.map */
