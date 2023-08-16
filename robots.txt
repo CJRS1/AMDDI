@@ -1,4 +1,3 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
@@ -17,4 +16,4 @@ Disallow: /*.txt$
 Disallow: /category-a/
 Disallow: /tag-x/
 
-Sitemap: https://www.miejemplo.com/sitemap.xml
+Sitemap: https://www.amddi.com/sitemap.xml
