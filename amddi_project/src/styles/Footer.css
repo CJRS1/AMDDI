@@ -140,14 +140,14 @@ section {
 .footer-description {
   height: 580px;
   width: 1481px;
-  background-image: url(../images/fonto_verde.jpeg);
+  background-image: url(../images/fondo_blanco.jpeg);
   background-size: 500px 500px;
   background-repeat: repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  color: #ffffff;
+  color: #00d799;
   padding-top: 20px;
 }
 
@@ -173,12 +173,10 @@ section {
 }
 
 .svg-effect {
-  filter: brightness(0) invert(1);
   transition: filter 0.3s;
 }
 
 .svg-effect:hover {
-  filter: brightness(1) invert(0);
   animation: scale 1s infinite;
 }
 
@@ -261,6 +259,9 @@ section {
   padding-left: 10px;
   padding-bottom: 5px;
 }
+.card-localizacion h5 {
+  color: #00d799 !important;
+}
 
 .bi-geo-alt {
   padding-top: 5px !important;
@@ -313,6 +314,9 @@ section {
   width: 100%;
   margin-bottom: 0 !important;
 }
+.container-list ul li {
+  color: #00d799 !important;
+}
 
 .programas {
   width: 100%;
@@ -350,7 +354,7 @@ section {
   }
   .footer-description {
     width: 100%;
-    height: 800px;
+    height: 700px;
   }
   .footer-content {
     width: 500px;
@@ -404,8 +408,12 @@ section {
     font-weight: 700 !important;
   }
   .footer-description-nuestrosservicios .container-list li .servicios h5 {
-    font-size: 22px !important;
-    font-weight: 700 !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #00d799 !important;
+  }
+  .pro_list {
+    color: #00d799 !important;
   }
   .footer-description-ubicanos {
     width: 500px;
