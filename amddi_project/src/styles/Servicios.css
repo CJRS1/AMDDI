@@ -272,24 +272,9 @@ section {
   width: 230px;
   border-radius: 10px;
   padding: 10px 0 10px 0;
-  background-image: url(../images/fondo_blanco.jpeg);
   background-size: 500px 500px;
   background-repeat: repeat;
   border: 1px solid #ffffff !important;
-}
-.ingenieria h3 {
-  color: #00d799 !important;
-}
-.ingenieria ul {
-  list-style: none !important;
-  text-decoration: none !important;
-}
-.ingenieria ul li {
-  text-decoration: none !important;
-  padding-right: 10px;
-  color: #00d799 !important;
-  font-weight: 800;
-  text-shadow: black 0.01em 0.01em 0.01em;
 }
 
 .basicas {

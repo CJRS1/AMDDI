@@ -18,8 +18,11 @@ import Registro2 from './components/Registro2';
 import Registro3 from './components/Registro3';
 import Login from './components/Login';
 
-function App() {
+// import ogImage from './images/Logo_soloverde.png'
 
+function App() {
+  // const dynamicImage = ogImage;
+  // document.querySelector('meta[name="twitter:image"]').setAttribute('content', dynamicImage);
   return (
     <Router>
       <Subheader />
@@ -52,7 +55,7 @@ function App() {
 
         <Route path="/investigacionsostenible" element={<Investigacion />} />
 
-        <Route path="/emprendimientojoven" element={<Emprendimiento/>} />
+        <Route path="/emprendimientojoven" element={<Emprendimiento />} />
 
         <Route path="/contactanos" element={<Contacto />} />
 
