@@ -291,14 +291,14 @@ section {
   }
   .container-contacto-lottie {
     width: 80%;
-    height: 90%;
+    height: 97%;
   }
   .ingresos_container {
     height: 100vh;
   }
   .ingresos_description {
     width: 90% !important;
-    height: 90% !important;
+    height: 95% !important;
   }
   .ingresos_card p {
     font-size: 17px !important;
