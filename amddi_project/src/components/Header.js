@@ -57,11 +57,11 @@ export default function Header() {
                                 <Link to="" className="nav-link active" aria-current="page" >Inicio </Link>
                             </li> */}
                             <li className="nav-item">
-                                <Link to="/nosotros" className="nav-link" onClick={handleLinkClick}>Nosotros </Link>
+                                <Link to="/nosotros" className="nav-link" onClick={handleLinkClick}>NOSOTROS </Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <Link to="/servicios" className="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                                    Nuestros Servicios
+                                    NUESTROS SERVICIOS
                                 </Link>
                                 <ul className={`dropdown-menu bg-gris ${menuClass}`} >
                                     <li> <HashLink to="/servicios#carreras" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('carreras'); }}>Carreras Asesoradas </HashLink> </li>
@@ -100,19 +100,19 @@ export default function Header() {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link to="/ingresosextra" className="nav-link" onClick={handleLinkClick}>Ingresos Extra </Link>
+                                <Link to="/ingresosextra" className="nav-link" onClick={handleLinkClick}>INGRESOS EXTRA </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/investigacionsostenible" className="nav-link" onClick={handleLinkClick}>Investigación Sostenible</Link>
+                                <Link to="/investigacionsostenible" className="nav-link" onClick={handleLinkClick}>INVESTIGACIÓN SOSTENIBLE</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/emprendimientojoven" className="nav-link" onClick={handleLinkClick}>Emprendimiento Joven </Link>
+                                <Link to="/emprendimientojoven" className="nav-link" onClick={handleLinkClick}>EMPRENDIMIENTO JÓVEN</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/testimonios" className="nav-link" onClick={handleLinkClick}>Testimonios </Link>
+                                <Link to="/testimonios" className="nav-link" onClick={handleLinkClick}>TESTIMONIOS </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/contactanos" className="nav-link" onClick={handleLinkClick}>Contáctanos </Link>
+                                <Link to="/contactanos" className="nav-link" onClick={handleLinkClick}>CONTÁCTANOS </Link>
                             </li>
                         </ul>
                     </div>

@@ -176,7 +176,7 @@ a {
 }
 
 .nav-item {
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,9 +184,8 @@ a {
 
 .nav-link {
   transition: all 0.5s ease-in-out !important;
-  font-weight: 300 !important;
-  font-weight: 800 !important;
-  font-size: 17px !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
   display: flex;
   justify-content: center;
   align-items: center;
