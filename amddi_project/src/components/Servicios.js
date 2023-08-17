@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+// useState, 
 import { useLocation } from 'react-router-dom';
 import '../styles/Servicios.css'
 // import Tesispregrado from  '../components/pdf/Tesispregrado.pdf';
@@ -11,6 +12,11 @@ export default function Servicios() {
         window.scrollTo(0, 0);
     }, [location]);
 
+    // const [imagenActiva, setImagenActiva] = useState(1);
+
+    // const manejarClick = (num) => {
+    //     setImagenActiva(num);
+    // }
 
     return (
         <section className="servicios_container">
@@ -114,6 +120,67 @@ export default function Servicios() {
                     </div>
                 </div>
             </div>
+            {/* <div className="carreras_container_1 ">
+                <div className="carreras_card">
+
+                    <div className="botones_carreras">
+
+                        <button
+                            className={imagenActiva === 1 ? 'activo' : ''}
+                            onClick={() => manejarClick(1)}
+                        >
+                            Ciencias Empresariales
+                        </button>
+
+                        <button
+                            className={imagenActiva === 2 ? 'activo' : ''}
+                            onClick={() => manejarClick(2)}
+                        >
+                            Ingenierías
+                        </button>
+
+                        <button
+                            className={imagenActiva === 3 ? 'activo' : ''}
+                            onClick={() => manejarClick(3)}
+                        >
+                            Ciencias de la Salud
+                        </button>
+
+                        <button
+                            className={imagenActiva === 4 ? 'activo' : ''}
+                            onClick={() => manejarClick(4)}
+                        >
+                            Ciencias Sociales
+                        </button>
+
+                        <button
+                            className={imagenActiva === 5 ? 'activo' : ''}
+                            onClick={() => manejarClick(5)}
+                        >
+                            Ciencias Biológicas y agrónomas
+                        </button>
+
+                        <button
+                            className={imagenActiva === 6 ? 'activo' : ''}
+                            onClick={() => manejarClick(6)}
+                        >
+                            Ciencias básicas
+                        </button>
+
+                    </div>
+
+                    <div className="imagen_carrera">
+
+                        <img
+                            className="imagen"
+                            src={require(`../images/Especializacion/img${imagenActiva}.jpeg`)}
+                            alt={`Imagen ${imagenActiva}`}
+                        />
+                    </div>
+
+                </div>
+            </div> */}
+
             <div className="servicios_list">
                 <div id="redacciontesispregrado" className="servicio_container">
                     <div className="servicios_card">
@@ -125,11 +192,11 @@ export default function Servicios() {
                                 </p>
                             </div>
                             {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
-                                <button className="btn boton_servicios button-effect button-perfect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
-                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                </svg> Descarga el Browsure</button>
-                        
+                            <button className="btn boton_servicios button-effect button-perfect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
+                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg> Descarga el Browsure</button>
+
                         </div>
                     </div>
                 </div>

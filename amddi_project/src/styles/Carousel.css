@@ -1290,6 +1290,10 @@ section {
     width: 50px !important;
     height: 50px !important;
   }
+  .carousel-control-next-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
   .quienessomos {
     width: 100vw !important;
   }

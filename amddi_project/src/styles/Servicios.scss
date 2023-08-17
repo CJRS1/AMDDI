@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .servicio_container {
@@ -157,17 +157,17 @@
     // h3{
     //     color: $verde-lima !important;
     // }
-//     ul{
-//         list-style: none !important;
-//         text-decoration: none !important;
-//         li{
-//             text-decoration: none !important;
-//             padding-right: 10px;
-//             color: $verde-lima !important;
-//             font-weight: 800;
-//             text-shadow: black 0.01em 0.01em 0.01em;
-//     }
-// }
+    //     ul{
+    //         list-style: none !important;
+    //         text-decoration: none !important;
+    //         li{
+    //             text-decoration: none !important;
+    //             padding-right: 10px;
+    //             color: $verde-lima !important;
+    //             font-weight: 800;
+    //             text-shadow: black 0.01em 0.01em 0.01em;
+    //     }
+    // }
 }
 
 .basicas {
@@ -224,9 +224,64 @@
     row-gap: 20px;
 }
 
+.im_carousel_carreras {
+    width: 500px !important;
+    height: 600px !important;
+}
+
+.carreras_container_1 {
+    height: calc(100vh - 120px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carreras_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.botones_carreras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botones_carreras button {
+    background: $gris-claro;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.botones_carreras button.activo {
+    background: $verde-lima;
+    box-shadow: 2px 2px 10px #999;
+}
+
+.imagen {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 50px;
+}
 
 
 @media (max-width: 768px) {
+
+    .prueba {
+        height: auto;
+    }
+
+    .imagen {
+        width: 90%;
+        height: auto;
+    }
+
     .servicios_container {
         height: auto;
     }
