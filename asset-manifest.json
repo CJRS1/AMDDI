@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.864481e4.css",
-    "main.js": "./static/js/main.3b70b690.js",
+    "main.css": "./static/css/main.b8f763e6.css",
+    "main.js": "./static/js/main.d87d66e9.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/adelante_completo.png": "./static/media/adelante_completo.0de1bb381c85f5fc29e0.png",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.201ea0cd81e8ce607ccf.png",
@@ -26,7 +26,6 @@
     "static/media/redaccion.png": "./static/media/redaccion.ebc0e010fc7a219e75d7.png",
     "static/media/somos_internacionales.png": "./static/media/somos_internacionales.bce64da39ac18dc6b6f2.png",
     "static/media/medalla.png": "./static/media/medalla.909d53018171dddd2b5a.png",
-    "static/media/libro.png": "./static/media/libro.0d80e2ed994b0173b4e0.png",
     "static/media/fonto_verde.jpeg": "./static/media/fonto_verde.f7e5e6ed193c305636bc.jpeg",
     "static/media/fondo_blanco.jpeg": "./static/media/fondo_blanco.7e6f572d8ef9aef1a3ac.jpeg",
     "static/media/Whatsapp.png": "./static/media/Whatsapp.3c88a2148dbf6e49dfae.png",
@@ -45,12 +44,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.864481e4.css.map": "./static/css/main.864481e4.css.map",
-    "main.3b70b690.js.map": "./static/js/main.3b70b690.js.map",
+    "main.b8f763e6.css.map": "./static/css/main.b8f763e6.css.map",
+    "main.d87d66e9.js.map": "./static/js/main.d87d66e9.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.864481e4.css",
-    "static/js/main.3b70b690.js"
+    "static/css/main.b8f763e6.css",
+    "static/js/main.d87d66e9.js"
   ]
 }
