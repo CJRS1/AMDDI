@@ -278,6 +278,13 @@
 
 
 @media (max-width: 768px) {
+    .img_logo_contacto{
+        display: none !important;
+    }
+
+    .contacto-desc{
+        width: 90% !important;
+    }
 
     .prueba {
         height: auto;

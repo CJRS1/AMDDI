@@ -11,7 +11,7 @@ import mercadopago from '../images/FormasdePago/mercadopago.png'
 import paypal from '../images/FormasdePago/paypal.png'
 import scotiabank from '../images/FormasdePago/scotiabank.jpg'
 import visa from '../images/FormasdePago/visa.jpg'
-import libro from '../images/libro.png'
+// import libro from '../images/libro.png'
 
 
 export default function Footer() {
@@ -345,13 +345,13 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
-                    <h4 className='margin_title'><strong>Libro de Reclamaciones</strong></h4>
+                    {/* <h4 className='margin_title'><strong>Libro de Reclamaciones</strong></h4>
                     <div className="libro-container">
                         <a href="https://librodereclamacionesperu.com/formulario.php?id=853131633"
                             rel="noreferrer" target="_blank" >
                             <img src={libro} alt='bcp' height={'55px'} />
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

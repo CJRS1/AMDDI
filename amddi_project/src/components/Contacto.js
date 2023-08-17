@@ -14,7 +14,7 @@ export default function Contacto() {
             <div className="container-contacto-lottie zoom">
                 {/* <lottie-player src="https://lottie.host/e78cad45-142b-442c-8943-73541c6778cb/vPwyM4thh3.json" background="transparent"
                     speed="0.5" style={{ height: '400px', width: '400px' }} loop autoplay></lottie-player> */}
-                    <img src={logo} alt='logo' height={'300px'} />
+                    <img className="img_logo_contacto" src={logo} alt='logo' height={'300px'} />
                 <form method="POST" action="https://formsubmit.co/info@amddi.com" encType="multipart/form-data" className="container-contacto-empresa">
                     <h2 className="titulo"><strong>Contáctanos</strong></h2>
                     <div className="contacto-desc">
