@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.b8f763e6.css",
-    "main.js": "./static/js/main.d87d66e9.js",
+    "main.css": "./static/css/main.d0cd5cdb.css",
+    "main.js": "./static/js/main.50c46e07.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/adelante_completo.png": "./static/media/adelante_completo.0de1bb381c85f5fc29e0.png",
+    "static/media/img2.jpeg": "./static/media/img2.f82c5355aa3f0a2f7287.jpeg",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.201ea0cd81e8ce607ccf.png",
+    "static/media/img3.jpeg": "./static/media/img3.667a19ee6edbcd78b61a.jpeg",
+    "static/media/img4.jpeg": "./static/media/img4.ed2ba1a2b3480b6173f0.jpeg",
+    "static/media/img5.jpeg": "./static/media/img5.ed2ba1a2b3480b6173f0.jpeg",
+    "static/media/img6.jpeg": "./static/media/img6.ed2ba1a2b3480b6173f0.jpeg",
+    "static/media/img1.jpeg": "./static/media/img1.21d4b9263037a56d9880.jpeg",
     "static/media/practicas_ preprofesionales.png": "./static/media/practicas_ preprofesionales.e4e53355aa1f3b6047ee.png",
     "static/media/asesoria.png": "./static/media/asesoria.98acf757d1b85d8641e6.png",
     "static/media/valores.jpg": "./static/media/valores.685bef8fa5d3187439d4.jpg",
@@ -44,12 +50,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.b8f763e6.css.map": "./static/css/main.b8f763e6.css.map",
-    "main.d87d66e9.js.map": "./static/js/main.d87d66e9.js.map",
+    "main.d0cd5cdb.css.map": "./static/css/main.d0cd5cdb.css.map",
+    "main.50c46e07.js.map": "./static/js/main.50c46e07.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8f763e6.css",
-    "static/js/main.d87d66e9.js"
+    "static/css/main.d0cd5cdb.css",
+    "static/js/main.50c46e07.js"
   ]
 }
