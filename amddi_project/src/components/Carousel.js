@@ -302,7 +302,7 @@ export default function Carousel() {
                 <div className="amdi_international_description">
                     <div className="international_container">
                         <h3>En AMDDI somos</h3>
-                        <h3> INTERNACIONES</h3>
+                        <h3> INTERNACIONALES</h3>
                         <ul className="paises_list">
                             <li><img className="pais" src={require('../images/paises/peru.png')} alt='Peru' height={'35px'} /></li>
                             <li><img className="pais" src={require('../images/paises/bolivia.png')} alt='Bolivia' height={'35px'} /></li>
