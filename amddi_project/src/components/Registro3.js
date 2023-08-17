@@ -1,5 +1,6 @@
-import React, { useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import '../styles/Registro.css';
 
 export default function Registro3() {
@@ -9,58 +10,68 @@ export default function Registro3() {
         window.scrollTo(0, 0);
     }, [location]);
 
-    // const [user, setUser] = useState({
-    //     name: '',
-    //     lastName: '',
-    //     career: '',
-    //     dni: '',
-    //     email: '',
-    //     password: ''
-    // });
+    const [user, setUser] = useState({
+        name: '',
+        lastName: '',
+        career: '',
+        dni: '',
+        email: '',
+        password: ''
+    });
 
 
-    // const handleInputChange = (event) => {
-    //     const { name, value } = event.target;
-    //     setUser({ ...user, [name]: value });
-    // }
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setUser({ ...user, [name]: value });
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
     }
 
 
+
     return (
         <section className="registro_container">
-            <div className="form_registro">
-
-                <h2 className="titulo">Escribe tu correo y contraseña</h2>
-                <form onSubmit={handleSubmit} >
-
-                    <input
+            <div className="form_registro_container">
+                <h2 className="titulo_registro">Creación de cuenta</h2>
+                <div className="secciones_registro_container">
+                    <span className="secciones_registro">1</span>
+                    <span className="secciones_registro">2</span>
+                    <span className="secciones_registro">3</span>
+                </div>
+                <form onSubmit={handleSubmit} className="form_registro_codigo">
+                    <h3>Código:</h3>
+                    <input className="input_registro_codigo"
                         type="text"
-                        pattern="[A-Za-z]*"
-                        maxLength={1}
+                        name="codigo1"
+                        placeholder=""
+                        value={user.codigo1}
+                        onChange={handleInputChange}
                     />
-                    <input
+                    <input className="input_registro_codigo"
                         type="text"
-                        pattern="[A-Za-z]*"
-                        maxLength={1}
+                        name="codigo2"
+                        placeholder=""
+                        value={user.codigo2}
+                        onChange={handleInputChange}
                     />
-                    <input
+                    <input className="input_registro_codigo"
                         type="text"
-                        pattern="[A-Za-z]*"
-                        maxLength={1}
+                        name="codigo3"
+                        placeholder=""
+                        value={user.codigo3}
+                        onChange={handleInputChange}
                     />
-                    <input
+                    <input className="input_registro_codigo"
                         type="text"
-                        pattern="[A-Za-z]*"
-                        maxLength={1}
+                        name="codigo4"
+                        placeholder=""
+                        value={user.codigo4}
+                        onChange={handleInputChange}
                     />
-
-                    <button type="submit">Crear</button>
-
-
                 </form>
+                    <Link to="/login" className="btn button-effect btn_registro" type="submit">Finalizar</Link>
             </div>
         </section>
 

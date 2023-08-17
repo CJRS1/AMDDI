@@ -38,7 +38,7 @@ function App() {
 
         <Route path="/registrarse" element={<Registro />} />
 
-        <Route path="/registrarse-p1" element={<Registro />} />
+        {/* <Route path="/registrarse-p1" element={<Registro />} /> */}
 
         <Route path="/registrarse-p2" element={<Registro2 />} />
 

@@ -16,7 +16,7 @@ export default function Subheader() {
 
                 <Link to="/registrarse" className="zoom-header">Registrarse </Link>
 
-                <Link to="/registrarse-p1" className="zoom-header">Registrarse </Link>
+                {/* <Link to="/registrarse-p1" className="zoom-header">Registrarse </Link> */}
 
             </div>
         </section>

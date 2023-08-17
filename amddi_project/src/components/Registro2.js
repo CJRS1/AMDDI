@@ -32,38 +32,37 @@ export default function Registro2() {
 
     return (
         <section className="registro_container">
-            <div className="form_registro">
-
-            <h2 className="titulo">Escribe tu correo y contraseña</h2>
-            <form onSubmit={handleSubmit} >
-                
-                <input className="input_registro"
-                    type="text"
-                    name="correo"
-                    placeholder="Correo"
-                    value={user.lastName}
-                    onChange={handleInputChange}
-                />
-                <input className="input_registro"
-                    type="text"
-                    name="password"
-                    placeholder="Contraseña"
-                    value={user.lastName}
-                    onChange={handleInputChange}
-                />
-                <input className="input_registro"
-                    type="text"
-                    name="password"
-                    placeholder="Confirma tu contraseña"
-                    value={user.lastName}
-                    onChange={handleInputChange}
-                />
-
-
-                <Link to="/AMDDI/registrarse-p3" type="submit">Siguiente</Link>
-
-
-            </form>
+            <div className="form_registro_container">
+                <h2 className="titulo_registro">Creación de cuenta</h2>
+                <div className="secciones_registro_container">
+                    <span className="secciones_registro">1</span>
+                    <span className="secciones_registro">2</span>
+                    <span className="secciones_registro">3</span>
+                </div>
+                <form onSubmit={handleSubmit} className="form_registro">
+                    <input className="input_registro"
+                        type="email"
+                        name="email"
+                        placeholder="Correo electrónico"
+                        value={user.email}
+                        onChange={handleInputChange}
+                    />
+                    <input className="input_registro"
+                        type="password"
+                        name="contraseña"
+                        placeholder="Contraseña"
+                        // value={user.password}
+                        // onChange={handleInputChange}
+                    />
+                    <input className="input_registro"
+                        type="password"
+                        name="contraseña"
+                        placeholder="Contraseña"
+                        // value={user.password}
+                        // onChange={handleInputChange}
+                    />
+                    <Link to="/registrarse-p3" className="btn button-effect btn_registro" type="submit">Siguiente</Link>
+                </form>
             </div>
         </section>
 
