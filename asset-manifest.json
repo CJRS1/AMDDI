@@ -1,8 +1,18 @@
 {
   "files": {
     "main.css": "./static/css/main.d0cd5cdb.css",
-    "main.js": "./static/js/main.78407ac2.js",
+    "main.js": "./static/js/main.ca499541.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
+    "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
+    "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
+    "static/media/Monografia.pdf": "./static/media/Monografia.0ca3d8fa087b6a97aff3.pdf",
+    "static/media/ArticulodeRevisiondeLiteratura.pdf": "./static/media/ArticulodeRevisiondeLiteratura.00f41de386bbb29e00bc.pdf",
+    "static/media/Diapositivas.pdf": "./static/media/Diapositivas.8184e61d5776024c704a.pdf",
+    "static/media/ArticulodeRevisionSistematica.pdf": "./static/media/ArticulodeRevisionSistematica.c5eee734ad08493d86cf.pdf",
+    "static/media/SuficienciaProfesional.pdf": "./static/media/SuficienciaProfesional.5f8d7d92e84f7e3828f7.pdf",
+    "static/media/ElaboraciondeTesina.pdf": "./static/media/ElaboraciondeTesina.ad14ed934435ce248ee7.pdf",
+    "static/media/PlanesdeNegocio.pdf": "./static/media/PlanesdeNegocio.49466c949e5d66f64904.pdf",
+    "static/media/LevantamientodeObservaciones.pdf": "./static/media/LevantamientodeObservaciones.c85cdd58442a0634e0ec.pdf",
     "static/media/adelante_completo.png": "./static/media/adelante_completo.0de1bb381c85f5fc29e0.png",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.201ea0cd81e8ce607ccf.png",
     "static/media/practicas_ preprofesionales.png": "./static/media/practicas_ preprofesionales.e4e53355aa1f3b6047ee.png",
@@ -45,11 +55,11 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "main.d0cd5cdb.css.map": "./static/css/main.d0cd5cdb.css.map",
-    "main.78407ac2.js.map": "./static/js/main.78407ac2.js.map",
+    "main.ca499541.js.map": "./static/js/main.ca499541.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0cd5cdb.css",
-    "static/js/main.78407ac2.js"
+    "static/js/main.ca499541.js"
   ]
 }
