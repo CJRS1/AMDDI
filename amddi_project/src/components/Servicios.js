@@ -2,10 +2,18 @@ import React, { useEffect } from "react";
 // useState, 
 import { useLocation } from 'react-router-dom';
 import '../styles/Servicios.css'
-// import ArtiuclodeRevisiondeLiteratura from  '../components/pdf/ArtiuclodeRevisiondeLiteratura.pdf';
-// import ArtiuclodeRevisionSistematica from  '../components/pdf/ArtiuclodeRevisionSistematica.pdf';
+import ArticulodeRevisiondeLiteratura from  '../components/pdf/ArticulodeRevisiondeLiteratura.pdf';
+import ArticulosCientificos from  '../components/pdf/ArticulosCientificos.pdf';
+import ArticulodeRevisionSistematica from  '../components/pdf/ArticulodeRevisionSistematica.pdf';
+import Diapositivas from  '../components/pdf/Diapositivas.pdf';
+import ElaboraciondeTesina from  '../components/pdf/ElaboraciondeTesina.pdf';
+import LevantamientodeObservaciones from  '../components/pdf/LevantamientodeObservaciones.pdf';
+import Monografia from  '../components/pdf/Monografia.pdf';
+import ParafraseoyCorrecciondeEstilos from  '../components/pdf/ParafraseoyCorrecciondeEstilos.pdf';
+import SuficienciaProfesional from  '../components/pdf/SuficienciaProfesional.pdf';
+import PlanesdeNegocio from  '../components/pdf/PlanesdeNegocio.pdf';
+
 // import Diapositivas from  '../components/pdf/Diapositivas.pdf';
-// import ElaboraciondeTesina from  '../components/pdf/ElaboraciondeTesina.pdf';
 
 
 export default function Servicios() {
@@ -246,11 +254,12 @@ export default function Servicios() {
                                     ¿Has recibido observaciones en tu tesis de pregrado? No te preocupes, estamos aquí para ayudarte a superarlas y corregir tu trabajo. Nuestro equipo de expertos revisará minuciosamente tus documentos, proporcionándote valiosas sugerencias para mejorar tu investigación. ¡Avanza hacia tu graduación sin complicaciones! Obtén más información ahora.
                                 </p>
                             </div>
-                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                            <a href={LevantamientodeObservaciones} target="_blank" rel="noopener noreferrer" download="LevantamientodeObservaciones.pdf">
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -263,11 +272,13 @@ export default function Servicios() {
                                     Si estás enfrentando observaciones en tu tesis de maestría, estamos preparados para asistirte en su resolución. Nuestro equipo altamente calificado te brindará la guía necesaria para abordar las observaciones y lograr un trabajo de excelencia académica. ¡Supera este último obstáculo en tu camino hacia el título de posgrado! Haz clic a continuación y descubre cómo podemos ayudarte.
                                 </p>
                             </div>
-                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                            <a href={LevantamientodeObservaciones} target="_blank" rel="noopener noreferrer" download="LevantamientodeObservaciones.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -280,11 +291,13 @@ export default function Servicios() {
                                     Evita el plagio y mejora la originalidad de tus textos con nuestro servicio de reescritura. Nuestros especialistas en parafraseo transformarán tus documentos manteniendo la coherencia y el significado original. Obtén textos únicos y libres de plagio con nuestro apoyo. ¿Deseas más información? Haz clic ahora mismo.
                                 </p>
                             </div>
-                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                            <a href={ParafraseoyCorrecciondeEstilos} target="_blank" rel="noopener noreferrer" download="ParafraseoyCorrecciondeEstilos.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -297,11 +310,13 @@ export default function Servicios() {
                                     Si te encuentras en el último tramo para obtener tu título profesional, nuestro equipo de expertos te brindará orientación en la elaboración de tu trabajo de suficiencia profesional. Garantizamos la calidad y pertinencia de tu trabajo para que puedas alcanzar tus metas académicas. ¡Haz clic a continuación y obtén más detalles!
                                 </p>
                             </div>
-                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                            <a href={SuficienciaProfesional} target="_blank" rel="noopener noreferrer" download="SuficienciaProfesional.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -314,11 +329,13 @@ export default function Servicios() {
                                     ¿Necesitas redactar un artículo académico o científico? Nuestro servicio te ofrece el apoyo necesario para crear trabajos de alta calidad que cumplan con los estándares exigidos por la comunidad científica. Confía en nuestro equipo de expertos para destacar en el ámbito académico. Obtén más información haciendo clic a continuación.
                                 </p>
                             </div>
-                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                            <a href={ArticulosCientificos} target="_blank" rel="noopener noreferrer" download="ArticulosCientificos.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -331,11 +348,13 @@ export default function Servicios() {
                                     Si estás elaborando una revisión sistemática, nuestro equipo de especialistas te asesorará en cada etapa del proceso. Desde la formulación de la pregunta de investigación hasta la síntesis de los resultados, te guiaremos para realizar una revisión exhaustiva y rigurosa. ¡Asegura la calidad de tu artículo! Obtén más información ahora.
                                 </p>
                             </div>
-                            {/* <a href={ArticulodeRevisionSistematica} target="_blank" rel="noopener noreferrer" download="ArticulodeRevisionSistematica.pdf"></a> */}
+                            <a href={ArticulodeRevisionSistematica} target="_blank" rel="noopener noreferrer" download="ArticulodeRevisionSistematica.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -348,11 +367,13 @@ export default function Servicios() {
                                     ¿Necesitas crear un artículo que revise la literatura existente? Te ofrecemos ayuda especializada para desarrollar un trabajo coherente y relevante que contribuya al conocimiento en tu campo de estudio. Nuestro equipo te guiará en la búsqueda y análisis de fuentes académicas. ¡Haz clic a continuación para obtener más detalles!
                                 </p>
                             </div>
-                            {/* <a href={ArticulodeRevisiondeLiteratura} target="_blank" rel="noopener noreferrer" download="ArticulodeRevisiondeLiteratura.pdf"></a> */}
+                            <a href={ArticulodeRevisiondeLiteratura} target="_blank" rel="noopener noreferrer" download="ArticulodeRevisiondeLiteratura.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -382,11 +403,13 @@ export default function Servicios() {
                                     ¿Necesitas elaborar una monografía o un trabajo de investigación? Nuestro servicio te ofrece orientación en todas las etapas del proceso, desde la delimitación del tema hasta la presentación final. Contamos con expertos en diversas áreas académicas listos para apoyarte. ¡Obtén más detalles haciendo clic ahora!
                                 </p>
                             </div>
-                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                            <a href={Monografia} target="_blank" rel="noopener noreferrer" download="Monografia.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -416,11 +439,13 @@ export default function Servicios() {
                                     Si estás emprendiendo un proyecto empresarial, nuestro servicio de asesoramiento te ayudará en la elaboración de planes de negocio sólidos y bien fundamentados. Te ofrecemos un enfoque integral que te permitirá presentar tu idea de manera atractiva y convincente. ¡Impulsa tu emprendimiento hacia el éxito! Obtén más información haciendo clic a continuación.
                                 </p>
                             </div>
-                            {/* <a href={Tesispregrado} target="_blank" rel="noopener noreferrer" download="Tesispregrado.pdf"></a> */}
+                            <a href={PlanesdeNegocio} target="_blank" rel="noopener noreferrer" download="PlanesdeNegocio.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -450,11 +475,13 @@ export default function Servicios() {
                                     Si estás preparando una tesina para optar por un título académico, nuestro equipo te brindará orientación en su redacción y estructura. Nos enfocamos en garantizar la calidad y originalidad de tu trabajo, así como en cumplir con los requisitos académicos. ¡Avanza hacia la obtención de tu título con éxito! Haz clic a continuación para obtener más detalles.
                                 </p>
                             </div>
-                            {/* <a href={ElaboraciondeTesina} target="_blank" rel="noopener noreferrer" download="ElaboraciondeTesina.pdf"></a> */}
+                            <a href={ElaboraciondeTesina} target="_blank" rel="noopener noreferrer" download="ElaboraciondeTesina.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -484,11 +511,13 @@ export default function Servicios() {
                                     Si buscas asistencia para elaborar presentaciones y diapositivas efectivas, estás en el lugar indicado. Nuestro equipo te brinda orientación en el diseño y contenido para crear presentaciones impactantes y profesionales. ¡Destaca en tus exposiciones con diapositivas visualmente atractivas! Obtén más información haciendo clic a continuación.
                                 </p>
                             </div>
-                            {/* <a href={Diapositivas} target="_blank" rel="noopener noreferrer" download="Diapositivas.pdf"></a> */}
+                            <a href={Diapositivas} target="_blank" rel="noopener noreferrer" download="Diapositivas.pdf">
+
                             <button className="btn boton_servicios button-effect"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg> Descarga el Browsure</button>
+                            </a>
                         </div>
                     </div>
                 </div>
