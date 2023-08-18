@@ -1,4 +1,4 @@
-import React, {useState,  useEffect } from "react";
+import React, { useEffect } from "react";
 // useState, 
 import { useLocation } from 'react-router-dom';
 import '../styles/Servicios.css'
@@ -15,11 +15,11 @@ export default function Servicios() {
         window.scrollTo(0, 0);
     }, [location]);
 
-    const [imagenActiva, setImagenActiva] = useState(1);
+    // const [imagenActiva, setImagenActiva] = useState(1);
 
-    const manejarClick = (num) => {
-        setImagenActiva(num);
-    }
+    // const manejarClick = (num) => {
+    //     setImagenActiva(num);
+    // }
 
     return (
         <section className="servicios_container">
@@ -123,7 +123,7 @@ export default function Servicios() {
                     </div>
                 </div>
             </div>
-            <div className="carreras_container_1 ">
+            {/* <div className="carreras_container_1 ">
                 <div className="carreras_card">
 
                     <div className="botones_carreras">
@@ -182,7 +182,7 @@ export default function Servicios() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
             <div className="servicios_list">
                 <div id="redacciontesispregrado" className="servicio_container">
