@@ -431,6 +431,7 @@ section {
     height: 90%;
   }
   .quienessomos-card {
+    justify-content: space-around;
     width: 80%;
   }
   .valores {
@@ -440,7 +441,7 @@ section {
     height: 100%;
   }
   .img-logo2 {
-    width: 320px;
+    width: 35%;
   }
   .quienessomos_description h4 {
     font-size: 17px !important;
