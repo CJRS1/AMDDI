@@ -427,6 +427,7 @@ section {
 }
 @media (min-width: 769px) and (max-width: 1480px) {
   .quienessomos-container {
+    padding-left: 0;
     height: 90%;
   }
   .quienessomos-card {
@@ -436,6 +437,28 @@ section {
     width: 95%;
   }
   .fila {
+    height: 100%;
+  }
+  .img-logo2 {
+    width: 320px;
+  }
+  .quienessomos_description h4 {
+    font-size: 17px !important;
+  }
+  .valor_description {
+    width: 320px !important;
+    padding-left: 3px;
+  }
+  .valor_description h3 {
+    font-size: 18px !important;
+  }
+  .valor_card {
+    height: 180px !important;
+  }
+  .footer_container {
+    height: auto !important;
+  }
+  .footer-description {
     height: 100%;
   }
 }/*# sourceMappingURL=Nosotros.css.map */

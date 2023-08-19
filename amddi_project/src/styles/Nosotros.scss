@@ -1,366 +1,380 @@
-@import 'Variables';
+@import "Variables";
 
 .amddi_container {
-    max-height: 500vh;
-    width: 100%;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-around !important;
-    padding-top: 120px;
-
+  max-height: 500vh;
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-around !important;
+  padding-top: 120px;
 }
 
 .carousel_nosotros {
-    padding-top: 50px !important;
+  padding-top: 50px !important;
 }
 
 .carousel_nosotros {
-    padding-top: 50px !important;
+  padding-top: 50px !important;
 }
 
 .quienessomos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 120px);
 }
 
 .quienessomos-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 399px;
-    padding: 0 0 0 20px;
-    border-radius: 10px;
-    position: relative;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 399px;
+  padding: 0 0 0 20px;
+  border-radius: 10px;
+  position: relative;
 }
 
 .quienessomos-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 30px;
 }
 
-
 .quienessomos-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
 }
 
 .quienessomos_description {
-    width: 550px;
-    text-align: justify;
+  width: 550px;
+  text-align: justify;
 
-    h1 {
-        color: $gris-oscuro !important;
-    }
+  h1 {
+    color: $gris-oscuro !important;
+  }
 
-    h4 {
-        font-size: 18px !important;
-        color: $gris-oscuro !important;
-    }
+  h4 {
+    font-size: 18px !important;
+    color: $gris-oscuro !important;
+  }
 }
 
 #accordionExample {
-    width: 500px;
-    padding: 20px 0 0 0 !important
+  width: 500px;
+  padding: 20px 0 0 0 !important;
 }
 
 .img-logo2 {
-    width: 400px;
+  width: 400px;
 }
 
 .valores-container {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-    background-image: url(../images/Nosotros/valores.jpg);
-    width: 100%;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    height: 140vh !important;
-    h2{
-        font-weight: 600;
-    }
-
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  background-image: url(../images/Nosotros/valores.jpg);
+  width: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 140vh !important;
+  h2 {
+    font-weight: 600;
+  }
 }
 
 .valores {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center !important;
-    width: 80%;
-    padding-top: 20px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center !important;
+  width: 80%;
+  padding-top: 20px;
 }
 
-.valores_primeros{
-    width: 550px;
+.valores_primeros {
+  width: 550px;
 }
 
-.valor_card{
-    display: flex;
-    height: 160px;
+.valor_card {
+  display: flex;
+  height: 160px;
 }
 
-.valor_description{
-    width: 450px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; 
-    h3{
-        font-size: 23px !important;
-        color: $verde-lima !important;
-        height: 16px !important;
-        font-weight: 700;
-    }
-    p{  
-
-        text-align: justify;
-    }
+.valor_description {
+  width: 450px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  h3 {
+    font-size: 23px !important;
+    color: $verde-lima !important;
+    height: 16px !important;
+    font-weight: 700;
+  }
+  p {
+    text-align: justify;
+  }
 }
 
-.img-valor{
-    height: 120px;
+.img-valor {
+  height: 120px;
 }
 
 .accordion-button {
-    color: white !important;
-    // background-color: $verde-lima !important;
-    background-image: url(../images/fonto_verde.jpeg);
-    background-size: 500px 500px;
-    background-repeat: repeat;
+  color: white !important;
+  // background-color: $verde-lima !important;
+  background-image: url(../images/fonto_verde.jpeg);
+  background-size: 500px 500px;
+  background-repeat: repeat;
 }
 
 .accordion-body p {
-    color: white !important;
+  color: white !important;
 }
 
 .accordion-collapse {
-    background-color: $verde-lima !important;
-
+  background-color: $verde-lima !important;
 }
 
 .accordion-button::before {
-    color: white;
-    /* Set the color of the arrow to white */
+  color: white;
+  /* Set the color of the arrow to white */
 }
 
 .accordion-button:not(.collapsed)::after {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .accordion-button:not(.collapsed)::before {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .accordion-button::after {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 @media (max-width: 768px) {
-    .amddi_container {
-        width: 100%;
-    }
+  .amddi_container {
+    width: 100%;
+  }
 
-    .img-valor{
-        height: 70px !important;
-    }
+  .img-valor {
+    height: 70px !important;
+  }
 
-    .valores-container{
-        height: 150vh !important;
-        width: 100%;
-        background-size: cover !important;
+  .valores-container {
+    height: 150vh !important;
+    width: 100%;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
-    }
+  }
 
-    .valor_card {
-        width: 100%;
-        height: auto;
-    }
+  .valor_card {
+    width: 100%;
+    height: auto;
+  }
 
-    .valores_primeros{
-        width: 100%;
-    }
-    .valores {
-        padding-top: 0;
-        width: 95%;
-        flex-direction: column !important;
-    }
+  .valores_primeros {
+    width: 100%;
+  }
+  .valores {
+    padding-top: 0;
+    width: 95%;
+    flex-direction: column !important;
+  }
 
-    .valor_description {
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-        h3{
-
-            font-size: 15px !important;
-        }
-        p{
-            font-size: 10px !important;
-        }
+  .valor_description {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    h3 {
+      font-size: 15px !important;
     }
-
-    .accordion {
-        width: 350px !important;
+    p {
+      font-size: 10px !important;
     }
+  }
 
-    .quienessomos {
-        padding-top: 30px;
-        height: 100% !important;
-    }
+  .accordion {
+    width: 350px !important;
+  }
 
-    .quienessomos-card {
-        flex-direction: column;
-        width: 90%;
-        
-    }
+  .quienessomos {
+    padding-top: 30px;
+    height: 100% !important;
+  }
 
-    .quienessomos-container{
-        height: 100%;
-        padding-left: 0 !important;
-    }
+  .quienessomos-card {
+    flex-direction: column;
+    width: 90%;
+  }
 
-    .img-logo2 {
-        width: 300px;
-    }
+  .quienessomos-container {
+    height: 100%;
+    padding-left: 0 !important;
+  }
 
-    .quienessomos_description {
-        margin-top: 20px;
-        width: 100%;
-    }
+  .img-logo2 {
+    width: 300px;
+  }
 
+  .quienessomos_description {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
-
 @media (min-width: 1500px) {
-    .vimi-container {
-        width: 80vw;
-    }
+  .vimi-container {
+    width: 80vw;
+  }
 
-    .vision {
-        width: 500px !important;
-        height: 500px;
-        background-repeat: no-repeat;
-        background-size: 500px 500px;
-    }
+  .vision {
+    width: 500px !important;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+  }
 
-    .mision {
-        width: 500px !important;
-        height: 500px;
-        background-repeat: no-repeat;
-        background-size: 500px 500px;
-    }
+  .mision {
+    width: 500px !important;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+  }
 
-    .titulo-vimi {
-        font-size: 40px;
-    }
+  .titulo-vimi {
+    font-size: 40px;
+  }
 
-    .img-logo-vimi {
-        height: 50px;
-    }
+  .img-logo-vimi {
+    height: 50px;
+  }
 
-    .img-titulo {
-        padding: 10px 0 10px 0;
-        margin-bottom: 20px;
-    }
+  .img-titulo {
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+  }
 
-    .vimi {
-        h4 {
-            font-size: 25px !important;
-        }
+  .vimi {
+    h4 {
+      font-size: 25px !important;
     }
+  }
 
-    // .valores-container {
-    //     width: 700px !important;
-    // }
+  // .valores-container {
+  //     width: 700px !important;
+  // }
 
-    // .valores {
-    //     width: 650px !important;
-    // }
-    .valores-container{
-        height: 110vh !important;
-    }
-    .valores{
-        width: 70%;
-    }
+  // .valores {
+  //     width: 650px !important;
+  // }
+  .valores-container {
+    height: 110vh !important;
+  }
+  .valores {
+    width: 70%;
+  }
 
-    .accordion {
-        width: 600px !important;
-    }
+  .accordion {
+    width: 600px !important;
+  }
 
-    .accordion-button {
-        font-size: 25px !important;
-    }
+  .accordion-button {
+    font-size: 25px !important;
+  }
 
-    .accordion-body {
-        p {
-            font-size: 25px !important;
-        }
+  .accordion-body {
+    p {
+      font-size: 25px !important;
     }
+  }
 
-    .img-titulo {
-        h2 {
-            font-size: 30px !important;
-        }
+  .img-titulo {
+    h2 {
+      font-size: 30px !important;
     }
+  }
 
-    .quienessomos-descripcion {
-        font-size: 30px !important;
-    }
+  .quienessomos-descripcion {
+    font-size: 30px !important;
+  }
 
-    .quienessomos-container {
-        width: 1200px !important;
-    }
+  .quienessomos-container {
+    width: 1200px !important;
+  }
 
-    .quienessomos {
-        width: 100%;
-    }
+  .quienessomos {
+    width: 100%;
+  }
 
-    .quienessomos-descripcion {
-        width: 680px;
-    }
-    .quienessomos-container{
-        width: 70% !important;
-        height: 90%;
-        margin-top: 50px;
-    }
-    .quienessomos-card{
-        width: 80%;
-        margin-bottom: 80px;
-    }
+  .quienessomos-descripcion {
+    width: 680px;
+  }
+  .quienessomos-container {
+    width: 70% !important;
+    height: 90%;
+    margin-top: 50px;
+  }
+  .quienessomos-card {
+    width: 80%;
+    margin-bottom: 80px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1480px) {
-
-
-.quienessomos-container{
+  .quienessomos-container {
+    padding-left: 0;
     height: 90%;
-}
-.quienessomos-card{
+  }
+  .quienessomos-card {
     width: 80%;
-}
-.valores{
+  }
+  .valores {
     width: 95%;
-}
+  }
 
-.fila{
+  .fila {
     height: 100%;
-}
+  }
 
-.img-logo2{
+  .img-logo2 {
+    width: 320px;
+  }
+
+  .quienessomos_description {
+    h4 {
+      font-size: 17px !important;
+    }
+  }
+
+.valor_description{
     width: 320px !important;
-}
+    padding-left: 3px;
+    h3{
+        font-size: 18px !important;
+        }
+    }
 
+.valor_card{
+    height: 180px !important;
+    }
+
+.footer_container{
+    height: auto !important;
+    }
+
+.footer-description{
+    height: 100%;
+    }
 }
