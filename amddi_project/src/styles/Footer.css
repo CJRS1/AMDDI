@@ -158,10 +158,18 @@ section {
   align-items: center;
   width: 400px;
 }
+.footer-description-amddi h4 {
+  font-weight: 900 !important;
+  font-size: 20px !important;
+}
 
 .footer-content {
   padding: 0 30px 0 30px;
   text-align: justify;
+}
+.footer-content h5 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
 }
 
 .footer-socialnetwork {
@@ -254,6 +262,10 @@ section {
 .card-icloc {
   display: flex;
 }
+.card-icloc h5 {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+}
 
 .card-localizacion {
   padding-left: 10px;
@@ -273,6 +285,10 @@ section {
   justify-content: center;
   padding-top: 10px;
   padding-left: 10px;
+}
+.container-ictel h5 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
 }
 
 .footer-text {
@@ -318,7 +334,7 @@ section {
 }
 .container-list li {
   list-style: none !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 5px !important;
 }
 .container-list li h5 {
   color: #00d799 !important;
@@ -330,6 +346,8 @@ section {
 
 .servicios_l {
   color: #00d799 !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
 }
 
 .programas {

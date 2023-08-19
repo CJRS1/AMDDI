@@ -21,12 +21,20 @@
     justify-content: center;
     align-items: center;
     width: 400px;
+    h4{
+        font-weight: 900 !important;
+        font-size: 20px !important;
+    }
 
 }
 
 .footer-content {
     padding: 0 30px 0 30px;
     text-align: justify;
+    h5{
+        font-size: 17px !important;
+        font-weight: 700 !important;
+    }
 
 }
 
@@ -128,6 +136,10 @@
 
 .card-icloc {
     display: flex;
+    h5{
+        font-size: 16px !important;
+        font-weight: 800 !important;
+    }
 }
 
 .card-localizacion {
@@ -149,6 +161,10 @@
     justify-content: center;
     padding-top: 10px;
     padding-left: 10px;
+    h5{
+        font-size: 17px !important;
+        font-weight: 700 !important;
+    }
 }
 
 .footer-text {
@@ -196,7 +212,7 @@
 
     li {
         list-style: none !important;
-        margin-bottom: 15px !important;
+        margin-bottom: 5px !important;
 
         h5 {
             color: $verde-lima !important;
@@ -210,6 +226,8 @@
 
 .servicios_l {
     color: $verde-lima !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
 }
 
 .programas {
@@ -220,6 +238,8 @@
     align-items: center;
     margin-top: 20px;
 }
+
+
 
 @media (max-width: 768px) {
     .footer_container {
@@ -265,6 +285,7 @@
 
         h5 {
             font-size: 20px !important;
+
         }
     }
 
