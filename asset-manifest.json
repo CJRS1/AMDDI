@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.d0cd5cdb.css",
-    "main.js": "./static/js/main.ca499541.js",
+    "main.css": "./static/css/main.7701ad6e.css",
+    "main.js": "./static/js/main.abdd6f75.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
     "static/media/Monografia.pdf": "./static/media/Monografia.0ca3d8fa087b6a97aff3.pdf",
     "static/media/ArticulodeRevisiondeLiteratura.pdf": "./static/media/ArticulodeRevisiondeLiteratura.00f41de386bbb29e00bc.pdf",
     "static/media/Diapositivas.pdf": "./static/media/Diapositivas.8184e61d5776024c704a.pdf",
-    "static/media/ArticulodeRevisionSistematica.pdf": "./static/media/ArticulodeRevisionSistematica.c5eee734ad08493d86cf.pdf",
     "static/media/SuficienciaProfesional.pdf": "./static/media/SuficienciaProfesional.5f8d7d92e84f7e3828f7.pdf",
     "static/media/ElaboraciondeTesina.pdf": "./static/media/ElaboraciondeTesina.ad14ed934435ce248ee7.pdf",
     "static/media/PlanesdeNegocio.pdf": "./static/media/PlanesdeNegocio.49466c949e5d66f64904.pdf",
@@ -46,6 +45,7 @@
     "static/media/bcp.jpg": "./static/media/bcp.af4c5f8d65c2acb39dbd.jpg",
     "static/media/Logo_plomo.png": "./static/media/Logo_plomo.01d1b40d73a96cee02c5.png",
     "static/media/insta.png": "./static/media/insta.85e869a755c605162bb9.png",
+    "static/media/ArticulodeRevisionSistematica.pdf": "./static/media/ArticulodeRevisionSistematica.99529eaed3f3d86817a4.pdf",
     "static/media/somos.png": "./static/media/somos.f66b10d244e33ca768b1.png",
     "static/media/mercadopago.png": "./static/media/mercadopago.a8b68a623faf4d213b61.png",
     "static/media/nosotros.png": "./static/media/nosotros.17a18f2e4487c6557019.png",
@@ -54,12 +54,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.d0cd5cdb.css.map": "./static/css/main.d0cd5cdb.css.map",
-    "main.ca499541.js.map": "./static/js/main.ca499541.js.map",
+    "main.7701ad6e.css.map": "./static/css/main.7701ad6e.css.map",
+    "main.abdd6f75.js.map": "./static/js/main.abdd6f75.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0cd5cdb.css",
-    "static/js/main.ca499541.js"
+    "static/css/main.7701ad6e.css",
+    "static/js/main.abdd6f75.js"
   ]
 }
