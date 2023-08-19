@@ -237,7 +237,7 @@ export default function Nosotros() {
                         <div className="valor_card">
                             <img className="img-valor" src={require('../images/Nosotros/v1.png')} alt='valor_1' />
                             <div className="valor_description">
-                                <h3>EXCELENCIA ACADÉMICA</h3>
+                                <h3>Excelencia académica</h3>
                                 <p>Comprometidos con la calidad y precisión en cada aspecto de nuestra asesoría para garantizar resultados sobresalientes en proyectos de investigación.</p>
                             </div>
                         </div>
@@ -304,7 +304,7 @@ export default function Nosotros() {
                             <img className="img-valor" src={require('../images/Nosotros/v10.png')} alt='valor_10' />
                             <div className="valor_description">
                                 <h3>Empoderamiento académico</h3>
-                                <p>Nos dedicamos a empoderar a nuestros clientes con conocimientos y habilidades que les permitan ser investigadores autónomos y competentes. Buscamos fortalecer sus capacidades intelectuales y técnicas para que puedan abordar futuros desafíos académicos y profesionales con confianza y éxito.</p>
+                                <p>Potenciamos a clientes con habilidades para investigación autónoma, fortaleciendo capacidades intelectuales y técnicas, listos para desafíos académicos y profesionales.</p>
                             </div>
                         </div>
                     </div>

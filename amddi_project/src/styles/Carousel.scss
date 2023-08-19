@@ -339,9 +339,9 @@
 
 .amddi_internacional {
     height: calc(100vh - 120px);
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -350,7 +350,7 @@
 }
 
 .img_int_container {
-    width: 400px !important;
+    width: 50% !important;
 }
 
 .amdi_international_description {
@@ -793,6 +793,11 @@
     }
 }
 
+.col{
+    p{
+        text-align: center;
+    }
+}
 
 @media (max-width: 768px) {
     .contacto_carousel{
@@ -1313,7 +1318,7 @@
     }
 
     .img-carousel_int{
-        width: 700px;
+        width: 150%;
     }
 
     .carousel-control-prev-icon {
@@ -1358,4 +1363,23 @@
         justify-content: center;
         align-items: center;
     }
+
+    .servicio_p{
+        width: 22%;
+    }
+
+    .servicio_titulo_p{
+h3{
+    font-size: 20px !important;
+
+}
+    }
+
+.international_container{
+    width: 90%;
+}
+
+.img-carousel_int{
+    width: 100%;
+}
 }

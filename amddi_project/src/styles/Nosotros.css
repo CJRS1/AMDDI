@@ -304,15 +304,19 @@ section {
     height: 70px !important;
   }
   .valores-container {
-    height: 150vh !important;
+    height: 140% !important;
     width: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
   }
+  .valores-container h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .valor_card {
     width: 100%;
-    height: auto;
+    height: 85px;
   }
   .valores_primeros {
     width: 100%;
@@ -426,10 +430,18 @@ section {
   }
 }
 @media (min-width: 769px) and (max-width: 1480px) {
+  .quienessomos {
+    width: 100% !important;
+  }
+  #carouselExample {
+    width: 100% !important;
+  }
   .quienessomos-container {
+    padding-left: 0;
     height: 90%;
   }
   .quienessomos-card {
+    justify-content: space-around;
     width: 80%;
   }
   .valores {
@@ -437,5 +449,30 @@ section {
   }
   .fila {
     height: 100%;
+  }
+  .img-logo2 {
+    width: 35%;
+  }
+  .quienessomos_description h4 {
+    font-size: 17px !important;
+  }
+  .valor_description {
+    width: 320px !important;
+    padding-left: 3px;
+  }
+  .valor_description h3 {
+    font-size: 18px !important;
+  }
+  .valor_card {
+    height: 180px !important;
+  }
+  .footer_container {
+    height: auto !important;
+  }
+  .footer-description {
+    height: 100%;
+  }
+  .valores_primeros {
+    width: 47%;
   }
 }/*# sourceMappingURL=Nosotros.css.map */

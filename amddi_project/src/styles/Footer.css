@@ -156,12 +156,20 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 27%;
+}
+.footer-description-amddi h4 {
+  font-weight: 900 !important;
+  font-size: 20px !important;
 }
 
 .footer-content {
   padding: 0 30px 0 30px;
   text-align: justify;
+}
+.footer-content h5 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
 }
 
 .footer-socialnetwork {
@@ -207,7 +215,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 27%;
+}
+.footer-description-nuestrosservicios h4 {
+  font-weight: 900 !important;
 }
 
 .footer-description-ubicanos {
@@ -215,7 +226,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 27%;
+}
+.footer-description-ubicanos h4 {
+  font-weight: 900 !important;
 }
 
 .footer-description-llamanos {
@@ -254,6 +268,10 @@ section {
 .card-icloc {
   display: flex;
 }
+.card-icloc h5 {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+}
 
 .card-localizacion {
   padding-left: 10px;
@@ -273,6 +291,10 @@ section {
   justify-content: center;
   padding-top: 10px;
   padding-left: 10px;
+}
+.container-ictel h5 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
 }
 
 .footer-text {
@@ -318,7 +340,7 @@ section {
 }
 .container-list li {
   list-style: none !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 5px !important;
 }
 .container-list li h5 {
   color: #00d799 !important;
@@ -330,6 +352,8 @@ section {
 
 .servicios_l {
   color: #00d799 !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
 }
 
 .programas {
@@ -359,6 +383,24 @@ section {
   }
   .container-list {
     width: 90%;
+  }
+  .footer-description-amddi {
+    width: 90%;
+  }
+  .footer-description-nuestrosservicios {
+    width: 90%;
+  }
+  .footer-description-ubicanos {
+    width: 90%;
+  }
+  .container-list {
+    padding-left: 0;
+  }
+  .container-list ul {
+    padding-left: 0;
+  }
+  .footer-content {
+    padding: 0 0 0 0;
   }
 }
 @media (min-width: 1500px) {
@@ -464,5 +506,20 @@ section {
   }
   .footer-description {
     width: 100%;
+  }
+  .footer-description-llamanos {
+    flex-direction: column;
+  }
+  .footer-socialnetwork {
+    width: 100%;
+  }
+  .footer-description-amddi {
+    width: 32%;
+  }
+  .footer-description-nuestrosservicios {
+    width: 32%;
+  }
+  .footer-description-ubicanos {
+    width: 32%;
   }
 }/*# sourceMappingURL=Footer.css.map */

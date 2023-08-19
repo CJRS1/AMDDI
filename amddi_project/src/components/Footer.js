@@ -22,7 +22,7 @@ export default function Footer() {
                     <h4><strong>Nosotros</strong></h4>
                     <div className="footer-content">
                         <h5>
-                            <strong>AMDDI</strong> AMDDI brinda servicios confiables de redacción para impulsar el éxito académico y profesional de nuestros clientes.
+                            <strong>AMDDI</strong> brinda servicios confiables de redacción para impulsar el éxito académico y profesional de nuestros clientes.
                         </h5>
                     </div>
                     <div className="footer-description-llamanos">
@@ -157,91 +157,8 @@ export default function Footer() {
                                 <h5 className='servicios_l'>Ensayos</h5>
                             </HashLink>
                         </li>
-
-                        {/* <li >
-                            <HashLink smooth to="/servicios#parafraseo" className="servicios li-effect" href="#parafraseo">
-                                <h5>Parafraseo</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#trabajosuficienciaprofesional" className="servicios li-effect" href="#suficiencia">
-                                <h5>Trabajo de Suficiencia Profesional</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#articulocientifico" className="servicios li-effect" href="#articulo">
-                                <h5>Artículo Científico</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#articulorevisionsistematica" className="servicios li-effect" href="#articulo-sistematica">
-                                <h5>Artículo de Revisión Sistemática</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#articulorevisionliteratura" className="servicios li-effect" href="#articulo-literatura">
-                                <h5>Artículo de Revisión de Literatura</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#trabajodeciclo" className="servicios li-effect" href="#ciclo">
-                                <h5>Trabajos de Ciclo</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#monografias" className="servicios li-effect" href="#monografia">
-                                <h5>Monografía</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#ensayos" className="servicios li-effect" href="#ensayo">
-                                <h5>Ensayos</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#plannegocio" className="servicios li-effect" href="#plan">
-                                <h5>Planes de Negocio</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#informepracticas" className="servicios li-effect" href="#practicas">
-                                <h5>Informe de Prácticas</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#tesinas" className="servicios li-effect" href="#tesinas">
-                                <h5>Tesinas</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#elaboracioncv" className="servicios li-effect" href="#cv">
-                                <h5>Elavoración de CV</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#dispositivas" className="servicios li-effect" href="#diapositivas">
-                                <h5>Diapositivas</h5>
-                            </HashLink>
-                        </li>
-                        <li >
-                            <HashLink smooth to="/servicios#cursos" className="servicios li-effect" href="#cursos">
-                                <h5>Curso Online: próximamente...</h5>
-                            </HashLink>
-                        </li> */}
                     </ul>
-                    {/* <div className="footer-description-pago">
-                        <h4><strong>Formas de pago</strong></h4>
-                        <div className="pago-container">
 
-                            <img src={bcp} alt='bcp' height={'45px'} />
-                            <img src={scotiabank} alt='scotiabank' height={'45px'} />
-                            <img src={visa} alt='visa' height={'45px'} />
-                            <img src={mastercard} alt='mastercard' height={'45px'} />
-                            <img src={mercadopago} alt='mercadopago' height={'45px'} />
-                            <img src={paypal} alt='paypal' height={'45px'} />
-
-                        </div>
-                    </div> */}
                     <div className="programas">
                         <h4><strong>Programas de Beneficios</strong></h4>
 
@@ -268,7 +185,7 @@ export default function Footer() {
                             </svg> */}
                             <a href='https://goo.gl/maps/A2tvJ1vVgeFuwbZX7' target='_blank' rel='noreferrer' className="card-localizacion">
 
-                                <h5><strong>SAN ISIDRO – LIMA</strong></h5>
+                                <h5>SAN ISIDRO – LIMA</h5>
                                 <h5>Calle German Schreiber 276</h5>
                             </a>
                         </div>
@@ -280,7 +197,7 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg> */}
                             <a href='https://goo.gl/maps/zGDxRZRcfkWzX1sZ6' target='_blank' rel='noreferrer' className="card-localizacion">
-                                <h5><strong>CERCADO DE LIMA – LIMA</strong></h5>
+                                <h5>CERCADO DE LIMA – LIMA</h5>
                                 <h5>Jr. Andahuaylas 437</h5>
                             </a>
                         </div>
@@ -292,7 +209,7 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg> */}
                             <a href='https://goo.gl/maps/88n29qF6EZrBbDsk7' target='_blank' rel='noreferrer' className="card-localizacion">
-                                <h5><strong>CUSCO – CUSCO</strong></h5>
+                                <h5>CUSCO – CUSCO</h5>
                                 <h5>Av. El Sol 344, oficina 211</h5>
                             </a>
                         </div>
@@ -304,7 +221,7 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg> */}
                             <a href='https://goo.gl/maps/udj8etqNmS2fjwDs9' target='_blank' rel='noreferrer' className="card-localizacion">
-                                <h5><strong>HUANCAYO</strong></h5>
+                                <h5>HUANCAYO</h5>
                                 <h5>Jr. Tacna 234, Edificio Torre Galena 234</h5>
                             </a>
                         </div>
@@ -316,7 +233,7 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg> */}
                             <a href='https://goo.gl/maps/aechKCqqoWUwACjy7' target='_blank' rel='noreferrer' className="card-localizacion">
-                                <h5><strong>JULIACA</strong></h5>
+                                <h5>JULIACA</h5>
                                 <h5>Jr. 02 de Mayo 408, oficina 304 </h5>
                             </a>
                         </div>
@@ -328,7 +245,7 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg> */}
                             <a href='https://goo.gl/maps/3FdEePActj1CCLjP8' target='_blank' rel='noreferrer' className="card-localizacion">
-                                <h5><strong>AREQUIPA</strong></h5>
+                                <h5>AREQUIPA</h5>
                                 <h5>Av. Ejército 710 Yanahuara </h5>
                             </a>
                         </div>
@@ -340,7 +257,7 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg> */}
                             <a href='https://goo.gl/maps/1Z3CP3vTZRnupzS16' target='_blank' rel='noreferrer' className="card-localizacion">
-                                <h5><strong>ICA</strong></h5>
+                                <h5>ICA</h5>
                                 <h5>Calle Lima 340, Oficina 25 </h5>
                             </a>
                         </div>
@@ -352,12 +269,12 @@ export default function Footer() {
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg> */}
                             <a href='https://goo.gl/maps/fdSddLtyg344cMh59' target='_blank' rel='noreferrer' className="card-localizacion">
-                                <h5><strong>AYACUCHO</strong></h5>
+                                <h5>AYACUCHO</h5>
                                 <h5>Jr. Bellido 534, 2do piso Oficina B</h5>
                             </a>
                         </div>
                     </div>
-                    {/* <h4 className='margin_title'><strong>Libro de Reclamaciones</strong></h4>
+                    {/* <h4 className='margin_title'>Libro de Reclamaciones</h4>
                     <div className="libro-container">
                         <a href="https://librodereclamacionesperu.com/formulario.php?id=853131633"
                             rel="noreferrer" target="_blank" >
