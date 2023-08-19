@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 27%;
     h4{
         font-weight: 900 !important;
         font-size: 20px !important;
@@ -88,7 +88,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 27%;
+    h4{
+        font-weight: 900 !important;
+    }
 }
 
 .footer-description-ubicanos {
@@ -96,7 +99,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 27%;
+    h4{
+        font-weight: 900 !important;
+    }
 }
 
 
@@ -265,7 +271,24 @@
         width: 90%;
 
     }
-
+    .footer-description-amddi{
+        width: 90%;
+    }
+    .footer-description-nuestrosservicios{
+        width: 90%;
+    }
+    .footer-description-ubicanos{
+        width: 90%;
+    }
+    .container-list{
+        padding-left: 0;
+        ul{
+            padding-left: 0;
+        }
+    }
+    .footer-content{
+        padding: 0 0 0 0;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -416,5 +439,24 @@
     .footer-description {
         width: 100%;
     }
+
+    .footer-description-llamanos{
+        flex-direction: column;
+    }
+
+    .footer-socialnetwork{
+        width: 100%;
+    }
+
+.footer-description-amddi{
+    width: 32%;
+}
+.footer-description-nuestrosservicios{
+    width: 32%;
+}
+.footer-description-ubicanos{
+    width: 32%;
+}
+
 
 }

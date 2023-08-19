@@ -328,7 +328,7 @@ export default function Carousel() {
                 <h2>NUESTROS SERVICIOS</h2>
                 <div className="servicios_list_p">
                     <HashLink className='servicio_p' to="/servicios#redacciontesispregrado" smooth={false} >
-                        <div className="servicio_p">
+                        <div className="servicio_p_l">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/ciclo.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
                                 <h3>Redacción de Tesis Pregrado</h3>
@@ -336,7 +336,7 @@ export default function Carousel() {
                         </div>
                     </HashLink>
                     <HashLink className='servicio_p' to="/servicios#levantamientoobservacionespregrado" smooth={false} >
-                        <div className="servicio_p">
+                        <div className="servicio_p_l">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/observaciones.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
                                 <h3>Levantamiento de Observaciones Pregrado</h3>
@@ -344,7 +344,7 @@ export default function Carousel() {
                         </div>
                     </HashLink>
                     <HashLink className='servicio_p' to="/servicios#trabajodeciclo" smooth={false} >
-                        <div className="servicio_p">
+                        <div className="servicio_p_l">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/redaccion.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
                                 <h3>Trabajos de ciclo</h3>
@@ -352,7 +352,7 @@ export default function Carousel() {
                         </div>
                     </HashLink>
                     <HashLink className='servicio_p' to="/servicios#informepracticas" smooth={false} >
-                        <div className="servicio_p">
+                        <div className="servicio_p_l">
                             <img className="img_servicio_p" src={require('../images/Servicio_carousel/informe.png')} alt='medalla' height={'300px'} />
                             <div className="servicio_titulo_p">
                                 <h3>Informe de prácticas</h3>
@@ -367,7 +367,7 @@ export default function Carousel() {
                     <div className="col" >
                         <img className="img_contador_1" src={require('../images/Contador/titulados.png')} alt='medalla' height={'220px'} />
                         <div className="d-flex">
-                            <Contador inicio={0} final={1000} duracion={5} />
+                            <Contador inicio={0} final={3000} duracion={5} />
                             <h3 className="contador-margin">+</h3>
                         </div>
                         <p>Titulados</p>
