@@ -317,7 +317,14 @@
 .efecto-scroll h2 {
     font-size: 5rem;
     color: #fff;
-    text-shadow: 0 0 10px #000;
+
+    span {
+        z-index: 6;
+        background: linear-gradient(to right, #b47a1a, #ffe55a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 0 0;
+    }
 }
 
 .efecto-scroll p {
@@ -410,16 +417,40 @@
                 font-size: 40px !important;
                 font-weight: 900 !important;
                 color: $gris-oscuro !important;
+                span {
+                    background: linear-gradient(to right, #b47a1a, #ffe55a);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
 
             p {
-                font-size: 20px !important;
-                font-weight: 800 !important;
-                color: $verde-lima !important;
+                color: $gris-oscuro !important;
+                font-size: 25px !important;
+                font-weight: 900 !important;
+
+
+
             }
         }
     }
 }
+
+.contador_num{
+        background: linear-gradient(to right, #b47a1a, #ffe55a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+
+.img_contador_1 {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .img_contador {
     margin-bottom: 20px;
@@ -474,7 +505,7 @@
 .botones_contacto_asesoria {
     position: relative;
     bottom: 0 !important;
-    left: 55%  !important;
+    left: 55% !important;
     z-index: 2;
     top: 78%;
     height: 100px;
@@ -770,7 +801,7 @@
 }
 
 .titulo_2 {
-    display: none ;
+    display: none;
 }
 
 .animated {
@@ -793,14 +824,14 @@
     }
 }
 
-.col{
-    p{
+.col {
+    p {
         text-align: center;
     }
 }
 
 @media (max-width: 768px) {
-    .contacto_carousel{
+    .contacto_carousel {
         width: 150px !important;
     }
 
@@ -864,7 +895,8 @@
     .negocio_list {
         margin-bottom: 0 !important;
         padding-left: 12px;
-        li{
+
+        li {
             font-weight: 300;
             font-size: 15px;
             margin-bottom: 10px;
@@ -892,6 +924,7 @@
     .practicas_titulo {
         width: 90%;
         padding-left: 30%;
+
         h2 {
             text-align: center;
             font-size: 30px;
@@ -940,7 +973,7 @@
     .proyecto_listas {
         padding-top: 0;
 
-        li{
+        li {
             font-weight: 300;
             font-size: 15px;
             margin-bottom: 10px;
@@ -949,7 +982,7 @@
         }
     }
 
-    .proyecto_list{
+    .proyecto_list {
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -1026,10 +1059,12 @@
 
         h2 {
             font-size: 20px !important;
+
         }
 
         p {
             font-size: 15px !important;
+
         }
     }
 
@@ -1152,6 +1187,7 @@
         padding-right: 25%;
 
         padding-left: 10%;
+
         .titulo_doctorado_1 {
             width: 100%;
             font-size: 25px !important;
@@ -1169,6 +1205,7 @@
         width: 300px;
         top: 70%;
         left: 12%;
+
         p {
             font-size: 15px;
             font-weight: 300;
@@ -1221,7 +1258,8 @@
 
     .maestria_list {
         margin-bottom: 0;
-        li{
+
+        li {
             font-weight: 300;
             font-size: 15px;
             margin-bottom: 5px;
@@ -1259,7 +1297,7 @@
         // background: blue !important;
     }
 
-    .contacto_tesis_prev{
+    .contacto_tesis_prev {
         margin-top: 0 !important;
 
     }
@@ -1300,6 +1338,7 @@
         height: calc(100vh - 120px) !important;
         width: 100vw !important;
     }
+
     .carousel_container {
         width: 100vw;
     }
@@ -1308,16 +1347,16 @@
         width: 100vw !important;
     }
 
-    .amddi_internacional{
+    .amddi_internacional {
         width: 100%;
     }
 
-    .amdi_international_description{
+    .amdi_international_description {
         width: 500px !important;
         margin-right: 100px;
     }
 
-    .img-carousel_int{
+    .img-carousel_int {
         width: 150%;
     }
 
@@ -1326,60 +1365,63 @@
         height: 50px !important;
         // background: blue !important;
     }
+
     .carousel-control-next-icon {
         width: 50px !important;
         height: 50px !important;
         // background: blue !important;
     }
 
-    .quienessomos{
+    .quienessomos {
         width: 100vw !important;
     }
 
-    .img-logo2{
+    .img-logo2 {
         width: 300px;
     }
 
-    .quienessomos-card{
+    .quienessomos-card {
         width: 90% !important;
         justify-content: space-around;
     }
 
-    .valor_description{
+    .valor_description {
         width: 380px !important;
-        h3{
+
+        h3 {
             font-size: 15px !important;
         }
-        p{
+
+        p {
             font-size: 15px !important;
         }
     }
 
-    .img-valor{
+    .img-valor {
         height: 70px !important;
     }
 
-    .valor_card{
+    .valor_card {
         justify-content: center;
         align-items: center;
     }
 
-    .servicio_p{
+    .servicio_p {
         width: 22%;
     }
 
-    .servicio_titulo_p{
-h3{
-    font-size: 20px !important;
+    .servicio_titulo_p {
+        h3 {
+            font-size: 20px !important;
 
-}
+        }
     }
 
-.international_container{
-    width: 90%;
-}
+    .international_container {
+        width: 90%;
+    }
 
-.img-carousel_int{
-    width: 100%;
-}
+    .img-carousel_int {
+        width: 100%;
+    }
 }

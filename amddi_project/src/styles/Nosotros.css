@@ -360,7 +360,7 @@ section {
     width: 100%;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1540px) {
   .vimi-container {
     width: 80vw;
   }
@@ -420,7 +420,7 @@ section {
     width: 680px;
   }
   .quienessomos-container {
-    width: 70% !important;
+    width: 70%;
     height: 90%;
     margin-top: 50px;
   }
@@ -436,7 +436,7 @@ section {
     font-size: 18px !important;
   }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1536px) {
   .quienessomos {
     width: 100% !important;
   }
@@ -449,7 +449,6 @@ section {
   }
   .quienessomos-card {
     justify-content: space-around;
-    width: 400px;
     margin-bottom: 0;
   }
   .valores {
@@ -466,7 +465,6 @@ section {
   }
   .valor_card {
     height: 180px !important;
-    background: #000000;
   }
   .footer_container {
     height: auto !important;
@@ -483,7 +481,7 @@ section {
     min-width: 100%;
   }
   .quienessomos-card {
-    width: 70%;
+    min-width: 60% !important;
     margin-bottom: 30px;
   }
   .valores-container {

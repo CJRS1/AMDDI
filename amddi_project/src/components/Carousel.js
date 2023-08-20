@@ -362,66 +362,75 @@ export default function Carousel() {
                 </div>
                 <Link to="/servicios" type="button" className="btn button-effect contacto_carousel">Ver más servicios</Link>
             </div>
+
+            <div className="contenedor-efecto ">
+                <div className="efecto-scroll">
+                    <div className="contenido-texto">
+                        <h2><span> # </span>¡SEGUIMOS ADELANTE!</h2>
+                        <p>Asesoría y redacción de tesis de Pregrado, Posgrado, Doctorado y MBA.</p>
+                        <div className="contacto_carousel contacto informacion_btn">
+                            <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel informacion_btn">Más información</Link>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div className="seccion_contador" ref={seccionRef}>
                 <div className="fila">
                     <div className="col" >
-                        <img className="img_contador_1" src={require('../images/Contador/titulados.png')} alt='medalla' height={'220px'} />
-                        <div className="d-flex">
-                            <Contador inicio={0} final={3000} duracion={5} />
-                            <h3 className="contador-margin">+</h3>
+                        <div className="img_contador_1">
+
+                            <img src={require('../images/Contador/titulados.png')} alt='medalla' />
                         </div>
-                        <p>Titulados</p>
+                        <div className="d-flex">
+
+                            <h3 className="contador-margin"><span>+ &nbsp;</span></h3>
+
+                            <span className='contador_num'>
+                                <Contador inicio={0} final={3000} duracion={5} />
+                            </span>
+
+                        </div>
+                        <p ><span>Titulados</span></p>
                     </div>
                     <div className="col" >
-                        <img className="img_contador_1" src={require('../images/Contador/clientes.png')} alt='medalla' height={'220px'} />
-                        <div className="d-flex">
-                            <Contador inicio={0} final={1000} duracion={5} />
-                            <h3 className="contador-margin">+</h3>
+                        <div className="img_contador_1">
+                            <img src={require('../images/Contador/clientes.png')} alt='medalla' />
                         </div>
-                        <p>Clientes Satisfechos</p>
+                        <div className="d-flex">
+                            <h3 className="contador-margin"><span>+ &nbsp;</span></h3>
+                            <span className='contador_num'>
+                                <Contador inicio={0} final={3000} duracion={5} />
+                            </span>
+                        </div>
+                        <p ><span>Clientes Satisfechos</span></p>
                     </div>
                     <div className="col" >
-                        <img className="img_contador_1" src={require('../images/Contador/peru.png')} alt='medalla' height={'220px'} />
-                        <Contador inicio={0} final={24} duracion={100} />
-                        <p>Departamentos de Perú</p>
+                        <div className="img_contador_1">
+                            <img src={require('../images/Contador/peru.png')} alt='medalla' />
+                        </div>
+                        <span className='contador_num'>
+                            <Contador inicio={0} final={24} duracion={100} />
+                        </span>
+                        <p ><span>Departamentos de Perú</span></p>
                     </div>
                     <div className="col" >
-                        <img className="img_contador_1" src={require('../images/Contador/carreras.png')} alt='medalla' height={'220px'} />
-                        <div className="d-flex">
-                            <Contador inicio={0} final={40} duracion={100} />
-                            <h3 className="contador-margin">+</h3>
+                        <div className="img_contador_1">
+                            <img src={require('../images/Contador/carreras.png')} alt='medalla' />
                         </div>
-                        <p>Carreras</p>
+                        <div className="d-flex">
+                            <h3 className="contador-margin"><span>+ &nbsp;</span></h3>
+                            <span className='contador_num'>
+                                <Contador inicio={0} final={40} duracion={100} />
+                            </span>
+                        </div>
+                        <p ><span>Carreras</span></p>
                     </div>
                 </div>
             </div>
 
-            {/* <div className="contenedor-efecto ">
-                <div ref={efectoRef} className="efecto-scroll">
-                    <div className="contenido-texto">
-                        <h2>#¡SEGUIMOS ADELANTE!</h2>
-                        <p>Asesoría y redacción de tesis de Pregrado, Posgrado, Doctorado y MBA.</p>
-                        <div className="contacto_carousel contacto informacion_btn">
-                            <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel informacion_btn">Más información</Link>
-                        </div>
-                    </div>
 
-                    <img ref={imagenRef} className="img-scroll" src={require('../images/adelante_completo.png')} alt='asesoria' />
-                </div>
-            </div> */}
-
-            <div className="contenedor-efecto ">
-                <div  className="efecto-scroll">
-                    <div className="contenido-texto">
-                        <h2>#¡SEGUIMOS ADELANTE!</h2>
-                        <p>Asesoría y redacción de tesis de Pregrado, Posgrado, Doctorado y MBA.</p>
-                        <div className="contacto_carousel contacto informacion_btn">
-                            <Link to="/contactanos" type="button" className="btn button-effect contacto_carousel informacion_btn">Más información</Link>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
 
         </section>
 

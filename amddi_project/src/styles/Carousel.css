@@ -427,7 +427,13 @@ section {
 .efecto-scroll h2 {
   font-size: 5rem;
   color: #fff;
-  text-shadow: 0 0 10px #000;
+}
+.efecto-scroll h2 span {
+  z-index: 6;
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 0 0;
 }
 
 .efecto-scroll p {
@@ -515,10 +521,29 @@ section {
   font-weight: 900 !important;
   color: #666666 !important;
 }
+.seccion_contador .fila .col h3 span {
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .seccion_contador .fila .col p {
-  font-size: 20px !important;
-  font-weight: 800 !important;
-  color: #00d799 !important;
+  color: #666666 !important;
+  font-size: 25px !important;
+  font-weight: 900 !important;
+}
+
+.contador_num {
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img_contador_1 {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img_contador {
