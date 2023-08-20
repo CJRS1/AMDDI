@@ -85,6 +85,7 @@
   background-size: cover !important;
   background-repeat: no-repeat !important;
   height: 140vh !important;
+
   h2 {
     font-weight: 600;
   }
@@ -114,12 +115,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
   h3 {
     font-size: 23px !important;
     color: $verde-lima !important;
     height: 16px !important;
     font-weight: 700;
   }
+
   p {
     text-align: justify;
   }
@@ -177,10 +180,11 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
-    h2{
+
+    h2 {
       margin-top: 20px;
       margin-bottom: 20px;
-      }
+    }
   }
 
   .valor_card {
@@ -191,6 +195,7 @@
   .valores_primeros {
     width: 100%;
   }
+
   .valores {
     padding-top: 0;
     width: 95%;
@@ -201,9 +206,11 @@
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
+
     h3 {
       font-size: 15px !important;
     }
+
     p {
       font-size: 10px !important;
     }
@@ -286,6 +293,7 @@
   .valores-container {
     height: 110vh !important;
   }
+
   .valores {
     width: 70%;
   }
@@ -325,32 +333,48 @@
   .quienessomos-descripcion {
     width: 680px;
   }
+
   .quienessomos-container {
     width: 70% !important;
     height: 90%;
     margin-top: 50px;
   }
+
   .quienessomos-card {
     width: 80%;
     margin-bottom: 80px;
   }
+
+  .valor_description {
+    width: 320px !important;
+    padding-left: 3px;
+
+    h3 {
+      font-size: 18px !important;
+    }
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1480px) {
-  .quienessomos{
-    width: 100% !important; 
-    }
-  #carouselExample{
+@media (min-width: 769px) and (max-width: 1200px) {
+  .quienessomos {
     width: 100% !important;
-    }
+  }
+
+  #carouselExample {
+    width: 100% !important;
+  }
+
   .quienessomos-container {
     padding-left: 0;
     height: 90%;
   }
+
   .quienessomos-card {
     justify-content: space-around;
-    width: 80%;
+    width: 400px ;
+    margin-bottom: 0;
   }
+
   .valores {
     width: 95%;
   }
@@ -364,50 +388,51 @@
   }
 
   .quienessomos_description {
+
     h4 {
       font-size: 17px !important;
     }
   }
 
-.valor_description{
-    width: 320px !important;
-    padding-left: 3px;
-    h3{
-        font-size: 18px !important;
-        }
-    }
-
-.valor_card{
+  .valor_card {
     height: 180px !important;
-    }
+    background: $negro;
+  }
 
-.footer_container{
+  .footer_container {
     height: auto !important;
-    }
+  }
 
-.footer-description{
+  .footer-description {
     height: 100%;
-    }
+  }
 
-.valores_primeros{
-  width: 47%;
+  .valores_primeros {
+    width: 47%;
   }
 }
 
 @supports (-webkit-appearance: none) {
-  .quienessomos-container{
+  .quienessomos-container {
     min-width: 100%;
   }
+
   .quienessomos-card{
     width: 70%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
-  .valores-container{
+  .valores-container {
     min-width: 100%;
-    min-height: 130vh;
+    min-height: 140vh;
   }
-  .valores{
+
+  .valores {
     min-width: 80%;
   }
+
+  .img-logo2 {
+    width: 400px;
+  }
+
 
 }

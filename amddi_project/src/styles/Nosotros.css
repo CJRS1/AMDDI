@@ -219,7 +219,7 @@ section {
   width: 100%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  height: 140vh ;
+  height: 140vh !important;
 }
 .valores-container h2 {
   font-weight: 600;
@@ -428,8 +428,15 @@ section {
     width: 80%;
     margin-bottom: 80px;
   }
+  .valor_description {
+    width: 320px !important;
+    padding-left: 3px;
+  }
+  .valor_description h3 {
+    font-size: 18px !important;
+  }
 }
-@media (min-width: 769px) and (max-width: 1480px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .quienessomos {
     width: 100% !important;
   }
@@ -442,7 +449,8 @@ section {
   }
   .quienessomos-card {
     justify-content: space-around;
-    width: 80%;
+    width: 400px;
+    margin-bottom: 0;
   }
   .valores {
     width: 95%;
@@ -456,15 +464,9 @@ section {
   .quienessomos_description h4 {
     font-size: 17px !important;
   }
-  .valor_description {
-    width: 320px !important;
-    padding-left: 3px;
-  }
-  .valor_description h3 {
-    font-size: 18px !important;
-  }
   .valor_card {
     height: 180px !important;
+    background: #000000;
   }
   .footer_container {
     height: auto !important;
@@ -482,13 +484,16 @@ section {
   }
   .quienessomos-card {
     width: 70%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .valores-container {
     min-width: 100%;
-    min-height: 130vh;
+    min-height: 140vh;
   }
   .valores {
     min-width: 80%;
+  }
+  .img-logo2 {
+    width: 400px;
   }
 }/*# sourceMappingURL=Nosotros.css.map */
