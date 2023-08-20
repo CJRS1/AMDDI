@@ -1,11 +1,16 @@
 @import 'Variables';
 
 .ingresos_container {
-    height: 100vh !important;
-    padding-top: 125px !important;
+    height: 100vh;
+    padding-top: 125px;
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
 
 .ingresos_description {
     width: 85%;
@@ -24,6 +29,14 @@
         text-align: justify;
 
     }
+}
+
+.emprendimiento{
+    height: 82%;
+}
+
+.investigacion{
+    height: 80%;
 }
 
 .puestos_list{
@@ -76,5 +89,37 @@
     .ingresos_description{
         width: 65%;
         height: 68%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1480px){
+    .ingresos_card{
+        padding-top: 0;
+        h2{
+            font-size: 25px;
+            padding-bottom: 0 !important;
+            margin-bottom: 10px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+}
+
+@supports (-webkit-appearance: none) {
+    .ingresos_container {
+        // min-height: 130vh;
+        padding-top: 100px;
+
+    }
+    .ingresos_description{
+        min-width: 85%;
+        min-height: 84%;
+    }
+    .emprendimiento{
+        min-height: 75%;
+    }
+    .investigacion{
+        min-height: 76%;
     }
 }

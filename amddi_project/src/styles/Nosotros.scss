@@ -393,3 +393,21 @@
   width: 47%;
   }
 }
+
+@supports (-webkit-appearance: none) {
+  .quienessomos-container{
+    min-width: 100%;
+  }
+  .quienessomos-card{
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  .valores-container{
+    min-width: 100%;
+    min-height: 130vh;
+  }
+  .valores{
+    min-width: 80%;
+  }
+
+}

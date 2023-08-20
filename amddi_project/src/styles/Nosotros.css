@@ -219,7 +219,7 @@ section {
   width: 100%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  height: 140vh !important;
+  height: 140vh ;
 }
 .valores-container h2 {
   font-weight: 600;
@@ -474,5 +474,21 @@ section {
   }
   .valores_primeros {
     width: 47%;
+  }
+}
+@supports (-webkit-appearance: none) {
+  .quienessomos-container {
+    min-width: 100%;
+  }
+  .quienessomos-card {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  .valores-container {
+    min-width: 100%;
+    min-height: 130vh;
+  }
+  .valores {
+    min-width: 80%;
   }
 }/*# sourceMappingURL=Nosotros.css.map */
