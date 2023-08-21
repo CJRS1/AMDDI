@@ -494,4 +494,12 @@ section {
   .img-logo2 {
     width: 400px;
   }
+}
+@media (max-width: 950px) {
+  .img-logo2 {
+    width: 250px !important;
+  }
+  .valor_description h3 {
+    font-size: 17px !important;
+  }
 }/*# sourceMappingURL=Nosotros.css.map */

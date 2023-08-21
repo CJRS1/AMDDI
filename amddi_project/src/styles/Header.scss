@@ -17,7 +17,7 @@
     left: 0;
     right: 0;
     z-index: 999;
-    box-shadow:  0 0 4px 0 $verde-lima;
+    box-shadow: 0 0 4px 0 $verde-lima;
     box-shadow: 0 0 4px 0 $verde-lima;
 }
 
@@ -146,7 +146,7 @@ a {
     }
 
     .img_header {
-        height: 60px;
+        height: 85px;
     }
 
     .contenedor_logo_menu {
@@ -235,4 +235,70 @@ a {
     .hidden {
         display: block !important;
     }
+
+    .nav-link {
+
+        font-weight: 800 !important;
+        font-size: 15px !important;
+    }
 }
+
+@media (min-width: 768px) and (max-width:1290px) {
+
+    .nav-link {
+
+        font-weight: 800 !important;
+        font-size: 15px !important;
+    }
+
+    .img_header {
+        height: 80px;
+    }
+
+    .menu-open {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        top: 0;
+        left: 0;
+        background-image: url(../images/fonto_verde.jpeg);
+        background-size: 500px 500px;
+        background-repeat: repeat;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .li-redacciongeneral {
+        display: flex;
+        align-items: flex-start !important;
+        display: none !important;
+    }
+
+    .dropdown-menu-redaccion {
+        display: none;
+        /* Puedes agregar estilos adicionales aquí, como position: absolute, right: 0, etc. */
+        /* Ajustamos el estilo para mostrar el menú a la derecha */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 370px;
+        height: 96px;
+        background: $verde-lima !important;
+        z-index: 2;
+    }
+
+    .hidden {
+        display: block !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        color: $blanco !important;
+    }
+}
+

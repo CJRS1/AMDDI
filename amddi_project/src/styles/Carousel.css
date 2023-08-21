@@ -1361,4 +1361,13 @@ section {
   .img-carousel_int {
     width: 100%;
   }
+  .col {
+    width: 25% !important;
+  }
+  .img_int_container {
+    display: none;
+  }
+  .amdi_international_description {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=Carousel.css.map */
