@@ -140,14 +140,14 @@ section {
 .footer-description {
   height: 580px;
   width: 1481px;
-  background-image: url(../images/fondo_blanco.jpeg);
-  background-size: 500px 500px;
-  background-repeat: repeat;
+  background-image: url(../images/Footer/fondo_footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  color: #00d799;
+  color: #ffffff;
   padding-top: 20px;
 }
 
@@ -156,7 +156,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 27%;
+  width: 28%;
 }
 .footer-description-amddi h4 {
   font-weight: 900 !important;
@@ -170,14 +170,18 @@ section {
 .footer-content h5 {
   font-size: 17px !important;
   font-weight: 700 !important;
+  color: #ffffff;
 }
 
 .footer-socialnetwork {
-  width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   padding-top: 20px;
+}
+.footer-socialnetwork a img {
+  margin-left: 5px;
 }
 
 .svg-effect {
@@ -210,26 +214,15 @@ section {
     transform: scale(1);
   }
 }
-.footer-description-nuestrosservicios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 27%;
-}
-.footer-description-nuestrosservicios h4 {
-  font-weight: 900 !important;
-}
-
 .footer-description-ubicanos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 27%;
+  justify-content: flex-start;
+  width: 55%;
 }
 .footer-description-ubicanos h4 {
   font-weight: 900 !important;
+  color: #ffffff;
 }
 
 .footer-description-llamanos {
@@ -267,18 +260,25 @@ section {
 
 .card-icloc {
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .card-icloc h5 {
   font-size: 16px !important;
   font-weight: 800 !important;
+  color: #ffffff;
 }
 
 .card-localizacion {
   padding-left: 10px;
-  padding-bottom: 5px;
+  display: flex !important;
+  align-items: center;
+  width: 100%;
 }
 .card-localizacion h5 {
-  color: #00d799 !important;
+  color: #ffffff !important;
+  margin-bottom: 0;
 }
 
 .bi-geo-alt {
@@ -317,15 +317,8 @@ section {
   align-items: center;
 }
 
-.pago-container {
-  padding-top: 3%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
 .pago-container img {
-  border-radius: 5px;
+  padding-left: 5px;
 }
 
 .libro-container {
@@ -356,13 +349,14 @@ section {
   font-weight: 700 !important;
 }
 
-.programas {
-  width: 100%;
+.footer_contacto {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.footer_contacto {
+  display: flex;
   align-items: center;
-  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -375,9 +369,6 @@ section {
     flex-direction: column;
     align-items: center;
   }
-  .footer-description-nuestrosservicios {
-    margin-top: 20px;
-  }
   .footer-text {
     font-size: 12px;
   }
@@ -385,9 +376,6 @@ section {
     width: 90%;
   }
   .footer-description-amddi {
-    width: 90%;
-  }
-  .footer-description-nuestrosservicios {
     width: 90%;
   }
   .footer-description-ubicanos {
@@ -449,29 +437,10 @@ section {
     align-items: center;
   }
   .pago-container img {
-    height: 60px;
-  }
-  .footer-description-nuestrosservicios {
-    width: 600px;
-  }
-  .footer-description-nuestrosservicios h4 {
-    font-size: 30px !important;
-  }
-  .footer-description-nuestrosservicios .container-list {
-    font-weight: 700 !important;
-  }
-  .footer-description-nuestrosservicios .container-list li {
-    font-weight: 700 !important;
-  }
-  .footer-description-nuestrosservicios .container-list li .servicios h5 {
-    font-size: 20px !important;
-    font-weight: 500 !important;
+    height: 35px;
   }
   .pro_list {
     color: #00d799 !important;
-  }
-  .footer-description-ubicanos {
-    width: 500px;
   }
   .footer-description-ubicanos h4 {
     font-size: 30px !important;
@@ -516,10 +485,7 @@ section {
   .footer-description-amddi {
     width: 32%;
   }
-  .footer-description-nuestrosservicios {
-    width: 32%;
-  }
   .footer-description-ubicanos {
-    width: 32%;
+    width: 55%;
   }
 }/*# sourceMappingURL=Footer.css.map */
