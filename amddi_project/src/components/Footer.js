@@ -39,7 +39,7 @@ export default function Footer() {
                             <img src={paypal} alt='paypal' height={'35px'} />
                         </div>
                     </div>
-                    <img src={tesis100} alt='tesis_medalla' height={'180px'} />
+                    <img className='img_tesis' src={tesis100} alt='tesis_medalla' height={'180px'} />
                 </div>
                 <div className="footer-description-ubicanos">
                     <div className="footer-description-redes">
@@ -62,7 +62,9 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
+                    <div className="title_ubi">
                     <h4><strong>Ubícanos</strong></h4>
+                    </div>
                     <div className="ubi-list">
                         <div className="card-icloc">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#00d799" className="bi bi-geo-alt"

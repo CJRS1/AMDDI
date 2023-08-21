@@ -45,9 +45,7 @@ export default function Header() {
         <header className="header_container">
             <nav className="navbar navbar-expand-lg navbar_header_container">
                 <div className="container-fluid contenedor_logo_menu">
-
-                    <Link to="" className="navbar-brand" href="#inicio"> <img className='img_header' src={require('../images/Logo_plomo.png')} alt='AMDDI' height={'80px'} />  </Link>
-
+                    <Link to="" className="navbar-brand" href="#inicio"> <img className='img_header' src={require('../images/Logo_plomo.png')} alt='AMDDI' height={'70px'} />  </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMenu} >
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -69,9 +67,8 @@ export default function Header() {
                                     <li> <HashLink to="/servicios#redacciontesispostgrado" className="dropdown-item" smooth={false} onClick={handleLinkClick}>Redacción de Tesis de Postgrado </HashLink> </li>
                                     <li> <HashLink to="/servicios#redacciontesismaestria" className="dropdown-item" smooth={false} onClick={handleLinkClick}>Redacción de Tesis de Maestría </HashLink> </li> */}
                                     <li className="dropdown li-redacciongeneral" >
-                                        <Link to="/servicios" className="dropdown-toggle li-redaccion-title">Redacción de Tesis</Link>
+                                        <Link to="/servicios#redacciontesispregrado" className="dropdown-toggle li-redaccion-title">Redacción de Tesis</Link>
                                         {/* Menú desplegable para "Redacción de Tesis" */}
-
                                         <ul className="dropdown-menu-redaccion">
                                             <li> <HashLink to="/servicios#redacciontesispregrado" className="dropdown-item li-redaccion" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesispregrado'); }}>Redacción de Tesis de Pregrado </HashLink> </li>
                                             <li> <HashLink to="/servicios#redacciontesispostgrado" className="dropdown-item li-redaccion" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesispostgrado'); }}>Redacción de Tesis de Postgrado </HashLink> </li>

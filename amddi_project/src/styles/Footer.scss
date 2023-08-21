@@ -6,6 +6,7 @@
     background-image: url(../images/Footer/fondo_footer.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -97,7 +98,6 @@
     width: 65%;
     margin-bottom: 40px;
     h4{
-        margin-right: 50px !important;
         font-weight: 500 !important;
         font-size: 20px !important;
 
@@ -255,6 +255,15 @@
     align-items: center;
 }
 
+.title_ubi{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media (max-width: 768px) {
     .footer_container {
         width: 100%;
@@ -289,6 +298,7 @@
         width: 90%;
         h4{
             text-align: center;
+            margin-right: 0 !important;
         }
     }
     .container-list{
@@ -317,7 +327,22 @@
             display: none;
         }
     }
+
+    .img_tesis{
+        height: 150px;
+    }
+
+    .pago-container{
+        img{
+            height: 30px;
+        }
+    }
+
+    .card-icloc{
+        margin-bottom: 5px;
+    }
 }
+
 
 @media (min-width: 1500px) {
 
