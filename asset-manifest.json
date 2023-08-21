@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.ea5754d3.css",
-    "main.js": "./static/js/main.ff87763b.js",
+    "main.css": "./static/css/main.e92b9c54.css",
+    "main.js": "./static/js/main.9d165d6b.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
@@ -13,7 +13,9 @@
     "static/media/PlanesdeNegocio.pdf": "./static/media/PlanesdeNegocio.49466c949e5d66f64904.pdf",
     "static/media/LevantamientodeObservaciones.pdf": "./static/media/LevantamientodeObservaciones.c85cdd58442a0634e0ec.pdf",
     "static/media/adelante_completo.png": "./static/media/adelante_completo.0de1bb381c85f5fc29e0.png",
+    "static/media/fondo_footer.png": "./static/media/fondo_footer.4a24aa416747288595ff.png",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.201ea0cd81e8ce607ccf.png",
+    "static/media/medallacompleta.png": "./static/media/medallacompleta.d689ca40d5b07f73a27a.png",
     "static/media/practicas_ preprofesionales.png": "./static/media/practicas_ preprofesionales.e4e53355aa1f3b6047ee.png",
     "static/media/asesoria.png": "./static/media/asesoria.98acf757d1b85d8641e6.png",
     "static/media/valores.jpg": "./static/media/valores.685bef8fa5d3187439d4.jpg",
@@ -38,13 +40,11 @@
     "static/media/fonto_verde.jpeg": "./static/media/fonto_verde.f7e5e6ed193c305636bc.jpeg",
     "static/media/fondo_blanco.jpeg": "./static/media/fondo_blanco.7e6f572d8ef9aef1a3ac.jpeg",
     "static/media/Whatsapp.png": "./static/media/Whatsapp.3c88a2148dbf6e49dfae.png",
-    "static/media/fb.png": "./static/media/fb.9a1f2b3dfc085a0cec69.png",
     "static/media/visa.jpg": "./static/media/visa.c81afb8585f5ad92385e.jpg",
     "static/media/scotiabank.jpg": "./static/media/scotiabank.d83752406a9bc559d7b8.jpg",
     "static/media/mastercard.jpg": "./static/media/mastercard.a173603c14fde665010f.jpg",
     "static/media/bcp.jpg": "./static/media/bcp.af4c5f8d65c2acb39dbd.jpg",
     "static/media/Logo_plomo.png": "./static/media/Logo_plomo.01d1b40d73a96cee02c5.png",
-    "static/media/insta.png": "./static/media/insta.85e869a755c605162bb9.png",
     "static/media/ArticulodeRevisionSistematica.pdf": "./static/media/ArticulodeRevisionSistematica.99529eaed3f3d86817a4.pdf",
     "static/media/somos.png": "./static/media/somos.f66b10d244e33ca768b1.png",
     "static/media/mercadopago.png": "./static/media/mercadopago.a8b68a623faf4d213b61.png",
@@ -54,12 +54,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.ea5754d3.css.map": "./static/css/main.ea5754d3.css.map",
-    "main.ff87763b.js.map": "./static/js/main.ff87763b.js.map",
+    "main.e92b9c54.css.map": "./static/css/main.e92b9c54.css.map",
+    "main.9d165d6b.js.map": "./static/js/main.9d165d6b.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea5754d3.css",
-    "static/js/main.ff87763b.js"
+    "static/css/main.e92b9c54.css",
+    "static/js/main.9d165d6b.js"
   ]
 }
