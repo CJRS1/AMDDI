@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.419f61ea.css",
-    "main.js": "./static/js/main.41b6844a.js",
+    "main.css": "./static/css/main.62d68977.css",
+    "main.js": "./static/js/main.bd9979d2.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
@@ -48,7 +48,6 @@
     "static/media/bcp.jpg": "./static/media/bcp.af4c5f8d65c2acb39dbd.jpg",
     "static/media/Logo_plomo.png": "./static/media/Logo_plomo.01d1b40d73a96cee02c5.png",
     "static/media/ArticulodeRevisionSistematica.pdf": "./static/media/ArticulodeRevisionSistematica.99529eaed3f3d86817a4.pdf",
-    "static/media/header.png": "./static/media/header.b96b4fb4316367ebc8b1.png",
     "static/media/somos.png": "./static/media/somos.f66b10d244e33ca768b1.png",
     "static/media/mercadopago.png": "./static/media/mercadopago.a8b68a623faf4d213b61.png",
     "static/media/nosotros.png": "./static/media/nosotros.17a18f2e4487c6557019.png",
@@ -57,12 +56,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.419f61ea.css.map": "./static/css/main.419f61ea.css.map",
-    "main.41b6844a.js.map": "./static/js/main.41b6844a.js.map",
+    "main.62d68977.css.map": "./static/css/main.62d68977.css.map",
+    "main.bd9979d2.js.map": "./static/js/main.bd9979d2.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.419f61ea.css",
-    "static/js/main.41b6844a.js"
+    "static/css/main.62d68977.css",
+    "static/js/main.bd9979d2.js"
   ]
 }
