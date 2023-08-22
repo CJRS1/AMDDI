@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.4e05dc49.css",
-    "main.js": "./static/js/main.8cc73345.js",
+    "main.css": "./static/css/main.c57499b1.css",
+    "main.js": "./static/js/main.3cbf0e3d.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
@@ -14,10 +14,12 @@
     "static/media/LevantamientodeObservaciones.pdf": "./static/media/LevantamientodeObservaciones.c85cdd58442a0634e0ec.pdf",
     "static/media/adelante_completo.png": "./static/media/adelante_completo.0de1bb381c85f5fc29e0.png",
     "static/media/fondo_footer.png": "./static/media/fondo_footer.4a24aa416747288595ff.png",
+    "static/media/portada_servicios.png": "./static/media/portada_servicios.9416f746fa1ce7c51f24.png",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.201ea0cd81e8ce607ccf.png",
     "static/media/medallacompleta.png": "./static/media/medallacompleta.d689ca40d5b07f73a27a.png",
     "static/media/practicas_ preprofesionales.png": "./static/media/practicas_ preprofesionales.e4e53355aa1f3b6047ee.png",
     "static/media/asesoria.png": "./static/media/asesoria.98acf757d1b85d8641e6.png",
+    "static/media/fondo_servicios.png": "./static/media/fondo_servicios.c00632defd05b71a0935.png",
     "static/media/valores.jpg": "./static/media/valores.685bef8fa5d3187439d4.jpg",
     "static/media/recortado4.png": "./static/media/recortado4.0a850ac2c4b5829cf4f5.png",
     "static/media/proyecto_inversión.png": "./static/media/proyecto_inversión.d02f608922a2cff1f28c.png",
@@ -37,6 +39,7 @@
     "static/media/redaccion.png": "./static/media/redaccion.ebc0e010fc7a219e75d7.png",
     "static/media/somos_internacionales.png": "./static/media/somos_internacionales.bce64da39ac18dc6b6f2.png",
     "static/media/medalla.png": "./static/media/medalla.909d53018171dddd2b5a.png",
+    "static/media/fondodegrade.png": "./static/media/fondodegrade.b430f6572a2cbbc26048.png",
     "static/media/fonto_verde.jpeg": "./static/media/fonto_verde.f7e5e6ed193c305636bc.jpeg",
     "static/media/fondo_blanco.jpeg": "./static/media/fondo_blanco.7e6f572d8ef9aef1a3ac.jpeg",
     "static/media/Whatsapp.png": "./static/media/Whatsapp.3c88a2148dbf6e49dfae.png",
@@ -54,12 +57,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.4e05dc49.css.map": "./static/css/main.4e05dc49.css.map",
-    "main.8cc73345.js.map": "./static/js/main.8cc73345.js.map",
+    "main.c57499b1.css.map": "./static/css/main.c57499b1.css.map",
+    "main.3cbf0e3d.js.map": "./static/js/main.3cbf0e3d.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e05dc49.css",
-    "static/js/main.8cc73345.js"
+    "static/css/main.c57499b1.css",
+    "static/js/main.3cbf0e3d.js"
   ]
 }
