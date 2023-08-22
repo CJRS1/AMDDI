@@ -7,8 +7,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/fondo_blanco.jpeg);
-    background-size: 500px 500px;
+    background-image: url(../images/header.png);
+    background-size: 100% 120px;
     background-repeat: repeat;
     height: 120px;
     font-size: 20px;
@@ -19,6 +19,17 @@
     z-index: 999;
     box-shadow: 0 0 4px 0 $verde-lima;
     box-shadow: 0 0 4px 0 $verde-lima;
+}
+
+.contenedor_logo_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_header_container{
+    height: 60px;
 }
 
 .disable-bootstrap-animations * {
@@ -48,16 +59,21 @@ a {
 
 .nav-link {
     transition: all $transition ease-in-out !important;
-    font-weight: 700 !important;
-    font-size: 18px !important;
+    font-weight: 600 !important;
+    font-size: 17px !important;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: $verde-lima !important;
+    color: $gris-oscuro !important;
 }
 
 .nav-link:hover {
+    span{
+        background: linear-gradient(to right, #b47a1a, #ffe55a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     transform: scale(1.1) !important;
     transition: all $transition ease-in-out !important;
 }
@@ -137,6 +153,13 @@ a {
 
 .hidden {
     display: none !important;
+}
+
+.btn_header{
+    margin-left: 10px;
+    border-radius: 5px !important;
+    background: linear-gradient(to right, #b47a1a, #ffe55a) !important;
+    color: $blanco !important;
 }
 
 @media (max-width: 768px) {

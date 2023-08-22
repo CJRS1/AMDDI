@@ -145,8 +145,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/fondo_blanco.jpeg);
-  background-size: 500px 500px;
+  background-image: url(../images/header.png);
+  background-size: 100% 120px;
   background-repeat: repeat;
   height: 120px;
   font-size: 20px;
@@ -157,6 +157,17 @@ section {
   z-index: 999;
   box-shadow: 0 0 4px 0 #00d799;
   box-shadow: 0 0 4px 0 #00d799;
+}
+
+.contenedor_logo_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_header_container {
+  height: 60px;
 }
 
 .disable-bootstrap-animations * {
@@ -184,18 +195,23 @@ a {
 
 .nav-link {
   transition: all 0.5s ease-in-out !important;
-  font-weight: 700 !important;
-  font-size: 18px !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #00d799 !important;
+  color: #666666 !important;
 }
 
 .nav-link:hover {
   transform: scale(1.1) !important;
   transition: all 0.5s ease-in-out !important;
+}
+.nav-link:hover span {
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dropdown-menu-redaccion {
@@ -266,6 +282,13 @@ a {
 
 .hidden {
   display: none !important;
+}
+
+.btn_header {
+  margin-left: 10px;
+  border-radius: 5px !important;
+  background: linear-gradient(to right, #b47a1a, #ffe55a) !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 768px) {

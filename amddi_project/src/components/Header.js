@@ -45,7 +45,11 @@ export default function Header() {
         <header className="header_container">
             <nav className="navbar navbar-expand-lg navbar_header_container">
                 <div className="container-fluid contenedor_logo_menu">
+                    <div className="logo_header_container">
+
                     <Link to="" className="navbar-brand" href="#inicio"> <img className='img_header' src={require('../images/Logo_plomo.png')} alt='AMDDI' height={'70px'} />  </Link>
+                    </div>
+
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMenu} >
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -55,11 +59,11 @@ export default function Header() {
                                 <Link to="" className="nav-link active" aria-current="page" >Inicio </Link>
                             </li> */}
                             <li className="nav-item">
-                                <Link to="/nosotros" className="nav-link" onClick={handleLinkClick}>NOSOTROS </Link>
+                                <Link to="/nosotros" className="nav-link" onClick={handleLinkClick}> <span>NOSOTROS </span></Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <Link to="/servicios" className="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                                    NUESTROS SERVICIOS
+                                    <span>SERVICIOS</span>
                                 </Link>
                                 <ul className={`dropdown-menu bg-gris ${menuClass}`} >
                                     <li> <HashLink to="/servicios#carreras" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('carreras'); }}>Carreras Asesoradas </HashLink> </li>
@@ -97,19 +101,19 @@ export default function Header() {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link to="/ingresosextra" className="nav-link" onClick={handleLinkClick}>INGRESOS EXTRA </Link>
+                                <Link to="/ingresosextra" className="nav-link" onClick={handleLinkClick}><span>INGRESOS EXTRA</span> </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/investigacionsostenible" className="nav-link" onClick={handleLinkClick}>INVESTIGACIÓN SOSTENIBLE</Link>
+                                <Link to="/investigacionsostenible" className="nav-link" onClick={handleLinkClick}><span>INGRESOS EXTRA</span></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/emprendimientojoven" className="nav-link" onClick={handleLinkClick}>EMPRENDIMIENTO JÓVEN</Link>
+                                <Link to="/emprendimientojoven" className="nav-link" onClick={handleLinkClick}><span>EMPRENDIMIENTO JÓVEN</span></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/testimonios" className="nav-link" onClick={handleLinkClick}>TESTIMONIOS </Link>
+                                <Link to="/testimonios" className="nav-link" onClick={handleLinkClick}><span>TESTIMONIOS</span> </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/contactanos" className="nav-link" onClick={handleLinkClick}>CONTÁCTANOS </Link>
+                                <Link to="/contactanos" className="nav-link btn_header" onClick={handleLinkClick}>CONTÁCTANOS </Link>
                             </li>
                         </ul>
                     </div>

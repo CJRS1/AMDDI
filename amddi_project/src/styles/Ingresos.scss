@@ -8,10 +8,6 @@
 }
 
 
-
-
-
-
 .ingresos_description {
     width: 85%;
     height: 87%;
@@ -106,7 +102,7 @@
 @media (min-width: 1600px){
     .ingresos_description{
         width: 70%;
-        height: 62%;
+        height: 50%;
     }
     @supports (-webkit-appearance: none){
         .investigacion{
@@ -120,6 +116,9 @@
         .ingresos{
             min-width: 52% ;
             min-height: 52% ;
+        }
+        .ingresos_description{
+            min-height: 70%;
         }
     }
 }
@@ -136,10 +135,24 @@
             font-size: 16px !important;
         }
     }
-    .ingresos_description{
-
-        background: black;
+    .ingresos_container{
+        height: 100vh;
     }
+    
+    .ingresos_description{
+        width: 90% !important;
+        height: 95% !important;
+    }
+    .ingresos_card{
+        p{
+            font-size: 17px !important;
+        }
+    }
+    
+    .ingresos_description{
+        height: auto !important;
+    }
+
 
 }
 
