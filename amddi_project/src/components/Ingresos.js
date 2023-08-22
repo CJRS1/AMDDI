@@ -13,7 +13,7 @@ export default function Testimonios() {
     return (
         <section className="ingresos_container">
             
-            <div className="ingresos_description">
+            <div className="ingresos_description ingresos">
                 <div className="ingresos_card">
                     <h2 className="titulo"><strong>Programa de 50 / 50</strong></h2>
                     <p>

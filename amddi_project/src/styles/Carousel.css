@@ -820,6 +820,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/fondodegrade.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .seccion_servicios_p h2 {
   font-size: 40px !important;

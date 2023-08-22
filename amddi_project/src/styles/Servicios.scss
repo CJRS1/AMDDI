@@ -7,11 +7,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background-image: url(../images/background.jpg);
-    // background-repeat: no-repeat;
-    // background-position: right top;
-    // background-attachment: fixed;
-    // background-size: 100vw 120vh;
+    background-image: url(../images/fondo_servicios.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100vw 100%;
 
 }
 
@@ -23,15 +23,87 @@
     align-items: center;
 }
 
+.portada_servicios {
+    margin-top: 120px;
+    height: 300px;
+    width: 100%;
+    background: $verde-lima;
+    background-image: url(../images/portada_servicios.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portada_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.portada_titulo {
+    h3 {
+        font-size: 60px !important;
+        font-weight: 900 !important;
+        margin: 0 0 0 0 !important;
+        padding: 0 0 0 0 !important;
+
+        span {
+            color: $verde-lima;
+        }
+    }
+}
+
+.confiables_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    position: relative;
+    // border-image: linear-gradient(to right, #b47a1a, #ffe55a);
+    // border-radius: 10px !important;
+    // border-image-slice: 1;
+
+    h4 {
+        font-size: 40px !important;
+        font-weight: 900 !important;
+        margin: 0 0 0 0 !important;
+        padding: 0 0 0 0 !important;
+        border-radius: 10px;
+
+        span {
+            background: linear-gradient(to right, #b47a1a, #ffe55a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.confiables_container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(to right, #b47a1a, #ffe55a);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+
 
 .servicios_card {
     height: 400px;
-    width: 600px;
+    width: 60%;
     margin-top: 80px;
-    background-image: url(../images/fonto_verde.jpeg);
-    background-size: 500px 500px;
-    background-repeat: repeat;
-    border-radius: 10px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +114,20 @@
     }
 }
 
+.servicios_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(to right, #b47a1a, #ffe55a);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
 .card_servicio {
     width: auto;
     height: 100%;
@@ -49,9 +135,54 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    position: relative;
+    a{
+        width: 250px;
+    }
     button {
-        margin-bottom: 0 !important;
+        position: absolute;
+        bottom: -5%;
+        transform: translate(-50%, -50%);
+        margin: 0 !important;
+        color: $blanco;
+        font-weight: 600 !important;
+        z-index: 2;
+        transform: scale(1.1);
+    }
+
+    button:hover {
+        // bottom: -5%;
+        animation: scale 1s infinite !important;
+        transform-origin: center; 
+        color: $blanco;
+    }
+
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card_title {
+    width: auto !important;
+    background: $verde-lima;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+
+    h2 {
+        font-size: 35px !important;
+        font-weight: 900 !important;
+        margin: 0 !important;
     }
 }
 
@@ -115,16 +246,27 @@
 }
 
 .servicio_description {
-    width: 600px;
+    width: 90%;
     padding: 20px 30px 20px 30px;
     text-align: justify;
+    margin-top: 20px;
+
+    p {
+        color: $negro !important;
+        font-size: 20px !important;
+    }
+}
+
+.boton_servicios {
+    border-radius: 10px;
+    width: 250px;
+    background: linear-gradient(to right, #b47a1a, #ffe55a);
+    margin-bottom: 0px !important;
     color: $blanco;
 }
 
-.button-effect {
-    border: 2px solid $blanco !important;
-    margin-bottom: 0px !important;
-}
+
+
 
 .biologicas {
     display: flex;
@@ -278,11 +420,11 @@
 
 
 @media (max-width: 768px) {
-    .img_logo_contacto{
+    .img_logo_contacto {
         display: none !important;
     }
 
-    .contacto-desc{
+    .contacto-desc {
         width: 90% !important;
     }
 
@@ -309,8 +451,8 @@
     }
 
     .servicios_card {
-        height: 75%;
-        width: 320px;
+        height: 70%;
+        width: 90%;
     }
 
     .servicios_carreras {
@@ -342,9 +484,37 @@
         margin-top: 20px;
     }
 
-    .servicio_description {
-        width: 320px;
+
+    .portada_container {
+        flex-direction: column;
+        width: 100%;
     }
+
+    .portada_titulo {
+        h3 {
+            font-size: 35px !important;
+        }
+    }
+
+    .confiables_container {
+        h4 {
+            font-size: 20px !important;
+        }
+    }
+
+    .card_title {
+        width: 80% !important;
+        h2 {
+            font-size: 20px !important;
+        }
+    }
+    .servicio_description {
+        p{
+            font-size: 15px !important;
+        }
+    }
+
+
 }
 
 @media (min-width: 1500px) {
@@ -356,7 +526,7 @@
     }
 
     .servicios_card {
-        width: 800px;
+        width: 65%;
     }
 
     .servicio_description {
@@ -367,4 +537,36 @@
         }
     }
 
+}
+
+@media (min-width: 910px) and (max-width: 1285px) {
+    .portada_container {
+        width: 80%;
+    }
+    .card_title {
+        h2 {
+            font-size: 25px !important;
+        }
+    }
+    .servicio_description {
+        p{
+            font-size: 17px !important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 909px) {
+    .portada_container {
+        width: 100%;
+    }
+    .card_title {
+        h2 {
+            font-size: 25px !important;
+        }
+    }
+    .servicio_description {
+        p{
+            font-size: 17px !important;
+        }
+    }
 }

@@ -46,6 +46,7 @@
 }
 
 .button-carousel:hover {
+    
     animation: scale 1s infinite;
 }
 
@@ -206,6 +207,7 @@
     width: 200px;
     padding-right: 12px !important;
     margin-bottom: 0 !important;
+    
 }
 
 .contenedor-efecto {
@@ -417,6 +419,7 @@
                 font-size: 40px !important;
                 font-weight: 900 !important;
                 color: $gris-oscuro !important;
+
                 span {
                     background: linear-gradient(to right, #b47a1a, #ffe55a);
                     -webkit-background-clip: text;
@@ -436,10 +439,10 @@
     }
 }
 
-.contador_num{
-        background: linear-gradient(to right, #b47a1a, #ffe55a);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+.contador_num {
+    background: linear-gradient(to right, #b47a1a, #ffe55a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -741,6 +744,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // background-image: url(../images/Footer/fondo_footer.png);
+    background-image: url(../images/fondodegrade.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background: $negro;
 
     h2 {
         font-size: 40px !important;
@@ -1425,17 +1434,16 @@
         width: 100%;
     }
 
-    .col{
+    .col {
         width: 25% !important;
     }
 
-    .img_int_container{
+    .img_int_container {
         display: none;
 
     }
 
-    .amdi_international_description{
+    .amdi_international_description {
         margin-right: 0;
     }
 }
-

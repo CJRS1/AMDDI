@@ -67,7 +67,7 @@ export default function Header() {
                                     <li> <HashLink to="/servicios#redacciontesispostgrado" className="dropdown-item" smooth={false} onClick={handleLinkClick}>Redacción de Tesis de Postgrado </HashLink> </li>
                                     <li> <HashLink to="/servicios#redacciontesismaestria" className="dropdown-item" smooth={false} onClick={handleLinkClick}>Redacción de Tesis de Maestría </HashLink> </li> */}
                                     <li className="dropdown li-redacciongeneral" >
-                                        <Link to="/servicios#redacciontesispregrado" className="dropdown-toggle li-redaccion-title">Redacción de Tesis</Link>
+                                        <HashLink to="/servicios#redacciontesispregrado" className="dropdown-toggle li-redaccion-title">Redacción de Tesis</HashLink>
                                         {/* Menú desplegable para "Redacción de Tesis" */}
                                         <ul className="dropdown-menu-redaccion">
                                             <li> <HashLink to="/servicios#redacciontesispregrado" className="dropdown-item li-redaccion" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('redacciontesispregrado'); }}>Redacción de Tesis de Pregrado </HashLink> </li>
@@ -85,13 +85,13 @@ export default function Header() {
                                     <li> <HashLink to="/servicios#articulocientifico" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('articulocientifico'); }}>Artículo Científico </HashLink> </li>
                                     <li> <HashLink to="/servicios#articulorevisionsistematica" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('articulorevisionsistematica'); }}>Artículo de Revisión Sistemática </HashLink> </li>
                                     <li> <HashLink to="/servicios#articulorevisionliteratura" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('articulorevisionliteratura'); }}>Artículo de Revisión de Literatura </HashLink> </li>
-                                    <li> <HashLink to="/servicios#trabajodeciclo" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('trabajodeciclo'); }}>Trabajos de Ciclo </HashLink> </li>
+                                    {/* <li> <HashLink to="/servicios#trabajodeciclo" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('trabajodeciclo'); }}>Trabajos de Ciclo </HashLink> </li> */}
                                     <li> <HashLink to="/servicios#monografias" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('monografias'); }}>Monografía </HashLink> </li>
-                                    <li> <HashLink to="/servicios#ensayos" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('ensayos'); }}>Ensayos </HashLink> </li>
+                                    {/* <li> <HashLink to="/servicios#ensayos" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('ensayos'); }}>Ensayos </HashLink> </li> */}
                                     <li> <HashLink to="/servicios#plannegocio" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('plannegocio'); }}>Planes de Negocio </HashLink> </li>
                                     <li> <HashLink to="/servicios#informepracticas" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('informepracticas'); }}>Informe de Prácticas </HashLink> </li>
                                     <li> <HashLink to="/servicios#tesinas" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('tesinas'); }}>Tesinas </HashLink> </li>
-                                    <li> <HashLink to="/servicios#elaboracioncv" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('elaboracioncv'); }}>Elaboración de CV </HashLink> </li>
+                                    {/* <li> <HashLink to="/servicios#elaboracioncv" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('elaboracioncv'); }}>Elaboración de CV </HashLink> </li> */}
                                     <li> <HashLink to="/servicios#dispositivas" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('dispositiva'); }}>Diapositivas </HashLink> </li>
                                     <li> <HashLink to="/servicios#cursos" className="dropdown-item" smooth={false} onClick={() => { handleLinkClick(); handleLinkNavigation('cursos'); }}>Curso Online: próximamente... </HashLink> </li>
                                 </ul>

@@ -192,6 +192,21 @@ section {
   border-radius: 5px;
 }
 
+@supports (-webkit-appearance: none) {
+  .ingresos_container {
+    padding-top: 100px;
+  }
+  .ingresos_description {
+    min-width: 85%;
+    min-height: 84%;
+  }
+  .emprendimiento {
+    min-height: 75%;
+  }
+  .investigacion {
+    min-height: 76%;
+  }
+}
 @media (max-width: 768px) {
   .ingresos_description {
     flex-direction: column;
@@ -214,10 +229,24 @@ section {
     margin-top: 20px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
   .ingresos_description {
-    width: 65%;
-    height: 68%;
+    width: 70%;
+    height: 62%;
+  }
+  @supports (-webkit-appearance: none) {
+    .investigacion {
+      min-width: 50%;
+      min-height: 50%;
+    }
+    .emprendimiento {
+      min-width: 50%;
+      min-height: 50%;
+    }
+    .ingresos {
+      min-width: 52%;
+      min-height: 52%;
+    }
   }
 }
 @media (min-width: 769px) and (max-width: 1480px) {
@@ -232,19 +261,7 @@ section {
   .ingresos_card p {
     font-size: 16px !important;
   }
-}
-@supports (-webkit-appearance: none) {
-  .ingresos_container {
-    padding-top: 100px;
-  }
   .ingresos_description {
-    min-width: 85%;
-    min-height: 84%;
-  }
-  .emprendimiento {
-    min-height: 75%;
-  }
-  .investigacion {
-    min-height: 76%;
+    background: black;
   }
 }/*# sourceMappingURL=Ingresos.css.map */
