@@ -104,7 +104,7 @@ export default function Header() {
                                 <Link to="/ingresosextra" className="nav-link" onClick={handleLinkClick}><span>INGRESOS EXTRA</span> </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/investigacionsostenible" className="nav-link" onClick={handleLinkClick}><span>INGRESOS EXTRA</span></Link>
+                                <Link to="/investigacionsostenible" className="nav-link" onClick={handleLinkClick}><span>INVESTIGACIÓN SOSTENIBLE</span></Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/emprendimientojoven" className="nav-link" onClick={handleLinkClick}><span>EMPRENDIMIENTO JÓVEN</span></Link>
