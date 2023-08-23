@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-// useState, 
+
+import SwiperComponent from "./Slider-Servicio";
+
 import { useLocation } from 'react-router-dom';
 import '../styles/Servicios.css'
 import ArticulodeRevisiondeLiteratura from '../components/pdf/ArticulodeRevisiondeLiteratura.pdf';
@@ -12,7 +14,6 @@ import Monografia from '../components/pdf/Monografia.pdf';
 import ParafraseoyCorrecciondeEstilos from '../components/pdf/ParafraseoyCorrecciondeEstilos.pdf';
 import SuficienciaProfesional from '../components/pdf/SuficienciaProfesional.pdf';
 import PlanesdeNegocio from '../components/pdf/PlanesdeNegocio.pdf';
-
 // import Diapositivas from  '../components/pdf/Diapositivas.pdf';
 
 
@@ -23,11 +24,6 @@ export default function Servicios() {
         window.scrollTo(0, 0);
     }, [location]);
 
-    // const [imagenActiva, setImagenActiva] = useState(1);
-
-    // const manejarClick = (num) => {
-    //     setImagenActiva(num);
-    // }
 
     return (
         <section className="servicios_container">
@@ -153,66 +149,9 @@ export default function Servicios() {
                     </div>
                 </div>
             </div>
-            {/* <div className="carreras_container_1 ">
-                <div className="carreras_card">
-
-                    <div className="botones_carreras">
-
-                        <button
-                            className={imagenActiva === 1 ? 'activo' : ''}
-                            onClick={() => manejarClick(1)}
-                        >
-                            Ciencias Empresariales
-                        </button>
-
-                        <button
-                            className={imagenActiva === 2 ? 'activo' : ''}
-                            onClick={() => manejarClick(2)}
-                        >
-                            Ingenierías
-                        </button>
-
-                        <button
-                            className={imagenActiva === 3 ? 'activo' : ''}
-                            onClick={() => manejarClick(3)}
-                        >
-                            Ciencias de la Salud
-                        </button>
-
-                        <button
-                            className={imagenActiva === 4 ? 'activo' : ''}
-                            onClick={() => manejarClick(4)}
-                        >
-                            Ciencias Sociales
-                        </button>
-
-                        <button
-                            className={imagenActiva === 5 ? 'activo' : ''}
-                            onClick={() => manejarClick(5)}
-                        >
-                            Ciencias Biológicas y agrónomas
-                        </button>
-
-                        <button
-                            className={imagenActiva === 6 ? 'activo' : ''}
-                            onClick={() => manejarClick(6)}
-                        >
-                            Ciencias básicas
-                        </button>
-
-                    </div>
-
-                    <div className="imagen_carrera">
-
-                        <img
-                            className="imagen"
-                            src={require(`../images/Especializacion/img${imagenActiva}.jpeg`)}
-                            alt={`Imagen ${imagenActiva}`}
-                        />
-                    </div>
-
-                </div>
-            </div> */}
+            <div className="carreras_container_1 ">
+                <SwiperComponent></SwiperComponent>
+            </div>
 
             <div className="servicios_list">
                 <div id="redacciontesispregrado" className="servicio_container">

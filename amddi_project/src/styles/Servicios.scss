@@ -136,9 +136,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    a{
+
+    a {
         width: 250px;
     }
+
     button {
         position: absolute;
         bottom: -5%;
@@ -153,7 +155,7 @@
     button:hover {
         // bottom: -5%;
         animation: scale 1s infinite !important;
-        transform-origin: center; 
+        transform-origin: center;
         color: $blanco;
     }
 
@@ -378,12 +380,65 @@
 }
 
 .carreras_container_1 {
+    position: relative;
     height: calc(100vh - 120px);
-    width: 100%;
+    width: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .slider {
+        width: 90%;
+        height: auto !important;
+        margin: 0 auto;
+    }
+
+    .slick-list {
+        height: 100%;
+    }
+
+    .slick-track {
+        height: 100%;
+    }
+
+    .slick-slider {
+        height: 100%;
+    }
+
+    .slick-slide {
+        transition: transform 0.3s;
+        margin: 0;
+    }
+
+    .slick-center {
+        transition: transform 0.5s;
+        transform: scale(1.2);
+        /* Hace que la imagen del medio sea un 20% más grande */
+    }
+
+    .slick-list {
+        margin: 0 -10px;
+        /* Espacios adicionales para centrar correctamente las imágenes */
+    }
+
+    .slick-slide img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        overflow: visible !important;
+        z-index: 10;
+        transform: scale(0.8);
+        cursor: pointer;
+    }
+
+    .slick-slide:not(.slick-center) img {
+        opacity: 0.7; /* Ajusta la opacidad según lo que prefieras */
+    }
+    
 }
+
+
 
 .carreras_card {
     display: flex;
@@ -504,12 +559,14 @@
 
     .card_title {
         width: 80% !important;
+
         h2 {
             font-size: 20px !important;
         }
     }
+
     .servicio_description {
-        p{
+        p {
             font-size: 15px !important;
         }
     }
@@ -543,13 +600,15 @@
     .portada_container {
         width: 80%;
     }
+
     .card_title {
         h2 {
             font-size: 25px !important;
         }
     }
+
     .servicio_description {
-        p{
+        p {
             font-size: 17px !important;
         }
     }
@@ -559,13 +618,15 @@
     .portada_container {
         width: 100%;
     }
+
     .card_title {
         h2 {
             font-size: 25px !important;
         }
     }
+
     .servicio_description {
-        p{
+        p {
             font-size: 17px !important;
         }
     }

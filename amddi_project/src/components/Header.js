@@ -53,7 +53,7 @@ export default function Header() {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMenu} >
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className={`disable-bootstrap-animations collapse navbar-collapse ${menuOpen ? 'menu-open' : 'menu-closed'}`} id="navbarNavDropdown" >
+                    <div className={`disable-bootstrap-animations collapse navbar-collapse header_cont_item ${menuOpen ? 'menu-open' : 'menu-closed'}`} id="navbarNavDropdown" >
                         <ul className="navbar-nav" >
                             {/* <li className="nav-item">
                                 <Link to="" className="nav-link active" aria-current="page" >Inicio </Link>
