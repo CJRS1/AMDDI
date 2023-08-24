@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-// import SwiperComponent from "./Slider-Servicio";
+import SwiperComponent from "./Slider-Servicio";
 
 import { useLocation } from 'react-router-dom';
 import '../styles/Servicios.css'
@@ -149,9 +149,9 @@ export default function Servicios() {
                     </div>
                 </div>
             </div>
-            {/* <div className="carreras_container_1 ">
+            <div className="carreras_container_1 ">
                 <SwiperComponent></SwiperComponent>
-            </div> */}
+            </div>
 
             <div className="servicios_list">
                 <div id="redacciontesispregrado" className="servicio_container">
