@@ -2,6 +2,7 @@
 
 .ingresos_container {
     height: 100vh;
+    width: 100%;
     padding-top: 125px;
     display: flex;
     flex-direction: column;
@@ -9,22 +10,38 @@
 
 
 .ingresos_description {
-    width: 85%;
+    width: 50% !important;
     height: 87%;
-    padding: 20px 40px 20px 40px;
+    // padding: 20px 40px 20px 40px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    // background: $verde-lima;
-    border-radius: 10px;
-    background-image: url(../images/fonto_verde.jpeg);
-    background-size: 500px 500px;
-    background-repeat: repeat;
+    box-shadow: 0 0 15px $negro;
     p {
         font-size: 18px;
         text-align: justify;
 
     }
+}
+
+.container-contacto-empresa{
+    width: 70%;
+    .titulo{
+        color: $verde-lima !important;
+        font-size: 30px !important;
+        padding-bottom: 0 !important;
+    }
+    h4{
+        font-size: 15px !important;
+    }
+}
+
+.form_ingreso{
+    margin-top: 35px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .emprendimiento{
@@ -40,23 +57,38 @@
 }
 
 .ingresos_card {
-    padding-top: 20px;
-    padding-right: 40px;
+    width: 35%;
+    height: 100%;
+    // padding-top: 20px;
+    // padding-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/Programa/programa50.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // .img-programa{
+    //     width: 100%;
+    //     height: 100%;
+    // }
 }
 
 .programa-formulario {
-    margin-top: 20px;
+    // margin-top: 20px;
     padding-left: 0 !important;
 }
 
 .seleccionar-archivo {
-    background: $blanco;
+    background: $verde-lima;
     border-radius: 5px;
 }
+
+.custom-file-input.is-valid ~ .custom-file-label::after {
+    content: "Archivo no seleccionado";
+    color: red; /* Cambia el color a tu preferencia */
+}
+
 
 @supports (-webkit-appearance: none) {
     .ingresos_container {
@@ -65,7 +97,7 @@
 
     }
     .ingresos_description{
-        min-width: 85%;
+        min-width: 75%;
         min-height: 84%;
     }
     .emprendimiento{
@@ -79,9 +111,9 @@
 @media (max-width: 768px){
     .ingresos_description{
         flex-direction: column;
-        padding: 0 30px 0 30px;
+        // padding: 0 30px 0 30px;
         height: 100%;
-        width: 90%;
+        width: 95% !important;
         padding-bottom: 20px;
     }
     .ingresos_card{
@@ -123,7 +155,27 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1480px){
+@media (max-width: 910px){
+
+    .ingresos_container{
+        height: 200vh !important;
+
+    }
+    .ingresos_description{
+        flex-direction: column;
+    }
+    .ingresos_card{
+        width: 100%;
+        // height: 800px;
+    }
+    .form_ingreso{
+        
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 910px) and (max-width: 1480px){
     .ingresos_card{
         padding-top: 0;
         h2{
@@ -135,23 +187,23 @@
             font-size: 16px !important;
         }
     }
-    .ingresos_container{
-        height: 100vh;
-    }
+    // .ingresos_container{
+    //     height: 100vh;
+    // }
     
     .ingresos_description{
         width: 90% !important;
-        height: 95% !important;
+        // height: 95% !important;
     }
-    .ingresos_card{
-        p{
-            font-size: 17px !important;
-        }
-    }
+    // .ingresos_card{
+    //     p{
+    //         font-size: 17px !important;
+    //     }
+    // }
     
-    .ingresos_description{
-        height: auto !important;
-    }
+    // .ingresos_description{
+    //     height: auto !important;
+    // }
 
 
 }

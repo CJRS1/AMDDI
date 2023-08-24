@@ -52,33 +52,39 @@ li {
 }
 
 input {
-  color: #00d799 !important;
+  color: #666666 !important;
+  border-color: #00d799 !important;
+  border: 3px solid #00d799 !important;
 }
 
 input::-moz-placeholder {
-  color: #00d799 !important;
+  color: #666666 !important;
   opacity: 1 !important;
 }
 
 input::placeholder {
-  color: #00d799 !important;
+  color: #666666 !important;
   opacity: 1 !important;
 }
 
 textarea {
-  color: #00d799 !important;
+  color: #666666 !important;
+  border-color: #00d799 !important;
+  border: 3px solid #00d799 !important;
 }
 
 textarea::-moz-placeholder {
-  color: #00d799 !important;
+  color: #666666 !important;
 }
 
 textarea::placeholder {
-  color: #00d799 !important;
+  color: #666666 !important;
 }
 
 select {
-  color: #00d799 !important;
+  color: #666666 !important;
+  border-color: #00d799 !important;
+  border: 3px solid #00d799 !important;
 }
 
 #root {
@@ -163,7 +169,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 650px;
+  width: 45%;
 }
 
 .cont {
@@ -197,8 +203,7 @@ section {
 }
 
 .button-contact {
-  border: 2px solid #ffffff !important;
-  background: #00d799 !important;
+  background: linear-gradient(to right, #b47a1a, #ffe55a) !important;
   color: #ffffff !important;
 }
 

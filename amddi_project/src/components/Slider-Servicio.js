@@ -18,9 +18,9 @@ export default class CenterMode extends Component {
             speed: 500,
             responsive: [
                 {
-                    breakpoint: 768, // Puedes ajustar este breakpoint según tus necesidades
+                    breakpoint: 910, // Puedes ajustar este breakpoint según tus necesidades
                     settings: {
-                        slidesToShow: 3, // Cambiar la cantidad de imágenes mostradas en pantallas más pequeñas
+                        slidesToShow: 1, // Cambiar la cantidad de imágenes mostradas en pantallas más pequeñas
                     }
                 }
             ]
@@ -28,23 +28,23 @@ export default class CenterMode extends Component {
         return (
             <div className="slider">
                 <Slider {...settings}>
-                    <div>
-                        <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
+                    <div className="container_slider">
+                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
-                    <div>
-                        <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
+                    <div className="container_slider">
+                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
-                    <div>
-                        <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
+                    <div className="container_slider">
+                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
-                    <div>
-                        <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
+                    <div className="container_slider">
+                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
-                    <div>
-                        <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
+                    <div className="container_slider">
+                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
-                    <div>
-                        <img className="img_contador" src={require('../images/Testimonios/mockup1.png')} alt='medalla' />
+                    <div className="container_slider">
+                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
                 </Slider>
             </div>

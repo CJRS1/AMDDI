@@ -151,7 +151,7 @@ export default function Servicios() {
             </div> */}
             <div  className="carreras_container_1 ">
                 <div className="carreras_titulo">
-                    <img className='img_header' src={require('../images/AMDDI_plomo.png')} alt='AMDDI' height={'50px'} />
+                    <img className='img_header1' src={require('../images/AMDDI_plomo.png')} alt='AMDDI' height={'50px'} />
                     <div className="carrera_description">
                         <h5>Brinda asesoría <strong> <i>especializada en ...</i></strong> <span>¡conócelas!</span></h5>
                     </div>
