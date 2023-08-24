@@ -25,7 +25,7 @@
 
 .portada_servicios {
     margin-top: 120px;
-    height: 300px;
+    height: 30vh;
     width: 100%;
     background: $verde-lima;
     background-image: url(../images/portada_servicios.png);
@@ -379,16 +379,47 @@
     height: 600px !important;
 }
 
+// #carreras{
+//     margin-top: -100px;
+// }
 .carreras_container_1 {
+    margin-top: 120px;
     position: relative;
     height:calc(100vh - 120px);
     width: 100% !important;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .slider {
+    .carreras_titulo{
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrera_description{
+        margin-top: 10px;
+        h5{
+            color: $verde-lima;
+            font-size: 35px !important;
+            span {
+                background: linear-gradient(to right, #b47a1a, #ffe55a);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .swiper_servicios{
+        position: absolute !important;
+        bottom: 0 !important;
+    }
+
+    .slider {
+        width: 50%;
         height: auto !important;
         margin: 0 auto;
     }
@@ -436,6 +467,9 @@
         opacity: 0.7; /* Ajusta la opacidad según lo que prefieras */
     }
     
+    .slick-dots {
+        bottom: 80px !important;
+    }
 }
 
 
@@ -575,12 +609,12 @@
 }
 
 @media (min-width: 1500px) {
-    .carreras_container {
-        height: calc(100vh - 120px) !important;
-        margin-top: 50px;
-        justify-content: center;
-        align-items: center;
-    }
+    // .carreras_container {
+    //     height: calc(100vh - 120px) !important;
+    //     margin-top: 50px;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 
     .servicios_card {
         width: 65%;
@@ -591,6 +625,12 @@
 
         p {
             font-size: 20px !important;
+        }
+    }
+
+    .carreras_container_1{
+        .slick-dots {
+            bottom: -50px !important;
         }
     }
 

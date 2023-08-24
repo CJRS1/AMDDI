@@ -179,7 +179,7 @@ section {
 }
 
 .slick-slide {
-  margin: 10px;
+  margin: 1px;
 }
 
 .slick-slide img {
@@ -298,7 +298,6 @@ section {
   .testimonios_container {
     width: 100% !important;
     height: calc(100vh - 70px) !important;
-    margin-top: 70px;
   }
   .carousel2 {
     height: 100% !important;

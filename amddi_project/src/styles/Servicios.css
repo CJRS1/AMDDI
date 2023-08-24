@@ -162,7 +162,7 @@ section {
 
 .portada_servicios {
   margin-top: 120px;
-  height: 300px;
+  height: 30vh;
   width: 100%;
   background: #00d799;
   background-image: url(../images/portada_servicios.png);
@@ -462,15 +462,40 @@ section {
 }
 
 .carreras_container_1 {
+  margin-top: 120px;
   position: relative;
   height: calc(100vh - 120px);
   width: 100% !important;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.carreras_container_1 .slider {
+.carreras_container_1 .carreras_titulo {
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carreras_container_1 .carrera_description {
+  margin-top: 10px;
+}
+.carreras_container_1 .carrera_description h5 {
+  color: #00d799;
+  font-size: 35px !important;
+}
+.carreras_container_1 .carrera_description h5 span {
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.carreras_container_1 .swiper_servicios {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+.carreras_container_1 .slider {
+  width: 50%;
   height: auto !important;
   margin: 0 auto;
 }
@@ -508,6 +533,9 @@ section {
 }
 .carreras_container_1 .slick-slide:not(.slick-center) img {
   opacity: 0.7; /* Ajusta la opacidad según lo que prefieras */
+}
+.carreras_container_1 .slick-dots {
+  bottom: 80px !important;
 }
 
 .carreras_card {
@@ -616,12 +644,6 @@ section {
   }
 }
 @media (min-width: 1500px) {
-  .carreras_container {
-    height: calc(100vh - 120px) !important;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-  }
   .servicios_card {
     width: 65%;
   }
@@ -630,6 +652,9 @@ section {
   }
   .servicio_description p {
     font-size: 20px !important;
+  }
+  .carreras_container_1 .slick-dots {
+    bottom: -50px !important;
   }
 }
 @media (min-width: 910px) and (max-width: 1285px) {

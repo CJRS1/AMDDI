@@ -49,7 +49,7 @@ export default function Servicios() {
                     </div>
                 </div>
             </div>
-            <div id="carreras" className="carreras_container">
+            {/* <div id="carreras" className="carreras_container">
                 <div className="servicios_caracteristicas">
                     <div className="servicios_titulo">
                         <h2 className="titulo2">Brindamos asesoría especializada en:</h2>
@@ -148,9 +148,15 @@ export default function Servicios() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="carreras_container_1 ">
-                <SwiperComponent></SwiperComponent>
+            </div> */}
+            <div  className="carreras_container_1 ">
+                <div className="carreras_titulo">
+                    <img className='img_header' src={require('../images/AMDDI_plomo.png')} alt='AMDDI' height={'50px'} />
+                    <div className="carrera_description">
+                        <h5>Brinda asesoría <strong> <i>especializada en ...</i></strong> <span>¡conócelas!</span></h5>
+                    </div>
+                </div>
+                <SwiperComponent className="swiper_servicios"></SwiperComponent>
             </div>
 
             <div className="servicios_list">
