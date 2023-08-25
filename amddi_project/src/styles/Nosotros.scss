@@ -246,50 +246,11 @@
 }
 
 @media (min-width: 1540px) {
-  .vimi-container {
-    width: 80vw;
+
+  .quienessomos{
+    width: 70% !important;
   }
 
-  .vision {
-    width: 500px !important;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: 500px 500px;
-  }
-
-  .mision {
-    width: 500px !important;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: 500px 500px;
-  }
-
-  .titulo-vimi {
-    font-size: 40px;
-  }
-
-  .img-logo-vimi {
-    height: 50px;
-  }
-
-  .img-titulo {
-    padding: 10px 0 10px 0;
-    margin-bottom: 20px;
-  }
-
-  .vimi {
-    h4 {
-      font-size: 25px !important;
-    }
-  }
-
-  // .valores-container {
-  //     width: 700px !important;
-  // }
-
-  // .valores {
-  //     width: 650px !important;
-  // }
   .valores-container {
     height: 110vh !important;
   }
@@ -298,18 +259,8 @@
     width: 70%;
   }
 
-  .accordion {
-    width: 600px !important;
-  }
-
-  .accordion-button {
-    font-size: 25px !important;
-  }
-
-  .accordion-body {
-    p {
-      font-size: 25px !important;
-    }
+  .valor_card {
+    width: 100%;
   }
 
   .img-titulo {
@@ -345,21 +296,17 @@
     margin-bottom: 80px;
   }
 
-  .valor_description {
-    width: 320px !important;
-    padding-left: 3px;
+  // .valor_description {
+  //   width: 320px !important;
+  //   padding-left: 3px;
 
-    h3 {
-      font-size: 18px !important;
-    }
-  }
+  //   h3 {
+  //     font-size: 18px !important;
+  //   }
+  // }
 }
 
 @media (min-width: 769px) and (max-width: 1536px) {
-  .quienessomos {
-    width: 100% !important;
-  }
-
   #carouselExample {
     width: 100% !important;
   }

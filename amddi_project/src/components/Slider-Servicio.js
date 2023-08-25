@@ -32,19 +32,19 @@ export default class CenterMode extends Component {
                         <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
+                        <img className="img_contador" src={require('../images/Carreras/csalud.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
+                        <img className="img_contador" src={require('../images/Carreras/cempresariales.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
+                        <img className="img_contador" src={require('../images/Carreras/cbioyagro.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
+                        <img className="img_contador" src={require('../images/Carreras/csociales.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
+                        <img className="img_contador" src={require('../images/Carreras/cbasicas.png')} alt='medalla' />
                     </div>
                 </Slider>
             </div>
