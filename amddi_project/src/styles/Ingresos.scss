@@ -95,7 +95,7 @@
 
 @supports (-webkit-appearance: none) {
     .ingresos_container {
-        min-height: 115vh;
+        min-height: 125vh;
         padding-top: 100px;
 
     }
@@ -149,6 +149,11 @@
         height: 50%;
     }
     @supports (-webkit-appearance: none){
+        .ingresos_container {
+            min-height: 100vh;
+            padding-top: 100px;
+    
+        }
         .investigacion{
             min-width: 50% ;
             min-height: 50% ;
@@ -165,6 +170,7 @@
             min-height: 70%;
         }
     }
+
 }
 
 @media (max-width: 910px){

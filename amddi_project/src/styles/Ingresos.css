@@ -232,7 +232,7 @@ section {
 
 @supports (-webkit-appearance: none) {
   .ingresos_container {
-    min-height: 130vh;
+    min-height: 125vh;
     padding-top: 100px;
   }
   .ingresos_description {
@@ -280,6 +280,10 @@ section {
     height: 50%;
   }
   @supports (-webkit-appearance: none) {
+    .ingresos_container {
+      min-height: 100vh;
+      padding-top: 100px;
+    }
     .investigacion {
       min-width: 50%;
       min-height: 50%;
