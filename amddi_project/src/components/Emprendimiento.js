@@ -21,7 +21,8 @@ export default function Emprendimiento() {
                 <div className="form_ingreso">
 
                     <form method="POST" action="https://formsubmit.co/reyes.christian@pucp.pe" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
-                        <h2 className="titulo"><strong>¡Postula ya! Rellena tus datos</strong></h2>
+                    <h3 className="titulo"><strong>Únete y convierte tu visión en realidad</strong></h3>
+                        <h4> ¡Postula ya! Rellena tus datos en el formulario</h4>
 
                         <div className="container-contacto">
                             <div className="mb-3 d-flex ">

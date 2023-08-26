@@ -3,3 +3,38 @@
 .titulo{
         text-align: center !important;
     }
+
+.emprendimiento_card{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Programa/emprendimientojoven.png);
+    background-size: 101% 105%; /* La imagen ocupará todo el espacio del contenedor */
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 0 !important;
+    margin:  0 !important;
+}
+
+@media (max-width: 910px){
+    .emprendimiento_card{
+        width: 100%;
+    }
+}
+
+@media (min-width: 910px) and (max-width: 1480px){
+    .emprendimiento_card{
+        padding-top: 0;
+        h2{
+            font-size: 25px;
+            padding-bottom: 0 !important;
+            margin-bottom: 10px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+}

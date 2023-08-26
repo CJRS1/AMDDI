@@ -144,32 +144,88 @@ section {
 }
 
 .contacto_container {
-  height: 100vh !important;
-  width: 1481px !important;
+  height: 140vh !important;
+  width: 100%;
   color: #ffffff !important;
   font-family: "Poppins", sans-serif !important;
   padding-top: 120px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
 }
 
 .container-contacto-lottie {
   display: flex !important;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 1100px;
-  height: 580px;
-  padding-top: 20px;
-  border-radius: 20px;
-  background-image: url(../images/fonto_verde.jpeg);
-  background-size: 500px 500px;
-  background-repeat: repeat;
+  width: 100%;
+  height: 100vh;
 }
 
-.container-contacto-empresa {
+.form_contacto {
+  padding: 20px;
+  box-shadow: 0 0 10px #000000;
+}
+
+.contacto_amddii {
+  width: 40%;
+}
+
+.contacto-desc {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+.contacto-desc img {
+  height: 88px;
+  width: 272px;
+}
+.contacto-desc h4 {
+  font-weight: 800;
+  font-size: 50px !important;
+}
+.contacto-desc h4 span {
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contacto-desc h3 {
+  text-align: justify !important;
+  color: #000000 !important;
+}
+
+.portada_contacto {
+  height: 40vh;
+  width: 100%;
+  background: #00d799;
+  background-image: url(../images/contacto.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+}
+
+.portada_contacto_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+}
+.portada_contacto_container img {
+  width: 100vw;
+}
+
+.portada_contacto_titulo h3 {
+  font-size: 60px !important;
+  font-weight: 900 !important;
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+}
+.portada_contacto_titulo h3 span {
+  color: #00d799;
 }
 
 .cont {
@@ -181,12 +237,6 @@ section {
   padding-bottom: 20px !important;
   font-family: "Poppins", sans-serif !important;
   font-weight: 500 !important;
-}
-
-.contacto-desc {
-  width: 600px !important;
-  text-align: justify;
-  padding-bottom: 15px;
 }
 
 .cont-text {
@@ -233,19 +283,6 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .container-contacto-lottie {
-    width: 97%;
-    height: 100% !important;
-  }
-  .container-contacto-empresa {
-    width: 100%;
-    height: 100%;
-    padding-left: 0;
-    padding: 0 10px 0 10px;
-  }
-  .contacto-desc {
-    text-align: justify;
-  }
   .container-contacto {
     margin-top: 16px;
     width: 100%;
@@ -288,14 +325,77 @@ section {
   .ingresos_description {
     width: 340px;
   }
-}
-@media (min-width: 769px) and (max-width: 1480px) {
-  .contacto_container {
-    width: 100% !important;
-    height: 100vh !important;
+  .contacto_amddii {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .container-contacto-lottie {
-    width: 80%;
-    height: 90%;
+    height: 120vh;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .contacto-desc {
+    width: 90%;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contacto-desc h4 {
+    font-size: 35px !important;
+  }
+  .contacto-desc h3 {
+    color: #000000 !important;
+  }
+  .portada_contacto_titulo h3 {
+    font-size: 38px !important;
+  }
+}
+@media (min-width: 1171px) and (max-width: 1480px) {
+  .contacto_container {
+    width: 100% !important;
+  }
+  .contacto-desc h4 {
+    font-size: 35px !important;
+  }
+  .contacto-desc h3 {
+    color: #000000 !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1170px) {
+  .contacto_container {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .container-contacto-lottie {
+    flex-direction: column;
+    height: 120vh;
+  }
+  .contacto-desc {
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto-desc h4 {
+    font-size: 35px !important;
+  }
+  .contacto-desc h3 {
+    color: #000000 !important;
+  }
+  .contacto_amddii {
+    width: 500px;
+  }
+}
+@media (max-width: 482px) {
+  .contacto-desc {
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto-desc h4 {
+    font-size: 28px !important;
+  }
+  .contacto-desc h3 {
+    color: #000000 !important;
+    font-size: 17px !important;
   }
 }/*# sourceMappingURL=Contacto.css.map */
