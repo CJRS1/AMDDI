@@ -175,7 +175,7 @@
 }
 
 .card_title {
-    width: auto !important;
+    max-width: 500px !important;
     background: $verde-lima;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
@@ -712,7 +712,7 @@
 
 }
 
-@media (min-width: 910px) and (max-width: 1285px) {
+@media (min-width: 910px) and (max-width: 1300px) {
     .portada_container {
         width: 80%;
     }

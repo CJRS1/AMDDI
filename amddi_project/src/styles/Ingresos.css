@@ -232,6 +232,7 @@ section {
 
 @supports (-webkit-appearance: none) {
   .ingresos_container {
+    min-height: 130vh;
     padding-top: 100px;
   }
   .ingresos_description {
