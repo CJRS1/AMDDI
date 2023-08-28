@@ -184,7 +184,7 @@ export default function Footer() {
                             </svg>
                             <a href='https://goo.gl/maps/LVMXphPBKPPq23feA' target='_blank' rel='noreferrer' className="card-localizacion">
                                 <h5>CHICLAYO</h5>
-                                <h5>&nbsp;Alfondo Ugarte 655, Entre Elias Aguirre y Maria Izaga</h5>
+                                <h5>&nbsp;Alfondo Ugarte 655. Entre Elias Aguirre y María Izaga</h5>
                             </a>
                         </div>
                     </div>
