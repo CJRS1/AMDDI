@@ -99,6 +99,12 @@
     color: red; /* Cambia el color a tu preferencia */
 }
 
+.centered-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 @supports (-webkit-appearance: none) {
     .ingresos_container {
@@ -198,6 +204,11 @@
             min-height: 90%;
             min-width: 70%;
         }
+
+        .input1{
+            height: 40px !important;
+        }
+        
     }
 
 
