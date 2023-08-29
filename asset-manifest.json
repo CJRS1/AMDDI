@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.35dc2f7f.css",
-    "main.js": "./static/js/main.051ee20a.js",
+    "main.js": "./static/js/main.ab3077b2.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
@@ -68,11 +68,11 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "main.35dc2f7f.css.map": "./static/css/main.35dc2f7f.css.map",
-    "main.051ee20a.js.map": "./static/js/main.051ee20a.js.map",
+    "main.ab3077b2.js.map": "./static/js/main.ab3077b2.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35dc2f7f.css",
-    "static/js/main.051ee20a.js"
+    "static/js/main.ab3077b2.js"
   ]
 }
