@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.336e308d.css",
-    "main.js": "./static/js/main.767781c0.js",
+    "main.css": "./static/css/main.2cfa715b.css",
+    "main.js": "./static/js/main.d0074c81.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
@@ -15,15 +15,15 @@
     "static/media/adelante_completo.png": "./static/media/adelante_completo.0de1bb381c85f5fc29e0.png",
     "static/media/fondo_footer.png": "./static/media/fondo_footer.4a24aa416747288595ff.png",
     "static/media/contacto.png": "./static/media/contacto.06efd5336c8b4eff08f1.png",
+    "static/media/programa50.png": "./static/media/programa50.c03b546d02c45e6efd76.png",
+    "static/media/invsostenible.png": "./static/media/invsostenible.390895bd5893fa156b98.png",
     "static/media/portada_servicios.png": "./static/media/portada_servicios.9416f746fa1ce7c51f24.png",
-    "static/media/programa50.png": "./static/media/programa50.62112e135af0872f1157.png",
     "static/media/csociales.png": "./static/media/csociales.b006ae3607f2da90d981.png",
-    "static/media/invsostenible.png": "./static/media/invsostenible.ab2262bf5f46f787bc96.png",
     "static/media/ingeniero.png": "./static/media/ingeniero.b9cadb8682cf26d68e5c.png",
     "static/media/cbioyagro.png": "./static/media/cbioyagro.0c43463aa0b1cb1907fc.png",
     "static/media/Plan_negocio.png": "./static/media/Plan_negocio.201ea0cd81e8ce607ccf.png",
     "static/media/medallacompleta.png": "./static/media/medallacompleta.d689ca40d5b07f73a27a.png",
-    "static/media/emprendimientojoven.png": "./static/media/emprendimientojoven.7ccc3112b3f1f5220c49.png",
+    "static/media/emprendimiento.png": "./static/media/emprendimiento.77b9c58735a2e2ffb757.png",
     "static/media/cbasicas.png": "./static/media/cbasicas.06ed0bdf682cb45dee0c.png",
     "static/media/cempresariales.png": "./static/media/cempresariales.f9a1db4b1c63e047c17a.png",
     "static/media/csalud.png": "./static/media/csalud.942e8a444a5df519380b.png",
@@ -67,12 +67,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.336e308d.css.map": "./static/css/main.336e308d.css.map",
-    "main.767781c0.js.map": "./static/js/main.767781c0.js.map",
+    "main.2cfa715b.css.map": "./static/css/main.2cfa715b.css.map",
+    "main.d0074c81.js.map": "./static/js/main.d0074c81.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.336e308d.css",
-    "static/js/main.767781c0.js"
+    "static/css/main.2cfa715b.css",
+    "static/js/main.d0074c81.js"
   ]
 }
