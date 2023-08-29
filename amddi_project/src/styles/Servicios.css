@@ -58,6 +58,18 @@ input {
   border: 3px solid #00d799 !important;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para ocultar las flechas en Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 input::-moz-placeholder {
   color: #666666 !important;
   opacity: 1 !important;
