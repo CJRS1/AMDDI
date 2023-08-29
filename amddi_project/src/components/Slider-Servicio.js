@@ -29,22 +29,22 @@ export default class CenterMode extends Component {
             <div className="slider">
                 <Slider {...settings}>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
+                        <img className="img_profesiones" src={require('../images/Carreras/ingeniero.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/csalud.png')} alt='medalla' />
+                        <img className="img_profesiones" src={require('../images/Carreras/csalud.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/cempresariales.png')} alt='medalla' />
+                        <img className="img_profesiones" src={require('../images/Carreras/cempresariales.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/cbioyagro.png')} alt='medalla' />
+                        <img className="img_profesiones" src={require('../images/Carreras/cbioyagro.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/csociales.png')} alt='medalla' />
+                        <img className="img_profesiones" src={require('../images/Carreras/csociales.png')} alt='medalla' />
                     </div>
                     <div className="container_slider">
-                        <img className="img_contador" src={require('../images/Carreras/cbasicas.png')} alt='medalla' />
+                        <img className="img_profesiones" src={require('../images/Carreras/cbasicas.png')} alt='medalla' />
                     </div>
                 </Slider>
             </div>
