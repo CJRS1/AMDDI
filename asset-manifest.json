@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.c7c48d8c.css",
-    "main.js": "./static/js/main.ab3077b2.js",
+    "main.css": "./static/css/main.41496595.css",
+    "main.js": "./static/js/main.8e6b274c.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
@@ -67,12 +67,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.c7c48d8c.css.map": "./static/css/main.c7c48d8c.css.map",
-    "main.ab3077b2.js.map": "./static/js/main.ab3077b2.js.map",
+    "main.41496595.css.map": "./static/css/main.41496595.css.map",
+    "main.8e6b274c.js.map": "./static/js/main.8e6b274c.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7c48d8c.css",
-    "static/js/main.ab3077b2.js"
+    "static/css/main.41496595.css",
+    "static/js/main.8e6b274c.js"
   ]
 }
