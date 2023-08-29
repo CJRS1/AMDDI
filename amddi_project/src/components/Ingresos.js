@@ -15,7 +15,7 @@ export default function Testimonios() {
 
             <div className="ingresos_description ingresos">
                 <div className="ingresos_card">
-                    {/* <img className="img-programa" src={require('../images/Programa/programa50.png')} alt='proyecto' /> */}
+                    <img className="img-programa" src={require('../images/Programa/programa50.png')} alt='proyecto' />
                     {/* <h2 className="titulo"><strong>Programa de 50 / 50</strong></h2>
                     <p>
                         Gana ingresos extras desde casa
@@ -37,20 +37,20 @@ export default function Testimonios() {
                         <h4> Envíanos tu CV y rellena el formulario de postulación</h4>
                         <div className="container-contacto">
                             <div className="mb-3 d-flex ">
-                                <input type="text" name="name" className="form-control my-input" style={{ width: '510px', height: '35px' }} id="Input1"
+                                <input type="text" name="name" className="form-control my-input input1" style={{ width: '510px', height: '35px' }} id="Input1"
                                     placeholder="Nombre y apellido *" required />
                             </div>
                             <div className="mb-3 d-flex input_contact_container">
 
-                                <input type="email" name="email" className="form-control form-email my-input" style={{ width: '250px', marginRight: '10px' }}
+                                <input type="email" name="email" className="form-control form-email my-input input2" style={{ width: '250px', marginRight: '10px' }}
                                     id="exampleFormControlInput1" placeholder="Correo electrónico *" required />
-                                <input type="number" name="phone" className="form-control my-input input_card" style={{ width: '250px', height: '35px' }} id="Input1"
+                                <input type="number" name="phone" className="form-control my-input input_card input2" style={{ width: '250px', height: '35px' }} id="Input1"
                                     placeholder="Celular *" min="10000000" max="999999999999" required />
                             </div>
                             <div className="mb-3 d-flex input_contact_container">
-                                <input type="text" name="phone" className="form-control my-input " style={{ width: '250px', marginRight: '10px', height: '35px' }} id="Input1"
+                                <input type="text" name="phone" className="form-control my-input input2" style={{ width: '250px', marginRight: '10px', height: '35px' }} id="Input1"
                                     placeholder="Puesto al que postula*" required />
-                                <select className="form-control my-input input_card" name="departamento" style={{ width: '250px', height: '35px' }} id="contact-method" defaultValue="" required>
+                                <select className="form-control my-input input_card" name="departamento input2" style={{ width: '250px', height: '35px' }} id="contact-method" defaultValue="" required>
                                     <option value="" disabled >Seleccione un departamento</option>
                                     <option value="Ancash">Ancash</option>
                                     <option value="Apurímac">Apurímac</option>
@@ -80,7 +80,7 @@ export default function Testimonios() {
                             </div>
 
                             <div className="mb-3">
-                                <textarea className="form-control my-input" name="message" id="exampleFormControlTextarea1" style={{ width: '510px', height: '100px' }} rows="5"
+                                <textarea className="form-control my-input input1" name="message" id="exampleFormControlTextarea1" style={{ width: '510px', height: '100px' }} rows="5"
                                     placeholder="Buenas tardes, yo José, quiero trabajar con ustedes en el área de ... *" required></textarea>
                             </div>
                             <div className="mb-3 d-flex flex-column custom-file seleccionar-archivo">

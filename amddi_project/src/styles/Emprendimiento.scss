@@ -5,16 +5,16 @@
     }
 
 .emprendimiento_card{
-    width: 35%;
+    min-width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: url(../images/Programa/emprendimientojoven.png);
-    background-size: 101% 105%; /* La imagen ocupará todo el espacio del contenedor */
-    background-repeat: no-repeat;
-    background-position: top left;
+    align-items: flex-start;
+    // background-image: url(../images/Programa/emprendimientojoven.png);
+    // background-size: 100% 100%; 
+    // background-repeat: no-repeat;
+    // background-position: top left;
     padding: 0 !important;
     margin:  0 !important;
 }

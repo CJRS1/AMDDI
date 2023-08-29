@@ -15,6 +15,7 @@ export default function Investigacion() {
 
             <div className="ingresos_description investigacion">
                 <div className="investigacion_card">
+                <img className="img-programa" src={require('../images/Programa/invsostenible.png')} alt='proyecto' />
                     {/* <h2 className="titulo"><strong>Programa de Investigación Sostenible</strong></h2>
                     <p> ¡Bienvenido al Programa de Investigación Sostenible AMDDI! Apoyamos a jóvenes investigadores comprometidos con soluciones innovadoras para los desafíos ambientales, sociales y económicos de nuestro país. Si compartes esta misión, te conectaremos con mentores expertos que te guiarán en tus investigaciones, brindándote valiosa orientación. También reconocemos la importancia de contar con recursos, por eso financiamos proyectos alineados con nuestros objetivos de desarrollo sostenible. Únete a nuestro programa y sé parte del cambio que el país necesita. Juntos podemos construir un futuro más sostenible. </p> */}
                 </div>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: "Poppins", sans-serif !important;
 }
@@ -178,14 +177,6 @@ section {
   font-size: 15px !important;
 }
 
-.form_ingreso {
-  width: 65%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .emprendimiento {
   height: 82%;
 }
@@ -198,17 +189,28 @@ section {
   margin: 5px 0 5px 0;
 }
 
+.form_ingreso {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-programa {
+  max-height: 100%;
+  height: auto;
+  float: left; /* Alinea la imagen a la izquierda */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
 .ingresos_card {
-  width: 35%;
+  min-width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-image: url(../images/Programa/programa50.png);
-  background-size: 101% 105%; /* La imagen ocupará todo el espacio del contenedor */
-  background-repeat: no-repeat;
-  background-position: top left;
+  align-items: flex-start;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -273,6 +275,25 @@ section {
     margin-top: 20px;
     height: auto;
   }
+  @supports (-webkit-appearance: none) {
+    .ingresos_description {
+      width: 95% !important;
+    }
+    .ingresos_card,
+    .emprendimiento_card,
+    .investigacion_card {
+      width: 100%;
+    }
+    .ingresos_card img,
+    .emprendimiento_card img,
+    .investigacion_card img {
+      width: 100%;
+      height: auto;
+    }
+    .form_ingreso {
+      width: 100%;
+    }
+  }
 }
 @media (min-width: 1600px) {
   .ingresos_description {
@@ -297,26 +318,12 @@ section {
       min-height: 52%;
     }
     .ingresos_description {
-      min-height: 70%;
+      min-height: 90%;
+      min-width: 70%;
     }
   }
 }
-@media (max-width: 910px) {
-  .ingresos_container {
-    height: 200vh !important;
-  }
-  .ingresos_description {
-    flex-direction: column;
-  }
-  .ingresos_card {
-    width: 100%;
-  }
-  .form_ingreso {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 910px) and (max-width: 1480px) {
+@media (min-width: 1190px) and (max-width: 1480px) {
   .ingresos_card {
     padding-top: 0;
   }
@@ -329,6 +336,28 @@ section {
     font-size: 16px !important;
   }
   .ingresos_description {
-    width: 90% !important;
+    width: 95% !important;
+  }
+}
+@media (min-width: 650px) and (max-width: 1189px) {
+  .ingresos_container {
+    width: 789px;
+    height: 230vh;
+  }
+  .ingresos_description {
+    flex-direction: column;
+  }
+  @supports (-webkit-appearance: none) {
+    .ingresos_description {
+      width: 626px !important;
+    }
+    .ingresos_card,
+    .emprendimiento_card,
+    .investigacion_card {
+      width: 100%;
+    }
+    .form_ingreso {
+      width: 100%;
+    }
   }
 }/*# sourceMappingURL=Ingresos.css.map */

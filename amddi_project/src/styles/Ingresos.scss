@@ -37,15 +37,6 @@
     }
 }
 
-.form_ingreso{
-    // margin-top: 35px;
-    width: 65%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .emprendimiento{
     height: 82%;
 }
@@ -58,20 +49,36 @@
     margin: 5px 0 5px 0;
 }
 
+.form_ingreso{
+    // margin-top: 35px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-programa{
+    max-height: 100%;
+    height: auto;
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
 .ingresos_card {
-    width: 35%;
+    min-width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: url(../images/Programa/programa50.png);
-    background-size: 101% 105%; /* La imagen ocupará todo el espacio del contenedor */
-    background-repeat: no-repeat;
-    background-position: top left;
+    align-items: flex-start;
+    // background-image: url(../images/Programa/programa50.png);
+    // background-size: auto 100%; 
+    // background-repeat: no-repeat;
+    // background-position: top left;
     padding: 0 !important;
     margin:  0 !important;
-
+    // object-fit: fill;
 }
 
 .programa-formulario {
@@ -141,6 +148,27 @@
         margin-top: 20px;
         height: auto;
     }
+
+
+
+    @supports (-webkit-appearance: none){
+        .ingresos_description{
+            width: 95% !important;
+        }
+        .ingresos_card,
+        .emprendimiento_card,
+        .investigacion_card{
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .form_ingreso{
+            width: 100%;
+        }
+    }
 }
 
 @media (min-width: 1600px){
@@ -167,33 +195,35 @@
             min-height: 52% ;
         }
         .ingresos_description{
-            min-height: 70%;
+            min-height: 90%;
+            min-width: 70%;
         }
     }
 
+
 }
 
-@media (max-width: 910px){
+// @media (max-width: 910px){
 
-    .ingresos_container{
-        height: 200vh !important;
+//     .ingresos_container{
+//         height: 200vh !important;
 
-    }
-    .ingresos_description{
-        flex-direction: column;
-    }
-    .ingresos_card{
-        width: 100%;
-        // height: 800px;
-    }
-    .form_ingreso{
+//     }
+//     .ingresos_description{
+//         flex-direction: column;
+//     }
+//     .ingresos_card{
+//         width: 100%;
+//         // height: 800px;
+//     }
+//     .form_ingreso{
         
-        width: 100%;
-        margin-bottom: 40px;
-    }
-}
+//         width: 100%;
+//         margin-bottom: 40px;
+//     }
+// }
 
-@media (min-width: 910px) and (max-width: 1480px){
+@media (min-width: 1190px) and (max-width: 1480px){
     .ingresos_card{
         padding-top: 0;
         h2{
@@ -205,24 +235,34 @@
             font-size: 16px !important;
         }
     }
-    // .ingresos_container{
-    //     height: 100vh;
-    // }
     
     .ingresos_description{
-        width: 90% !important;
-        // height: 95% !important;
+        width: 95% !important;
     }
-    // .ingresos_card{
-    //     p{
-    //         font-size: 17px !important;
-    //     }
-    // }
-    
-    // .ingresos_description{
-    //     height: auto !important;
-    // }
-
-
 }
 
+@media (min-width: 650px) and (max-width: 1189px){
+    .ingresos_container{
+        width: 789px;
+        height: 230vh;
+    }
+    .ingresos_description {
+        flex-direction: column;
+    }
+
+    @supports (-webkit-appearance: none){
+        .ingresos_description{
+            width: 626px !important;
+        }
+        .ingresos_card,
+        .emprendimiento_card,
+        .investigacion_card
+        {
+            width: 100%;
+        }
+
+        .form_ingreso{
+            width: 100%;
+        }
+    }
+}

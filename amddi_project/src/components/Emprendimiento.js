@@ -15,6 +15,7 @@ export default function Emprendimiento() {
 
             <div className="ingresos_description emprendimiento">
                 <div className="emprendimiento_card">
+                <img className="img-programa" src={require('../images/Programa/emprendimientojoven.png')} alt='proyecto' />
                     {/* <h2 className="titulo"><strong>Programa Emprendimiento Joven</strong></h2>
                     <p> ¡Bienvenido al Programa Emprendimiento AMDDI! Apoyamos a jóvenes estudiantes emprendedores comprometidos en hacer realidad sus ideas innovadoras. Si compartes esta pasión, te brindamos asesoría experta para desarrollar planes de negocio y acceso a subvenciones como capital inicial. También te ofrecemos constante mentoria desde la conceptualización hasta la ejecución de tu emprendimiento. Únete a nuestro programa y convierte tu visión en realidad, con nuestro apoyo financiero y en conocimientos. Juntos podemos impulsar el potencial de los jóvenes para crear un impacto positivo. </p> */}
                 </div>
