@@ -4,6 +4,11 @@ import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link'
 import '../styles/Carousel.css'
 
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 function Contador({ inicio, final, duracion }) {
     const [contador, setContador] = useState(inicio);
 
@@ -32,36 +37,6 @@ export default function Carousel() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
-
-    // const efectoRef = useRef(null);
-    // const imagenRef = useRef(null);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const contenedorTop = efectoRef.current.getBoundingClientRect().top + window.scrollY;
-    //         const maxTop = 1000;
-    //         const scrollY = window.scrollY;
-    //         const imagenTop = imagenRef.current.getBoundingClientRect().top + scrollY;
-
-    //         if (scrollY > contenedorTop) {
-    //             const scrollOffset = scrollY - contenedorTop;
-    //             const maxImageTop = Math.min(maxTop, imagenTop - scrollOffset);
-    //             efectoRef.current.style.top = `-${scrollOffset}px`;
-    //             imagenRef.current.style.top = `${maxImageTop}px`;
-    //         } else {
-    //             efectoRef.current.style.top = "0px";
-    //             imagenRef.current.style.top = Math.min(scrollY, maxTop) + 'px';
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
-
 
     const seccionRef = useRef(null);
     const [animated, setAnimated] = useState(false); // Estado para controlar la animación
@@ -100,7 +75,30 @@ export default function Carousel() {
     }, [animated]); // Añade "animated" como dependencia
 
 
-
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3, // Número de elementos a mostrar en pantallas grandes (mayor a 1200px)
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        adaptiveHeight: false,
+        // centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1300, // Cambiar a 2 elementos en pantallas medianas
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768, // Cambiar a 1 elemento en pantallas pequeñas
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
     return (
         <section className="carousel_container">
             <div id="carouselExample" className="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="6000">
@@ -296,9 +294,6 @@ export default function Carousel() {
                 </button>
             </div>
             <div className="amddi_internacional">
-                <div className="img_int_container">
-                    <img className="img-carousel_int" src={require('../images/somos_internacionales.png')} alt='proyecto' />
-                </div>
                 <div className="amdi_international_description">
                     <div className="international_container">
                         <h3>En AMDDI somos</h3>
@@ -318,9 +313,68 @@ export default function Carousel() {
                                 En AMDDI, nos especializamos en soluciones integrales para investigación y asesoría. Guiamos y apoyamos proyectos de investigación para impulsar el crecimiento académico y profesional. Nuestro equipo multidisciplinario de expertos en metodología y estadísticas está comprometido con tu éxito. Operamos en Perú, Bolivia, Colombia, Costa Rica, Cuba, Ecuador, Venezuela y México.
                             </p>
 
-                            <Link to="/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link>
+                            {/* <Link to="/nosotros" type="button" className="btn button-effect contacto_carousel">Conócenos</Link> */}
                         </div>
                     </div>
+                </div>
+                {/* <div className="carousel_infinito">
+                    <div class="scroll-container">
+                        <div class="scroll-wrapper">
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/peruM.png')} alt='medalla' />
+                            </div>
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/bolivia.png')} alt='medalla' />
+                            </div>
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/colombia.png')} alt='medalla' />
+                            </div>
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/costica.png')} alt='medalla' />
+                            </div>
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/peruM.png')} alt='medalla' />
+                            </div>
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/ecuador.png')} alt='medalla' />
+                            </div>
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/venezuela.png')} alt='medalla' />
+                            </div>
+                            <div class="scroll-item">
+                                <img className="img_contador" src={require('../images/Nosotros/mexico.png')} alt='medalla' />
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
+                <div className="carousel_infinito">
+                    <Slider {...settings}>
+                        <div className="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/peruM.png')} alt='medalla' />
+                        </div>
+                        <div className="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/bolivia.png')} alt='medalla' />
+                        </div>
+                        <div className="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/colombia.png')} alt='medalla' />
+                        </div>
+                        <div class="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/costica.png')} alt='medalla' />
+                        </div>
+                        <div class="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/peruM.png')} alt='medalla' />
+                        </div>
+                        <div class="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/ecuador.png')} alt='medalla' />
+                        </div>
+                        <div class="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/venezuela.png')} alt='medalla' />
+                        </div>
+                        <div class="scroll-item">
+                            <img className="img_int_amddi" src={require('../images/Nosotros/mexico.png')} alt='medalla' />
+                        </div>
+                        {/* Agrega el resto de tus imágenes aquí */}
+                    </Slider>
                 </div>
             </div>
 

@@ -46,7 +46,7 @@
 }
 
 .button-carousel:hover {
-    
+
     animation: scale 1s infinite;
 }
 
@@ -207,7 +207,7 @@
     width: 200px;
     padding-right: 12px !important;
     margin-bottom: 0 !important;
-    
+
 }
 
 .contenedor-efecto {
@@ -350,6 +350,7 @@
     height: calc(100vh - 120px);
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -363,7 +364,7 @@
 }
 
 .amdi_international_description {
-    width: 550px;
+    width: 80%;
 
     .international_container {
         h3:nth-of-type(1) {
@@ -389,11 +390,54 @@
 
         p {
             color: #000 !important;
-            text-align: justify;
+            text-align: center;
             font-size: 18px;
         }
     }
 }
+
+/*  */
+.carousel_infinito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+
+    .carousel_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+      }
+
+    .slick-slider {
+        width: 90%;
+        height: 100%;
+    }
+
+    .scroll-item {
+        width: 311px; /* Ancho deseado */
+        height: 223px; /* Alto deseado */
+        overflow: hidden; /* Recortar cualquier parte de la imagen que sea más grande */
+      }
+
+    /* Estilo para las imágenes en el carrusel */
+    .img_int_amddi {
+        width: 311px;
+        /* Ancho deseado */
+        height: 223px;
+        /* Alto deseado */
+        object-fit: cover;
+        /* Ajustar la imagen para llenar el tamaño deseado sin deformarla */
+    }
+
+}
+
+
+
+
+/*  */
 
 .seccion_contador {
     height: 400px;
@@ -840,6 +884,9 @@
 }
 
 @media (max-width: 768px) {
+
+
+
     .contacto_carousel {
         width: 150px !important;
     }
@@ -1310,6 +1357,12 @@
         margin-top: 0 !important;
 
     }
+
+    .scroll-item{
+        width: 311px !important;
+        height: 223px !important;
+    }
+
 }
 
 @media (min-width: 1500px) {
@@ -1341,8 +1394,18 @@
         }
     }
 }
+/* Ajusta los estilos según sea necesario */
+
 
 @media (min-width: 769px) and (max-width: 1480px) {
+
+
+
+    .scroll-item {
+        width: calc(50% - 10px);
+        /* Una imagen por fila */
+    }
+
     .img-carousel {
         height: calc(100vh - 120px) !important;
         width: 100vw !important;
@@ -1361,7 +1424,7 @@
     }
 
     .amdi_international_description {
-        width: 500px !important;
+        width: 80% !important;
         margin-right: 100px;
     }
 
@@ -1427,7 +1490,7 @@
     }
 
     .international_container {
-        width: 90%;
+        width: 100%;
     }
 
     .img-carousel_int {

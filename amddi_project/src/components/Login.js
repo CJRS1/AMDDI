@@ -20,9 +20,12 @@ export default function Inicio() {
 
     return (
         <section className="login_container">
-            <div className="form_registro">
-                <h2 className="titulo">Inicia sesión</h2>
-                <form onSubmit={handleSubmit}>
+            <div className="form_login_container">
+                <div className="titulo_login">
+                    <h2>Ingresar</h2>
+                    <span className="linea"></span>
+                </div>
+                <form onSubmit={handleSubmit} className="form_login_user">
                     <input className="input_registro"
                         type="email"
                         placeholder="Correo electrónico"
@@ -36,14 +39,15 @@ export default function Inicio() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
+                    <div className="login_opciones">
 
-                    <button type="submit">Iniciar Sesión</button>
+                        <Link to="/AMDDI/olvide_contraseña" type="submit" className="login_preguntas">¿Has olvidado tu contraseña? <strong>Recupérala.</strong></Link>
+                        <Link to="/AMDDI/registrarse" type="submit" className="login_preguntas">¿Aún no tienes cuenta? <strong>Regístrate</strong>.</Link>
+                    </div>
 
-                    <button type="submit">Recuperar Contraseña</button>
-
-
-                    <Link to="/AMDDI/registrarse" type="submit">Crear una cuenta</Link>
-                    <Link to="/AMDDI/registrarse" type="submit">¿Has olvidado tu contraseña?</Link>
+                    <button className="button_logearse" type="submit">
+                        Iniciar Sesión
+                        </button>
 
                 </form>
             </div>

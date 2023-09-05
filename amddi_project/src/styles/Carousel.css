@@ -475,6 +475,7 @@ section {
   height: calc(100vh - 120px);
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -488,7 +489,7 @@ section {
 }
 
 .amdi_international_description {
-  width: 550px;
+  width: 80%;
 }
 .amdi_international_description .international_container h3:nth-of-type(1) {
   color: #00d799 !important;
@@ -510,10 +511,45 @@ section {
 }
 .amdi_international_description .international_desc p {
   color: #000 !important;
-  text-align: justify;
+  text-align: center;
   font-size: 18px;
 }
 
+/*  */
+.carousel_infinito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40%;
+  /* Estilo para las imágenes en el carrusel */
+}
+.carousel_infinito .carousel_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+}
+.carousel_infinito .slick-slider {
+  width: 90%;
+  height: 100%;
+}
+.carousel_infinito .scroll-item {
+  width: 311px; /* Ancho deseado */
+  height: 223px; /* Alto deseado */
+  overflow: hidden; /* Recortar cualquier parte de la imagen que sea más grande */
+}
+.carousel_infinito .img_int_amddi {
+  width: 311px;
+  /* Ancho deseado */
+  height: 223px;
+  /* Alto deseado */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Ajustar la imagen para llenar el tamaño deseado sin deformarla */
+}
+
+/*  */
 .seccion_contador {
   height: 400px;
   width: 100%;
@@ -1293,6 +1329,10 @@ section {
   .contacto_tesis_prev {
     margin-top: 0 !important;
   }
+  .scroll-item {
+    width: 311px !important;
+    height: 223px !important;
+  }
 }
 @media (min-width: 1500px) {
   .caracterisctia_servicios_container {
@@ -1316,7 +1356,12 @@ section {
     font-size: 18px !important;
   }
 }
+/* Ajusta los estilos según sea necesario */
 @media (min-width: 769px) and (max-width: 1480px) {
+  .scroll-item {
+    width: calc(50% - 10px);
+    /* Una imagen por fila */
+  }
   .img-carousel {
     height: calc(100vh - 120px) !important;
     width: 100vw !important;
@@ -1331,7 +1376,7 @@ section {
     width: 100%;
   }
   .amdi_international_description {
-    width: 500px !important;
+    width: 80% !important;
     margin-right: 100px;
   }
   .img-carousel_int {
@@ -1378,7 +1423,7 @@ section {
     font-size: 20px !important;
   }
   .international_container {
-    width: 90%;
+    width: 100%;
   }
   .img-carousel_int {
     width: 100%;
