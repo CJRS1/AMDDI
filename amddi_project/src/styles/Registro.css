@@ -157,6 +157,7 @@ section {
 }
 
 .registro_container {
+  width: 600px;
   height: 100vh;
   padding-top: 120px;
   display: flex;
@@ -167,12 +168,10 @@ section {
 
 /* Estilos para el formulario */
 .form_registro_container {
-  max-width: 400px;
+  width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #00d799;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,15 +225,22 @@ section {
   margin-bottom: 10px;
 }
 
+.titulo_registro {
+  color: #00d799 !important;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
 .form_registro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.btn_registro {
-  margin-top: 15px !important;
+.button_logearse {
+  margin-bottom: 0 !important;
 }
 
 .input_registro_codigo {
@@ -248,7 +254,30 @@ section {
 
 .form_registro_codigo {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 400px;
+  width: 100%;
+}
+.form_registro_codigo h3 {
+  font-size: 15px !important;
+  color: #00d799 !important;
+}
+
+.input_card {
+  width: 100%;
+}
+
+.codigo_partes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.input_codigo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
 }/*# sourceMappingURL=Registro.css.map */

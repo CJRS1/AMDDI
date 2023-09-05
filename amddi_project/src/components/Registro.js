@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom'
-
 import '../styles/Registro.css';
 
 export default function Registro() {
@@ -13,107 +11,203 @@ export default function Registro() {
 
     const [user, setUser] = useState({
         name: '',
-        lastName: '',
-        career: '',
+        lastName1: '',
+        lastName2: '',
         dni: '',
         email: '',
         password: ''
     });
 
+    const [currentStep, setCurrentStep] = useState(1);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setUser({ ...user, [name]: value });
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleNextStep = () => {
+        setCurrentStep(currentStep + 1);
     }
 
+    const handlePrevStep = () => {
+        setCurrentStep(currentStep - 1);
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Aquí puedes realizar acciones específicas para cada paso si es necesario
+    }
 
     return (
-        <section className="registro_container">
-            <div className="form_registro_container">
-                <h2 className="titulo_registro">Creación de cuenta</h2>
-                <div className="secciones_registro_container">
-                    <span className="secciones_registro">1</span>
-                    <span className="secciones_registro">2</span>
-                    <span className="secciones_registro">3</span>
-                </div>
-                <form onSubmit={handleSubmit} className="form_registro">
-                    <input className="input_registro"
-                        type="text"
-                        name="name"
-                        placeholder="Nombre"
-                        value={user.name}
-                        onChange={handleInputChange}
-                    />
-                    <input className="input_registro"
-                        type="text"
-                        name="lastName1"
-                        placeholder="Apellido Paterno"
-                        value={user.lastName}
-                        onChange={handleInputChange}
-                    />
-                    <input className="input_registro"
-                        type="text"
-                        name="lastName2"
-                        placeholder="Apellido Materno"
-                        value={user.lastName}
-                        onChange={handleInputChange}
-                    />
-                    <input className="input_registro"
-                        type="text"
-                        name="dni"
-                        placeholder="DNI"
-                        value={user.lastName}
-                        onChange={handleInputChange}
-                    />
-                    <input className="input_registro"
-                        type="text"
-                        name="career"
-                        placeholder="Carrera"
-                        value={user.lastName}
-                        onChange={handleInputChange}
-                    />
+        <div>
+            <section className="registro_container">
+                {currentStep === 1 && (
+                    <div className="form_registro_container">
+                        <h2 className="titulo_registro">Creación de cuenta</h2>
+                        <div className="secciones_registro_container">
+                            <span className="secciones_registro">1</span>
+                            <span className="secciones_registro">2</span>
+                            <span className="secciones_registro">3</span>
+                        </div>
+                        <form onSubmit={handleSubmit} className="form_registro">
+                            <input className="input_registro"
+                                type="text"
+                                name="name"
+                                placeholder="Nombre"
+                                value={user.name}
+                                onChange={handleInputChange}
+                            />
+                            <input className="input_registro"
+                                type="text"
+                                name="lastName1"
+                                placeholder="Apellido Paterno"
+                                value={user.lastName}
+                                onChange={handleInputChange}
+                            />
+                            <input className="input_registro"
+                                type="text"
+                                name="lastName2"
+                                placeholder="Apellido Materno"
+                                value={user.lastName}
+                                onChange={handleInputChange}
+                            />
+                            <input className="input_registro"
+                                type="text"
+                                name="dni"
+                                placeholder="DNI"
+                                value={user.lastName}
+                                onChange={handleInputChange}
+                            />
+                            <input className="input_registro"
+                                type="text"
+                                name="career"
+                                placeholder="Carrera"
+                                value={user.lastName}
+                                onChange={handleInputChange}
+                            />
 
-                    <select className="form-control my-input input_card" name="departamento" style={{ width: '300px' }} id="contact-method" defaultValue="" required>
-                        <option value="" disabled >Seleccione un departamento</option>
-                        <option value="Ancash">Ancash</option>
-                        <option value="Apurímac">Apurímac</option>
-                        <option value="Arequipa">Arequipa</option>
-                        <option value="Ayacucho">Ayacucho</option>
-                        <option value="Cajamarca">Cajamarca</option>
-                        <option value="Callao">Callao</option>
-                        <option value="Cusco">Cusco</option>
-                        <option value="Huancavelica">Huancavelica</option>
-                        <option value="Huánuco">Huánuco</option>
-                        <option value="Ica">Ica</option>
-                        <option value="Junín">Junín</option>
-                        <option value="La Libertad">La Libertad</option>
-                        <option value="Lambayeque">Lambayeque</option>
-                        <option value="Lima">Lima</option>
-                        <option value="Loreto">Loreto</option>
-                        <option value="Madre de Dios">Madre de Dios</option>
-                        <option value="Moquegua">Moquegua</option>
-                        <option value="Pasco">Pasco</option>
-                        <option value="Piura">Piura</option>
-                        <option value="Puno">Puno</option>
-                        <option value="San Martín">San Martín</option>
-                        <option value="Tacna">Tacna</option>
-                        <option value="Tumbes">Tumbes</option>
-                        <option value="Ucayali">Ucayali</option>
-                    </select>
-
-
-                    {/* <button type="submit">Registrarse</button> */}
-
-                    <Link to="/registrarse-p2" className="btn button-effect btn_registro" type="submit">Siguiente</Link>
+                            <select className="form-control my-input input_card" name="departamento" id="contact-method" defaultValue="" required>
+                                <option value="" disabled >Seleccione un departamento</option>
+                                <option value="Ancash">Ancash</option>
+                                <option value="Apurímac">Apurímac</option>
+                                <option value="Arequipa">Arequipa</option>
+                                <option value="Ayacucho">Ayacucho</option>
+                                <option value="Cajamarca">Cajamarca</option>
+                                <option value="Callao">Callao</option>
+                                <option value="Cusco">Cusco</option>
+                                <option value="Huancavelica">Huancavelica</option>
+                                <option value="Huánuco">Huánuco</option>
+                                <option value="Ica">Ica</option>
+                                <option value="Junín">Junín</option>
+                                <option value="La Libertad">La Libertad</option>
+                                <option value="Lambayeque">Lambayeque</option>
+                                <option value="Lima">Lima</option>
+                                <option value="Loreto">Loreto</option>
+                                <option value="Madre de Dios">Madre de Dios</option>
+                                <option value="Moquegua">Moquegua</option>
+                                <option value="Pasco">Pasco</option>
+                                <option value="Piura">Piura</option>
+                                <option value="Puno">Puno</option>
+                                <option value="San Martín">San Martín</option>
+                                <option value="Tacna">Tacna</option>
+                                <option value="Tumbes">Tumbes</option>
+                                <option value="Ucayali">Ucayali</option>
+                            </select>
 
 
-                </form>
-            </div>
-        </section>
+                            {/* <button type="submit">Registrarse</button> */}
 
+
+                            <button className="btn button-effect button_logearse" onClick={handleNextStep}>Siguiente</button>
+
+                        </form>
+
+                    </div>
+                )}
+
+                {currentStep === 2 && (
+                    <div className="form_registro_container">
+                        <h2 className="titulo_registro">Creación de cuenta</h2>
+                        <div className="secciones_registro_container">
+                            <span className="secciones_registro">1</span>
+                            <span className="secciones_registro">2</span>
+                            <span className="secciones_registro">3</span>
+                        </div>
+                        <form onSubmit={handleSubmit} className="form_registro">
+                            <input className="input_registro"
+                                type="email"
+                                name="email"
+                                placeholder="Correo electrónico"
+                                value={user.email}
+                                onChange={handleInputChange}
+                            />
+                            <input className="input_registro"
+                                type="password"
+                                name="contraseña"
+                                placeholder="Contraseña"
+                                value={user.password}
+                                onChange={handleInputChange}
+                            />
+                            <input className="input_registro"
+                                type="password"
+                                name="contraseña"
+                                placeholder="Contraseña"
+                                value={user.password}
+                                onChange={handleInputChange}
+                            />
+                            {/* Resto de los campos para el segundo paso */}
+                            <button className="btn button-effect button_logearse" onClick={handlePrevStep}>Atrás</button>
+                            <button className="btn button-effect button_logearse" onClick={handleNextStep}>Siguiente</button>
+                        </form>
+                    </div>
+                )}
+
+                {currentStep === 3 && (
+                    <div className="form_registro_container">
+                        <h2 className="titulo_registro">Creación de cuenta</h2>
+                        <div className="secciones_registro_container">
+                            <span className="secciones_registro">1</span>
+                            <span className="secciones_registro">2</span>
+                            <span className="secciones_registro">3</span>
+                        </div>
+                        <form onSubmit={handleSubmit} className="form_registro_codigo">
+                            <div className="codigo_partes">
+                                <input className="input_codigo"
+                                    type="password"
+                                    name="contraseña"
+                                    placeholder=""
+                                    value={user.password}
+                                    onChange={handleInputChange}
+                                />
+                                <input className="input_codigo"
+                                    type="password"
+                                    name="contraseña"
+                                    placeholder=""
+                                    value={user.password}
+                                    onChange={handleInputChange}
+                                />
+                                <input className="input_codigo"
+                                    type="password"
+                                    name="contraseña"
+                                    placeholder=""
+                                    value={user.password}
+                                    onChange={handleInputChange}
+                                />
+                                <input className="input_codigo"
+                                    type="password"
+                                    name="contraseña"
+                                    placeholder=""
+                                    value={user.password}
+                                    onChange={handleInputChange}
+                                />
+                            </div>
+                            <h3>Ingrese el <strong>código</strong> enviado a su correo registrado anteriormente.</h3>
+                            {/* Resto de los campos para el tercer paso */}
+                            <button className="btn button-effect button_logearse" onClick={handleSubmit}>Finalizar</button>
+                        </form>
+                    </div>
+                )}
+            </section>
+        </div>
     );
 }

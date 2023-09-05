@@ -34,6 +34,10 @@ margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    a{
+        color: $verde-lima !important;
+        font-size: 14px;
+    }
 }
 
 /* a {
