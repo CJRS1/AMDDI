@@ -41,8 +41,8 @@ export default function Inicio() {
                     />
                     <div className="login_opciones">
 
-                        <Link to="/AMDDI/olvide_contraseña" type="submit" className="login_preguntas">¿Has olvidado tu contraseña? <strong>Recupérala.</strong></Link>
-                        <Link to="/AMDDI/registrarse" type="submit" className="login_preguntas">¿Aún no tienes cuenta? <strong>Regístrate</strong>.</Link>
+                        <Link to="/recuperar_pwd" type="submit" className="login_preguntas">¿Has olvidado tu contraseña? <strong>Recupérala.</strong></Link>
+                        <Link to="/registrarse" type="submit" className="login_preguntas">¿Aún no tienes cuenta? <strong>Regístrate</strong>.</Link>
                     </div>
 
                     <button className="button_logearse" type="submit">

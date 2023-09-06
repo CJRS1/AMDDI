@@ -17,6 +17,7 @@ import Registro from './components/Registro';
 import Login from './components/Login';
 import Miproyecto from './components/Miproyecto';
 import Miconfiguracion from './components/Miconfiguracion';
+import RecuperarC from './components/RecuperarC';
 
 // import ogImage from './images/Logo_soloverde.png'
 
@@ -45,6 +46,8 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/servicios" element={<Servicios />} />
+
+        <Route path="/recuperar_pwd" element={<RecuperarC />} />
 
         <Route path="/testimonios" element={<Testimonios />} />
 

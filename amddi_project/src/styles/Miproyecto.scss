@@ -3,5 +3,120 @@
 
 .miproyecto_container{
     height: calc(100vh - 120px) ;
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    h3{
+        color: $verde-lima !important;
+        font-size: 50px !important;
+        font-weight: 900;
+    }
+    h4{ 
+        color: $gris_claro;
+        font-size: 35px !important;
+        span{
+            color: $gris_oscuro
+        }
+    }
 }
 
+.circle_span{
+    background: $gris_claro;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $blanco;
+    font-size: 20px;
+}
+
+.bg_dorado{
+    background: linear-gradient(to right, #b47a1a, #ffe55a);
+}
+
+.etapa_card{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    p{  
+        font-size: 20px;
+        margin-left: 20px;
+        color: $gris_oscuro !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.proyect_card {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.progreso_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyect_btn {
+    background: linear-gradient(to right, #b47a1a, #ffe55a);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 80px 10px 80px;
+    color: $blanco;
+}
+
+.fecha_entrega{
+        color: $verde-lima !important;
+}
+
+.btn_avance{
+    margin-top: 20px;
+}
+
+.proyecto_fin_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    h5{
+        font-size: 40px !important;
+        font-weight: 900;
+        span {
+            background: linear-gradient(to right, #b47a1a, #ffe55a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    p{  
+        font-size: 20px;
+        margin-left: 20px;
+        color: $gris_oscuro !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.proyect_btn:hover {
+    animation: scale 1s infinite;
+    transition: 0.2s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
