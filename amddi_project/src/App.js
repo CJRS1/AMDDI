@@ -14,9 +14,9 @@ import Investigacion from './components/Investigacion';
 import Emprendimiento from './components/Emprendimiento';
 import Subheader from './components/Subheader';
 import Registro from './components/Registro';
-import Registro2 from './components/Registro2';
-import Registro3 from './components/Registro3';
 import Login from './components/Login';
+import Miproyecto from './components/Miproyecto';
+import Miconfiguracion from './components/Miconfiguracion';
 
 // import ogImage from './images/Logo_soloverde.png'
 
@@ -38,12 +38,9 @@ function App() {
 
         <Route path="/registrarse" element={<Registro />} />
 
-        {/* <Route path="/registrarse-p1" element={<Registro />} /> */}
+        <Route path="/miproyecto" element={<Miproyecto />} />
 
-        <Route path="/registrarse-p2" element={<Registro2 />} />
-
-        <Route path="/registrarse-p3" element={<Registro3 />} />
-
+        <Route path="/miconfiguracion" element={<Miconfiguracion />} />
 
         <Route path="/login" element={<Login />} />
 

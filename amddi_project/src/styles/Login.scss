@@ -98,3 +98,14 @@ a.login_preguntas:hover {
         transform: scale(1);
     }
 }
+
+@media (max-width: 768px){
+    .login_opciones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .button_logearse{
+        width: 310px;
+    }
+}

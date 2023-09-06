@@ -337,11 +337,12 @@ a {
   }
   .contenedor_logo_menu {
     width: 100% !important;
+    flex-direction: row !important;
     justify-content: space-between !important;
     padding: 0 0 0 0 !important;
   }
   .navbar_header_container {
-    width: 85% !important;
+    width: 95% !important;
   }
   .menu-closed {
     display: none;

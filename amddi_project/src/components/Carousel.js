@@ -362,7 +362,7 @@ export default function Carousel() {
                             <img className="img_int_amddi" src={require('../images/Nosotros/costica.png')} alt='medalla' />
                         </div>
                         <div class="scroll-item">
-                            <img className="img_int_amddi" src={require('../images/Nosotros/peruM.png')} alt='medalla' />
+                            <img className="img_int_amddi" src={require('../images/Nosotros/cuba.png')} alt='medalla' />
                         </div>
                         <div class="scroll-item">
                             <img className="img_int_amddi" src={require('../images/Nosotros/ecuador.png')} alt='medalla' />

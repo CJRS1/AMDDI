@@ -160,6 +160,7 @@ section {
   top: 1%;
   right: 1.5%;
   z-index: 155555;
+  position: fixed;
 }
 
 .subheader-content {
@@ -199,5 +200,8 @@ section {
   }
   .login-btn {
     margin-top: 1rem;
+  }
+  .subheader_container {
+    right: inherit;
   }
 }/*# sourceMappingURL=Subheader.css.map */
