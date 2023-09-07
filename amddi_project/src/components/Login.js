@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
+import axios from 'axios';
 import '../styles/Login.css';
 
-export default function Inicio() {
+export default function Login({ setUser, setIsLoggedIn }) {
     const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -12,11 +14,41 @@ export default function Inicio() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    // console.log("el valor",setIsLoggedIn); 
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        // Aquí realizarías la autenticación
+        try {
+            const response = await axios.post('http://localhost:5000/login', {
+                email,
+                password,
+            });
+            console.log(response);
+            if (response.status === 200) {
+                console.log("Se inició sesión");
+                setIsLoggedIn(true);
+                console.log(email);
+                
+                try {
+                    const responseUsuario = await axios.get(`http://localhost:5000/usuario_por_email/${email}`);
+
+                    if (responseUsuario.status === 200) {
+                        console.log(responseUsuario.data.content);
+                        setUser(responseUsuario.data.content);
+                        navigate({ pathname: "/" });
+                    }
+                } catch (error) {
+                    console.error("Error al buscar el usuario:", error.response?.data?.message || "Error desconocido");
+                }
+            }
+        } catch (error) {
+            console.error('Error de autenticación:', error.response?.data?.msg || 'Error desconocido');
+            console.log(error); // Agrega esta línea para mostrar el error completo en la consola
+        }
     }
+
+
+
 
     return (
         <section className="login_container">
@@ -47,7 +79,7 @@ export default function Inicio() {
 
                     <button className="button_logearse" type="submit">
                         Iniciar Sesión
-                        </button>
+                    </button>
 
                 </form>
             </div>

@@ -23,6 +23,13 @@
     }
 }
 
+.form_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .input_config{
     width: 600px;
     height: 45px;

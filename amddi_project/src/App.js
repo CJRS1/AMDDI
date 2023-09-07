@@ -1,6 +1,7 @@
 import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from "react";
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -22,11 +23,13 @@ import RecuperarC from './components/RecuperarC';
 // import ogImage from './images/Logo_soloverde.png'
 
 function App() {
+  const [user, setUser] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   // const dynamicImage = ogImage;
   // document.querySelector('meta[name="twitter:image"]').setAttribute('content', dynamicImage);
   return (
     <Router>
-      <Subheader />
+      <Subheader user={user} isLoggedIn={isLoggedIn} setUser={setUser}/>
       <Header />
 
       <Routes>
@@ -41,9 +44,9 @@ function App() {
 
         <Route path="/miproyecto" element={<Miproyecto />} />
 
-        <Route path="/miconfiguracion" element={<Miconfiguracion />} />
+        <Route path="/miconfiguracion" element={<Miconfiguracion user={user}/>} />
 
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login setUser={setUser} setIsLoggedIn={setIsLoggedIn}/>} />
 
         <Route path="/servicios" element={<Servicios />} />
 
