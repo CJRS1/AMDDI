@@ -318,30 +318,30 @@ export default function Carousel() {
                     </div>
                 </div>
                 {/* <div className="carousel_infinito">
-                    <div class="scroll-container">
-                        <div class="scroll-wrapper">
-                            <div class="scroll-item">
+                    <div className="scroll-container">
+                        <div className="scroll-wrapper">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/peruM.png')} alt='medalla' />
                             </div>
-                            <div class="scroll-item">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/bolivia.png')} alt='medalla' />
                             </div>
-                            <div class="scroll-item">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/colombia.png')} alt='medalla' />
                             </div>
-                            <div class="scroll-item">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/costica.png')} alt='medalla' />
                             </div>
-                            <div class="scroll-item">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/peruM.png')} alt='medalla' />
                             </div>
-                            <div class="scroll-item">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/ecuador.png')} alt='medalla' />
                             </div>
-                            <div class="scroll-item">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/venezuela.png')} alt='medalla' />
                             </div>
-                            <div class="scroll-item">
+                            <div className="scroll-item">
                                 <img className="img_contador" src={require('../images/Nosotros/mexico.png')} alt='medalla' />
                             </div>
                         </div>
@@ -358,19 +358,19 @@ export default function Carousel() {
                         <div className="scroll-item">
                             <img className="img_int_amddi" src={require('../images/Nosotros/colombia.png')} alt='medalla' />
                         </div>
-                        <div class="scroll-item">
+                        <div className="scroll-item">
                             <img className="img_int_amddi" src={require('../images/Nosotros/costica.png')} alt='medalla' />
                         </div>
-                        <div class="scroll-item">
+                        <div className="scroll-item">
                             <img className="img_int_amddi" src={require('../images/Nosotros/cuba.png')} alt='medalla' />
                         </div>
-                        <div class="scroll-item">
+                        <div className="scroll-item">
                             <img className="img_int_amddi" src={require('../images/Nosotros/ecuador.png')} alt='medalla' />
                         </div>
-                        <div class="scroll-item">
+                        <div className="scroll-item">
                             <img className="img_int_amddi" src={require('../images/Nosotros/venezuela.png')} alt='medalla' />
                         </div>
-                        <div class="scroll-item">
+                        <div className="scroll-item">
                             <img className="img_int_amddi" src={require('../images/Nosotros/mexico.png')} alt='medalla' />
                         </div>
                         {/* Agrega el resto de tus imágenes aquí */}

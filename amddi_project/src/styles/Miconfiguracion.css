@@ -156,7 +156,7 @@ section {
 }
 
 .miconfiguracion_container {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   margin-top: 120px;
   display: flex;
@@ -176,6 +176,13 @@ section {
 }
 .miconfiguracion_container p {
   color: #666666 !important;
+}
+
+.btn_container_config {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form_info {

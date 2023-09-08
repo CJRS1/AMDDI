@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios';
 import '../styles/Login.css';
 
-export default function Login({ setUser, setIsLoggedIn }) {
+export default function Login({ setUser }) {
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -23,27 +23,31 @@ export default function Login({ setUser, setIsLoggedIn }) {
                 email,
                 password,
             });
-            console.log(response);
+            // console.log(response);
             if (response.status === 200) {
-                console.log("Se inició sesión");
-                setIsLoggedIn(true);
-                console.log(email);
+                // console.log("Se inició sesión");
+                // setIsLoggedIn(true);
+                // console.log(email);
                 
                 try {
                     const responseUsuario = await axios.get(`http://localhost:5000/usuario_por_email/${email}`);
 
                     if (responseUsuario.status === 200) {
-                        console.log(responseUsuario.data.content);
+                        // console.log(responseUsuario.data.content);
                         setUser(responseUsuario.data.content);
+                        localStorage.setItem('user', JSON.stringify(responseUsuario.data.content));
                         navigate({ pathname: "/" });
+                        window.location.reload();
                     }
                 } catch (error) {
                     console.error("Error al buscar el usuario:", error.response?.data?.message || "Error desconocido");
                 }
             }
+
         } catch (error) {
             console.error('Error de autenticación:', error.response?.data?.msg || 'Error desconocido');
             console.log(error); // Agrega esta línea para mostrar el error completo en la consola
+            alert('Error de autenticación: Correo o contraseña incorrectos', error.response?.data?.msg || 'Error desconocido');
         }
     }
 

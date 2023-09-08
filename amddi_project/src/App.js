@@ -24,12 +24,12 @@ import RecuperarC from './components/RecuperarC';
 
 function App() {
   const [user, setUser] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
   // const dynamicImage = ogImage;
   // document.querySelector('meta[name="twitter:image"]').setAttribute('content', dynamicImage);
   return (
     <Router>
-      <Subheader user={user} isLoggedIn={isLoggedIn} setUser={setUser}/>
+      <Subheader user={user}  setUser={setUser}/>
       <Header />
 
       <Routes>
@@ -46,7 +46,7 @@ function App() {
 
         <Route path="/miconfiguracion" element={<Miconfiguracion user={user}/>} />
 
-        <Route path="/login" element={<Login setUser={setUser} setIsLoggedIn={setIsLoggedIn}/>} />
+        <Route path="/login" element={<Login setUser={setUser} />} />
 
         <Route path="/servicios" element={<Servicios />} />
 
