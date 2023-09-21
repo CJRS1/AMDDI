@@ -189,6 +189,27 @@ section {
   color: #00d799 !important;
   font-size: 14px !important;
 }
+.zoom-header h6 {
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  margin: 5px 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  border-radius: 10px;
+}
+.zoom-header h6 span {
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn_bg_login {
+  background: linear-gradient(to right, #b47a1a, #ffe55a);
+  border: none !important;
+}
+
+.miinf_login {
+  color: #000000 !important;
+}
 
 .zoom-header:hover {
   transform: scale(1.2);

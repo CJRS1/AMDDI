@@ -44,17 +44,17 @@ export default function Subheader({ user, setUser }) {
 
                 {!currentUser ? (
                     <>
-                        <Link to="/login" className="zoom-header inicio">Iniciar sesión </Link>
-                        <Link to="/registrarse" className="zoom-header">Registrarse </Link>
+                        <Link to="/login" className="zoom-header inicio"><h6> <span>Iniciar sesión </span></h6> </Link>
+                        <Link to="/registrarse" className="zoom-header"><h6> <span> Registrarse</span></h6> </Link>
                     </>
                 ) : (
                     <div className="dropdown dropdown_user">
-                        <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button className="btn btn-secondary dropdown-toggle btn_bg_login" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {`${currentUser.nombre} ${currentUser.apePat}`}
                         </button>
                         <ul className="dropdown-menu">
-                            <li><Link to="/miconfiguracion" className="dropdown-item">Mi Información</Link></li>
-                            <li><Link to="/miproyecto" className="dropdown-item">Mi Proyecto</Link></li>
+                            <li><Link to="/miconfiguracion" className="dropdown-item miinf_login">Mi Información</Link></li>
+                            <li><Link to="/miproyecto" className="dropdown-item miinf_login">Mi Proyecto</Link></li>
                             <li><button onClick={handleLogout} className="dropdown-item">Cerrar Sesión</button></li>
                         </ul>
                     </div>
