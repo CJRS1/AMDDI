@@ -25,7 +25,7 @@ export default function Miconfiguracion({ user }) {
     }, []);
 
     const email = currentUser.email;
-    console.log("email", email);
+    // console.log("email", email);
 
     useEffect(() => {
         async function fetchData() {
@@ -37,7 +37,7 @@ export default function Miconfiguracion({ user }) {
                     setServicio(responseUsuario.data.content);
                 }
             } catch (error) {
-                console.error("Error al buscar el usuario:", error.response?.data?.message || "Error desconocido");
+                // console.error("Error al buscar el usuario:", error.response?.data?.message || "Error desconocido");
             }
         }
 
@@ -50,6 +50,7 @@ export default function Miconfiguracion({ user }) {
         apeMat: "",
         dni: "",
         carrera: "",
+        pais: "",
         departamento: "",
         pwd_hash:"",
     });
@@ -61,15 +62,16 @@ export default function Miconfiguracion({ user }) {
             apeMat: currentUser?.apeMat || "",
             dni: currentUser?.dni || "",
             carrera: currentUser?.carrera || "",
+            pais: currentUser?.pais || "",
             departamento: currentUser?.departamento || "",
             pwd_hash: "",
         });
     }, [currentUser]);
 
-    console.log(formData);
+    // console.log(formData);
 
     const [isEditable, setIsEditable] = useState(false);
-    console.log(isEditable);
+    // console.log(isEditable);
 
     const handleActualizarClick = () => {
         setIsEditable(true);
@@ -160,6 +162,15 @@ export default function Miconfiguracion({ user }) {
                     name="carrera"
                     placeholder="Carrera"
                     value={formData.carrera}
+                    onChange={handleInputChange}
+                    readOnly={true}
+                />
+                <input
+                    className="input_config"
+                    type="text"
+                    name="pais"
+                    placeholder="País"
+                    value={formData.pais}
                     onChange={handleInputChange}
                     readOnly={true}
                 />

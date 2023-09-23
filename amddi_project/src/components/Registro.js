@@ -23,11 +23,146 @@ export default function Registro() {
         setFormData1({ ...formData1, [name]: value });
     }
 
-    const handleNextStep = () => {
-        setCurrentStep(currentStep + 1);
-        console.log(formData);
 
-    }
+
+    // const handleNextStep = () => {
+    //     // setCurrentStep(currentStep + 1);
+    //     // console.log(formData);
+    //     if (
+    //         formData.nombre &&
+    //         formData.apePat &&
+    //         formData.apeMat &&
+    //         formData.carrera &&
+    //         formData.pais &&
+    //         formData.departamento
+    //     ) {
+    //         let validLength = false;
+    //         let isNumber = false;
+
+    //         // Comprobar si formData.dni es un número válido
+    //         // if (Number.isInteger(Number(formData.dni))) {
+    //         //     isNumber = true;
+    //         //     console.log(formData.dni);
+    //         // }
+    //         if (Number.isInteger(Number.parseFloat(formData.dni))) {
+    //             isNumber = true;
+    //           }
+
+    //         // Comprobar la longitud del DNI o INE según el país seleccionado
+    //         switch (formData.pais) {
+    //             case 'México':
+    //                 validLength = formData.dni.length === 18;
+    //                 break;
+    //             case 'Perú':
+    //                 validLength = formData.dni.length === 8 || formData.dni.length === 20;
+    //                 break;
+    //             case 'Bolivia':
+    //                 validLength = formData.dni.length === 11;
+    //                 break;
+    //             case 'Colombia':
+    //                 validLength = formData.dni.length === 10;
+    //                 break;
+    //             case 'Costa Rica':
+    //                 validLength = formData.dni.length === 9;
+    //                 break;
+    //             case 'Cuba':
+    //                 validLength = formData.dni.length === 11;
+    //                 break;
+    //             case 'Ecuador':
+    //                 validLength = formData.dni.length === 10;
+    //                 break;
+    //             case 'Venezuela':
+    //                 validLength = formData.dni.length === 7 || formData.dni.length === 8;
+    //                 break;
+    //             default:
+    //                 validLength = true; // No se aplica verificación de longitud para otros países
+    //                 break;
+    //         }
+    //         if (!isNumber) {
+    //             alert('El campo DNI debe ser un número válido.');
+    //             return; // Detener el avance si DNI no es un número válido
+    //         }
+    //         if (!validLength) {
+    //             alert('La longitud del documento de identificación no es la adecuada para el país seleccionado.');
+    //             return; // Detener el avance si la longitud no es la adecuada
+    //         }
+
+    //         // Al menos uno de los campos obligatorios está lleno y el DNI o INE tiene la longitud adecuada
+    //         setCurrentStep(currentStep + 1);
+    //         console.log(formData);
+    //     } else {
+    //         // Mostrar una alerta en JavaScript si todos los campos están vacíos
+    //         alert('Completa todos los campo antes de avanzar.');
+    //     }
+    // }
+
+    const handleNextStep = () => {
+        // Verificar si al menos uno de los campos obligatorios está lleno
+        if (
+            formData.nombre &&
+            formData.apePat &&
+            formData.apeMat &&
+            formData.carrera &&
+            formData.pais &&
+            formData.departamento
+        ) {
+            // Verificar si formData.dni contiene solo dígitos y tiene la longitud adecuada
+            const validDniRegex = /^[0-9]+$/; // Expresión regular que verifica que solo contiene dígitos
+
+            if (!validDniRegex.test(formData.dni)) {
+                // Si no contiene solo dígitos, muestra una alerta
+                alert('El campo DNI debe contener solo dígitos.');
+                return; // Detener el avance si no contiene solo dígitos
+            }
+
+            let validLength = false;
+
+            // Verificar la longitud del DNI o INE según el país seleccionado
+            switch (formData.pais) {
+                case 'México':
+                    validLength = formData.dni.length === 18;
+                    break;
+                case 'Perú':
+                    validLength = formData.dni.length === 8 || formData.dni.length === 20;
+                    break;
+                case 'Bolivia':
+                    validLength = formData.dni.length === 11;
+                    break;
+                case 'Colombia':
+                    validLength = formData.dni.length === 10;
+                    break;
+                case 'Costa Rica':
+                    validLength = formData.dni.length === 9;
+                    break;
+                case 'Cuba':
+                    validLength = formData.dni.length === 11;
+                    break;
+                case 'Ecuador':
+                    validLength = formData.dni.length === 10;
+                    break;
+                case 'Venezuela':
+                    validLength = formData.dni.length === 7 || formData.dni.length === 8;
+                    break;
+                default:
+                    validLength = true; // No se aplica verificación de longitud para otros países
+                    break;
+            }
+
+            if (!validLength) {
+                alert('La longitud del documento de identificación no es la adecuada para el país seleccionado.');
+                return; // Detener el avance si la longitud no es la adecuada
+            }
+
+            // Al menos uno de los campos obligatorios está lleno, DNI es válido y tiene la longitud adecuada
+            setCurrentStep(currentStep + 1);
+            console.log(formData);
+        } else {
+            // Mostrar una alerta en JavaScript si todos los campos están vacíos
+            alert('Completa todos los campos antes de avanzar.');
+        }
+    };
+
+
 
     const handlePrevStep = () => {
         setCurrentStep(currentStep - 1);
@@ -40,6 +175,7 @@ export default function Registro() {
         apeMat: "",
         dni: "",
         carrera: "",
+        pais: "",
         departamento: "",
 
     });
@@ -49,6 +185,8 @@ export default function Registro() {
         pwd_hash: "",
         confirma_pwd_hash: "",
     });
+
+    const [departamentos, setDepartamentos] = useState([]);
 
     const validateForm = () => {
         const errors = {};
@@ -73,6 +211,7 @@ export default function Registro() {
             apeMat: "",
             dni: "",
             carrera: "",
+            pais: "",
             departamento: "",
         });
         setFormData1({
@@ -106,6 +245,95 @@ export default function Registro() {
                 ...formData1,
             };
 
+            switch (formData.pais) {
+                case 'Perú':
+                    // Verificar si formData.celular es un número y tiene 9 caracteres para Perú
+                    const celularRegexPeru = /^[0-9]+$/;
+                    if (!celularRegexPeru.test(fullFormData.celular) || fullFormData.celular.length !== 9) {
+                        console.error("El número de celular no es válido para Perú");
+                        window.alert("El número de celular no es válido para Perú");
+                        return;
+                    }
+                    break;
+            
+                case 'Bolivia':
+                    // Verificar si formData.celular es un número y tiene 8 caracteres para Bolivia
+                    const celularRegexBolivia = /^[0-9]+$/;
+                    if (!celularRegexBolivia.test(fullFormData.celular) || fullFormData.celular.length !== 8) {
+                        console.error("El número de celular no es válido para Bolivia");
+                        window.alert("El número de celular no es válido para Bolivia");
+                        return;
+                    }
+                    break;
+            
+                case 'Colombia':
+                    // Verificar si formData.celular es un número y tiene 10 caracteres para Colombia
+                    const celularRegexColombia = /^[0-9]+$/;
+                    if (!celularRegexColombia.test(fullFormData.celular) || fullFormData.celular.length !== 10) {
+                        console.error("El número de celular no es válido para Colombia");
+                        window.alert("El número de celular no es válido para Colombia");
+                        return;
+                    }
+                    break;
+            
+                case 'Costa Rica':
+                    // Verificar si formData.celular es un número y tiene 8 caracteres para Costa Rica
+                    const celularRegexCostaRica = /^[0-9]+$/;
+                    if (!celularRegexCostaRica.test(fullFormData.celular) || fullFormData.celular.length !== 8) {
+                        console.error("El número de celular no es válido para Costa Rica");
+                        window.alert("El número de celular no es válido para Costa Rica");
+                        return;
+                    }
+                    break;
+            
+                case 'Cuba':
+                    // Verificar si formData.celular es un número y tiene 8 caracteres para Cuba
+                    const celularRegexCuba = /^[0-9]+$/;
+                    if (!celularRegexCuba.test(fullFormData.celular) || fullFormData.celular.length !== 8) {
+                        console.error("El número de celular no es válido para Cuba");
+                        window.alert("El número de celular no es válido para Cuba");
+                        return;
+                    }
+                    break;
+            
+                case 'Ecuador':
+                    // Verificar si formData.celular es un número y tiene 10 caracteres para Ecuador
+                    const celularRegexEcuador = /^[0-9]+$/;
+                    if (!celularRegexEcuador.test(fullFormData.celular) || fullFormData.celular.length !== 10) {
+                        console.error("El número de celular no es válido para Ecuador");
+                        window.alert("El número de celular no es válido para Ecuador");
+                        return;
+                    }
+                    break;
+            
+                case 'Venezuela':
+                    // Verificar si formData.celular es un número y tiene 7 u 8 caracteres para Venezuela
+                    const celularRegexVenezuela = /^[0-9]+$/;
+                    if (
+                        !celularRegexVenezuela.test(fullFormData.celular) ||
+                        (fullFormData.celular.length !== 7 && fullFormData.celular.length !== 8)
+                    ) {
+                        console.error("El número de celular no es válido para Venezuela");
+                        window.alert("El número de celular no es válido para Venezuela");
+                        return;
+                    }
+                    break;
+            
+                    case 'México':
+                        // Verificar si formData.celular es un número y tiene 10 caracteres para México
+                        const celularRegexMexico = /^[0-9]+$/;
+                        if (!celularRegexMexico.test(fullFormData.celular) || fullFormData.celular.length !== 10) {
+                            console.error("El número de celular no es válido para México");
+                            window.alert("El número de celular no es válido para México");
+                            return;
+                        }
+                        break;
+            
+                default:
+                    // No se aplica verificación específica para otros países
+                    break;
+            }
+
 
             console.log("El formulario entregado es", fullFormData);
 
@@ -118,6 +346,14 @@ export default function Registro() {
             if (fullFormData.pwd_hash !== fullFormData.confirma_pwd_hash) {
                 console.error("Las contraseñas no coinciden");
                 window.alert("Las contraseñas no coinciden");
+                return;
+            }
+
+            const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$/;
+
+            if (!passwordRegex.test(fullFormData.pwd_hash)) {
+                console.error("La contraseña debe tener al menos 6 caracteres, incluyendo una letra mayúscula, un número y un signo de exclamación.");
+                window.alert("La contraseña debe tener al menos 6 caracteres, incluyendo una letra mayúscula, un número y un signo de exclamación.");
                 return;
             }
 
@@ -155,7 +391,7 @@ export default function Registro() {
             try {
                 const response = await fetch("http://localhost:5000/especialidades");
                 const data = await response.json();
-                console.log(data);
+                // console.log(data);
 
                 // Accede a la propiedad 'content' para obtener el array de especialidades
                 setEspecialidades(data.content);
@@ -185,8 +421,8 @@ export default function Registro() {
 
         // Concatenar los valores de los cuatro campos en un solo valor
         const verificationCode = `${formCode.code1}${formCode.code2}${formCode.code3}${formCode.code4}`;
-        console.log("concatenado:",verificationCode);
-        console.log("email:",email);
+        console.log("concatenado:", verificationCode);
+        console.log("email:", email);
         try {
 
             const response = await fetch("http://localhost:5000/verificacion", {
@@ -214,6 +450,44 @@ export default function Registro() {
 
     };
 
+    useEffect(() => {
+        // Hacer una solicitud para obtener datos de los departamentos cuando se cambie el país seleccionado
+        if (formData.pais) {
+            // Aquí deberías realizar una solicitud a la API adecuada para obtener los departamentos del país seleccionado
+            // y luego actualizar el estado "departments" con la respuesta del servidor.
+            // Esto dependerá de cómo esté estructurada tu base de datos y tu servidor.
+            // Por ahora, simularemos los departamentos de forma estática.
+
+            // Simulación de los departamentos
+            const departmentsForCountry = getDepartmentsForCountry(formData.pais);
+            setDepartamentos(departmentsForCountry);
+        } else {
+            setDepartamentos([]); // Limpiar los departamentos si no hay un país seleccionado.
+        }
+    }, [formData.pais]);
+
+    const getDepartmentsForCountry = (country) => {
+        switch (country) {
+            case 'Perú':
+                return ['Amazonas', 'Áncash', 'Apurímac', 'Arequipa', 'Ayacucho', 'Cajamarca', 'Callao', 'Cusco', 'Huancavelica', 'Huánuco', 'Ica', 'Junín', 'La Libertad', 'Lambayeque', 'Lima', 'Loreto', 'Madre de Dios', 'Moquegua', 'Pasco', 'Piura', 'Puno', 'San Martín', 'Tacna', 'Tumbes', 'Ucayali'];
+            case 'Bolivia':
+                return ['La Paz', 'Santa Cruz', 'Cochabamba', 'Potosí', 'Oruro', 'Tarija', 'Chuquisaca', 'Beni', 'Pando'];
+            case 'Colombia':
+                return ['Amazonas', 'Antioquia', 'Arauca', 'Atlántico', 'Bogotá D.C.', 'Bolívar', 'Boyacá', 'Caldas', 'Caquetá', 'Casanare', 'Cauca', 'Cesar', 'Chocó', 'Córdoba', 'Cundinamarca', 'Guainía', 'Guaviare', 'Huila', 'La Guajira', 'Magdalena', 'Meta', 'Nariño', 'Norte de Santander', 'Putumayo', 'Quindío', 'Risaralda', 'San Andrés y Providencia', 'Santander', 'Sucre', 'Tolima', 'Valle del Cauca', 'Vaupés', 'Vichada'];
+            case 'Costa Rica':
+                return ['San José', 'Alajuela', 'Heredia', 'Cartago', 'Guanacaste', 'Puntarenas', 'Limón'];
+            case 'Cuba':
+                return ['La Habana', 'Pinar del Río', 'Artemisa', 'Mayabeque', 'Isla de la Juventud', 'Matanzas', 'Cienfuegos', 'Villa Clara', 'Sancti Spíritus', 'Ciego de Ávila', 'Camagüey', 'Las Tunas', 'Granma', 'Holguín', 'Santiago de Cuba', 'Guantánamo'];
+            case 'Ecuador':
+                return ['Azuay', 'Bolívar', 'Cañar', 'Carchi', 'Chimborazo', 'Cotopaxi', 'El Oro', 'Esmeraldas', 'Galápagos', 'Guayas', 'Imbabura', 'Loja', 'Los Ríos', 'Manabí', 'Morona Santiago', 'Napo', 'Orellana', 'Pastaza', 'Pichincha', 'Santa Elena', 'Santo Domingo de los Tsáchilas', 'Sucumbíos', 'Tungurahua', 'Zamora-Chinchipe'];
+            case 'Venezuela':
+                return ['Amazonas', 'Anzoátegui', 'Apure', 'Aragua', 'Barinas', 'Bolívar', 'Carabobo', 'Cojedes', 'Delta Amacuro', 'Falcón', 'Guárico', 'Lara', 'Mérida', 'Miranda', 'Monagas', 'Nueva Esparta', 'Portuguesa', 'Sucre', 'Táchira', 'Trujillo', 'Vargas', 'Yaracuy', 'Zulia'];
+            case 'México':
+                return ['Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'Chiapas', 'Chihuahua', 'Coahuila', 'Colima', 'Durango', 'Guanajuato', 'Guerrero', 'Hidalgo', 'Jalisco', 'México', 'Michoacán', 'Morelos', 'Nayarit', 'Nuevo León', 'Oaxaca', 'Puebla', 'Querétaro', 'Quintana Roo', 'San Luis Potosí', 'Sinaloa', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas'];
+            default:
+                return [];
+        }
+    };
 
 
     return (
@@ -251,13 +525,19 @@ export default function Registro() {
                                 value={formData.apeMat}
                                 onChange={handleInputChange}
                             />
-                            <input className="input_registro"
-                                type="text"
-                                name="dni"
-                                placeholder="DNI"
-                                value={formData.dni}
-                                onChange={handleInputChange}
-                            />
+                            {/* <select className="form-control my-input input_card pais_select" name="pais" id="contact-method" defaultValue="" value={formData.pais} onChange={handleInputChange} required>
+                                <option value="" disabled >Seleccione un país</option>
+                                <option value="Bolivia">CI Boliviano</option>
+                                <option value="Cuba">CI Cubano</option>
+                                <option value="Colombia">CC</option>
+                                <option value="Costa Rica">CI Costa Rica</option>
+                                <option value="Ecuador">CI Ecuatoriano</option>
+                                <option value="México">INE</option>
+                                <option value="Perú">DNI</option>
+                                <option value="Venezuela">CI Venezolano</option>
+                                <option value="CE">Carnet de Extranjerìa</option>
+                            </select> */}
+
                             {/* <input className="input_registro"
                                 type="text"
                                 name="career"
@@ -280,34 +560,35 @@ export default function Registro() {
                                 ))}
                             </select>
 
-
-                            <select className="form-control my-input input_card" name="departamento" id="contact-method" defaultValue="" value={formData.departamento} onChange={handleInputChange} required>
-                                <option value="" disabled >Seleccione un departamento</option>
-                                <option value="Ancash">Ancash</option>
-                                <option value="Apurímac">Apurímac</option>
-                                <option value="Arequipa">Arequipa</option>
-                                <option value="Ayacucho">Ayacucho</option>
-                                <option value="Cajamarca">Cajamarca</option>
-                                <option value="Callao">Callao</option>
-                                <option value="Cusco">Cusco</option>
-                                <option value="Huancavelica">Huancavelica</option>
-                                <option value="Huánuco">Huánuco</option>
-                                <option value="Ica">Ica</option>
-                                <option value="Junín">Junín</option>
-                                <option value="La Libertad">La Libertad</option>
-                                <option value="Lambayeque">Lambayeque</option>
-                                <option value="Lima">Lima</option>
-                                <option value="Loreto">Loreto</option>
-                                <option value="Madre de Dios">Madre de Dios</option>
-                                <option value="Moquegua">Moquegua</option>
-                                <option value="Pasco">Pasco</option>
-                                <option value="Piura">Piura</option>
-                                <option value="Puno">Puno</option>
-                                <option value="San Martín">San Martín</option>
-                                <option value="Tacna">Tacna</option>
-                                <option value="Tumbes">Tumbes</option>
-                                <option value="Ucayali">Ucayali</option>
+                            <select className="form-control my-input input_card pais_select" name="pais" id="contact-method" defaultValue="" value={formData.pais} onChange={handleInputChange} required>
+                                <option value="" disabled >Seleccione un país</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="México">México</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Venezuela">Venezuela</option>
                             </select>
+
+                            <select className="form-control my-input input_card pais_select" name="departamento" id="contact-method" defaultValue="" value={formData.departamento} onChange={handleInputChange} required>
+                                <option value="" disabled >Seleccione un departamento</option>
+                                {/* <option value="Ancash">Ancash</option> */}
+                                {departamentos.map((departamento) => (
+                                    <option key={departamento} value={departamento}>
+                                        {departamento}
+                                    </option>
+                                ))}
+                            </select>
+
+                            <input className="input_registro"
+                                type="text"
+                                name="dni"
+                                placeholder="Ingrese su DNI o CI o CC o INE o Carnet de Extranjería"
+                                value={formData.dni}
+                                onChange={handleInputChange}
+                            />
 
 
                             {/* <button type="submit">Registrarse</button> */}
@@ -334,7 +615,7 @@ export default function Registro() {
                             <input className="input_registro"
                                 type="text"
                                 name="celular"
-                                placeholder="Número celular"
+                                placeholder="Número celular: Ejemplo 987456111"
                                 value={formData1.celular}
                                 onChange={handleInputChange1}
                             />

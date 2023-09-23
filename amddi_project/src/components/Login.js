@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import axios from 'axios';
+import jwt_decode from "jwt-decode";
 import '../styles/Login.css';
 
 export default function Login({ setUser }) {
@@ -28,7 +29,11 @@ export default function Login({ setUser }) {
                 // console.log("Se inició sesión");
                 // setIsLoggedIn(true);
                 // console.log(email);
-                
+                const data = response.data;
+                localStorage.setItem("token_user", data.token);
+                const decodedToken = jwt_decode(data.token);
+                console.log("Rol del usuario:", decodedToken.rol);
+
                 try {
                     const responseUsuario = await axios.get(`http://localhost:5000/usuario_por_email/${email}`);
 

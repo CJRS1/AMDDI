@@ -158,7 +158,7 @@ section {
 
 .registro_container {
   width: 600px;
-  height: 100vh;
+  height: 120vh;
   padding-top: 120px;
   display: flex;
   flex-direction: column;
@@ -303,6 +303,12 @@ section {
   width: 80px;
   height: 80px;
   border-radius: 10px;
+  font-size: 20px;
+  text-align: center !important;
+}
+
+.pais_select {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
