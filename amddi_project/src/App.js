@@ -1,7 +1,9 @@
 import './App.css';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import axios from 'axios';
+
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -22,14 +24,48 @@ import RecuperarC from './components/RecuperarC';
 
 // import ogImage from './images/Logo_soloverde.png'
 
+function PrivateRoute({ element, isLoggedIn }) {
+
+  return isLoggedIn ? element : <Navigate to="/login" />;
+}
+
 function App() {
   const [user, setUser] = useState(null);
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
-  // const dynamicImage = ogImage;
-  // document.querySelector('meta[name="twitter:image"]').setAttribute('content', dynamicImage);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const location = useLocation();
+  console.log(isLoggedIn);
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Obtener el token del localStorage
+    const token = localStorage.getItem('token_user');
+
+    // Verificar si el token existe
+    if (token) {
+
+      axios.get('http://localhost:5000/usuario', {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+        .then(response => {
+          setUser(response.data.content); 
+          setIsLoggedIn(true);
+        })
+        .catch(error => {
+          setIsLoggedIn(false);
+          console.error("Error al buscar el usuario:", error.response?.data?.message || "Error desconocido");
+        });
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
+
   return (
     <Router>
-      <Subheader user={user}  setUser={setUser}/>
+      <Subheader user={user} setUser={setUser} />
       <Header />
 
       <Routes>
@@ -42,11 +78,15 @@ function App() {
 
         <Route path="/registrarse" element={<Registro />} />
 
-        <Route path="/miproyecto" element={<Miproyecto />} />
+        <Route path="/miproyecto" element={<PrivateRoute element={<Miproyecto />} isLoggedIn={isLoggedIn} />} />
 
-        <Route path="/miconfiguracion" element={<Miconfiguracion user={user}/>} />
+        <Route path="/miconfiguracion" element={<PrivateRoute element={<Miconfiguracion />} isLoggedIn={isLoggedIn} />} />
 
-        <Route path="/login" element={<Login setUser={setUser} />} />
+        {/* <Route path="/miproyecto" element={<Miproyecto />} /> */}
+
+        {/* <Route path="/miconfiguracion" element={<Miconfiguracion user={user} />} /> */}
+
+        <Route path="/login" element={<Login setUser={setUser} setIsLoggedIn={setIsLoggedIn} />} />
 
         <Route path="/servicios" element={<Servicios />} />
 

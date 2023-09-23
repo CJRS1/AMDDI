@@ -3,26 +3,52 @@ import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Miconfiguracion.css';
 
-export default function Miconfiguracion({ user }) {
+export default function Miconfiguracion() {
     const location = useLocation();
     const [servicio, setServicio] = useState("");
     const [currentUser, setCurrentUser] = useState({});
     // const [localUser, setLocalUser] = useState(loadUserFromLocalStorage() || user);
     // console.log("holaxdd::::", currentUser)
-    
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
 
+
     useEffect(() => {
-        // Al cargar el componente Subheader, verifica si hay datos de usuario en localStorage y si no, intenta recuperarlos.
-        const storedUser = JSON.parse(localStorage.getItem('user'));
-        if (storedUser) {
-            setCurrentUser(storedUser);
+        window.scrollTo(0, 0);
+
+        // Obtener el token del localStorage
+        const token = localStorage.getItem('token_user');
+
+        // Verificar si el token existe
+        if (token) {
+            // Si el token existe, realiza una solicitud al servidor para obtener los datos del usuario
+            axios.get('http://localhost:5000/usuario', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+                .then(response => {
+                    // console.log("hola")
+                    // console.log("hola",response.data.content);
+                    setCurrentUser(response.data.content); // Almacena los datos del usuario en el estado
+                })
+                .catch(error => {
+                    console.log(error);
+                });
         }
-        // console.log("holaaaaaaxd", storedUser);
-    }, []);
+    }, [location]);
+
+    // useEffect(() => {
+    //     // Al cargar el componente Subheader, verifica si hay datos de usuario en localStorage y si no, intenta recuperarlos.
+    //     const storedUser = JSON.parse(localStorage.getItem('user'));
+    //     if (storedUser) {
+    //         setCurrentUser(storedUser);
+    //     }
+    //     // console.log("holaaaaaaxd", storedUser);
+    // }, []);
 
     const email = currentUser.email;
     // console.log("email", email);
@@ -52,7 +78,7 @@ export default function Miconfiguracion({ user }) {
         carrera: "",
         pais: "",
         departamento: "",
-        pwd_hash:"",
+        pwd_hash: "",
     });
 
     useEffect(() => {
@@ -94,15 +120,15 @@ export default function Miconfiguracion({ user }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("entro aquì",formData);
+        console.log("entro aquì", formData);
         console.log(currentUser.id);
         try {
             const response = await axios.put(`http://localhost:5000/usuarios/${currentUser.id}`, formData);
-    
+
             if (response.status === 201) {
                 // Actualizar currentUser con los nuevos datos
-                console.log("hola",formData);
-                localStorage.setItem('user', JSON.stringify({...currentUser, ...formData}));
+                console.log("hola", formData);
+                localStorage.setItem('user', JSON.stringify({ ...currentUser, ...formData }));
                 setCurrentUser({ ...currentUser, ...formData });
                 console.log("entro aquì");
                 // Actualizar el usuario en el localStorage

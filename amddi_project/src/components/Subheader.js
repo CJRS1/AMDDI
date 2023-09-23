@@ -28,8 +28,10 @@ export default function Subheader({ user, setUser }) {
         try {
             // Realiza una solicitud POST para cerrar sesión
             await axios.post('http://localhost:5000/logout');
+            sessionStorage.removeItem('token_user');
             sessionStorage.removeItem('user');
             // Después de cerrar sesión con éxito, redirige al usuario a la página de inicio de sesión
+            localStorage.removeItem('token_user');
             localStorage.removeItem('user');
             setCurrentUser(null);
             setUser(null);

@@ -23,79 +23,6 @@ export default function Registro() {
         setFormData1({ ...formData1, [name]: value });
     }
 
-
-
-    // const handleNextStep = () => {
-    //     // setCurrentStep(currentStep + 1);
-    //     // console.log(formData);
-    //     if (
-    //         formData.nombre &&
-    //         formData.apePat &&
-    //         formData.apeMat &&
-    //         formData.carrera &&
-    //         formData.pais &&
-    //         formData.departamento
-    //     ) {
-    //         let validLength = false;
-    //         let isNumber = false;
-
-    //         // Comprobar si formData.dni es un número válido
-    //         // if (Number.isInteger(Number(formData.dni))) {
-    //         //     isNumber = true;
-    //         //     console.log(formData.dni);
-    //         // }
-    //         if (Number.isInteger(Number.parseFloat(formData.dni))) {
-    //             isNumber = true;
-    //           }
-
-    //         // Comprobar la longitud del DNI o INE según el país seleccionado
-    //         switch (formData.pais) {
-    //             case 'México':
-    //                 validLength = formData.dni.length === 18;
-    //                 break;
-    //             case 'Perú':
-    //                 validLength = formData.dni.length === 8 || formData.dni.length === 20;
-    //                 break;
-    //             case 'Bolivia':
-    //                 validLength = formData.dni.length === 11;
-    //                 break;
-    //             case 'Colombia':
-    //                 validLength = formData.dni.length === 10;
-    //                 break;
-    //             case 'Costa Rica':
-    //                 validLength = formData.dni.length === 9;
-    //                 break;
-    //             case 'Cuba':
-    //                 validLength = formData.dni.length === 11;
-    //                 break;
-    //             case 'Ecuador':
-    //                 validLength = formData.dni.length === 10;
-    //                 break;
-    //             case 'Venezuela':
-    //                 validLength = formData.dni.length === 7 || formData.dni.length === 8;
-    //                 break;
-    //             default:
-    //                 validLength = true; // No se aplica verificación de longitud para otros países
-    //                 break;
-    //         }
-    //         if (!isNumber) {
-    //             alert('El campo DNI debe ser un número válido.');
-    //             return; // Detener el avance si DNI no es un número válido
-    //         }
-    //         if (!validLength) {
-    //             alert('La longitud del documento de identificación no es la adecuada para el país seleccionado.');
-    //             return; // Detener el avance si la longitud no es la adecuada
-    //         }
-
-    //         // Al menos uno de los campos obligatorios está lleno y el DNI o INE tiene la longitud adecuada
-    //         setCurrentStep(currentStep + 1);
-    //         console.log(formData);
-    //     } else {
-    //         // Mostrar una alerta en JavaScript si todos los campos están vacíos
-    //         alert('Completa todos los campo antes de avanzar.');
-    //     }
-    // }
-
     const handleNextStep = () => {
         // Verificar si al menos uno de los campos obligatorios está lleno
         if (
@@ -560,7 +487,8 @@ export default function Registro() {
                                 ))}
                             </select>
 
-                            <select className="form-control my-input input_card pais_select" name="pais" id="contact-method" defaultValue="" value={formData.pais} onChange={handleInputChange} required>
+                            <select className="form-control my-input input_card pais_select" name="pais" id="contact-method" 
+                            value={formData.pais} onChange={handleInputChange} required>
                                 <option value="" disabled >Seleccione un país</option>
                                 <option value="Bolivia">Bolivia</option>
                                 <option value="Cuba">Cuba</option>
@@ -572,7 +500,7 @@ export default function Registro() {
                                 <option value="Venezuela">Venezuela</option>
                             </select>
 
-                            <select className="form-control my-input input_card pais_select" name="departamento" id="contact-method" defaultValue="" value={formData.departamento} onChange={handleInputChange} required>
+                            <select className="form-control my-input input_card pais_select" name="departamento" id="contact-method"  value={formData.departamento} onChange={handleInputChange} required>
                                 <option value="" disabled >Seleccione un departamento</option>
                                 {/* <option value="Ancash">Ancash</option> */}
                                 {departamentos.map((departamento) => (

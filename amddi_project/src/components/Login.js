@@ -5,7 +5,7 @@ import axios from 'axios';
 import jwt_decode from "jwt-decode";
 import '../styles/Login.css';
 
-export default function Login({ setUser }) {
+export default function Login({ setUser, setIsLoggedIn }) {
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -33,7 +33,8 @@ export default function Login({ setUser }) {
                 localStorage.setItem("token_user", data.token);
                 const decodedToken = jwt_decode(data.token);
                 console.log("Rol del usuario:", decodedToken.rol);
-
+                setIsLoggedIn(true);
+                
                 try {
                     const responseUsuario = await axios.get(`http://localhost:5000/usuario_por_email/${email}`);
 
