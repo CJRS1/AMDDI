@@ -1,27 +1,32 @@
 @import 'Variables';
 
 
-.miproyecto_container{
-    height: calc(100vh - 120px) ;
+.miproyecto_container {
+    // min-height: calc(100vh - 120px);
+    height: 130vh;
     width: 100%;
     margin-top: 120px;
     display: flex;
     flex-direction: column;
-    h3{
+
+
+    h3 {
         color: $verde-lima !important;
         font-size: 50px !important;
         font-weight: 900;
     }
-    h4{ 
+
+    h4 {
         color: $gris_claro;
         font-size: 35px !important;
-        span{
+
+        span {
             color: $gris_oscuro
         }
     }
 }
 
-.circle_span{
+.circle_span {
     background: $gris_claro;
     width: 50px;
     height: 50px;
@@ -33,16 +38,25 @@
     font-size: 20px;
 }
 
-.bg_dorado{
+.bg_dorado {
     background: linear-gradient(to right, #b47a1a, #ffe55a);
 }
 
-.etapa_card{
+.color_dorado {
+    background: linear-gradient(to right, #b47a1a, #ffe55a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px !important;
+}
+
+.etapa_card {
     display: flex;
     align-items: center;
     margin: 20px;
-    p{  
-        font-size: 20px;
+
+    span {
+        font-size: 25px;
+        font-weight: 700;
         margin-left: 20px;
         color: $gris_oscuro !important;
         margin-bottom: 0 !important;
@@ -50,13 +64,13 @@
 }
 
 .proyect_card {
-    width: 50%;
+    width: 800px;
     display: flex;
     justify-content: space-between;
 
 }
 
-.progreso_container{
+.progreso_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,30 +85,33 @@
     color: $blanco;
 }
 
-.fecha_entrega{
-        color: $verde-lima !important;
+.fecha_entrega {
+    color: $verde-lima !important;
 }
 
-.btn_avance{
+.btn_avance {
     margin-top: 20px;
 }
 
-.proyecto_fin_container{
+.proyecto_fin_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: none;
-    h5{
+
+    h5 {
         font-size: 40px !important;
         font-weight: 900;
+
         span {
             background: linear-gradient(to right, #b47a1a, #ffe55a);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
-    p{  
+
+    p {
         font-size: 20px;
         margin-left: 20px;
         color: $gris_oscuro !important;

@@ -1,4 +1,5 @@
-import React, { useEffect} from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useLocation } from 'react-router-dom';
@@ -6,11 +7,56 @@ import '../styles/Miproyecto.css';
 
 export default function Miproyecto() {
     const location = useLocation();
+    const [currentUser, setCurrentUser] = useState([]);
+    const [estados, setEstados] = useState([]);
+
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        // Obtener el token del localStorage
+        const token = localStorage.getItem('token_user');
+
+        // Verificar si el token existe
+        if (token) {
+            // Si el token existe, realiza una solicitud al servidor para obtener los datos del usuario
+            axios.get('http://localhost:5000/usuario', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+                .then(response => {
+                    // console.log("hola")
+                    // console.log("hola",response.data.content);
+                    setEstados(response.data.content.estados);
+                    setCurrentUser(response.data.content.usuario);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
     }, [location]);
-    const percentage = 50;
+
+    console.log(currentUser);
+    console.log(estados);
+    // Encuentra el estado correspondiente en estados que coincide con currentUser.estado
+    const estadoCoincidente = estados.find((estado) => estado.estado === currentUser.estado);
+
+    let percentage = 0;
+
+    // Verifica si se encontró un estado coincidente
+    if (estadoCoincidente) {
+        // Obtiene el índice del estado coincidente
+        const index = estados.indexOf(estadoCoincidente);
+
+        // Calcula el porcentaje en función del índice y la longitud de estados
+        percentage = (index + 1) / estados.length * 100;
+
+        console.log(`Porcentaje: ${percentage}%`);
+    } else {
+        console.log("No se encontró un estado coincidente.");
+    }
 
     return (
         <section className="miproyecto_container">
@@ -33,27 +79,31 @@ export default function Miproyecto() {
                         strokeWidth={15} // Ajusta el valor según tu preferencia
                     />
 
-                    <button className="proyect_btn btn_avance">Descargar avance</button>
+                    {currentUser.pdf_url && currentUser.pdf_url.length > 0 && (
+                        <a
+                            href={`http://localhost:5000${currentUser.pdf_url[currentUser.pdf_url.length - 1].pdf_url}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download="true"  // Cambia "nombre_del_archivo.pdf" al nombre deseado
+                            className="proyect_btn btn_avance"
+                        >
+                            Descargar avance
+                        </a>
+                    )}
+
 
                 </div>
                 <div className="etapa_container">
-                    <div className="etapa_card">
-                        <span className="circle_span bg_dorado"><strong>1</strong></span>
-                        <p>Proyecto registrado</p>
-                    </div>
-                    <div className="etapa_card">
-                        <span className="circle_span"><strong>2</strong></span>
-                        <p>Asesor asignado</p>
-                    </div>
-                    <div className="etapa_card">
-                        <span className="circle_span"><strong>3</strong></span>
-                        <p>Proceso de investigación</p>
-                    </div>
-                    <div className="etapa_card">
-                        <span className="circle_span"><strong>4</strong></span>
-                        <p>Revisión completa</p>
-                    </div>
-                    <p className="fecha_entrega">La fecha estimada de entrega es: <strong>08/12/2023</strong></p>
+                    {estados.map((estado, index) => (
+                        <div className="etapa_card" key={index} >
+                            {/* ${estado.estado === currentUser.estado ? 'bg_dorado' : ''} */}
+                            <span className={`circle_span ${estado.estado === currentUser.estado ? 'bg_dorado' : ''}`}>
+                                <strong>{estado.id}</strong>
+                            </span>
+                            <span className={`${estado.estado === currentUser.estado ? 'color_dorado' : ''}`}> {estado.estado} </span>
+                        </div>
+                    ))}
+                    <p className="fecha_entrega">La fecha estimada de entrega es: <strong>{currentUser.fecha_estimada}</strong></p>
                 </div>
             </div>
             <div className="proyecto_fin_container">

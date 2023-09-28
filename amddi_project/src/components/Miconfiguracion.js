@@ -10,12 +10,6 @@ export default function Miconfiguracion() {
     // const [localUser, setLocalUser] = useState(loadUserFromLocalStorage() || user);
     // console.log("holaxdd::::", currentUser)
 
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [location]);
-
-
     useEffect(() => {
         window.scrollTo(0, 0);
 
