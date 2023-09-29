@@ -7,6 +7,7 @@ export default function Miconfiguracion() {
     const location = useLocation();
     const [servicio, setServicio] = useState("");
     const [currentUser, setCurrentUser] = useState({});
+
     // const [localUser, setLocalUser] = useState(loadUserFromLocalStorage() || user);
     // console.log("holaxdd::::", currentUser)
 
@@ -27,7 +28,20 @@ export default function Miconfiguracion() {
                 .then(response => {
                     // console.log("hola")
                     // console.log("hola",response.data.content);
-                    setCurrentUser(response.data.content); // Almacena los datos del usuario en el estado
+                    setCurrentUser(response.data.content.usuario);
+                    const userEmail = response.data.content.usuario.email;
+
+                    // Realiza la segunda solicitud para obtener el servicio por correo electrónico
+                    axios.get(`http://localhost:5000/servicio_por_email/${userEmail}`)
+                        .then(responseUsuario => {
+                            if (responseUsuario.status === 200) {
+                                // console.log(responseUsuario.data.content);
+                                setServicio(responseUsuario.data.content);
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Error al buscar el usuario:", error.response?.data?.message || "Error desconocido");
+                        });
                 })
                 .catch(error => {
                     console.log(error);
@@ -35,43 +49,14 @@ export default function Miconfiguracion() {
         }
     }, [location]);
 
-    // useEffect(() => {
-    //     // Al cargar el componente Subheader, verifica si hay datos de usuario en localStorage y si no, intenta recuperarlos.
-    //     const storedUser = JSON.parse(localStorage.getItem('user'));
-    //     if (storedUser) {
-    //         setCurrentUser(storedUser);
-    //     }
-    //     // console.log("holaaaaaaxd", storedUser);
-    // }, []);
-
-    const email = currentUser.email;
-    // console.log("email", email);
-
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const responseUsuario = await axios.get(`http://localhost:5000/servicio_por_email/${email}`);
-
-                if (responseUsuario.status === 200) {
-                    // console.log(responseUsuario.data.content);
-                    setServicio(responseUsuario.data.content);
-                }
-            } catch (error) {
-                // console.error("Error al buscar el usuario:", error.response?.data?.message || "Error desconocido");
-            }
-        }
-
-        fetchData(); // Llama a la función asíncrona
-    }, [email])
-
     const [formData, setFormData] = useState({
-        nombre: "",
-        apePat: "",
-        apeMat: "",
-        dni: "",
-        carrera: "",
-        pais: "",
-        departamento: "",
+        nombre: currentUser?.nombre || "", // Inicializar con el valor de currentUser.nombre si está definido
+        apePat: currentUser?.apePat || "",
+        apeMat: currentUser?.apeMat || "",
+        dni: currentUser?.dni || "",
+        carrera: currentUser?.carrera || "",
+        pais: currentUser?.pais || "",
+        departamento: currentUser?.departamento || "",
         pwd_hash: "",
     });
 
@@ -140,85 +125,93 @@ export default function Miconfiguracion() {
             <h4>Información <span><strong>Personal</strong></span></h4>
             <p>Actualiza tus datos personales:</p>
             <form className="form_info" onSubmit={handleSubmit}>
-                <input
-                    className="input_config"
-                    type="text"
-                    name="nombre"
-                    placeholder="Nombre"
-                    value={formData.nombre}
-                    onChange={handleInputChange}
-                    readOnly={!isEditable}
-                />
-                <input
-                    className="input_config"
-                    type="text"
-                    name="apePat"
-                    placeholder="Apellido Paterno"
-                    value={formData.apePat}
-                    onChange={handleInputChange}
-                    readOnly={!isEditable}
-                />
-                <input
-                    className="input_config"
-                    type="text"
-                    name="apeMat"
-                    placeholder="Apellido Materno"
-                    value={formData.apeMat}
-                    onChange={handleInputChange}
-                    readOnly={!isEditable}
-                />
-                <input
-                    className="input_config"
-                    type="text"
-                    name="dni"
-                    placeholder="DNI"
-                    value={formData.dni}
-                    onChange={handleInputChange}
-                    readOnly={!isEditable}
-                />
-                <input
-                    className="input_config"
-                    type="text"
-                    name="carrera"
-                    placeholder="Carrera"
-                    value={formData.carrera}
-                    onChange={handleInputChange}
-                    readOnly={true}
-                />
-                <input
-                    className="input_config"
-                    type="text"
-                    name="pais"
-                    placeholder="País"
-                    value={formData.pais}
-                    onChange={handleInputChange}
-                    readOnly={true}
-                />
-                <input
-                    className="input_config"
-                    type="text"
-                    name="departamento"
-                    placeholder="Departamento"
-                    value={formData.departamento}
-                    onChange={handleInputChange}
-                    readOnly={true}
-                />
-                <input className="input_config"
-                    type="text"
-                    placeholder="Mi Servicio"
-                    value={servicio.nombre_servicio}
-                    onChange={handleInputChange}
-                    readOnly={true}
-                />
-                <input
-                    className="input_config"
-                    type="password"
-                    name="pwd_hash"
-                    placeholder="Contraseña"
-                    value={formData.pwd_hash}
-                    onChange={handleInputChange}
-                    readOnly={!isEditable}
-                />
+                {currentUser && (
+                    <>
+                        <input
+                            className="input_config"
+                            type="text"
+                            name="nombre"
+                            placeholder="Nombre"
+                            value={formData.nombre}
+                            onChange={handleInputChange}
+                            readOnly={!isEditable}
+                        />
+                        <input
+                            className="input_config"
+                            type="text"
+                            name="apePat"
+                            placeholder="Apellido Paterno"
+                            value={formData.apePat}
+                            onChange={handleInputChange}
+                            readOnly={!isEditable}
+                        />
+                        <input
+                            className="input_config"
+                            type="text"
+                            name="apeMat"
+                            placeholder="Apellido Materno"
+                            value={formData.apeMat}
+                            onChange={handleInputChange}
+                            readOnly={!isEditable}
+                        />
+                        <input
+                            className="input_config"
+                            type="text"
+                            name="dni"
+                            placeholder="DNI"
+                            value={formData.dni}
+                            onChange={handleInputChange}
+                            readOnly={!isEditable}
+                        />
+                        <input
+                            className="input_config"
+                            type="text"
+                            name="carrera"
+                            placeholder="Carrera"
+                            value={formData.carrera}
+                            onChange={handleInputChange}
+                            readOnly={true}
+                        />
+                        <input
+                            className="input_config"
+                            type="text"
+                            name="pais"
+                            placeholder="País"
+                            value={formData.pais}
+                            onChange={handleInputChange}
+                            readOnly={true}
+                        />
+                        <input
+                            className="input_config"
+                            type="text"
+                            name="departamento"
+                            placeholder="Departamento"
+                            value={formData.departamento}
+                            onChange={handleInputChange}
+                            readOnly={true}
+                        />
+                    </>
+                )}
+                {servicio.nombre_servicio && (
+                    <input className="input_config"
+                        type="text"
+                        placeholder="Mi Servicio"
+                        value={servicio.nombre_servicio}
+                        onChange={handleInputChange}
+                        readOnly={true}
+                    />
+                )}
+                {currentUser && (
+                    <input
+                        className="input_config"
+                        type="password"
+                        name="pwd_hash"
+                        placeholder="Contraseña"
+                        value={formData.pwd_hash}
+                        onChange={handleInputChange}
+                        readOnly={!isEditable}
+                    />
+                )}
                 {!isEditable && ( // Mostrar el botón "Editar datos" si no se está editando
                     <button onClick={handleActualizarClick} className="button_config">
                         Editar datos

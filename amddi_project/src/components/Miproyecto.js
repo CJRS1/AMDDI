@@ -11,7 +11,6 @@ export default function Miproyecto() {
     const [estados, setEstados] = useState([]);
 
 
-
     useEffect(() => {
         window.scrollTo(0, 0);
 
@@ -38,8 +37,8 @@ export default function Miproyecto() {
         }
     }, [location]);
 
-    console.log(currentUser);
-    console.log(estados);
+    // console.log(currentUser);
+    // console.log(estados);
     // Encuentra el estado correspondiente en estados que coincide con currentUser.estado
     const estadoCoincidente = estados.find((estado) => estado.estado === currentUser.estado);
 
@@ -53,10 +52,11 @@ export default function Miproyecto() {
         // Calcula el porcentaje en función del índice y la longitud de estados
         percentage = (index + 1) / estados.length * 100;
 
-        console.log(`Porcentaje: ${percentage}%`);
-    } else {
-        console.log("No se encontró un estado coincidente.");
-    }
+        // console.log(`Porcentaje: ${percentage}%`);
+    } 
+    // else {
+    //     console.log("No se encontró un estado coincidente.");
+    // }
 
     return (
         <section className="miproyecto_container">

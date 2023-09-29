@@ -226,4 +226,25 @@ section {
   100% {
     transform: scale(1);
   }
+}
+@media (min-width: 1500px) {
+  .miconfiguracion_container {
+    height: calc(100vh - 120px) !important;
+  }
+}
+@media (max-width: 768px) {
+  .miconfiguracion_container {
+    height: auto !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .miconfiguracion_container h3 {
+    font-size: 35px !important;
+  }
+  .miconfiguracion_container h4 {
+    font-size: 25px !important;
+  }
+  .button_config {
+    width: 300px;
+  }
 }/*# sourceMappingURL=Miconfiguracion.css.map */

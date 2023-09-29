@@ -22,19 +22,9 @@ import Miproyecto from './components/Miproyecto';
 import Miconfiguracion from './components/Miconfiguracion';
 import RecuperarC from './components/RecuperarC';
 
-// import ogImage from './images/Logo_soloverde.png'
-
-function PrivateRoute({ element, isLoggedIn }) {
-
-  return isLoggedIn ? element : <Navigate to="/login" />;
-}
-
 function App() {
   const [user, setUser] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  // const location = useLocation();
-  console.log(isLoggedIn);
-
+  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('token_user'));
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -78,13 +68,29 @@ function App() {
 
         <Route path="/registrarse" element={<Registro />} />
 
-        <Route path="/miproyecto" element={<PrivateRoute element={<Miproyecto />} isLoggedIn={isLoggedIn} />} />
+        {/* <Route path="/miproyecto" element={<PrivateRoute element={<Miproyecto />} isLoggedIn={isLoggedIn} />} />
 
-        <Route path="/miconfiguracion" element={<PrivateRoute element={<Miconfiguracion />} isLoggedIn={isLoggedIn} />} />
+        <Route path="/miconfiguracion" element={<PrivateRoute element={<Miconfiguracion />} isLoggedIn={isLoggedIn} />} /> */}
 
         {/* <Route path="/miproyecto" element={<Miproyecto />} /> */}
 
         {/* <Route path="/miconfiguracion" element={<Miconfiguracion user={user} />} /> */}
+
+        <Route path="/miproyecto" element={
+          isLoggedIn ? (
+            <Miproyecto />
+          ) : (
+            <Navigate to="/login" /> // Redirige a /login si no está autenticado
+          )
+        } />
+
+        <Route path="/miconfiguracion" element={
+          isLoggedIn ? (
+            <Miconfiguracion />
+          ) : (
+            <Navigate to="/login" /> // Redirige a /login si no está autenticado
+          )
+        } />
 
         <Route path="/login" element={<Login setUser={setUser} setIsLoggedIn={setIsLoggedIn} />} />
 
