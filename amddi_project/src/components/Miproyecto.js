@@ -39,7 +39,7 @@ export default function Miproyecto() {
     }, [location]);
 
     console.log(currentUser);
-    // console.log(estados);
+    console.log(estados);
     // Encuentra el estado correspondiente en estados que coincide con currentUser.estado
     const estadoCoincidente = estados.find((estado) => estado.estado === currentUser.estado);
 
@@ -50,9 +50,10 @@ export default function Miproyecto() {
     if (estadoCoincidente) {
         // Obtiene el índice del estado coincidente
         const index = estados.indexOf(estadoCoincidente);
-
+        // console.log(index);
+        // console.log(estados.length);
         // Calcula el porcentaje en función del índice y la longitud de estados
-        percentage = (index + 1) / estados.length * 100;
+        percentage = (((index + 1) / estados.length) * 100).toFixed(1);
 
         // console.log(`Porcentaje: ${percentage}%`);
     } 
