@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.2bf76120.css",
-    "main.js": "./static/js/main.c35f6e08.js",
+    "main.css": "./static/css/main.0cdc0fa6.css",
+    "main.js": "./static/js/main.079a3a75.js",
     "static/js/787.a75494a5.chunk.js": "./static/js/787.a75494a5.chunk.js",
     "static/media/ParafraseoyCorrecciondeEstilos.pdf": "./static/media/ParafraseoyCorrecciondeEstilos.f329ee35fe77abf32761.pdf",
     "static/media/ArticulosCientificos.pdf": "./static/media/ArticulosCientificos.af56e09cb574c03b0bc8.pdf",
@@ -38,16 +38,23 @@
     "static/media/doctoral.png": "./static/media/doctoral.93f90bd39c19f33277e4.png",
     "static/media/maestria.png": "./static/media/maestria.1cdb6ad1c32d8a08821b.png",
     "static/media/ciclo.png": "./static/media/ciclo.e5e9603ce26d128281d4.png",
+    "static/media/peruM.png": "./static/media/peruM.126878e1b7d5ed22c104.png",
     "static/media/recortado2.png": "./static/media/recortado2.0a185e8bc98e878adcff.png",
+    "static/media/costica.png": "./static/media/costica.a14f5868147e1dd92c40.png",
     "static/media/recortado5.png": "./static/media/recortado5.b18521663fba26d736f4.png",
+    "static/media/cuba.png": "./static/media/cuba.b86e1f66bc8df1c40474.png",
+    "static/media/colombia.png": "./static/media/colombia.99f382ac6ec8b98e749d.png",
     "static/media/recortado3.png": "./static/media/recortado3.afb36cd909cb495a6d44.png",
+    "static/media/venezuela.png": "./static/media/venezuela.09bd8dbe70984eab5d19.png",
     "static/media/mockup3.png": "./static/media/mockup3.fb1f0c0790ed58786621.png",
     "static/media/observaciones.png": "./static/media/observaciones.ed0641411c5ac010e95a.png",
+    "static/media/bolivia.png": "./static/media/bolivia.925687d540f35d64bd8b.png",
+    "static/media/mexico.png": "./static/media/mexico.b28aa79006ade6444375.png",
+    "static/media/ecuador.png": "./static/media/ecuador.a00665b9cb0a3824ca46.png",
     "static/media/mockup2.png": "./static/media/mockup2.d49c3443fdc5762c6936.png",
     "static/media/mockup1.png": "./static/media/mockup1.3f5a89ec20655204c040.png",
     "static/media/informe.png": "./static/media/informe.cebed6fd8609990f88a1.png",
     "static/media/redaccion.png": "./static/media/redaccion.ebc0e010fc7a219e75d7.png",
-    "static/media/somos_internacionales.png": "./static/media/somos_internacionales.bce64da39ac18dc6b6f2.png",
     "static/media/medalla.png": "./static/media/medalla.909d53018171dddd2b5a.png",
     "static/media/fondodegrade.png": "./static/media/fondodegrade.b430f6572a2cbbc26048.png",
     "static/media/fonto_verde.jpeg": "./static/media/fonto_verde.f7e5e6ed193c305636bc.jpeg",
@@ -67,12 +74,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.2bf76120.css.map": "./static/css/main.2bf76120.css.map",
-    "main.c35f6e08.js.map": "./static/js/main.c35f6e08.js.map",
+    "main.0cdc0fa6.css.map": "./static/css/main.0cdc0fa6.css.map",
+    "main.079a3a75.js.map": "./static/js/main.079a3a75.js.map",
     "787.a75494a5.chunk.js.map": "./static/js/787.a75494a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bf76120.css",
-    "static/js/main.c35f6e08.js"
+    "static/css/main.0cdc0fa6.css",
+    "static/js/main.079a3a75.js"
   ]
 }
