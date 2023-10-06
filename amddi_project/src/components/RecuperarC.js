@@ -35,7 +35,7 @@ export default function RecuperarContraseña() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`http://localhost:5000/cv_por_email/${email}`, {
+            const response = await axios.post(`https://amddibackend-production.up.railway.app/cv_por_email/${email}`, {
             });
             // console.log(response);
             if (response.status === 200) {
@@ -51,7 +51,7 @@ export default function RecuperarContraseña() {
         e.preventDefault();
         const codigoVerificacion = `${formCode.code1}${formCode.code2}${formCode.code3}${formCode.code4}`;
         try {
-            const response = await axios.post(`http://localhost:5000/verificar_code/${email}`, {
+            const response = await axios.post(`https://amddibackend-production.up.railway.app/verificar_code/${email}`, {
                 email,
                 codigoVerificacion,
             });
@@ -69,7 +69,7 @@ export default function RecuperarContraseña() {
         e.preventDefault();
         if (pwd_hash === confirm_pwd_hash){
             try {
-                const response = await axios.put(`http://localhost:5000/usuario/${email}`, {
+                const response = await axios.put(`https://amddibackend-production.up.railway.app/usuario/${email}`, {
                     pwd_hash,
                 });
                 // console.log(response);

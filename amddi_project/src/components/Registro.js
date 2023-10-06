@@ -288,7 +288,7 @@ export default function Registro() {
             setEmail(formData1.email);
             console.log(formData1.email);
 
-            const response = await fetch("http://localhost:5000/user_t", {
+            const response = await fetch("https://amddibackend-production.up.railway.app/user_t", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -330,24 +330,7 @@ export default function Registro() {
         // };
         console.log("hola");
         const cargarEspecialidades = async () => {
-            // try {
-            //     console.log("1");
-            //     const response = await axios.get("http://amddi.com/backend/especialidades");
-            //     console.log(response);
-            //     console.log("hola");
-            //     setEspecialidades(response.data.content);
-            // } catch (error) {
-            //     console.error(error);
-            // } 
-            // try {
-            //     console.log("2");
-            //     const response = await axios.get("https://amddi.com/backend/especialidades");
-            //     console.log(response);
-            //     console.log("hola");
-            //     setEspecialidades(response.data.content);
-            // } catch (error) {
-            //     console.error(error);
-            // } 
+
             try {
                 console.log("3");
                 const response = await axios.get("https://amddibackend-production.up.railway.app/especialidades");
@@ -386,7 +369,7 @@ export default function Registro() {
         console.log("email:", email);
         try {
 
-            const response = await fetch("http://localhost:5000/verificacion", {
+            const response = await fetch("https://amddibackend-production.up.railway.app/verificacion", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

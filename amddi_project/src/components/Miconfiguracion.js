@@ -20,7 +20,7 @@ export default function Miconfiguracion() {
         // Verificar si el token existe
         if (token) {
             // Si el token existe, realiza una solicitud al servidor para obtener los datos del usuario
-            axios.get('http://localhost:5000/usuario', {
+            axios.get('https://amddibackend-production.up.railway.app/usuario', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -32,7 +32,7 @@ export default function Miconfiguracion() {
                     const userEmail = response.data.content.usuario.email;
 
                     // Realiza la segunda solicitud para obtener el servicio por correo electrónico
-                    axios.get(`http://localhost:5000/servicio_por_email/${userEmail}`)
+                    axios.get(`https://amddibackend-production.up.railway.app/servicio_por_email/${userEmail}`)
                         .then(responseUsuario => {
                             if (responseUsuario.status === 200) {
                                 // console.log(responseUsuario.data.content);
@@ -102,7 +102,7 @@ export default function Miconfiguracion() {
         console.log("entro aquì", formData);
         console.log(currentUser.id);
         try {
-            const response = await axios.put(`http://localhost:5000/usuarios/${currentUser.id}`, formData);
+            const response = await axios.put(`https://amddibackend-production.up.railway.app/usuarios/${currentUser.id}`, formData);
 
             if (response.status === 201) {
                 // Actualizar currentUser con los nuevos datos
