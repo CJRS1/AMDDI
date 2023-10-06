@@ -20,6 +20,7 @@ export default function Login({ setUser, setIsLoggedIn }) {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
+            /* const response = await axios.post('http://localhost:5000/login' */
             const response = await axios.post('http://localhost:5000/login', {
                 email,
                 password,
@@ -35,7 +36,7 @@ export default function Login({ setUser, setIsLoggedIn }) {
                 const decodedToken = jwt_decode(data.token);
                 console.log("Rol del usuario:", decodedToken.rol);
                 setIsLoggedIn(true);
-                
+                /* const responseUsuario = await axios.get(`http://localhost:5000/usuario_por_email/${email} */
                 try {
                     const responseUsuario = await axios.get(`http://localhost:5000/usuario_por_email/${email}`);
 

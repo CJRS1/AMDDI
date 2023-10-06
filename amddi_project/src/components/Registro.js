@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../styles/Registro.css';
 
@@ -182,7 +183,7 @@ export default function Registro() {
                         return;
                     }
                     break;
-            
+
                 case 'Bolivia':
                     // Verificar si formData.celular es un número y tiene 8 caracteres para Bolivia
                     const celularRegexBolivia = /^[0-9]+$/;
@@ -192,7 +193,7 @@ export default function Registro() {
                         return;
                     }
                     break;
-            
+
                 case 'Colombia':
                     // Verificar si formData.celular es un número y tiene 10 caracteres para Colombia
                     const celularRegexColombia = /^[0-9]+$/;
@@ -202,7 +203,7 @@ export default function Registro() {
                         return;
                     }
                     break;
-            
+
                 case 'Costa Rica':
                     // Verificar si formData.celular es un número y tiene 8 caracteres para Costa Rica
                     const celularRegexCostaRica = /^[0-9]+$/;
@@ -212,7 +213,7 @@ export default function Registro() {
                         return;
                     }
                     break;
-            
+
                 case 'Cuba':
                     // Verificar si formData.celular es un número y tiene 8 caracteres para Cuba
                     const celularRegexCuba = /^[0-9]+$/;
@@ -222,7 +223,7 @@ export default function Registro() {
                         return;
                     }
                     break;
-            
+
                 case 'Ecuador':
                     // Verificar si formData.celular es un número y tiene 10 caracteres para Ecuador
                     const celularRegexEcuador = /^[0-9]+$/;
@@ -232,7 +233,7 @@ export default function Registro() {
                         return;
                     }
                     break;
-            
+
                 case 'Venezuela':
                     // Verificar si formData.celular es un número y tiene 7 u 8 caracteres para Venezuela
                     const celularRegexVenezuela = /^[0-9]+$/;
@@ -245,17 +246,17 @@ export default function Registro() {
                         return;
                     }
                     break;
-            
-                    case 'México':
-                        // Verificar si formData.celular es un número y tiene 10 caracteres para México
-                        const celularRegexMexico = /^[0-9]+$/;
-                        if (!celularRegexMexico.test(fullFormData.celular) || fullFormData.celular.length !== 10) {
-                            console.error("El número de celular no es válido para México");
-                            window.alert("El número de celular no es válido para México");
-                            return;
-                        }
-                        break;
-            
+
+                case 'México':
+                    // Verificar si formData.celular es un número y tiene 10 caracteres para México
+                    const celularRegexMexico = /^[0-9]+$/;
+                    if (!celularRegexMexico.test(fullFormData.celular) || fullFormData.celular.length !== 10) {
+                        console.error("El número de celular no es válido para México");
+                        window.alert("El número de celular no es válido para México");
+                        return;
+                    }
+                    break;
+
                 default:
                     // No se aplica verificación específica para otros países
                     break;
@@ -314,20 +315,53 @@ export default function Registro() {
 
 
     useEffect(() => {
-        const obtenerEspecialidades = async () => {
-            try {
-                const response = await fetch("http://localhost:5000/especialidades");
-                const data = await response.json();
-                // console.log(data);
+        // const obtenerEspecialidades = async () => {
+        //     try {
+        //         /* const response = await fetch("http://localhost:5000/especialidades") */
+        //         const response = await fetch("https://amddi.com/backend/especialidades");
+        //         const data = await response.json();
+        //         // console.log(data);
 
-                // Accede a la propiedad 'content' para obtener el array de especialidades
-                setEspecialidades(data.content);
+        //         // Accede a la propiedad 'content' para obtener el array de especialidades
+        //         setEspecialidades(data.content);
+        //     } catch (error) {
+        //         console.error("Error al obtener las especialidades:", error);
+        //     }
+        // };
+        console.log("hola");
+        const cargarEspecialidades = async () => {
+            // try {
+            //     console.log("1");
+            //     const response = await axios.get("http://amddi.com/backend/especialidades");
+            //     console.log(response);
+            //     console.log("hola");
+            //     setEspecialidades(response.data.content);
+            // } catch (error) {
+            //     console.error(error);
+            // } 
+            // try {
+            //     console.log("2");
+            //     const response = await axios.get("https://amddi.com/backend/especialidades");
+            //     console.log(response);
+            //     console.log("hola");
+            //     setEspecialidades(response.data.content);
+            // } catch (error) {
+            //     console.error(error);
+            // } 
+            try {
+                console.log("3");
+                const response = await axios.get("http://localhost:5000/especialidades");
+                console.log(response);
+                console.log("hola");
+                setEspecialidades(response.data.content);
             } catch (error) {
-                console.error("Error al obtener las especialidades:", error);
-            }
+                console.error(error);
+            } 
+
         };
 
-        obtenerEspecialidades();
+        cargarEspecialidades();
+        // obtenerEspecialidades();
     }, []);
 
     const [formCode, setFormCode] = useState({
@@ -378,6 +412,7 @@ export default function Registro() {
     };
 
     useEffect(() => {
+        
         // Hacer una solicitud para obtener datos de los departamentos cuando se cambie el país seleccionado
         if (formData.pais) {
             // Aquí deberías realizar una solicitud a la API adecuada para obtener los departamentos del país seleccionado
@@ -487,8 +522,8 @@ export default function Registro() {
                                 ))}
                             </select>
 
-                            <select className="form-control my-input input_card pais_select" name="pais" id="contact-method" 
-                            value={formData.pais} onChange={handleInputChange} required>
+                            <select className="form-control my-input input_card pais_select" name="pais" id="contact-method"
+                                value={formData.pais} onChange={handleInputChange} required>
                                 <option value="" disabled >Seleccione un país</option>
                                 <option value="Bolivia">Bolivia</option>
                                 <option value="Cuba">Cuba</option>
@@ -500,7 +535,7 @@ export default function Registro() {
                                 <option value="Venezuela">Venezuela</option>
                             </select>
 
-                            <select className="form-control my-input input_card pais_select" name="departamento" id="contact-method"  value={formData.departamento} onChange={handleInputChange} required>
+                            <select className="form-control my-input input_card pais_select" name="departamento" id="contact-method" value={formData.departamento} onChange={handleInputChange} required>
                                 <option value="" disabled >Seleccione un departamento</option>
                                 {/* <option value="Ancash">Ancash</option> */}
                                 {departamentos.map((departamento) => (
