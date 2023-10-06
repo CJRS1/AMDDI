@@ -350,7 +350,7 @@ export default function Registro() {
             // } 
             try {
                 console.log("3");
-                const response = await axios.get("http://localhost:5000/especialidades");
+                const response = await axios.get("https://amddibackend-production.up.railway.app/especialidades");
                 console.log(response);
                 console.log("hola");
                 setEspecialidades(response.data.content);
