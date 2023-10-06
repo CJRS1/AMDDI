@@ -19,7 +19,6 @@ export default function Miconfiguracion() {
 
         // Verificar si el token existe
         if (token) {
-            // Si el token existe, realiza una solicitud al servidor para obtener los datos del usuario
             axios.get('https://amddibackend-production.up.railway.app/usuario', {
                 headers: {
                     Authorization: `Bearer ${token}`
