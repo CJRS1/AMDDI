@@ -27,7 +27,7 @@ export default function Subheader({ user, setUser }) {
     const handleLogout = async () => {
         try {
             // Realiza una solicitud POST para cerrar sesión
-            await axios.post('amddibackend-production-2880.up.railway.app/logout');
+            await axios.post('https://amddibackend-production-2880.up.railway.app/logout');
             sessionStorage.removeItem('token_user');
             sessionStorage.removeItem('user');
             // Después de cerrar sesión con éxito, redirige al usuario a la página de inicio de sesión

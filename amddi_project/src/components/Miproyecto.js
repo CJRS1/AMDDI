@@ -20,7 +20,7 @@ export default function Miproyecto() {
         // Verificar si el token existe
         if (token) {
             // Si el token existe, realiza una solicitud al servidor para obtener los datos del usuario
-            axios.get('amddibackend-production-2880.up.railway.app/usuario', {
+            axios.get('https://amddibackend-production-2880.up.railway.app/usuario', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -84,7 +84,7 @@ export default function Miproyecto() {
 
                     {currentUser.pdf_url && currentUser.pdf_url.length > 0 && (
                         <a
-                            href={`amddibackend-production-2880.up.railway.app${currentUser.pdf_url[currentUser.pdf_url.length - 1].pdf_url}`}
+                            href={`https://amddibackend-production-2880.up.railway.app${currentUser.pdf_url[currentUser.pdf_url.length - 1].pdf_url}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             download="true"  // Cambia "nombre_del_archivo.pdf" al nombre deseado
