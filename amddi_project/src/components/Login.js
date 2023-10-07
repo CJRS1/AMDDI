@@ -21,7 +21,7 @@ export default function Login({ setUser, setIsLoggedIn }) {
         event.preventDefault();
         try {
             /* const response = await axios.post('http://localhost:5000/login' */
-            const response = await axios.post('https://amddibackend-production.up.railway.app/login', {
+            const response = await axios.post('amddibackend-production-2880.up.railway.app/login', {
                 email,
                 password,
             });
@@ -36,9 +36,9 @@ export default function Login({ setUser, setIsLoggedIn }) {
                 const decodedToken = jwt_decode(data.token);
                 console.log("Rol del usuario:", decodedToken.rol);
                 setIsLoggedIn(true);
-                /* const responseUsuario = await axios.get(`https://amddibackend-production.up.railway.app/usuario_por_email/${email} */
+                /* const responseUsuario = await axios.get(`amddibackend-production-2880.up.railway.app/usuario_por_email/${email} */
                 try {
-                    const responseUsuario = await axios.get(`https://amddibackend-production.up.railway.app/usuario_por_email/${email}`);
+                    const responseUsuario = await axios.get(`amddibackend-production-2880.up.railway.app/usuario_por_email/${email}`);
 
                     if (responseUsuario.status === 200) {
                         // console.log(responseUsuario.data.content);

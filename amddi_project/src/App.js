@@ -35,7 +35,7 @@ function App() {
     // Verificar si el token existe
     if (token) {
 
-      axios.get('https://amddibackend-production.up.railway.app/usuario', {
+      axios.get('amddibackend-production-2880.up.railway.app/usuario', {
         headers: {
           Authorization: `Bearer ${token}`
         }

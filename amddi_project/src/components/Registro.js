@@ -288,7 +288,7 @@ export default function Registro() {
             setEmail(formData1.email);
             console.log(formData1.email);
 
-            const response = await fetch("https://amddibackend-production.up.railway.app/user_t", {
+            const response = await fetch("amddibackend-production-2880.up.railway.app/user_t", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -333,7 +333,7 @@ export default function Registro() {
 
             try {
                 console.log("3");
-                const response = await axios.get("https://amddibackend-production.up.railway.app/especialidades");
+                const response = await axios.get("amddibackend-production-2880.up.railway.app/especialidades");
                 console.log(response);
                 console.log("hola");
                 setEspecialidades(response.data.content);
@@ -369,7 +369,7 @@ export default function Registro() {
         console.log("email:", email);
         try {
 
-            const response = await fetch("https://amddibackend-production.up.railway.app/verificacion", {
+            const response = await fetch("amddibackend-production-2880.up.railway.app/verificacion", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
