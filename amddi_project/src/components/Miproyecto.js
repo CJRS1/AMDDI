@@ -27,8 +27,6 @@ export default function Miproyecto() {
             })
                 .then(response => {
                     // console.log("hola")
-                    console.log("hola",response.data.content.estados);
-                    console.log("hola",response.data.content);
                     setEstados(response.data.content.estados);
                     setCurrentUser(response.data.content.usuario);
                 })
@@ -38,8 +36,6 @@ export default function Miproyecto() {
         }
     }, [location]);
 
-    console.log(currentUser);
-    console.log(estados);
     // Encuentra el estado correspondiente en estados que coincide con currentUser.estado
     const estadoCoincidente = estados.find((estado) => estado.estado === currentUser.estado);
 

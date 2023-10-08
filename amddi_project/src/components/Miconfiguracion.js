@@ -98,17 +98,16 @@ export default function Miconfiguracion() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("entro aquì", formData);
-        console.log(currentUser.id);
+
         try {
             const response = await axios.put(`https://amddibackend-production-2880.up.railway.app/usuarios/${currentUser.id}`, formData);
 
             if (response.status === 201) {
                 // Actualizar currentUser con los nuevos datos
-                console.log("hola", formData);
+
                 localStorage.setItem('user', JSON.stringify({ ...currentUser, ...formData }));
                 setCurrentUser({ ...currentUser, ...formData });
-                console.log("entro aquì");
+
                 // Actualizar el usuario en el localStorage
                 window.location.reload();
                 setIsEditable(false); // Desactivar la edición
