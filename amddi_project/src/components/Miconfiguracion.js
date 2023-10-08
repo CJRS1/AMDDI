@@ -25,13 +25,15 @@ export default function Miconfiguracion() {
                 }
             })
                 .then(response => {
-                    // console.log("hola")
-                    // console.log("hola",response.data.content);
+
                     setCurrentUser(response.data.content.usuario);
                     const userEmail = response.data.content.usuario.email;
 
                     // Realiza la segunda solicitud para obtener el servicio por correo electrónico
-                    axios.get(`https://amddibackend-production-2880.up.railway.app/servicio_por_email/${userEmail}`)
+                    axios.get(`/servicio_por_email/${userEmail}`),{
+                        baseURL: 'https://amddibackend-production-2880.up.railway.app'
+                    }
+
                         .then(responseUsuario => {
                             if (responseUsuario.status === 200) {
                                 // console.log(responseUsuario.data.content);
