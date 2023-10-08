@@ -34,6 +34,7 @@ export default function RecuperarContraseña() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(email)
         try {
             const response = await axios.post(`https://amddibackend-production-2880.up.railway.app/cv_por_email/${email}`, {
             });
