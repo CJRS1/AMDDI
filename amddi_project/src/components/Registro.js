@@ -436,7 +436,7 @@ export default function Registro() {
 
 
     return (
-        <div>
+
             <section className="registro_container">
                 {currentStep === 1 && (
                     <div className="form_registro_container">
@@ -644,6 +644,6 @@ export default function Registro() {
                     </div>
                 )}
             </section>
-        </div>
+
     );
 }
