@@ -51,7 +51,7 @@ export default function Registro() {
                     validLength = formData.dni.length === 18;
                     break;
                 case 'Perú':
-                    validLength = formData.dni.length === 8 || formData.dni.length === 20;
+                    validLength = formData.dni.length === 8 || formData.dni.length === 9;
                     break;
                 case 'Bolivia':
                     validLength = formData.dni.length === 11;
@@ -69,7 +69,7 @@ export default function Registro() {
                     validLength = formData.dni.length === 10;
                     break;
                 case 'Venezuela':
-                    validLength = formData.dni.length === 7 || formData.dni.length === 8;
+                    validLength = formData.dni.length === 8;
                     break;
                 default:
                     validLength = true; // No se aplica verificación de longitud para otros países
