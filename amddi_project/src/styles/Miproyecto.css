@@ -328,6 +328,6 @@ section {
 }
 @media (min-width: 768px) and (max-width: 1499px) {
   .miproyecto_container {
-    height: 110vh;
+    height: auto;
   }
 }/*# sourceMappingURL=Miproyecto.css.map */
