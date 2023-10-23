@@ -59,7 +59,7 @@ export default function Miproyecto() {
 
     return (
         <section className="miproyecto_container">
-            {currentUser.categoria === 'Premium' && (
+            {currentUser.categoria === 'Oro' && (
                 <>
                     <h3>MI PROYECTO</h3>
                     <h4>¿Cómo va mi <span><strong>proyecto?</strong></span></h4>
