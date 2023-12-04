@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import '../styles/Ingresos.css';
 
@@ -17,6 +17,8 @@ export default function Testimonios() {
             setShowAlert(false);
         }, 1000);
     };
+
+    
 
     return (
         <section className="ingresos_container">
@@ -40,25 +42,25 @@ export default function Testimonios() {
                 </div>
                 <div className="form_ingreso">
 
-                    <form  method="POST" action="https://formcarry.com/s/cd88rix77r" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
+                    <form method="POST" action="https://formcarry.com/s/cd88rix77r" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
                         <h3 className="titulo"><strong>Únete a nuestra comunidad freelance</strong></h3>
                         <h4> Envíanos tu CV y rellena el formulario de postulación</h4>
                         <div className="container-contacto">
                             <div className="mb-3 d-flex ">
                                 <input type="text" name="name" className="form-control my-input input1" style={{ width: '510px', height: '35px' }} id="Input1"
-                                    placeholder="Nombre y apellido *"  required />
+                                    placeholder="Nombre y apellido *" required />
                             </div>
                             <div className="mb-3 d-flex input_contact_container">
 
                                 <input type="email" name="email" className="form-control form-email my-input input1" style={{ width: '250px', marginRight: '10px' }}
                                     id="exampleFormControlInput1" placeholder="Correo electrónico *" required />
                                 <input type="number" name="phone" className="form-control my-input input_card input1" style={{ width: '250px', height: '35px' }} id="Input1"
-                                    placeholder="Celular *" min="10000000" max="999999999999"  required />
+                                    placeholder="Celular *" min="10000000" max="999999999999" required />
                             </div>
                             <div className="mb-3 d-flex input_contact_container">
                                 <input type="text" name="puesto" className="form-control my-input input1" style={{ width: '250px', marginRight: '10px', height: '35px' }} id="Input1"
-                                    placeholder="Puesto al que postula*"  required />
-                                <select className="form-control my-input input_card" name="departamento"  style={{ width: '250px' }} id="contact-method" defaultValue="" required>
+                                    placeholder="Puesto al que postula*" required />
+                                <select className="form-control my-input input_card" name="departamento" style={{ width: '250px' }} id="contact-method" defaultValue="" required>
                                     <option value="" disabled >Seleccione un departamento</option>
                                     <option value="Ancash">Ancash</option>
                                     <option value="Apurímac">Apurímac</option>
@@ -89,13 +91,15 @@ export default function Testimonios() {
 
                             <div className="mb-3">
                                 <textarea className="form-control my-input " name="message" id="exampleFormControlTextarea1" style={{ width: '510px', height: '100px' }} rows="5"
-                                    placeholder="Buenas tardes, yo José, quiero trabajar con ustedes en el área de ... *"  required></textarea>
+                                    placeholder="Buenas tardes, yo José, quiero trabajar con ustedes en el área de ... *" required></textarea>
                             </div>
                             <div className="mb-3 d-flex flex-column custom-file seleccionar-archivo">
 
-                                <input className="form-control btn color-button" name="picture" type="file"
-                                    id="formFileMultiple" required />
-                                    
+                                {/* <input className="form-control btn color-button" name="file" type="file"
+                                    id="formFileMultiple" accept=".pdf" required /> */}
+
+                                <input name="picture" type="file"/>
+
                             </div>
                             {showAlert && (
                                 <div className="alert-overlay">
@@ -105,7 +109,7 @@ export default function Testimonios() {
                                     </div>
                                 </div>
                             )}
-                            <button type="submit" className="btn button-contact" value="Send" onClick={handleAlertClick}>Enviar el formulario</button>
+                            <button type="submit" value="Send" className="btn button-contact" onClick={handleAlertClick}>Enviar el formulario</button>
 
                             <input type="hidden" name="_next" value="https://www.amddi.com/ingresosextra" />
                             <input type="hidden" name="_captcha" value="false" />
