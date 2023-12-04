@@ -40,7 +40,7 @@ export default function Testimonios() {
                 </div>
                 <div className="form_ingreso">
 
-                    <form  method="POST" action="https://formsubmit.co/info@amddi.com" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
+                    <form  method="POST" action="https://formcarry.com/s/cd88rix77r" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
                         <h3 className="titulo"><strong>Únete a nuestra comunidad freelance</strong></h3>
                         <h4> Envíanos tu CV y rellena el formulario de postulación</h4>
                         <div className="container-contacto">
