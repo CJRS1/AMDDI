@@ -57,7 +57,7 @@ export default function Contacto() {
                     </div>
                 </div>
                 <div className="form_contacto">
-                    <form method="POST" action="https://formsubmit.co/info@amddi.com" encType="multipart/form-data" className="container-contacto-form">
+                    <form method="POST" action="https://formspree.io/f/mqkvvrpz" encType="multipart/form-data" className="container-contacto-form">
                         <div className="container-contacto">
                             <div className="mb-3 d-flex flex-column justify-content-center input_container">
                                 <input type="text" name="name" className="form-control my-input" style={{ width: '610px', marginBottom:'16px' }} id="Input1"

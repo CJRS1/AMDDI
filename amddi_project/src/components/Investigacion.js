@@ -28,7 +28,7 @@ export default function Investigacion() {
                     <p> ¡Bienvenido al Programa de Investigación Sostenible AMDDI! Apoyamos a jóvenes investigadores comprometidos con soluciones innovadoras para los desafíos ambientales, sociales y económicos de nuestro país. Si compartes esta misión, te conectaremos con mentores expertos que te guiarán en tus investigaciones, brindándote valiosa orientación. También reconocemos la importancia de contar con recursos, por eso financiamos proyectos alineados con nuestros objetivos de desarrollo sostenible. Únete a nuestro programa y sé parte del cambio que el país necesita. Juntos podemos construir un futuro más sostenible. </p> */}
                 </div>
                 <div className="form_ingreso">
-                    <form method="POST" action="https://formsubmit.co/info@amddi.com" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
+                    <form method="POST" action="https://formspree.io/f/mqkvvrpz" encType="multipart/form-data" className="container-contacto-empresa programa-formulario">
                         <h3 className="titulo"><strong>Construyamos un futuro más sostenible</strong></h3>
                         <h4> ¡Postula ya! Rellena tus datos en el formulario</h4>
 

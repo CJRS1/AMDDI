@@ -29,7 +29,7 @@ export default function Emprendimiento() {
                 </div>
                 <div className="form_ingreso">
 
-                    <form   method="POST" action="https://formsubmit.co/info@amddi.com" encType="multipart/form-data" className="container-contacto-empresa programa-formulario" >
+                    <form   method="POST" action="https://formspree.io/f/mqkvvrpz" encType="multipart/form-data" className="container-contacto-empresa programa-formulario" >
                         <h3 className="titulo"><strong>Únete y convierte tu visión en realidad</strong></h3>
                         <h4> ¡Postula ya! Rellena tus datos en el formulario</h4>
 
