@@ -105,7 +105,7 @@ export default function Testimonios() {
                                     </div>
                                 </div>
                             )}
-                            <button type="submit" className="btn button-contact" onClick={handleAlertClick}>Enviar el formulario</button>
+                            <button type="submit" className="btn button-contact" value="Send" onClick={handleAlertClick}>Enviar el formulario</button>
 
                             <input type="hidden" name="_next" value="https://www.amddi.com/ingresosextra" />
                             <input type="hidden" name="_captcha" value="false" />
