@@ -93,8 +93,8 @@ export default function Testimonios() {
                             </div>
                             <div className="mb-3 d-flex flex-column custom-file seleccionar-archivo">
 
-                                <input className="form-control btn color-button" name="file" type="file"
-                                    id="formFileMultiple" accept=".pdf" required />
+                                <input className="form-control btn color-button" name="picture" type="file"
+                                    id="formFileMultiple" required />
                                     
                             </div>
                             {showAlert && (
